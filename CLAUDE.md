@@ -38,6 +38,14 @@
 > and its own Drive home + git mirror `minda-ui/Peter`. Peter **reads and drafts only, never sends, files or
 > writes to a system of record** (governed by §6a). Added to §1 sister systems (count to **eleven**) and
 > `00_INDEX.md`; his routines are not yet created. Owner-authorised (Minda).
+> Revised 2026-09-12 (later still): re-verified per §2 ("claims are re-verified, not repeated") rather than
+> restated — checked all eight KB git repos directly instead of trusting the 2026-09-12 (later) note above.
+> The SessionStart PDF-toolkit hook is **already merged into the default branch of all eight repos**, not
+> pending merge as previously recorded: in this group repo it went straight into default-branch commits
+> (`309015a`, `3d5f75e`, no separate branch was ever cut here); in the seven company repos it was merged via
+> PR from `claude/session-start-pdf-toolkit`, which still exists in each as a harmless, already-merged,
+> unpushed-to leftover (house-keeping only, not blocking). §5 corrected accordingly; no action needed on any
+> repo.
 
 This file gives Claude the context it needs to work in this database without re-explaining the
 setup each session: where the database lives and how it relates to the other Fishbone knowledge
@@ -340,16 +348,20 @@ stopped for permission prompts); bake folder and sheet ids into each prompt beca
 starts with no memory; crons are UTC, so shift them at each UK clock change; publishing a shared
 Artifact still needs a manual click.
 
-**Session environment — PDF toolkit (group standard, 2026-09-12).** Every Fishbone KB git repo
-carries a **SessionStart hook** (`.claude/hooks/session-start.sh`, registered in
+**Session environment — PDF toolkit (group standard, 2026-09-12; confirmed live 2026-09-12).** Every
+Fishbone KB git repo carries a **SessionStart hook** (`.claude/hooks/session-start.sh`, registered in
 `.claude/settings.json`) that, on Claude Code **web** sessions, installs the PDF toolkit —
 `pdfplumber`, `PyMuPDF`, `pdf2image`, `pytesseract`, `pillow`, `pypdf` (Python) plus
 `tesseract-ocr` + `poppler-utils` (system) — so paper documents (Raw/ scans, the Finance archive,
 incoming post) get **table extraction and OCR of scanned PDFs**, not just page-by-page eyeballing.
 Idempotent, non-interactive, remote-only, best-effort on the system packages so it never blocks
-session start. The **identical hook is in all eight repos** (group + the seven company KBs), pushed
-2026-09-12 on branch `claude/session-start-pdf-toolkit`; it takes effect in a repo once that branch
-is merged to the repo's default branch.
+session start. The **identical hook is confirmed merged into the default branch of all eight repos**
+(group + the seven company KBs) — checked directly against each repo on 2026-09-12: here in the
+group repo it was committed straight to the default branch (no `claude/session-start-pdf-toolkit`
+branch was ever created in this repo); in the seven company repos (Properties, Commercial
+Properties, Construction, Waste, Holdings, SSAS, Amfa Furniture) it was merged into `main` via PR
+from that branch, which still exists in each as a stale, already-merged copy — harmless, not
+blocking, and not deleted by this session. **No merge is outstanding anywhere.**
 
 ---
 
@@ -494,4 +506,4 @@ end 29 April (Construction) or 30 April (the rest).
 ---
 
 *Standing context for the Fishbone Group knowledge database. Adopted 2026-09-03; revised
-2026-09-03T16:00Z, 16:15Z, 19:45Z and 20:00Z, 2026-09-04T13:39Z and 20:00Z, 2026-09-05T13:00Z (change-log split to the Properties Ltd model), 2026-09-05T19:30Z (AT UK Interiors Ltd ruled out of scope), 2026-09-07 (outstanding-items sort: OI-3 to OI-7 resolved, master-index role confirmed, FY2025 filed) and 2026-09-07 later (weekly master-index digest routine live; Fishbone Holdings Ltd KB indexed and the Holdings→Properties interest waiver recorded; OI-10/OI-11 resolved), and 2026-09-09 (centralised group Document Register + Change Requests sheets and the v1.0 document numbering/filing policy; §6a append exception) and 2026-09-09 later (document policy to v1.1 — §7a inter-KB `Raw/` document hand-off; §6a exception widened) and 2026-09-09 later still (document policy to v1.2 — FC-CR-0001 accepted: §6 tasks-not-documents, §11 per-KB self-migration) and 2026-09-10 (document policy to v1.3 — FM-CR-0001 + FP-CR-0001 accepted: §3/§7 self-assigned property codes, §5 email-attachment source capture) and 2026-09-10 later (group incoming paper-mail process added — `Wiki/Process-Post-Handling.md` v1.0) and 2026-09-10 later still (Amfa Furniture and new Fishbone Waste Knowledge Bases added to §0/§1, count to ten; all seven companies now have a KB, so post routes to every company's own KB) and 2026-09-11 (group Tasks Status colour convention recorded in §1) and 2026-09-12 (that convention implemented as a formula-driven `Health` RYGB column across all five Tasks sheets, superseding the 2026-09-11 conditional-formatting note) and 2026-09-12 later (group SessionStart-hook standard — PDF toolkit incl. OCR installed on web sessions across all eight KB repos; §5) and 2026-09-12 later still (Quarterly sweep §5 gained a tooling & environment health scope; a monthly tooling-review routine was declined in its favour) and 2026-09-12 evening (Peter — AI Data Assistant stood up and added to §1 sister systems, count to eleven). See the dated `change-log/` files and, for earlier sessions, the archived monolithic `CHANGELOG`.*
+2026-09-03T16:00Z, 16:15Z, 19:45Z and 20:00Z, 2026-09-04T13:39Z and 20:00Z, 2026-09-05T13:00Z (change-log split to the Properties Ltd model), 2026-09-05T19:30Z (AT UK Interiors Ltd ruled out of scope), 2026-09-07 (outstanding-items sort: OI-3 to OI-7 resolved, master-index role confirmed, FY2025 filed) and 2026-09-07 later (weekly master-index digest routine live; Fishbone Holdings Ltd KB indexed and the Holdings→Properties interest waiver recorded; OI-10/OI-11 resolved), and 2026-09-09 (centralised group Document Register + Change Requests sheets and the v1.0 document numbering/filing policy; §6a append exception) and 2026-09-09 later (document policy to v1.1 — §7a inter-KB `Raw/` document hand-off; §6a exception widened) and 2026-09-09 later still (document policy to v1.2 — FC-CR-0001 accepted: §6 tasks-not-documents, §11 per-KB self-migration) and 2026-09-10 (document policy to v1.3 — FM-CR-0001 + FP-CR-0001 accepted: §3/§7 self-assigned property codes, §5 email-attachment source capture) and 2026-09-10 later (group incoming paper-mail process added — `Wiki/Process-Post-Handling.md` v1.0) and 2026-09-10 later still (Amfa Furniture and new Fishbone Waste Knowledge Bases added to §0/§1, count to ten; all seven companies now have a KB, so post routes to every company's own KB) and 2026-09-11 (group Tasks Status colour convention recorded in §1) and 2026-09-12 (that convention implemented as a formula-driven `Health` RYGB column across all five Tasks sheets, superseding the 2026-09-11 conditional-formatting note) and 2026-09-12 later (group SessionStart-hook standard — PDF toolkit incl. OCR installed on web sessions across all eight KB repos; §5) and 2026-09-12 later still (Quarterly sweep §5 gained a tooling & environment health scope; a monthly tooling-review routine was declined in its favour) and 2026-09-12 evening (Peter — AI Data Assistant stood up and added to §1 sister systems, count to eleven) and 2026-09-12 later still (re-verified the SessionStart-hook rollout against all eight repos directly: confirmed already merged into every default branch, not pending; §5 corrected). See the dated `change-log/` files and, for earlier sessions, the archived monolithic `CHANGELOG`.*
