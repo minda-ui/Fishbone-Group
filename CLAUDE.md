@@ -214,6 +214,9 @@ rules govern how every AI employee — Victoria, Rachel, John, Peter, Eugene, He
   identified gaps are recorded as Tasks & Requests rows; lessons learned are recorded as Help &
   Lessons rows. A local KB log may keep working detail, but the item must be surfaced to the Hub —
   nothing that concerns a task, a lesson or a gap lives only in a local log the coordinator cannot see.
+- **Rule C — plain-brief (owner standard, Minda 2026-09-22).** Say it in fewer words. Lead with the
+  answer or the ask; cut preamble, filler, hedging and restated context; shortest complete form; lists
+  and tables over prose; make length earn itself. Applies to every message, charter, log, Hub row and doc.
 
 The full standard is recorded as the group session-discipline standard in Alex's own
 `Process-Housekeeping-and-Session-Discipline.md` and propagated to each employee's own charter §0
