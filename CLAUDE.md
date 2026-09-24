@@ -210,9 +210,17 @@ file), is tracked live on the **Fishbone AI Workforce Hub** (Smartsheet workspac
 Workforce": `Roster`, `Tasks & Requests`, `Help & Lessons`), which supersedes this section as the
 day-to-day source for who is on the workforce; this section is kept as the group KB's own dated
 record of it.
+**Revised 2026-09-24:** **Nadia — the Amfa Sales & Ops Assistant** — added. Like John, she adds no new
+knowledge system to the count above: she **adopts the existing Amfa Furniture Ltd Knowledge Base** (Drive
+`1ugshCjwx2yvRXZvmtpwLcg3kUgTKN7aU`) rather than standing up her own; her identity files live in a dedicated
+git mirror `minda-ui/Nadia`. Draft-only outward, she runs Amfa's enquiry→quote→order pipeline (an
+Enquiries/Quotes CRM sheet, Smartsheet `5405540723328900`, feeding the AMFA order tracker) while Amfa stays
+dormant — sales **test-running under the Fishbone Construction Ltd umbrella** until the 1 May 2027 launch.
+Proposed by Victoria (AWT-0092), built by Eugene (AWT-0093), owner-authorised (Minda). Status **Building** on
+the Hub Roster until `enquiries@amfa.uk` is connected; Peter routes Amfa enquiries into her `Raw/` (AWT-0095).
 
 **The Hub Coordination Standard (owner "main thing", Minda 2026-09-20; AWT-0040).** Two standing
-rules govern how every AI employee — Victoria, Rachel, John, Peter, Eugene, Helen, Darius, Anna and Alex
+rules govern how every AI employee — Victoria, Rachel, John, Peter, Eugene, Helen, Darius, Anna, Nadia and Alex
 — uses the Fishbone AI Workforce Hub:
 - **Rule A — session start, check the Hub first.** At every session start, before other work, read
   Tasks & Requests for your own Assigned-to rows that are Open or In Progress; flip a task you take
