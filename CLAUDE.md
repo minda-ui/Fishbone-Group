@@ -192,13 +192,15 @@ never by Drive id.** Raw and Archive items keep stable ids.
 
 ### Sister systems (link, do not copy)
 
-Thirteen other knowledge systems exist (the Fishbone Holdings Ltd Knowledge Base was added 2026-09-05, the
+Fourteen other knowledge systems exist (the Fishbone Holdings Ltd Knowledge Base was added 2026-09-05, the
 Amfa Furniture Ltd Knowledge Base 2026-09-05, the Fishbone SSAS Knowledge Base 2026-09-06 and the
 Fishbone Waste Ltd Knowledge Base 2026-09-10 — so **all seven group companies now have their own KB** —
 **Peter, the group's data-collection assistant, was added 2026-09-12**, and **Eugene, the group's IT &
 engineering assistant, was added 2026-09-12** as the second AI employee; **Anna, the group's AI
 Construction Assistant — a technical construction adviser — was added 2026-09-22** with her own Drive
-home and `minda-ui/Anna` mirror).
+home and `minda-ui/Anna` mirror; **Nadia, the Amfa Sales & Ops Assistant, gained her own standalone KB
+2026-09-26** — Drive home + `minda-ui/Nadia` mirror — converted from adopting the Amfa Furniture Ltd KB
+(see the 2026-09-26 revision below), which is what raises the count from thirteen to fourteen).
 **Revised 2026-09-20:** **Victoria — the CEO's Assistant and AI Workforce Coordinator** — and
 **John — the AI Properties Operations Assistant** — added below; both were missing from this
 roster. Neither adds a new knowledge system to the count above: Victoria has no separate KB or git
@@ -210,14 +212,20 @@ file), is tracked live on the **Fishbone AI Workforce Hub** (Smartsheet workspac
 Workforce": `Roster`, `Tasks & Requests`, `Help & Lessons`), which supersedes this section as the
 day-to-day source for who is on the workforce; this section is kept as the group KB's own dated
 record of it.
-**Revised 2026-09-24:** **Nadia — the Amfa Sales & Ops Assistant** — added. Like John, she adds no new
-knowledge system to the count above: she **adopts the existing Amfa Furniture Ltd Knowledge Base** (Drive
-`1ugshCjwx2yvRXZvmtpwLcg3kUgTKN7aU`) rather than standing up her own; her identity files live in a dedicated
-git mirror `minda-ui/Nadia`. Draft-only outward, she runs Amfa's enquiry→quote→order pipeline (an
-Enquiries/Quotes CRM sheet, Smartsheet `5405540723328900`, feeding the AMFA order tracker) while Amfa stays
-dormant — sales **test-running under the Fishbone Construction Ltd umbrella** until the 1 May 2027 launch.
-Proposed by Victoria (AWT-0092), built by Eugene (AWT-0093), owner-authorised (Minda). Status **Building** on
-the Hub Roster until `enquiries@amfa.uk` is connected; Peter routes Amfa enquiries into her `Raw/` (AWT-0095).
+**Revised 2026-09-24, updated 2026-09-26:** **Nadia — the Amfa Sales & Ops Assistant** — added 2026-09-24,
+then **converted to a standalone KB on 2026-09-26** (owner decision, Minda; proposed/coordinated by Victoria,
+built by Eugene, AWT-0104). She now has **her own standalone Knowledge Base** — a Drive home (`Nadia - AI Amfa
+Sales & Ops Assistant`, `1dWtVYhQZlluqDiL4azeaEN2t4Y-be9xT`) with its own `CHARTER.md` / `Charter-Rules.md` /
+`Charter-History.md`, four control files and `Raw/Wiki/Outputs/Drafts/Archive`, mirrored to git `minda-ui/Nadia`
+— which is the added system in the count above. (Originally, 2026-09-24, she **adopted** the Amfa Furniture Ltd
+KB with no KB of her own, on the John pattern; on 2026-09-26 her identity was moved out of that KB's root into
+her own home, the Amfa **company** KB left intact as one of the seven.) Draft-only outward, she runs Amfa's
+enquiry→quote→order pipeline (an Enquiries/Quotes CRM sheet, Smartsheet `5405540723328900`, feeding the AMFA
+order tracker) and reads/maintains the Amfa Furniture Ltd KB + AMFA Smartsheet from her own home, while Amfa
+stays dormant — sales **test-running under the Fishbone Construction Ltd umbrella** until the 1 May 2027 launch.
+Proposed by Victoria (AWT-0092), built by Eugene (AWT-0093 stand-up, AWT-0104 standalone conversion),
+owner-authorised (Minda). Status **Building** on the Hub Roster until `enquiries@amfa.uk` is connected; Peter
+routes Amfa enquiries into her `Raw/` (AWT-0095).
 
 **The Hub Coordination Standard (owner "main thing", Minda 2026-09-20; AWT-0040).** Two standing
 rules govern how every AI employee — Victoria, Rachel, John, Peter, Eugene, Helen, Darius, Anna, Nadia and Alex
