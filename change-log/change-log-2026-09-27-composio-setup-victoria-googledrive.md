@@ -44,3 +44,12 @@ Changes carried: `open-issues.md` gained **OI-18** (six `Raw/` items with no led
 records this rollout, OI-18, and marks "Raw items pending" unverified.
 Gotcha: `GOOGLEDRIVE_FIND_FILE` on `Archive/` (hundreds of files) returned no `data` at pageSize 200 —
 check an archived file's parent by id instead.
+
+## `CLAUDE.md` — same cycle, larger file (Minda approved after a first attempt was blocked)
+- Genuine change: §1 lost John's unattended grant (`384129e`) and Nadia's standalone KB (`38bde73`) when
+  the `5f7838a` Drive→git sync copied the older Drive text over git. Re-applied only those changes.
+- Pre-check: live Drive copy identical to the pre-edit text (43,449 B, `d7ca3c54e8c27954`).
+- Old `1auDbd5Mu7YaEfQb1bDlqYbkyHOFyvB6U` → `Archive/`, bytes unchanged. New live
+  `1kdaqpR8oos0-QIhWDn6maHCJvCTg2d7V`, 45,878 B, `eb1d80b9f32a26ae`, identical to git. One live copy.
+- Largest file proven through Composio so far: 45,878 B.
+- Recorded in `CLAUDE-History.md` and `current-state.md`, both replaced by the same cycle.

@@ -7,6 +7,13 @@ so that `CLAUDE.md` never has to grow an intro blockquote just to record what ch
 routine rule or roster change now only needs a new line here, not a rewrite of the standing-context
 paragraph above it._
 
+- **2026-09-27 (later).** **§1 — John's unattended grant and Nadia's standalone KB restored.** Both were
+ made in git only (`384129e`, 2026-09-24; `38bde73`, 2026-09-26) and lost when the same-day
+ Drive→git sync (`5f7838a`) copied the older Drive text over git. Re-applied exactly: the count of
+ other knowledge systems 13→14, the Nadia paragraph, Nadia in the Hub Coordination Standard list, and
+ John's row (unattended for Smartsheet + Google Drive within his §2 guardrails). Replaced on Drive by
+ archive-then-recreate through Composio (`victoria-googledrive`), byte-verified. Covers the John/Nadia
+ part of `AWT-0118`; the rest of that task is not checked here. Owner-authorised (Minda: "Go ahead").
 - **2026-09-27.** **`CLAUDE-Rules.md` §6a — Composio fallback-connector rule added.** Adopts
  Alex's `Raw/2026-09-27_Proposal_Composio-Rollout.md` into this database's governance: Composio
  (CLI pinned 0.4.1) may stand in when a native connector fails, as a transport only — every §6a
