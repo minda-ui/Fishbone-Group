@@ -106,27 +106,12 @@ Workforce": `Roster`, `Tasks & Requests`, `Help & Lessons`), which supersedes th
 day-to-day source for who is on the workforce; this section is kept as the group KB's own dated
 record of it.
 
-**The Hub Coordination Standard (owner "main thing", Minda 2026-09-20; AWT-0040).** Two standing
+**The Hub Coordination Standard (owner "main thing", Minda 2026-09-20; AWT-0040).** Three standing
 rules govern how every AI employee — Victoria, Rachel, John, Peter, Eugene, Helen, Darius, Anna and Alex
-— uses the Fishbone AI Workforce Hub:
-- **Rule A — session start, check the Hub first.** At every session start, before other work, read
- Tasks & Requests for your own Assigned-to rows that are Open or In Progress; flip a task you take
- up to In Progress (the receipt that it landed); the task's Request is the canonical brief; close
- on the same row (Status = Done + Response); own rows only.
-- **Rule B — the Hub is the single home for tasks, lessons and gaps.** Actionable work and identified
- gaps are recorded as Tasks & Requests rows; lessons learned are recorded as Help &
- Lessons rows. A local KB log may keep working detail, but the item must be surfaced to the Hub —
- nothing that concerns a task, a lesson or a gap lives only in a local log the coordinator cannot see.
-- **Rule E — plain-brief (owner standard, Minda 2026-09-22; lettered E, not C, from 2026-09-23 — Rule
- C already names the older, unrelated verify-against-system-of-record rule used across the estate's
- charters since 2026-09-21; see `CLAUDE-History.md`).** Say it in fewer words. Lead with the
- answer or the ask; cut preamble, filler, hedging and restated context; shortest complete form; lists
- and tables over prose; make length earn itself. Applies to every message, charter, log, Hub row and doc.
-
-The full standard is recorded as the group session-discipline standard in Alex's own
-`Process-Housekeeping-and-Session-Discipline.md` and propagated to each employee's own charter §0
-via the §7a `Raw/` hand-off below; this note is this database's own dated pointer to it, since this
-file is the group's canonical reference point.
+— uses the Fishbone AI Workforce Hub. Rules A–D (session start, single home for tasks/lessons,
+plain-brief writing, and applying Hub drift) are in `CLAUDE-Rules.md` §0 now, alongside the full
+Definition of Done and the Raw/-only cross-KB channel — this note is this database's own dated
+pointer to it, since this file is the group's canonical reference point.
 
 **Cross-KB amendment rule (HL-0023/AWT-0036, accepted by Minda 2026-09-19; tightened to Raw/-only,
 HL-Helen-01, 2026-09-22).** An estate-wide rule, policy or amendment that needs to land in another

@@ -6,11 +6,72 @@
 > `README.md`, `WORKFLOW.md` and `Wiki/WIKI_GUIDELINES.md` hold the detailed procedures; this file
 > is the standing context that an AI session reads first. Where this file and those differ, this
 > file wins, and the difference is a bug to fix in the same session.
->
-> **Full revision history moved to `CLAUDE-History.md` (2026-09-23).** This file's own change
-> history — every dated revision from 2026-09-03 to date — is recorded there now, append-only,
-> newest first, so this file's intro never has to grow just to record what changed and when. See
-> that file for the complete log.
+> Revised 2026-09-03T16:00Z: Fishbone Holdings Ltd added as the seventh entity.
+> Revised 2026-09-03T16:15Z: Anthill Homes Ltd confirmed out of scope; the group is final at seven.
+> Revised 2026-09-03T19:45Z: legal structure, company numbers and financial summaries taken from
+> statutory accounts (Raw batch 1); §7 rewritten.
+> Revised 2026-09-03T20:00Z: Raw batch 2 (Properties FY2025, Waste FY2025, Drylining YE2023); Fishbone Waste
+> status changed to Active; §7 Waste and Properties rows and open questions updated.
+> Revised 2026-09-04T13:39Z: Companies House certificate (ledger row 18) confirms Furniture by Fishbone Ltd renamed
+> to Amfa Furniture Ltd on 13/07/2026; OI-1 resolved; §7 Amfa row and open questions updated.
+> Revised 2026-09-04T20:00Z: owner note (ledger row 21) confirms Fishbone Waste Ltd ceased operating January 2026
+> (not being liquidated); Waste status Active -> Dormant; OI-9 resolved; §7 Waste row and open questions updated.
+> Revised 2026-09-05T13:00Z: the change log was split to the Fishbone Properties Ltd model — the single `CHANGELOG.md`
+> retired (frozen in `Archive/`) in favour of four standing control files (`current-state.md`, `open-issues.md`,
+> `external-source-register.md`, `processed-items-ledger.md`) plus dated per-session files in `change-log/`; §0, §1, §3b and §4 updated.
+> Revised 2026-09-05T19:30Z: owner ruling — AT UK Interiors Ltd is not connected to the group (owner note, ledger row 25); §0 out-of-scope list and §7 updated.
+> Revised 2026-09-07: outstanding-items sort. OI-3 to OI-7 resolved (SSAS canonical home + scheme facts; this database confirmed as the group **master index**; loan reconciliation adopting the authoritative `Fishbone_Loan_Repayment_Plan.xlsx`, three debt layers; Ferndale title TY59507 — FCP freehold / Properties leasehold); OI-5 access adequate; FY2025 accounts confirmed **filed** at Companies House. OI-8 remains open (workshop lease). §0 SSAS row, §1 sister-systems, §6b and §7 updated.
+> Revised 2026-09-07 (later): the group **weekly master-index digest routine went live** (§5) and its first run flagged drift now actioned here — the **Fishbone Holdings Ltd Knowledge Base** (created 2026-09-05) added to §0/§1; the Holdings→Properties **interest waiver recorded as executed** (§7 open question 2 closed; effective 1 Oct 2026–30 Sep 2028); and two stale sister-KB descriptions corrected in §1 (Construction no longer a skeleton; Commercial's root `CHANGELOG.md` retired). OI-10 and OI-11 resolved; OI-12 (a Loans-Wiki compliance finding) left with Minda/RMT.
+> Revised 2026-09-09: **centralised group Document Register system** stood up — one group-wide **Document Register** and a **Change Requests** feedback queue (Smartsheets in a new "Fishbone Group - Documents" workspace; SRC-38/39), and the single locked, versioned policy `Wiki/Process-Document-Numbering-and-Filing.md` v1.0 (per-entity prefixes FC/FP/FH/FW/FA/FM/FS/FG, 7-digit IDs, dedup-on-entry, files co-located in Collaboration Space, feedback loop). A **narrow §6a append exception** now permits appending rows to those two group sheets and filing documents into Collaboration Space. §0, §5 and §6a updated; rollout phased (new documents now; the Properties `FP` / Holdings `FH` back-catalogues migrated later).
+> Revised 2026-09-09 (later): the document policy went to **v1.1** — new **§7a inter-KB document hand-off** (a group KB may drop a registered document, named by its existing ID, into another group KB's `Raw/` — add-only, with a covering note and a register annotation, no re-numbering). The §6a exception widened to cover that `Raw/` hand-off; §0 and §6a updated. Owner-authorised (Minda).
+> Revised 2026-09-09 (later still): the document policy went to **v1.2** — resolving the first Change Request, FC-CR-0001 (Fishbone Construction, Accepted): §6 clarifies that **tasks/to-dos are not documents** (no register row, no ID) and §11 that **each KB may migrate its own local back-catalogue now**, deduping on entry. Current policy-version references in §0 and §6a updated to v1.2. Owner-authorised (Minda).
+> Revised 2026-09-10: the document policy went to **v1.3** — resolving two more Change Requests (both Accepted): **FM-CR-0001** (Commercial Properties) — property codes are 4 digits = acquisition-year + sequence, **self-assigned** per company and recorded in its own property register (145 High Street East = `FM2301`), property-tied docs file into `<CODE> - <Address>/Documents/` (policy §3/§7); **FP-CR-0001** (Properties) — email-attachment **source capture**: when bytes can't be captured, register with the Gmail thread id as Source key and a flagged transcription (policy §5). Current policy-version references updated to v1.3; v1.3 note distributed to the five sister `/Raw` inboxes. Owner-authorised (Minda).
+> Revised 2026-09-10 (later): added a group **incoming paper-mail process** — `Wiki/Process-Post-Handling.md` (v1.0). The office receives post for all seven companies in one pile; the group opens/scans it into a single `Raw/Paper Mail/` intake, triages each letter to its owning company, registers it in the Document Register (Direction = Incoming) and files it, then routes it to that company's KB `/Raw` via §7a (Fishbone Waste and group-level `FG` items kept by the group). Reuses the v1.3 numbering policy; no new numbering. §0 pointer added; distributed to the six KB `/Raw` inboxes. Owner-authorised (Minda).
+> Revised 2026-09-11: recorded the **group Tasks Status colour convention** in §1 (Live data sources) at the owner's instruction — Done = green, In Progress = yellow, Overdue (Due Date past AND Status ≠ Done) = red — applied via Smartsheet conditional formatting in the UI (the API/MCP has no formatting tool). Convention only; no sheet change made by this database (the "1. General" Tasks sheet is read-only for automation, §6a). Owner-authorised (Minda).
+> Revised 2026-09-10 (later still): corrected two stale "no KB" gaps — the **Amfa Furniture Ltd Knowledge Base** (Drive `1ugshCjwx2yvRXZvmtpwLcg3kUgTKN7aU`, created 2026-09-05) and the new **Fishbone Waste Ltd Knowledge Base** (Drive `1LMVTPw4YFw9OmW7GcTjaDEfXqCIjp1ZJ`, created 2026-09-10, built on policy v1.3) are now listed in §0 (read-first table) and §1 (sister systems), raising the count to **ten** other knowledge systems. **All seven group companies now have their own KB**, so the §0 post-room pointer now routes every company's post to its own KB via §7a (only group-level `FG` items are kept by the group); Fishbone Waste is no longer a special case. No policy change. Owner-authorised (Minda).
+> Revised 2026-09-12: the group **Tasks health-colour convention** was implemented as a formula-driven **`Health` RYGB column** across all five Tasks sheets (group "1. General", Construction, Holdings, SSAS, AMFA), standardised on one formula — Done green / Blocked or overdue red / due ≤14 days yellow / >14 days green / no due date blue. This **supersedes the 2026-09-11 note** that the colours would be set via Status-cell conditional formatting in the UI; the Health column is API-settable and self-updating. §1 Live-data-sources row updated. Owner-authorised (Minda).
+> Revised 2026-09-12 (later): established a **group SessionStart-hook standard** — every Fishbone KB repo carries `.claude/hooks/session-start.sh` installing the PDF toolkit (pdfplumber / PyMuPDF / pdf2image / pytesseract + tesseract-ocr / poppler-utils) on web sessions, so scanned or tabular PDFs can be OCR'd and table-extracted rather than read by eye. §5 updated; the hook is on branch `claude/session-start-pdf-toolkit` in all eight repos (group + seven company KBs), live once merged to each default branch. Owner-authorised (Minda).
+> Revised 2026-09-12 (later still): the **Quarterly sweep** routine (§5) gained a **tooling & environment health** scope (hook install check; skills/connectors/tools drift diff; change-log tooling-pain scan). A separate monthly tooling-review routine was **considered and declined** (owner): tooling changes too slowly for monthly to carry signal, so it folds into the quarterly sweep. The sweep is still to be created via the routines form. Owner-authorised (Minda).
+> Revised 2026-09-12 (evening): **Peter — AI Data Assistant** stood up as the group's data-collection
+> assistant — a collector/stager with three beats (inbound email triage of `info@fishboneconstruction.co.uk`;
+> Companies House research for the six registered companies; document capture staged toward the group register)
+> and its own Drive home + git mirror `minda-ui/Peter`. Peter **reads and drafts only, never sends, files or
+> writes to a system of record** (governed by §6a). Added to §1 sister systems (count to **eleven**) and
+> `00_INDEX.md`; his routines are not yet created. Owner-authorised (Minda).
+> Revised 2026-09-12 (night): **Eugene — AI IT & Engineering Assistant** stood up as the group's **second
+> AI employee**, built before Content & Marketing at the owner's instruction. Eugene is the enablement layer
+> behind the AI workforce: he produces software-setup runbooks + config and verifies them, scaffolds new AI
+> employees and drafts their routine prompts, writes/tests hardware & automation code, and keeps the
+> infrastructure inventory. Reach (owner-set): **edits code/repos/KB directly; guide-only for live systems
+> (a human executes Admin-console / DNS / mailbox-migration / account / routines-form / hardware-deploy
+> steps); never holds secrets** (governed by §6a). Own Drive home (`1o4MBRcckZBspw-uT6qM2V-74H6OsRK9T`) + git
+> mirror `minda-ui/Eugene`; connectors Drive + GitHub + Web (no Gmail). Added to §1 sister systems (count to
+> **twelve**); the AI Workforce Plan reordered to v2 (Eugene = build #2 ahead of Content & Marketing). Owner-authorised (Minda).
+> Revised 2026-09-20: recorded the **Hub Coordination Standard** in §1 (owner "main thing", Minda
+> 2026-09-20; AWT-0040) — Rule A (session start: check the Fishbone AI Workforce Hub's Tasks &
+> Requests for your own rows first) and Rule B (the Hub, not a local log, is the single home for
+> tasks, lessons and gaps); added a pointer to the new **cross-KB amendment rule** (HL-0023/AWT-0036,
+> accepted by Minda 2026-09-19) — an estate-wide amendment to another employee's own governed file
+> now goes through that KB's `Raw/` plus a Hub `Tasks & Requests` row, never a direct edit, though
+> this does not change Alex's own direct edit authority over this group file. Also added **Victoria —
+> CEO's Assistant / AI Workforce Coordinator** (no separate KB; operates through this database) and
+> **John — AI Properties Operations Assistant** (adopts the existing Fishbone Properties Ltd KB, no
+> KB of his own) to §1, both previously missing from the roster. Owner-authorised (Minda, via Alex).
+> Revised 2026-09-22: **Anna — AI Construction Assistant** stood up as the group's technical
+> construction adviser (own Drive home `1b0p62LxaX4C9H1cvK1R7K1KdX6-JcvoT` + git mirror `minda-ui/Anna`;
+> own charter, four control files, `Reference`/`Queries`/`Raw` folders). Interactive; reads/drafts/cites,
+> **adviser not certifier** — structural / fire / Building-Control / party-wall / gas / electrical
+> decisions are flagged and deferred to the named professional; no Gmail; no routines (§6a). Added to
+> §1 sister systems (count to **thirteen**); Hub AWT-0060 (Eugene hook) / AWT-0061 (Construction-KB read
+> access). Built by Victoria. Owner-authorised (Minda).
+> Revised 2026-09-22 (later): the document policy went to **v1.4** — FG-CR-0001 Accepted: a new
+> **§7b Financial documents** — financial documents are filed **ONLY in the Financial Archive**
+> (`1BVk_RfuJ3rBRujZUMC98KMlil4AkICL4`), **never** the Collaboration Space, OneDrive or git; the Finance
+> function (Rachel) holds the sister-KB consolidation-move grant; company registration-identifier documents
+> (e.g. Gov Gateway user IDs, carrying no password) are registrable with the identifier value kept out; the
+> personal-data bar is untouched. This **overrides §7's Collaboration-Space filing for financial documents**,
+> and the rule is now identical for every KB. Current policy-version references updated to v1.4; the rule was
+> broadcast to every KB `/Raw` (Victoria, 2026-09-22). Owner-authorised (Minda; AWT-0034).
 
 This file gives Claude the context it needs to work in this database without re-explaining the
 setup each session: where the database lives and how it relates to the other Fishbone knowledge
@@ -22,10 +83,54 @@ one-screen snapshot of the group with its open questions (§7).
 
 ## 0. Start every session here
 
-**Moved to `CLAUDE-Rules.md` (2026-09-23).** Read that file's §0 in full before anything else — the
-read-first table (this KB and each sister company's), document filing & numbering, and the
-out-of-scope entities. It changes far more often than the rest of this file, so it lives on its
-own.
+**Before doing anything else, read the four standing control files at the root of this folder:**
+`current-state.md` (last session and what is pending), `open-issues.md` (the `OI-<n>` table),
+`processed-items-ledger.md` (scan for rows still `in-progress`, `partial` or `blocked`), and
+`external-source-register.md` (the `SRC-<n>` sources). Then read the newest one or two dated files
+in `change-log/` for what the last sessions did. This applies to every kind of session: a one-off
+question, a drafting request, a survey of Drive, not only formal Raw processing. Another session
+may already have answered the question or corrected the figure. (Session history before 2026-09-05
+is in the final monolithic `CHANGELOG` in `Archive/`; see §4.)
+
+**If the task is about one company rather than the group**, also read the newest change-log
+entries in that company's own knowledge system before answering, because the detailed facts live
+there and this database only links to them (see §1, "Sister systems"):
+
+| Company | Read first |
+|---|---|
+| Fishbone Properties Ltd | `Fishbone Properties Ltd - Knowledge Base/CLAUDE.md` §0 and its latest `Outputs/change-log-*.md`; Smartsheet Document Register and Tasks (workspace "1. General") |
+| Fishbone Commercial Properties Ltd | `Fishbone Commercial Properties Ltd - Knowledge Base/CLAUDE.md` and its dated `Outputs/change-log-*.md` files (the root `CHANGELOG.md` was retired 2026-09-05); Smartsheet workspace of the same name |
+| Fishbone Construction Ltd | `Loans/Wiki/Entity - Fishbone Construction Ltd` and the latest `Loans/Change Log YYYY-MM-DD`; its FY2025 accounts are archived here (`Wiki/Org-Fishbone-Construction-Ltd.md` Sources) |
+| Fishbone Holdings Ltd | The **Fishbone Holdings Ltd – Knowledge Base** (Drive `1sZJ4frIcVqsgON4eewAqmdKq5YEXInvu`, git mirror `minda-ui/Fishbone-Holdings-Ltd`, created 2026-09-05); then `Wiki/Org-Fishbone-Holdings-Ltd.md` here (FY2024/FY2025 accounts archived) and the Smartsheet Document Register/Investment Register |
+| Amfa Furniture Ltd (11259604; renamed from Furniture by Fishbone Ltd 13/07/2026) | The **Amfa Furniture Ltd – Knowledge Base** (Drive `1ugshCjwx2yvRXZvmtpwLcg3kUgTKN7aU`, git mirror `minda-ui/Amfa-Furniture-Ltd`, created 2026-09-05); then Smartsheet workspace "AMFA Furniture"; Drive `Collaboration Space / Furniture by Fishbone`; no accounts on file anywhere |
+| Fishbone Waste Ltd | The **Fishbone Waste Ltd – Knowledge Base** (Drive `1LMVTPw4YFw9OmW7GcTjaDEfXqCIjp1ZJ`, created 2026-09-10, built on policy v1.3); then `Wiki/Org-Fishbone-Waste-Ltd.md` here (FY2024 and FY2025 accounts archived); Drive `Collaboration Space / Fishbone Waste`; the Finance archive's Waste folder (SRC-31) |
+| Fishbone SSAS | The **Fishbone SSAS – Knowledge Base** (Drive `1Ow2wOI2hQE3ugsxeZqk2xf7P5f9IT7oV`, its canonical home) and the `SSAS` source folder (`1jSFpIOcKb7yANA0hJVtjWb_80rMfvo5c`); then `Wiki/Org-Fishbone-SSAS.md` here |
+| Any borrowing or loan question | `Loans/Wiki/Home` and `Loans/Outputs/Fishbone_Loan_Repayment_Plan.xlsx` (Summary tab); note OI-6, the loan lists disagree, and the accounts figures in `open-issues.md` OI-6 |
+
+Facts that appear in two places must agree. If they do not, raise an Open Issue rather than
+picking one.
+
+**Document filing & numbering (all companies)** follow one locked, versioned policy,
+`Wiki/Process-Document-Numbering-and-Filing.md` (v1.4): every qualifying business document is
+registered **once** in the single **Fishbone Group Document Register** (Smartsheet, SRC-38) under a
+per-entity-prefixed 7-digit ID (`FC/FP/FH/FW/FA/FM/FS/FG`), deduped on a Source key, and filed
+**co-located in its project/company folder in Collaboration Space**. Raise any gap or improvement in
+the **Change Requests** queue (SRC-39); only the group edits the policy (§9 of that doc). Group KBs may
+also **hand a registered document to each other by dropping it (named by its existing ID) into another
+KB's `Raw/`**, with a covering note and a register annotation — add-only, no re-numbering (§7a of that
+doc). Appending to those two sheets, filing into Collaboration Space, and that `Raw/` hand-off are the
+narrow live-system exceptions (§6a). **Incoming paper post** received at the shared office for any
+company is captured by the group post-room procedure `Wiki/Process-Post-Handling.md` — opened and
+scanned into the single group `Raw/Paper Mail/` intake, triaged to its owning company (from the letter, not
+the envelope), registered in the Document Register (Direction = Incoming) and filed, then routed to the
+owning company's KB `/Raw` via §7a (now that all seven companies have a KB, every company item routes; only group-level `FG` items are kept by the group).
+
+**Out of scope, do not raise again:** Anthill Homes Ltd is not part of the group (owner note
+`2026-09-03_owner-note_anthill-homes-out-of-scope.md`); its Smartsheet workspace and Drive
+folders are not surveyed or cited from here. **AT UK Interiors Ltd** is likewise not connected to
+the group (owner note `2026-09-05_owner-note_at-uk-interiors-out-of-scope.md`, ledger row 25) — it
+appears only as a third-party counterparty in Construction's bank data (a £15,000 credit,
+22 Jul 2026), not as a group entity.
 
 ---
 
@@ -33,24 +138,24 @@ own.
 
 ### Where it lives
 - **Google Drive**, `My Drive / Fishbone Group` (folder id `1pOHvl8X64E-x3rRb-6Wrc9zsHZ2mgi73`).
- Source of truth. There is no git mirror as of 2026-09-03.
+  Source of truth. There is no git mirror as of 2026-09-03.
 - Owner: minda@fishboneconstruction.co.uk. Sharing has not been checked (§6b).
 
 ### Folders
 ```
 Fishbone Group/
-├── CLAUDE.md <- this file (standing context for AI sessions)
-├── README.md <- human-readable structure and conventions
-├── WORKFLOW.md <- step-by-step Raw -> Wiki -> Archive procedure
-├── current-state.md <- present snapshot, overwritten each session (§4)
-├── open-issues.md <- the OI-<n> table (§4)
-├── external-source-register.md <- the SRC-<n> register (§4)
-├── processed-items-ledger.md <- one row per Raw item ever seen (§4)
-├── change-log/ <- one dated change-log file per session (§4)
-├── Raw/ <- source material exactly as received; never edited
-├── Wiki/ <- one Markdown article per entity or topic; 00_INDEX.md; WIKI_GUIDELINES.md
-├── Outputs/ <- deliverables built from the Wiki; standing files once §5 exists
-└── Archive/ <- processed Raw items (renamed YYYY-MM-DD_<name>) and superseded control files
+├── CLAUDE.md            <- this file (standing context for AI sessions)
+├── README.md            <- human-readable structure and conventions
+├── WORKFLOW.md          <- step-by-step Raw -> Wiki -> Archive procedure
+├── current-state.md             <- present snapshot, overwritten each session (§4)
+├── open-issues.md               <- the OI-<n> table (§4)
+├── external-source-register.md  <- the SRC-<n> register (§4)
+├── processed-items-ledger.md    <- one row per Raw item ever seen (§4)
+├── change-log/          <- one dated change-log file per session (§4)
+├── Raw/                 <- source material exactly as received; never edited
+├── Wiki/                <- one Markdown article per entity or topic; 00_INDEX.md; WIKI_GUIDELINES.md
+├── Outputs/             <- deliverables built from the Wiki; standing files once §5 exists
+└── Archive/             <- processed Raw items (renamed YYYY-MM-DD_<name>) and superseded control files
 ```
 
 Folder ids: Raw `1AskWaogQoyQH7COKZq85jL00QUtcx---`, Wiki `1noZncKHLV9IWXbcbeIzaBAZs9yfnNQgC`,
@@ -110,32 +215,30 @@ record of it.
 rules govern how every AI employee — Victoria, Rachel, John, Peter, Eugene, Helen, Darius, Anna and Alex
 — uses the Fishbone AI Workforce Hub:
 - **Rule A — session start, check the Hub first.** At every session start, before other work, read
- Tasks & Requests for your own Assigned-to rows that are Open or In Progress; flip a task you take
- up to In Progress (the receipt that it landed); the task's Request is the canonical brief; close
- on the same row (Status = Done + Response); own rows only.
-- **Rule B — the Hub is the single home for tasks, lessons and gaps.** Actionable work and identified
- gaps are recorded as Tasks & Requests rows; lessons learned are recorded as Help &
- Lessons rows. A local KB log may keep working detail, but the item must be surfaced to the Hub —
- nothing that concerns a task, a lesson or a gap lives only in a local log the coordinator cannot see.
-- **Rule E — plain-brief (owner standard, Minda 2026-09-22; lettered E, not C, from 2026-09-23 — Rule
- C already names the older, unrelated verify-against-system-of-record rule used across the estate's
- charters since 2026-09-21; see `CLAUDE-History.md`).** Say it in fewer words. Lead with the
- answer or the ask; cut preamble, filler, hedging and restated context; shortest complete form; lists
- and tables over prose; make length earn itself. Applies to every message, charter, log, Hub row and doc.
+  Tasks & Requests for your own Assigned-to rows that are Open or In Progress; flip a task you take
+  up to In Progress (the receipt that it landed); the task's Request is the canonical brief; close
+  on the same row (Status = Done + Response); own rows only.
+- **Rule B — the Hub is the single home for tasks, lessons and gaps.** Actionable work and
+  identified gaps are recorded as Tasks & Requests rows; lessons learned are recorded as Help &
+  Lessons rows. A local KB log may keep working detail, but the item must be surfaced to the Hub —
+  nothing that concerns a task, a lesson or a gap lives only in a local log the coordinator cannot see.
+- **Rule C — plain-brief (owner standard, Minda 2026-09-22).** Say it in fewer words. Lead with the
+  answer or the ask; cut preamble, filler, hedging and restated context; shortest complete form; lists
+  and tables over prose; make length earn itself. Applies to every message, charter, log, Hub row and doc.
 
 The full standard is recorded as the group session-discipline standard in Alex's own
 `Process-Housekeeping-and-Session-Discipline.md` and propagated to each employee's own charter §0
 via the §7a `Raw/` hand-off below; this note is this database's own dated pointer to it, since this
 file is the group's canonical reference point.
 
-**Cross-KB amendment rule (HL-0023/AWT-0036, accepted by Minda 2026-09-19; tightened to Raw/-only,
-HL-Helen-01, 2026-09-22).** An estate-wide rule, policy or amendment that needs to land in another
-employee's own governed file (a charter, a `CLAUDE.md`) is edited only by its owner: it is dropped
-into that KB's `Raw/` folder, named, with a covering Hub `Tasks & Requests` row, and the KB's own
-owner writes it in — never a direct edit by anyone else, never a background agent impersonating
-that employee. This does not change how *this* file is edited — it is the group's own file, and
-Alex's Rung-1 archive-then-recreate authority over it (§1, §6a) is unaffected — but it is recorded
-here because this file is the group's canonical reference point.
+**Cross-KB amendment rule (HL-0023/AWT-0036, accepted by Minda 2026-09-19).** An estate-wide rule,
+policy or amendment that needs to land in another employee's own governed file (a charter, a
+`CLAUDE.md`) is no longer edited into that file directly by anyone but its owner: it is dropped into
+that KB's `Raw/` folder, named, with a covering Hub `Tasks & Requests` row, and the KB's own owner
+writes it in (the existing §7a hand-off below, now the sanctioned route rather than a courtesy).
+This does not change how *this* file is edited — it is the group's own file, and Alex's Rung-1
+archive-then-recreate authority over it (§1, §6a) is unaffected — but it is recorded here because
+this file is the group's canonical reference point.
 
 **OI-4 was resolved on 2026-09-07 (owner decision): this group database is the _master index_
 over all Fishbone systems** — it links to and cites them and never copies their content, so each
@@ -191,29 +294,29 @@ export, and log the pull.
 Full rules are in `Wiki/WIKI_GUIDELINES.md`. In short:
 
 - One subject per article. Header block mandatory: `Type`, `Status` (Active | Completed |
- Dormant | Superseded), `Last reviewed`, `Related`. Sections: Summary, Key facts, Details, Open
- questions, Sources, History.
+  Dormant | Superseded), `Last reviewed`, `Related`. Sections: Summary, Key facts, Details, Open
+  questions, Sources, History.
 - Every fact carries an `[Sn]` tag resolving to a Sources line: archived filename, Drive URL,
- document date, locator (page and note number for accounts). Sources that live outside this
- database (sister systems, Smartsheet, Minda Wiki) are cited as
- `External (Drive|Smartsheet): <title> - <URL> - <dated> - accessed YYYY-MM-DD` and are also
- registered in `external-source-register.md` (§4). A fact with no source goes under
- Open questions, not Key facts.
+  document date, locator (page and note number for accounts). Sources that live outside this
+  database (sister systems, Smartsheet, Minda Wiki) are cited as
+  `External (Drive|Smartsheet): <title> - <URL> - <dated> - accessed YYYY-MM-DD` and are also
+  registered in `external-source-register.md` (§4). A fact with no source goes under
+  Open questions, not Key facts.
 - Links between articles are relative, by filename, on first mention, both ways where the
- relationship matters. A missing target gets a stub in the same session, never a dead link.
+  relationship matters. A missing target gets a stub in the same session, never a dead link.
 - One fact, one home. If the fact belongs to a sister system (a property's rent, a facility's
- balance), link there; do not restate it here. Statutory-accounts figures are an exception:
- they are stated once in the company's own `Org-` article and cross-referenced from the
- counterparty's article for intercompany balances.
+  balance), link there; do not restate it here. Statutory-accounts figures are an exception:
+  they are stated once in the company's own `Org-` article and cross-referenced from the
+  counterparty's article for intercompany balances.
 - Personal data: business name, role and work contact only. No home addresses, personal phone
- numbers, bank account numbers, payroll identifiers, health or personal financial details.
- Directors' names and directors' loan balances as disclosed in statutory accounts are public
- company information and may be recorded; the directors' personal circumstances are not.
+  numbers, bank account numbers, payroll identifiers, health or personal financial details.
+  Directors' names and directors' loan balances as disclosed in statutory accounts are public
+  company information and may be recorded; the directors' personal circumstances are not.
 - Every edit bumps `Last reviewed` and adds a History line naming the session.
 - **Claims in this file are re-verified, not repeated.** The Properties Ltd file carried a
- "known bug" for 17 days that did not exist, and a sharing claim that was wrong for four days.
- If a task is about to act on a claim here that it can cheaply re-check against the live
- source, do so first.
+  "known bug" for 17 days that did not exist, and a sharing claim that was wrong for four days.
+  If a task is about to act on a claim here that it can cheaply re-check against the live
+  source, do so first.
 
 ---
 
@@ -222,7 +325,7 @@ Full rules are in `Wiki/WIKI_GUIDELINES.md`. In short:
 ### 3a. Live sources
 1. Check the change log for the last sync of that source (here or in the sister KB).
 2. Pull current data from the connector (Smartsheet `get_columns` then `get_sheet_summary`;
- QuickBooks `company_info` then the report tools).
+   QuickBooks `company_info` then the report tools).
 3. Diff against the Wiki; update articles in place, moving old values to History.
 4. Cite the live source URL in the article.
 5. Log the sync with a timestamp, even if nothing changed.
@@ -249,28 +352,28 @@ it). Together they fix the group at seven entities.
 
 ### 3d. Reading limits, inherited from the sister systems
 - **Any PDF with side-by-side tables** (bank statements, schedules, the Loans workbook exported to
- PDF) is read as a rendered image, not extracted text. A real £11,000 payment was missed in a
- sister workspace this way on 02/09/2026. RMT-prepared statutory accounts extracted cleanly as
- text on 03/09/2026 (two-year columns, one table at a time), so they are an exception in
- practice; still sanity-check that current-year and prior-year figures did not swap.
+  PDF) is read as a rendered image, not extracted text. A real £11,000 payment was missed in a
+  sister workspace this way on 02/09/2026. RMT-prepared statutory accounts extracted cleanly as
+  text on 03/09/2026 (two-year columns, one table at a time), so they are an exception in
+  practice; still sanity-check that current-year and prior-year figures did not swap.
 - **HMRC CT600 PDFs** extract with box numbers and values scrambled. Read page by page as images,
- or take figures from the accountant's computation.
+  or take figures from the accountant's computation.
 - **Gmail attachment bytes often fail Drive's upload validation.** When the binary cannot be
- filed, transcribe the readable content into a `.md` record in `Raw/`, cite that, and say in the
- change log that it is a transcription.
+  filed, transcribe the readable content into a `.md` record in `Raw/`, cite that, and say in the
+  change log that it is a transcription.
 - **Some .docx files return only their package structure** from the Drive reader (seen with the
- FP0000001 letter on 03/09/2026). Download and convert, or ask for a PDF, rather than citing a
- summary of the document from elsewhere as if it were the document.
+  FP0000001 letter on 03/09/2026). Download and convert, or ask for a PDF, rather than citing a
+  summary of the document from elsewhere as if it were the document.
 - **Time-bounded Drive searches can paginate wrongly** (the second page repeated the first on
- 03/09/2026). For a large folder, enumerate by parent folder instead.
+  03/09/2026). For a large folder, enumerate by parent folder instead.
 - **Drive listings can be incomplete** for folders owned by other accounts (Fishbone Waste,
- Furniture by Fishbone, parts of Collaboration Space). Say "not visible to this login" rather
- than "does not exist".
+  Furniture by Fishbone, parts of Collaboration Space). Say "not visible to this login" rather
+  than "does not exist".
 - **Similar company names are not the same company, and different names are not different
- companies.** Fishbone Drylining Ltd turned out to be Fishbone Construction Ltd; Fishbone
- Commercial Properties Ltd turned out not to be Fishbone Properties Ltd; "Fishbone Investments
- Ltd", "Furniture by Fishbone Ltd" and "Amfa Furniture" are one company under three names.
- Ask; do not assume.
+  companies.** Fishbone Drylining Ltd turned out to be Fishbone Construction Ltd; Fishbone
+  Commercial Properties Ltd turned out not to be Fishbone Properties Ltd; "Fishbone Investments
+  Ltd", "Furniture by Fishbone Ltd" and "Amfa Furniture" are one company under three names.
+  Ask; do not assume.
 
 ---
 
@@ -334,10 +437,71 @@ is merged to the repo's default branch.
 
 ## 6. Governance
 
-**Moved to `CLAUDE-Rules.md` (2026-09-23).** Read that file's §6 in full — what automation may do
-without asking, what always needs a human, data access, and how this document itself is revisited.
-It changes far more often than the rest of this file (three changes in the fortnight before the
-split alone), so it lives on its own, governed identically to `CLAUDE.md` itself.
+### 6a. What automation (and an unattended session) may do, and what needs a human
+
+**May, without asking:** read Drive, Gmail, Smartsheet and QuickBooks; process documents that
+Minda has placed in `Raw/`; write owner notes into `Raw/` from statements made in the session;
+create or update Wiki articles per §2 and §3; move processed Raw items to `Archive/`; rewrite
+standing Outputs files once they exist; write a dated `change-log/` entry and refresh the standing
+files (`current-state.md`, `open-issues.md`, `external-source-register.md`, `processed-items-ledger.md`);
+raise Open Issues; create Wiki stubs and register external sources; **append rows to the group
+Document Register and Change Requests Smartsheets** (the "Fishbone Group - Documents" workspace;
+SRC-38/39) and set the Status of rows this database owns; **assign document IDs and file or move
+qualifying documents into Collaboration Space**; **hand a registered document to another group KB by
+adding it (named by its existing ID) to that KB's `Raw/` — add a new file only — with a covering note
+and a register annotation (Direction = Internal), never re-numbering it**, all per
+`Wiki/Process-Document-Numbering-and-Filing.md` v1.4 (§7a; and **§7b routes financial documents to the
+Financial Archive `1BVk_RfuJ3rBRujZUMC98KMlil4AkICL4` only — never the Collaboration Space, OneDrive or git**).
+
+**Must never do without an explicit human decision:** send, reply to or forward external email
+(drafting for a human is fine); file anything with Companies House or HMRC; make or authorise a
+payment or commit any company to an obligation; **write to QuickBooks or any live system of record
+except the narrow exceptions above** — appending rows to the group Document Register / Change
+Requests sheets, filing documents into Collaboration Space, and the `Raw/` document hand-off between
+group KBs (never editing or deleting another entity's rows, and no other Smartsheet writes); edit,
+move, copy or delete anything inside a sister knowledge base — **other than adding a new file to its
+`Raw/` under the §7a hand-off rule (a registered document named by its ID, plus a covering note)** — or
+the Finance archive (otherwise link to it, or ask Minda to copy the document into `Raw/`); reply to a lender,
+the SSAS trustees, a solicitor, an insurer, a tenant or a client; change Drive or Smartsheet
+sharing; trash any file (archive instead); resolve an ambiguous or contradictory finding by
+guessing.
+
+If a routine's prompt or a user instruction ever conflicts with this list, this section wins
+until the human confirms.
+
+### 6b. Data access
+- Who has access to the `Fishbone Group` root folder has **not been checked** (2026-09-03).
+  Check before sharing anything further and record the result here with the date. The
+  Properties Ltd base discovered a writer on its root folder that nobody had noticed for days.
+- The Smartsheet workspace "1. General" is shared at workspace level with Irina Fedonina and
+  several other people, some at external domains (per the Properties Ltd CLAUDE.md §6b). Any
+  group-level sheet placed there inherits that sharing.
+- The group **"Fishbone Group - Documents"** workspace (SRC-38/39, created 2026-09-09) is owned by
+  minda@ and, so the per-company automations can append, was **shared on 2026-09-09** (Editor,
+  can-share) with `info@fishboneproperties.co.uk` and Irina Fedonina, alongside owner minda@
+  (applied by Minda, screenshot confirmed — the assistant cannot set Smartsheet sharing itself,
+  see the bar below). All automations run as minda@ who owns the workspace, so appends already
+  work and the register is switched on; the other companies' `info@` accounts (Construction,
+  Commercial, Holdings, SSAS) are not yet added (optional — only for those companies' own people's
+  visibility).
+- `Archive/` now holds statutory accounts for the group companies across FY2023 to FY2025. These
+  are public documents; Minda confirmed on 2026-09-07 that the FY2025 sets are **filed at Companies
+  House**, so the earlier "For Approval / treat as confidential until filing is confirmed" caveat
+  is retired. The Smartsheet "Sebastian Pabis" folder and the Finance archive (PAYE, P60s, bank
+  statements) hold payroll and banking identifiers: cite, never copy.
+- Several Collaboration Space folders are owned by staff and contractor accounts
+  (`lana@fishbonewaste.co.uk`, `anna@indome.co.uk`, `anastasia@fishboneconstruction.co.uk`).
+  Their contents may be partly hidden from this login (OI-5); confirm write access per project
+  folder before relying on automated filing there.
+- Cross-company facts are **linked** between systems, never copied, so there is one place to
+  correct each fact.
+
+### 6c. Revisiting this document
+Update §0 to §3 when structure or process changes; §4 is maintained continuously; §5 must be
+kept current as routines are created, changed or retired; §6 is revisited deliberately, not
+silently rewritten; §7 is refreshed whenever a Raw item or an Open Issue resolution changes the
+picture. Every replacement of this file goes through archive-then-recreate and gets a change-log
+entry.
 
 ---
 
@@ -367,54 +531,50 @@ end 29 April (Construction) or 30 April (the rest).
 
 **Open questions** (full text in `open-issues.md`)
 1. **OI-8 — the only substantive item still open.** Which company holds the furniture-**workshop
- lease** and legal title to the woodworking machinery. Minda confirmed on 2026-09-07 that a
- **separate lease exists** (so the workshop is not simply Construction's premises), even though
- the trade, the machinery and the £449,536 of leasehold improvements are booked in Construction.
- Awaiting the lease document from Minda. Material to any future Amfa Furniture sale.
+   lease** and legal title to the woodworking machinery. Minda confirmed on 2026-09-07 that a
+   **separate lease exists** (so the workshop is not simply Construction's premises), even though
+   the trade, the machinery and the £449,536 of leasehold improvements are booked in Construction.
+   Awaiting the lease document from Minda. Material to any future Amfa Furniture sale.
 2. Which companies' QuickBooks files the Intuit connector reaches (always call `company_info`
- first — Properties confirmed, and Construction now also seen reachable via the Loans Wiki's
- reconciliation work; others still unconfirmed).
+   first — Properties confirmed, and Construction now also seen reachable via the Loans Wiki's
+   reconciliation work; others still unconfirmed).
 3. Optional/awaiting Minda: set the group **north-star goal** so the Operations Dashboard §3
- becomes an agreed plan rather than a synthesis of existing targets; an optional retrospective
- Fishbone Waste "lessons" article.
+   becomes an agreed plan rather than a synthesis of existing targets; an optional retrospective
+   Fishbone Waste "lessons" article.
 4. With Minda/RMT (not a database task): OI-12 — a Loans-Wiki reconciliation found a proposed
- Construction→Holdings dividend / D Macdonald loan-assignment document (dated 31/05/2025) that
- Construction's own ledger does not support; no accounting treatment to be actioned or backdated
- on it. See `open-issues.md` OI-12.
+   Construction→Holdings dividend / D Macdonald loan-assignment document (dated 31/05/2025) that
+   Construction's own ledger does not support; no accounting treatment to be actioned or backdated
+   on it. See `open-issues.md` OI-12.
 
 **Recently resolved — 2026-09-07 outstanding-items sort** (audit trail in `open-issues.md`):
 - **OI-3** — SSAS canonical home set to the Fishbone SSAS Knowledge Base; scheme facts recorded
- from the TPR certificate; `Org-Fishbone-SSAS.md` built out from stub.
+  from the TPR certificate; `Org-Fishbone-SSAS.md` built out from stub.
 - **OI-4** — this group database is the **master index** over all Fishbone systems (link-and-cite;
- "where each thing lives" map in `Wiki/00_INDEX.md`).
+  "where each thing lives" map in `Wiki/00_INDEX.md`).
 - **OI-5** — access to the staff-owned Collaboration Space folders is adequate for the master-index
- purpose; specific files can be shared on request.
+  purpose; specific files can be shared on request.
 - **OI-6** — the `Loans/Outputs/Fishbone_Loan_Repayment_Plan.xlsx` workbook is authoritative.
- Group debt is recorded as **three separate layers, never one combined total**: business /
- related-party / HP **£638,939** across three borrowers (Construction £532,829, Properties
- £74,613, Commercial £31,496 SSAS loanback), plus £10,442 related-party interest arrears and two
- revolving trade-finance/HMRC facilities off-total; property mortgages **~£1.23m (30/04/2025) /
- £1.49m (01/09/2026)**, Fishbone Properties only; and intercompany loans (Holdings→Properties
- £303,702 etc.), internal.
+  Group debt is recorded as **three separate layers, never one combined total**: business /
+  related-party / HP **£638,939** across three borrowers (Construction £532,829, Properties
+  £74,613, Commercial £31,496 SSAS loanback), plus £10,442 related-party interest arrears and two
+  revolving trade-finance/HMRC facilities off-total; property mortgages **~£1.23m (30/04/2025) /
+  £1.49m (01/09/2026)**, Fishbone Properties only; and intercompany loans (Holdings→Properties
+  £303,702 etc.), internal.
 - **OI-7** — official copy of register title **TY59507** settles Ferndale: FCP owns the freehold of
- 145 High Street East + 2 & 2A Ferndale Avenue; Properties holds a 125-year leasehold (TY324602);
- a 29/04/2025 SSAS charge secures the loanback. Only the operational insure/pay point remains.
+  145 High Street East + 2 & 2A Ferndale Avenue; Properties holds a 125-year leasehold (TY324602);
+  a 29/04/2025 SSAS charge secures the loanback. Only the operational insure/pay point remains.
 - **FY2025 accounts** — confirmed **filed** at Companies House (owner statement); the "For Approval
- / confidential" framing is retired (§6b).
+  / confidential" framing is retired (§6b).
 - **OI-10 (2026-09-07, later)** — the **Fishbone Holdings Ltd Knowledge Base** (created 2026-09-05)
- was added to §0/§1 and `00_INDEX.md`, and the Holdings→Properties **interest waiver** recorded as
- executed (this closed open question 2 above): effective 1 Oct 2026–30 Sep 2028, contractual rates
- resume 1 Oct 2028, standing orders cancelled 2026-09-07, a manual September-interest payment
- (~£1,994) due by 31 Oct 2026, to be disclosed in both companies' FY2027 accounts.
+  was added to §0/§1 and `00_INDEX.md`, and the Holdings→Properties **interest waiver** recorded as
+  executed (this closed open question 2 above): effective 1 Oct 2026–30 Sep 2028, contractual rates
+  resume 1 Oct 2028, standing orders cancelled 2026-09-07, a manual September-interest payment
+  (~£1,994) due by 31 Oct 2026, to be disclosed in both companies' FY2027 accounts.
 - **OI-11 (2026-09-07, later)** — corrected two stale sister-KB descriptions in §1 (Construction is
- no longer a skeleton; Commercial's root `CHANGELOG.md` was retired 2026-09-05).
+  no longer a skeleton; Commercial's root `CHANGELOG.md` was retired 2026-09-05).
 (OI-1 resolved 2026-09-04: Furniture by Fishbone Ltd renamed Amfa Furniture Ltd on 13/07/2026, ledger row 18. OI-2 resolved 2026-09-03: Anthill Homes out of scope. OI-9 resolved 2026-09-04: Fishbone Waste ceased operating January 2026, ledger row 21.)
 
 ---
 
-*Standing context for the Fishbone Group knowledge database. Split into `CLAUDE.md` (this file,
-§1–§5 and §7 — stable structure and process) / `CLAUDE-Rules.md` (§0 and §6 — session-start and
-governance, the sections that change almost every session) / `CLAUDE-History.md` (the full dated
-revision log) on 2026-09-23, mirroring the split proven the same day on Alex's own `CHARTER.md`.
-See `CLAUDE-History.md` for the complete version history from adoption (2026-09-03) to date, and
-the dated `change-log/` files for session-by-session detail.*
+*Standing context for the Fishbone Group knowledge database. Adopted 2026-09-03; revised
+2026-09-03T16:00Z, 16:15Z, 19:45Z and 20:00Z, 2026-09-04T13:39Z and 20:00Z, 2026-09-05T13:00Z (change-log split to the Properties Ltd model), 2026-09-05T19:30Z (AT UK Interiors Ltd ruled out of scope), 2026-09-07 (outstanding-items sort: OI-3 to OI-7 resolved, master-index role confirmed, FY2025 filed) and 2026-09-07 later (weekly master-index digest routine live; Fishbone Holdings Ltd KB indexed and the Holdings→Properties interest waiver recorded; OI-10/OI-11 resolved), and 2026-09-09 (centralised group Document Register + Change Requests sheets and the v1.0 document numbering/filing policy; §6a append exception) and 2026-09-09 later (document policy to v1.1 — §7a inter-KB `Raw/` document hand-off; §6a exception widened) and 2026-09-09 later still (document policy to v1.2 — FC-CR-0001 accepted: §6 tasks-not-documents, §11 per-KB self-migration) and 2026-09-10 (document policy to v1.3 — FM-CR-0001 + FP-CR-0001 accepted: §3/§7 self-assigned property codes, §5 email-attachment source capture) and 2026-09-10 later (group incoming paper-mail process added — `Wiki/Process-Post-Handling.md` v1.0) and 2026-09-10 later still (Amfa Furniture and new Fishbone Waste Knowledge Bases added to §0/§1, count to ten; all seven companies now have a KB, so post routes to every company's own KB) and 2026-09-11 (group Tasks Status colour convention recorded in §1) and 2026-09-12 (that convention implemented as a formula-driven `Health` RYGB column across all five Tasks sheets, superseding the 2026-09-11 conditional-formatting note) and 2026-09-12 later (group SessionStart-hook standard — PDF toolkit incl. OCR installed on web sessions across all eight KB repos; §5) and 2026-09-12 later still (Quarterly sweep §5 gained a tooling & environment health scope; a monthly tooling-review routine was declined in its favour) and 2026-09-12 evening (Peter — AI Data Assistant stood up and added to §1 sister systems, count to eleven) and 2026-09-12 night (Eugene — AI IT & Engineering Assistant stood up as the second AI employee, built before Content & Marketing; added to §1 sister systems, count to twelve; AI Workforce Plan reordered to v2) and 2026-09-20 (the Hub Coordination Standard recorded in §1, owner "main thing" Minda 2026-09-20, AWT-0040 — session-start Hub check and the Hub as single home for tasks/lessons/gaps; a pointer to the cross-KB amendment rule added, HL-0023/AWT-0036; Victoria — CEO's Assistant / AI Workforce Coordinator — and John — AI Properties Operations Assistant — added to §1, both previously missing from the roster) and 2026-09-22 (**Anna — AI Construction Assistant** stood up as the group's technical construction adviser — own Drive home + `minda-ui/Anna` mirror, own charter / four control files / Reference seed; **adviser not certifier**; added to §1 sister systems, count to **thirteen**; Hub AWT-0060 Eugene-hook / AWT-0061 Construction-KB read access; built by Victoria) and 2026-09-22 later (document policy to **v1.4** — FG-CR-0001 accepted: new §7b, financial documents filed only in the Financial Archive, never Collaboration Space/OneDrive/git; rule now identical for every KB; broadcast to every KB /Raw). See the dated `change-log/` files and, for earlier sessions, the archived monolithic `CHANGELOG`.*

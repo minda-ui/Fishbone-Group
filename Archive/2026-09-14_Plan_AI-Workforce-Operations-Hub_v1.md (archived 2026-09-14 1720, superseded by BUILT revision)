@@ -1,0 +1,106 @@
+# Fishbone Group — AI Workforce Operations Hub (spec) · v1
+
+**Type:** Plan / Output (design spec; to build once approved). **Status:** Drafted 2026-09-14, awaiting owner decisions (§9). **Author:** Claude, on behalf of minda@fishboneconstruction.co.uk. **Related:** `2026-09-12_Plan_AI-Workforce_v2.md` (the parent plan — who the AI employees are and the build order; this Hub is its **operational front-end**); the Peter KB (`minda-ui/Peter`) and Eugene KB (`minda-ui/Eugene`); `2026-09-07_Dashboard_Operations_v2.html` (dashboard style precedent); `CLAUDE.md` §1 (sister-systems / master-index), §5 (routines), §6a (governance).
+
+The owner asked for **"a space to communicate with Peter, Eugene and future employees — where they show achievements, what they've done, what they need to do."** This spec designs that space. It does **not** build anything yet; §7 is the phased build, §9 the decisions needed first.
+
+---
+
+## 1. Objective & the communication model (read this first — it sets expectations)
+
+The Hub is **one shared operational surface** for the whole AI workforce: see each employee, assign them work, watch it move from to-do → done, and keep a wall of what they've achieved. It sits at the **group level** because this database is already the master index over Peter, Eugene and the company KBs.
+
+**Honest model of "communicating with" an AI employee** — there is no always-on chatbot; there are two real modes, and the Hub supports both:
+- **Live / interactive:** open a Claude Code session on the employee's repo (`minda-ui/Peter`, `minda-ui/Eugene`). Its charter loads as context, so the session *is* that employee answering — a direct conversation. Best for briefing, back-and-forth, one-off asks.
+- **Asynchronous / task-based:** post a task or question into the Hub's **Tasks/Requests** sheet; the employee's scheduled **routine** reads its rows on the next run, does the work, and writes a response/status back. Best for standing, repeatable, "assign and forget" work.
+
+So the Hub is a **task-and-status board plus an achievements wall**, not a live group chat. That framing is what makes it reliable.
+
+---
+
+## 2. Architecture — three layers
+
+### 2a. Roster (Smartsheet) — "who works here"
+One row per AI employee (and a template row for future hires):
+`Employee` · `Role` · `Status` (Active / Building / Paused) · `Home KB` (Drive + git link) · `Connectors` · `Reach` (what it may / may not do, one line from its charter) · `Routines` (names + cadence) · `Last run` · `Next scheduled run` · `Manager` (Minda).
+Seed rows: **Peter** (data-collection; reads + drafts, never sends/files/writes to a system of record) and **Eugene** (IT & engineering; edits code/repos/KB, guide-only for live systems, never holds secrets).
+
+### 2b. Tasks / Requests (Smartsheet) — "the read/write channel"
+The place you assign work or ask a question, and the employee answers. Columns:
+`Task ID` · `Assigned to` (employee) · `Requested by` · `Request / question` · `Priority` · `Status` (Open / In Progress / Done / Blocked) · `Response / result` (the employee writes here) · `Due date` · `Done date` · **`Health`** (the group RYGB column formula you already standardised — Done green / overdue or Blocked red / due ≤14d yellow / else green / no due date blue).
+Flow: you add a row → the employee's routine reads rows `Assigned to = me, Status = Open` → does the work → sets Status and writes `Response / result` + `Done date`. Overdue/blocked shows red automatically.
+
+### 2c. Achievements / Log — "what they've done"
+Two feeds, both auto-populated so nothing is hand-curated:
+- **Completed tasks** roll up from 2b (a filtered view / report: Status = Done, newest first).
+- **Change-log feed** — a short rollup of each employee's own dated change-log / output entries (the group **master-index digest routine** already surveys the sister systems weekly; it gains an "AI workforce" section that appends achievement lines here).
+
+### 2d. Dashboard (HTML Artifact) — "the board you glance at"
+One card per employee, in the Operations-Dashboard style: name + role, a **status light**, **recently completed** (last few), **in progress**, **assigned / to-do**, **next scheduled run**, and a small counts strip (open / done-this-week / overdue). Built from the Smartsheet layer; refreshed by a routine (or regenerated on request). Optional richer version: an **interactive Artifact board** where you add tasks in the page itself and it remembers them (and can ping Claude) — more app-like, more to build; noted as a later option, not v1.
+
+---
+
+## 3. How it works end-to-end
+
+- **Assign:** add a Tasks/Requests row for Peter/Eugene (or ask a question there).
+- **They pick it up:** the employee's routine (Peter twice daily; Eugene when run) reads its open rows, acts within its charter boundaries, and writes Status + Response + Done date.
+- **You see it:** the dashboard card and the Achievements feed update; overdue turns red.
+- **Live when needed:** for anything conversational, open the employee's session directly — the Hub row links to its KB so you're one click from "talking to" them.
+
+---
+
+## 4. Per-employee wiring & charter grants (the one real prerequisite)
+
+The Hub sheet lives at the group level; **reading** their assigned rows is fine for any employee. For an employee to **write status/response back** into the Hub sheet, its charter needs a **narrow, explicit grant** — modelled on the group Document-Register append exception (§6a):
+- **Eugene** edits code/repos/KB directly, so updating its own Hub rows is within reach already — just name the Hub sheet in its charter.
+- **Peter** is read + draft + stage only; give it **one scoped exception**: "may set Status/Response on its own rows in the AI Workforce Tasks sheet" — nothing wider. Its email boundaries are untouched.
+- Each grant is applied **in that employee's own KB** (by a session there or Minda), not from this database (§6a: the group DB does not edit sister KBs beyond the §7a hand-off).
+- **Future hires** inherit a template grant when they're created.
+
+---
+
+## 5. Governance
+
+- **In scope for the group DB (§6a):** create/append the group "Fishbone AI Workforce" Smartsheet and build the dashboard Output — same permission basis as the group Document Register and the Operations Dashboard.
+- **Out of scope from here:** editing Peter's/Eugene's KBs or charters — those grants are applied in their own KBs.
+- **Boundaries preserved:** the Hub does not widen any employee's reach. Peter still never sends/files/writes to a system of record except the one scoped Hub-status exception; Eugene still guide-only for live systems, never holds secrets.
+- **Access:** the Hub is a management surface — decide who beyond Minda may view/assign (§9).
+
+---
+
+## 6. Where it lives
+
+- **Smartsheet:** a new group workspace **"Fishbone AI Workforce"** (Roster + Tasks/Requests + Achievements views). Sheet ids assigned on creation and recorded in `CLAUDE.md` §1 Live-data-sources and `external-source-register.md` (new SRC entries).
+- **Dashboard:** `Outputs/YYYY-MM-DD_Dashboard_AI-Workforce_v1.html` (group Outputs), optionally published as a private Artifact and pinned.
+
+---
+
+## 7. Build sequence (once approved)
+
+1. Create the **"Fishbone AI Workforce"** Smartsheet workspace: Roster, Tasks/Requests (with the RYGB `Health` column), and an Achievements report/view.
+2. **Seed** Peter and Eugene roster rows + a couple of live tasks each, so it's not empty.
+3. Build the **AI Workforce dashboard** HTML from the sheet; publish as a private Artifact.
+4. Apply the **per-employee charter grants** (§4) in the Peter and Eugene KBs (their sessions / Minda).
+5. Extend the **master-index digest routine** to append an "AI workforce" achievements section (§2c).
+6. Register the new sheets as SRC entries; add the Hub to `CLAUDE.md` §1 and `00_INDEX.md`.
+7. **Later (optional):** upgrade the dashboard to an interactive Artifact board (add-tasks-in-page, persistent).
+
+---
+
+## 8. Future-employee template
+
+When a new AI employee is created (per AI Workforce Plan v2 — Content & Marketing is next), joining the Hub is four steps: add a **Roster** row, start a **Tasks** feed, apply the **charter grant** (§4), and add a **dashboard card**. Bake this into the new-employee scaffolding Eugene already does.
+
+---
+
+## 9. Decisions needed from Minda (before build)
+
+1. **Scope of first build** — the recommended pair is the Smartsheet tracker **+** the dashboard together; confirm, or start with just the tracker.
+2. **Who may view/assign** besides Minda (any staff? external? — the workspace inherits Smartsheet sharing, so this matters).
+3. **Dashboard type** — static HTML refreshed by a routine (v1), or the richer interactive Artifact board (later)?
+4. **Refresh cadence** for the dashboard (e.g., daily, or on the weekly digest run).
+5. **Naming** — "Fishbone AI Workforce" for the workspace, or a name you prefer.
+
+---
+
+*Spec v1, Fishbone Group. Drafted 2026-09-14 — the operational front-end of AI Workforce Plan v2. No build performed; awaiting the §9 decisions. See the group `change-log/`.*

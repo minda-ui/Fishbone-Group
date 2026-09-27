@@ -1,0 +1,243 @@
+# Victoria — Coordination Schedule (standing, always-current)
+
+**Type:** Outputs / standing (maintained by Victoria's two daily routines; not a dated snapshot)
+**Owner seat:** Victoria — CEO's Assistant / AI Workforce Coordinator (on Minda's behalf)
+**Created:** 2026-09-20 · **Last refreshed:** 2026-09-27 (morning sweep)
+**Governance:** group `CLAUDE.md` §6a — Victoria reads, drafts, proposes, coordinates and may append to the
+shared registers and the AI Workforce Hub; sends nothing outward, makes no payment/commitment, creates/fires
+no routine, and never resolves an ambiguity by guessing (surface it to Minda).
+
+Charter re-read fresh this run (§0 requirement: `CHARTER.md` core + `Charter-Rules.md` Rules A–C). Every claim
+below is checked against a direct read of the Hub sheets, Drive and Gmail this run (morning), not against
+yesterday afternoon's digest or a Hub row's own account of itself (Rule C).
+
+**Headline: 38 Glebe Road is now overdue with no confirmation either way; HL-0051 unresolved a fifth sweep;
+two untracked Alexey document requests recovered onto the Hub; one new High security-corroboration lesson.**
+The **38 Glebe Road remortgage** completion (told to complete Fri 25 Sep) is still unconfirmed as of this
+sweep — it is now two days past the "today" in the solicitor's go-ahead, with nobody having checked whether
+it actually happened; AWT-0108's Health is now **Red** (overdue). **HL-0051** — the missing OI-18 row —
+re-checked directly again this run: the group's own `open-issues.md` (id `19eKiZ5sh-QundSbvKhQxlMzTK1DPWHws`)
+is confirmed **still 38,077 bytes, still unchanged since 2026-09-21T10:40Z**, a fifth consecutive sweep with
+no OI-18. **New — AWT-0115/AWT-0116 (Rachel, Medium):** two Alexey Glukhov emails to `ops@` yesterday
+afternoon (16:12 and 16:16 UTC) asking for FBCP and Holdings accounts documents had no Hub row; registered
+now under Rule B and routed to Rachel with a hand-off note in her `Raw/` (nothing sent). **New —
+AWT-0112 (routed to Eugene):** Nadia's AI Workforce Hub board mirror (roster/achievements) was never created;
+Victoria doesn't hold board-write authority, so flipped to In Progress and routed. Alex's new Estate
+Mail-Triage Index pipeline ran its 4th, 5th and 6th dry-run passes since yesterday afternoon (AWT-0110/0111/
+0114) — still nothing dispatched, still awaiting Minda's tick to promote out of dry-run. The Document System
+Change Requests queue gained a fifth row, **FS-CR-0001**, Accepted 2026-09-26 (Fishbone SSAS exempted from
+the single-home Financial Archive rule — policy now v1.5); a follow-on task (**AWT-0113**) asks Rachel to
+fold that into her own charter. **New — HL-0055 (Peter, High):** a genuine Microsoft account-security alert
+(unusual sign-in, Brazil) for `minda@` sat unlabelled and out of Peter's own triage records for three days,
+found only by a direct search rather than label-based triage — corroborates the standing Microsoft
+account-security escalation already in `current-state.md`. Full detail below.
+
+---
+
+## 1. The two routines
+
+| Routine | Time (UK) | Cron (UTC, BST now) | What it does |
+|---|---|---|---|
+| **Victoria — Morning Coordination Sweep** | 08:00 | `0 7 * * *` (BST) → `0 8 * * *` at the Oct clock change | Live. |
+| **Victoria — Afternoon Coordination Sweep** | 15:00 | `0 14 * * *` (BST) → `0 15 * * *` at the Oct clock change | Live. |
+
+Crons are UTC — shift both by one hour at the UK clock change (25 Oct 2026: BST→GMT). Routines are created
+by Minda (Victoria cannot create or fire them, §6a). **Note (HL-0054, unresolved):** this routine's own
+paste-in prompt still carries a stale standing-points list (old AWT numbers already Done weeks ago, and
+OI-14, resolved 2026-09-21) — verified stale again this run (Rule C); every claim in this schedule is drawn
+from live state, not from that list. Still needs a Minda edit via the routines form.
+
+---
+
+## 2. Desk vs delegated
+
+### Victoria's desk
+
+- **38 Glebe Road remortgage completion — now overdue, still unconfirmed.** The solicitor was told to go
+  ahead and complete "today" on Fri 25 Sep; nobody has confirmed it did, and it is now Sunday 27 Sep. Victoria
+  has no route to Irina or the solicitor directly. This is the single most time-sensitive item on the desk —
+  worth a direct word with Irina/the solicitor today rather than waiting on the next scheduled pass (§6).
+- **HL-0051 — unresolved a fifth consecutive sweep.** AWT-0098 (Alex) has read Done since 2026-09-25, claiming
+  the group's `open-issues.md` gained an OI-18 row; a direct byte/metadata check this run again shows the file
+  unchanged since 2026-09-21 (38,077 B). Now sat unresolved for a full weekend plus a working day. Escalating
+  again rather than restating quietly (§6).
+- **New this run — two untracked Alexey document requests, now on the Hub and routed to Rachel.** Gmail
+  threads `1a0de80d76fd0e92` ("FBCP annual accounts") and `1a0de7dbe71b1fa0` ("Fishbone Holdings Ltd"), both
+  2026-09-26 afternoon, both to `ops@`, asking for bank statements / SSAS heads of terms / HMRC item (FBCP)
+  and bank statements or QuickBooks-reconciliation confirmation (Holdings). Registered as **AWT-0115/AWT-0116**
+  (Rachel, Medium, Open) and handed off with a note in Rachel's `Raw/` (id `1oODTMeiecz194h-q7bxfFkPpKW8Pf_C-`).
+  Nothing sent; Rachel drafts, Minda sends.
+- **New this run — AWT-0112 routed to Eugene.** Nadia's AI Workforce Hub board mirror (roster/achievements
+  docs) was never created when she went standalone (AWT-0104). Victoria doesn't hold board-write authority, so
+  flipped the row to In Progress (Rule A receipt) with a note routing it to Eugene, who scaffolds new AI
+  employees and edits repos/KB/board content directly.
+- **New this run — HL-0055 (Peter, High) — flagging, not actioning.** A genuine Microsoft "unusual sign-in
+  activity" alert (Brazil, IP `45.188.74.238`) for `minda@fishboneconstruction.co.uk`, received 2026-09-23,
+  carried only an old housekeeping label and never reached Peter's own triage ledger — found only because the
+  standing Microsoft account-security escalation prompted a direct mailbox search. It corroborates that
+  existing escalation (foreign sign-in three days before the password change) rather than raising a new one;
+  Peter's own answer proposes a periodic zero-Peter/*-label sweep as a backstop. Nothing further for Victoria
+  to do beyond surfacing it (§6).
+- **AWT-0113 (Rachel, Medium) — fold policy v1.5's SSAS exemption into her charter.** New since yesterday;
+  Rachel's §7b.3 consolidation grant no longer extends to SSAS's own financial documents. Tracking, not
+  Victoria's to action.
+- **Estate Mail-Triage Index pipeline — three more dry-run passes since yesterday afternoon** (AWT-0110,
+  AWT-0111, AWT-0114 — 4th, 5th and 6th runs). Still attended/dry-run throughout; nothing dispatched to any
+  employee's Raw/. AWT-0114 (this morning, 2026-09-27) flags that Peter has no Authority Register grant that
+  functions as a true "General/unclassified" catch-all, so every item that would route to him under the
+  pipeline's default lane keeps failing gate 3 — worth Minda's eventual attention if the pipeline is to reach
+  him once promoted out of dry-run. Still awaiting Minda's tick to promote out of dry-run, plus the three
+  outstanding rulings already asked for (Known-Correspondents whitelist scope; 2 Ferndale Avenue dual-
+  ownership logging; whether Smartsheet's own notifications should be logged at all).
+- **New Document System Change Request — FS-CR-0001, Accepted 2026-09-26.** Fishbone SSAS's own financial
+  documents are now exempted from the single-home Financial Archive rule (policy v1.4 §7b.1) and stay in
+  SSAS's own KB folder; policy is now **v1.5** (new §7b.8). Tracking only — the follow-on task to Rachel
+  (AWT-0113) is the actionable piece.
+- **HL-0054 (Victoria, Low) — this routine's own prompt is stale.** Re-confirmed this run (see §1). Still
+  needs a Minda edit via the routines form, no rush.
+- **AWT-0090 (Eugene, M365 over-privilege) — still In Progress, due 2026-09-29 (2 days out).** Unchanged.
+- **AWT-0091 / AWT-0097 (Alexey emails, "renamer" / "Bank statement skill") — still Open, unchanged.**
+  AWT-0102 (Alexey, FB Waste QuickBooks access) — still **In Progress**: Minda ruled to grant access; still
+  needs a human with QBO admin rights to send the invite.
+- **AWT-0101 (Eugene/Alex cross-login audit) — still Blocked**, parked pending Minda's own tests. Unchanged.
+- **AWT-0099 / AWT-0100 (Minda, Properties routine steps, both on `ops@fishboneproperties.co.uk`) — still
+  unmoved**, now four days since AWT-0099 was raised (2026-09-24).
+- **OI-13** — Amfa workshop reorg research. Unchanged, Open.
+- **Master-index housekeeping** — OI-15 (index stale), OI-16 (three stale `Org-*` articles). Both still Open;
+  group `open-issues.md` unchanged since 2026-09-21 10:40 — confirmed directly this run, nothing new beyond
+  OI-18 itself to fold in.
+- Victoria's own Raw checked directly this run — empty. Group Raw's three scaffolding folders
+  (`Inbox-Reports/`, `Routine-State/`, `Request-Inbox/`) unchanged in structure; `Inbox-Reports/` gained the
+  new triage-run reports already covered by AWT-0110/0111/0114 above.
+- These two routines and the schedule itself.
+
+### Delegated — track only (via the Hub)
+
+- **Eugene** — AWT-0090 (In Progress, due Tue 29 Sep), AWT-0101 (Blocked, parked). **New: AWT-0112**
+  (Nadia's board mirror, routed today). AWT-0060 (Blocked, repo empty, unchanged).
+- **Peter** — routine filing continues (AWT-0106 Done, AWT-0095 Done). **New: HL-0055** (security-labelling
+  gap, flagged above).
+- **Minda** — AWT-0107/AWT-0108/AWT-0110/AWT-0111/AWT-0114 (Mail-Triage Index dry-run pipeline — awaiting tick
+  + three rulings). AWT-0099/0100 unchanged. AWT-0074 (Open, unchanged). **AWT-0108's 38 Glebe Road item is
+  now overdue — see §6.**
+- **Rachel** — **New: AWT-0115/AWT-0116** (two Alexey document requests, routed today), **AWT-0113** (fold
+  policy v1.5 SSAS exemption). AWT-0109 (In Progress, due Mon 28 Sep — Alexey £30,000 classification).
+  AWT-0070, AWT-0073, AWT-0094, AWT-0091/0097 unchanged. AWT-0102 In Progress (see above).
+- **Darius** — AWT-0089 (Open, Low, deliberately deferred). Unchanged.
+- **Anna** — AWT-0077 (Open, unchanged).
+- **Alex** — AWT-0098 marked Done but **not actually resolved** (HL-0051, above), now a fifth sweep.
+  HL-0053 (Ref collision) also routed to Alex, unchanged. Running the Mail-Triage Index dry-run passes
+  (AWT-0110/0111/0114).
+- **John** — Properties intake pipeline, live & attended (daily 07:00 UK); still gated on AWT-0100.
+
+---
+
+## 3. Fixed-deadline calendar (blocked onto days)
+
+| Day | Blocked item | Whose action |
+|---|---|---|
+| **Sun 27 Sep (today) — now overdue, not a fixed deadline but urgent** | Confirm whether the 38 Glebe Road remortgage (told to complete Fri 25 Sep) actually completed. Two days unconfirmed. | Minda (check with Irina/solicitor) |
+| **Every sweep until cleared** | HL-0051 / OI-18 — the group `open-issues.md` row that AWT-0098 claims landed but demonstrably hasn't. Fifth sweep unresolved. | Minda (nudge Alex, or write the OI-18 row directly) |
+| **Mon 28 Sep** | Rachel's answer to Alexey on the FBW £30,000 intercompany-creditor classification, pending Minda/RMT's view (AWT-0109). | Rachel → Minda first |
+| **Every sweep until cleared** | OI-13 Amfa reorg — research only, no urgency. | Victoria (watch) |
+| **Tue 29 Sep** (pre-deadline nudge) | AWT-0090 M365 Entra revoke due. | Minda/Eugene |
+| **Wed 30 Sep** | **Alexey offset — respond/confirm** | Minda (Rachel drafted) |
+
+Note on the weekend-nudge rule: 26/27 Sep and 3 Oct are weekends, so a deadline that would otherwise be
+nudged on one of those days is nudged the preceding Friday instead. The 38 Glebe Road item is not a
+fixed deadline in that sense — it is a live, already-passed "today" with no fixed re-nudge day — so it is
+carried forward on every sweep until confirmed one way or the other.
+
+---
+
+## 4. Weekly rhythm (for the non-deadline work)
+
+| Day | Focus |
+|---|---|
+| **Mon** | Master-index & Open-Issues housekeeping (OI-15, OI-16) |
+| **Tue** | Adviser / finance thread status (Alexey threads) |
+| **Wed** | Properties→Group migration stage check (John cutover readiness) |
+| **Thu** | Document-system health (Doc Register, Change Requests queue) |
+| **Fri** | Strategic / backlog + short weekly digest to Minda |
+
+Today is Sunday — outside the Mon–Fri rhythm; no specific weekday focus applies, though the Mail-Triage
+Index pipeline evidently still runs on weekends (AWT-0114 fired this morning).
+
+---
+
+## 5. What moved since the last sweep (2026-09-26 afternoon → 2026-09-27 morning)
+
+Verified by direct Smartsheet/Drive/Gmail read this run (Rule C), not carried over from yesterday's digest.
+
+**New since yesterday afternoon:**
+- **AWT-0110 / AWT-0111 / AWT-0114** (Alex) — Estate Mail-Triage Index dry-run passes 4, 5 and 6. All
+  attended/dry-run; nothing dispatched. AWT-0114 (this morning) surfaced that Peter has no true
+  "General/unclassified" catch-all grant.
+- **AWT-0112** (Alex → Victoria) — Nadia's Hub board mirror never created; routed to Eugene this run.
+- **AWT-0113** (Alex → Rachel) — fold the new policy v1.5 SSAS exemption into Rachel's charter.
+- **FS-CR-0001** (Document System Change Requests) — new row, Accepted 2026-09-26, policy now v1.5.
+- **HL-0055** (Peter) — new High finding: a genuine MS account-security alert sat unlabelled for three days.
+- **AWT-0115 / AWT-0116** (Victoria → Rachel) — two untracked Alexey document-request threads, registered
+  and routed this run.
+
+**Confirmed unchanged / still at risk (re-verified this run, not assumed):**
+- **HL-0051** — still Open; `open-issues.md` still byte-identical to its 2026-09-21 state, re-checked a
+  fifth time.
+- **AWT-0108 (38 Glebe Road)** — still Open, now **overdue** (due date 2026-09-26 passed with no
+  confirmation either way). Health flipped to Red.
+- **AWT-0099 / AWT-0100** (Minda) — still unmoved, four days now.
+- **AWT-0101** (Eugene) — still Blocked, parked pending Minda.
+- AWT-0060, AWT-0070, AWT-0073, AWT-0074, AWT-0077, AWT-0089, AWT-0090 (still In Progress), AWT-0091,
+  AWT-0094, AWT-0097, AWT-0102 (In Progress); HL-0042, HL-0043, HL-0046, HL-0049, HL-0050, HL-0053, HL-0054
+  all still Open; OI-13/15/16 all still Open; group `Raw/Paper Mail/` intake still empty.
+
+---
+
+## 6. Today's ask to Minda
+
+1. **Check whether the 38 Glebe Road remortgage actually completed.** It is now two days past the
+   solicitor's "today" go-ahead with no confirmation either way — the single most time-sensitive item on
+   this desk, worth a direct word with Irina or the solicitor rather than waiting for the next scheduled pass.
+2. **HL-0051 — unresolved for a fifth consecutive sweep.** A direct nudge to Alex, or writing the OI-18 row
+   into the group `open-issues.md` yourself, would close this out; it has now sat unresolved since Thursday.
+3. **New — two Alexey document requests now on the Hub (AWT-0115/AWT-0116)** — for your awareness; Rachel
+   will draft once she's opened both threads in full. No decision needed from you yet.
+4. **New — AWT-0112 (Nadia's Hub board mirror)** — routed to Eugene; flagging in case you'd rather it go
+   elsewhere.
+5. **New — HL-0055**: a Microsoft security alert (Brazil sign-in, `minda@`) sat unlabelled for three days —
+   corroborates the account-security escalation already on your desk; no new action beyond what's already
+   in motion, but worth knowing the triage pipeline had this gap.
+6. **New Mail-Triage Index pipeline (AWT-0107/AWT-0108/AWT-0110/AWT-0111/AWT-0114) — needs your tick to
+   promote out of dry-run**, plus the three outstanding rulings (Known-Correspondents whitelist scope; how to
+   log the 2 Ferndale Avenue dual-ownership item; whether Smartsheet's own notifications should be logged at
+   all) and, new this run, whether Peter should get a scoped "general/unclassified" grant so items can
+   actually reach him once the pipeline goes live.
+7. **AWT-0109 due Monday 28 Sep** — Rachel needs your (and RMT's) view on the FBW £30,000 classification
+   question so she can close the loop with Alexey on time.
+8. **Two Properties-routine steps, unmoved for four days now** (both on `ops@fishboneproperties.co.uk`):
+   paste in John's new intake routine (AWT-0099); edit John's two live routine prompts to drop the tick-gate
+   for Smartsheet/Drive writes only (AWT-0100).
+9. **AWT-0102 — the QuickBooks invite for Alexey (FB Waste) still needs sending** now that you've ruled to
+   grant it; only a human with QBO admin rights can do it.
+10. **AWT-0090 (Eugene, High)** — still needs a tenant-admin action on the Entra scope grant; due Tue 29 Sep.
+11. **Two other open Alexey emails (AWT-0091, AWT-0097)** — unchanged, still your call.
+12. **AWT-0101 (Eugene/Alex)** — still parked pending the tests you said you'd run; no rush.
+13. **HL-0054 (Low, no rush)** — this routine's own prompt still needs a refresh next time you're in the
+    routines form.
+14. **Next fixed dates:** Mon 28 Sep (AWT-0109), Tue 29 Sep (AWT-0090), Wed 30 Sep (Alexey offset).
+
+---
+
+## Appendix — routine prompts to paste into the routines form
+
+*Unchanged since 2026-09-20; see an earlier archived version of this file for the full text. See HL-0054
+above regarding the step-4 standing-points list within these prompts — it is confirmed stale again this run
+and needs a refresh next time Minda is in the routines form.*
+
+---
+
+*Standing coordination schedule for Victoria, the Fishbone Group CEO's Assistant. This sweep (2026-09-27
+morning) found the 38 Glebe Road remortgage still unconfirmed and now overdue, HL-0051 unresolved for a
+fifth consecutive sweep, recovered two untracked Alexey document requests onto the Hub (AWT-0115/AWT-0116,
+routed to Rachel), routed Nadia's board-mirror gap to Eugene (AWT-0112), and surfaced a new High
+security-labelling lesson (HL-0055) — each claim checked against the live system it concerns, not assumed.*

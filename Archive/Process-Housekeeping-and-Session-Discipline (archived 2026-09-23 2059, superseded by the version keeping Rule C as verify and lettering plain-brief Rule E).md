@@ -1,0 +1,263 @@
+# Process — Housekeeping & Session Discipline
+
+- **Type:** Process
+- **Status:** Active
+- **Last reviewed:** 2026-09-23
+- **Related:** `CLAUDE.md` §0/§2/§4/§6a; `WORKFLOW.md`; `Outputs/2026-09-14_Plan_Housekeeping-and-Updates-Improvement_v1.md` (the design + the control-release ladder); the **Alex** KB (the steward who enforces this); the AI Workforce Hub **Tasks & Requests** and **Help & Lessons** desks.
+
+## Summary
+
+This is the group standard for keeping every Fishbone knowledge system **documented, current and tidy**. It
+turns the housekeeping rules that were scattered across `CLAUDE.md` and `WORKFLOW.md` into one place with a
+single **Definition of Done** and copy-paste **templates**, so the right thing is the easy thing. It is
+owner-authorised (Minda, 2026-09-14) and is **Layer 1** of the Housekeeping & Updates Improvement Plan. **Alex**
+(the Housekeeping & Operations Steward) is the named owner; the group **Help & Lessons** desk is where anyone
+raises a housekeeping problem.
+
+## Key facts
+
+### The Definition of Done (every session, every KB)
+
+A session — a one-off question, a drafting request, a Raw run, a survey — is **not finished** until:
+
+1. **`current-state.md` reflects it** (the "Last session" and "Next action" cells are true as of now).
+2. **A dated `change-log/` entry is written** — `change-log-YYYY-MM-DD-<slug>.md`, newest note at the top,
+ append-only (never edit a past file; correct with a new entry).
+3. **Every superseded file is in `Archive/`** — renamed `<title> (archived YYYY-MM-DD HHMM, superseded by
+ <reason>)`, **never trashed, never left beside its replacement** in the folder root.
+4. **Any new open issue is logged** (`OI-<n>` in the group; the KB's own scheme elsewhere), and any
+ cross-employee problem is raised on the **Help & Lessons** sheet.
+
+If a session changes nothing that needs recording, it still writes a one-line change-log entry saying so and
+refreshes `current-state.md`'s date. "Documented" is the default, not the exception.
+
+### Archive-then-recreate (because Drive files can't be edited in place)
+
+Every replacement of a control file, a Wiki article, `CLAUDE.md`, `README.md` or `WORKFLOW.md`:
+`rename old -> move to Archive/ -> upload new with the original title`. **Reference control files by filename,
+never by Drive id** (their ids change on every replacement). Raw and Archive items keep stable ids.
+
+### Byte-verify every recreate
+
+After uploading, confirm: uploaded `fileSize` **==** the local file's byte count; **zero U+FFFD** replacement
+characters; **`£` and other non-ASCII preserved**. Never round-trip `read_file_content` (it returns *escaped*
+markdown); take a faithful local copy with `download_file_content` (base64) when you must edit an existing
+Drive-only file.
+
+### One duplicate = a bug
+
+Two files with the same basename outside `Archive/` means an archive step was skipped. Fix it the same session:
+archive the older, keep the newest, note it in the change-log.
+
+### Cross-KB amendments go through Raw/ — the ONLY channel, no exceptions (tightened 2026-09-22, HL-Helen-01)
+
+Owner ruling (Minda, 2026-09-20; HL-0023, AWT-0036). Where an estate-wide rule, policy or amendment needs to
+land in another employee's governed file — a `CHARTER.md`, `CLAUDE.md`, or standing control file — there is
+exactly **one** sanctioned route: the originator drops it into that KB's own `Raw/` folder with a Hub
+Tasks & Requests row naming what it is and which file/section it belongs in, and **the KB owner writes it in
+themselves, in their own session**. This is the existing §7a hand-off, now the sanctioned route for cross-KB
+amendments rather than a courtesy.
+
+**Nothing else is permitted, regardless of whether the content is correct or the intent is good (owner
+ruling, Minda, 2026-09-22; HL-Helen-01)** — not a direct edit by the originator, and **not a background
+agent dispatched to act as the target employee and write the change in on their behalf.** The 2026-09-20
+Rule C rollout used exactly that pattern — background agents impersonating each sister employee to write
+directly into their own `CHARTER.md` — and it went through with no block, on the same class of
+self-modification that the harness's own safety classifier correctly hard-stopped when Helen tried the
+identical edit transparently, in her own live session, with a full audit trail and the owner's explicit
+confirmation. That is backwards: the more auditable path was the one stopped. Impersonating another
+employee's session to bypass that boundary is never acceptable, whatever the harness does or doesn't
+block — even to land a correct, owner-approved change. This ruling applies from 2026-09-22 forward only;
+the seven `CHARTER.md` edits already landed via the impersonation route (`AWT-0049`–`AWT-0055`) stand as-is,
+not redone.
+
+Why the Raw/-only rule exists at all: a direct edit into a file whose conventions you don't maintain costs
+things the content itself never shows — a dropped markup marker, a missing entry in that file's own
+amendment/history log, or a silent byte-level divergence between Drive and its git mirror, all found only
+by a later diff. The Raw/-hand-off route preserves those conventions because the person who knows them
+makes the edit — and it is also the only route that keeps a governed file's own self-modification boundary
+intact, which an impersonating background agent quietly defeats.
+
+Not covered: financial documents, which never use the §7a hand-off at all (HL-0017) — they go straight to
+the main Financial Archive. That exception is about documents; this rule is about amendments to governed
+files, and the two do not collide.
+
+### Hub Coordination Standard (owner "main thing", Minda 2026-09-20; AWT-0040)
+
+Standing rules for how every seat uses the Fishbone AI Workforce Hub:
+
+- **Rule A — session start, check the Hub first.** At every session start, before other work: read Tasks &
+ Requests for your own Assigned-to rows that are Open/In Progress; flip a task you take up to In Progress
+ (the receipt — so the coordinator sees it landed); the task's Request is the canonical brief (reconcile a
+ chat instruction against it, don't run two versions); close on the same row (Status=Done + Response); own
+ rows only.
+- **Rule B — the Hub is the single home for tasks, lessons and gaps.** Everything concerning tasks, lessons
+ learned, and missing/gap items about the AI workforce is recorded on the Hub as the shared record:
+ actionable work and identified gaps as Tasks & Requests rows; lessons learned as Help & Lessons rows. A
+ local KB log may keep working detail, but the item must be surfaced to the Hub — nothing that concerns a
+ task, a lesson, or a gap lives only in a local log the coordinator can't see.
+- **Rule C — plain-brief (owner standard, Minda 2026-09-22; confirmed as Rule C, 2026-09-23).** Say it in
+ fewer words. Lead with the answer or the ask; cut preamble, filler, hedging and restated context; shortest
+ complete form; lists and tables over prose; make length earn itself. Applies to every message, charter,
+ log, Hub row and doc, group-wide.
+- **Rule E — verify against the system of record before reporting status (added 2026-09-21 as "Rule C",
+ renamed to Rule E 2026-09-23 once Rule C was settled as the plain-brief standard above — see History).**
+ Whenever work is delegated to a subagent, background process, or any other proxy, its own completion signal
+ (a hand-back message, an internal "finished" flag, a self-reported summary) is never sufficient grounds to
+ report that work as done, in progress, blocked, or any other status to a human. Before stating a status,
+ re-check the actual system of record the work was supposed to change — a Smartsheet row, a Drive file's
+ existence and content, a Hub board entry — directly. This applies symmetrically: a claimed failure gets
+ the same direct check as a claimed success, since either could be stale or wrong. Scoped to anyone who
+ delegates work, not just Alex.
+
+### Drive folder listings can disclose file content — pass `excludeContentSnippets: true`
+
+(HL-0022, Rachel, 2026-09-19.) `search_files` returns a `contentSnippet` — a preview of each file's actual
+text — by default, whether or not it was asked for, and it lands in the session transcript just from
+listing a folder. Deliberately never opening a sensitive file (a credential document, personal data) is
+**not** a control on its own if the folder holding it is ever listed without suppressing snippets. Pass
+`excludeContentSnippets: true` on every `search_files` / `get_file_metadata` call unless content is
+specifically wanted — make it the default, not the exception. Confirmed: the flag returns strictly
+everything a folder walk needs (title, id, mimeType, fileSize, parentId, owner, timestamps) with no
+snippet.
+
+### Correspondence discipline: read before replying, reconcile before answering
+
+Three related lessons from Rachel's KB, 2026-09-20 (HL-0025/0026/0027):
+
+- An inbound email and its own attachment can say materially different things — open every attachment
+ before forming a view on what a sender has got wrong, especially before correcting an external
+ professional. The email is often a compressed summary; the attachment is usually the considered version.
+- When a sender supplies a series of documents, reconcile them against each other before reconciling them
+ against our own records — two documents that are each internally correct can still disagree with each
+ other in a way a single-document read never surfaces.
+- Editing a Gmail draft that is a reply (rather than creating a fresh one) may silently detach it from its
+ thread with no error reported — provisional pending independent confirmation; in the meantime, create a
+ fresh reply draft rather than editing an existing one, and check the returned `threadId` matches the
+ original thread.
+
+### Onboarding someone into a company KB (getting them the shared conventions)
+
+When a person starts working in one of the company KBs — a property manager, a bookkeeper, anyone on an
+operating company's side — they are given that KB, and every estate-wide convention in this Wiki stays
+invisible to them. The group KB is owner-only and **stays** owner-only: it also holds
+`Org-Fishbone-SSAS.md` and each company's own profile, which are not for a sister company to read.
+
+The standard step is therefore: **share the conventions file by file, read-only. Never the folder.**
+
+1. Grant **Viewer** (never Editor) on each of these group Wiki files to the person's work address:
+ `Process-Fishbone-Systems-House-Rules.md`, `Process-Document-Numbering-and-Filing.md`,
+ `Process-Housekeeping-and-Session-Discipline.md`, `Process-Post-Handling.md`, `WIKI_GUIDELINES.md`,
+ plus **their own company's** `Org-*.md` — and nothing else. Not the folder, not `00_INDEX.md`, and
+ not another company's `Org-*.md`.
+2. Have Alex place a `Wiki/Group-Conventions-Index.md` in that person's KB: one table linking the
+ shared files, so they have a single page to start from. **Links, never copies.** A copy is a second
+ home for the rule and goes stale, silently, the next time the original is revised.
+3. If a stopgap copy of a convention is already sitting in that KB, archive it once the links work —
+ not before, or the reader is left with neither.
+
+**Only the owner can do step 1.** Alex must never change Drive or Smartsheet sharing (Alex charter
+§2c): it prepares, indexes and retires the stopgap, a human grants the access.
+
+Read-only is the point, not a precaution. These are group rules with one owner. A reader who finds one
+wrong, unclear or a bad fit raises it — to the owner, or on the **Help & Lessons** desk — and it gets
+fixed once, at the source, for everybody. A KB that quietly edits its own copy has forked the rule, and
+nobody finds out until the two versions disagree in front of a tenant, a lender or an accountant.
+
+Check domain-level grants too. A folder shared to a **domain** (e.g. `fishboneconstruction.co.uk`) does
+not reach an address on a different company domain, even inside this group. Confirm the person can
+actually open anything they have been told to use.
+
+## Details — templates
+
+### `change-log/` entry template
+
+```
+# Change log — YYYY-MM-DD — <short title>
+
+_Append-only dated session file. See `current-state.md` and `CLAUDE.md` §4._
+
+## Session — YYYY-MM-DD: <what this session did>
+
+<1–3 short paragraphs: what changed, the Drive/Smartsheet ids touched, byte-verify results,
+what was archived, any new open issue.>
+
+**Pending / carried forward:** <what the next session should pick up.>
+```
+
+### `current-state.md` skeleton (one row per field)
+
+```
+# Current State — <KB name>
+
+| Field | Value |
+|---|---|
+| Last session | <date + what happened; older sessions condensed to a digest> |
+| Last session by | Claude, on behalf of <owner> |
+| <domain rows…> | … |
+| Open issues | <count + the open ids> |
+| Next action | <the single most important next step(s)> |
+```
+
+### `open-issues.md` row
+
+```
+| <ID> | YYYY-MM-DD | Open | <the issue, and what would resolve it> |
+```
+A resolved issue gets a `Resolved YYYY-MM-DD: <how>` line — never a deletion.
+
+### `external-source-register.md` row
+
+```
+| <SRC-ID> | <source name> | <Drive id / Smartsheet id / URL> | <notes; cite, never copy> |
+```
+
+## Who keeps this working
+
+- **Every session** holds itself to the Definition of Done above.
+- **Alex** (Housekeeping & Operations Steward) runs a periodic **sweep** that detects drift (undocumented
+ sessions, stale `current-state.md`, duplicate control files, dead links, orphans), **fixes what it may**
+ (its own KB and the group KB, at Rung 1), and **proposes** the rest. See the Alex charter and the
+ control-release ladder in the Housekeeping plan.
+- A **SessionStart/Stop hook** (group repo `.claude/hooks/`) surfaces the last change-log date on start and
+ reminds + checks for duplicate control files on stop — best-effort, never blocks a session. Most useful in
+ the content-mirrored employee KB repos.
+
+## Open questions
+
+- **Rung 2 was released 2026-09-15** (owner decision, Minda): Alex may apply the same mechanical, reversible
+ housekeeping fixes in *sister* KBs, under **dry-run-then-tick, attended only** — Minda sees and approves the
+ intended list before anything touches a sister KB, every change is archive-then-recreate, and an unattended
+ routine run can never self-approve (it stops at the proposed-fix list). As of 2026-09-20, this now applies
+ specifically as the Raw/-hand-off route above for amendments to another KB's own governed files — Alex
+ proposes the content, the KB owner writes it in, rather than Alex editing it directly even under a tick.
+ As of 2026-09-22, that Raw/-hand-off route is also the ONLY route — no exception for a dispatched agent
+ impersonating the KB owner, see above.
+- **Rule E (verify) and Rule D (Alex's own board-drift rule, Alex's charter only) have not been propagated
+ to the seven sister CHARTER.md files** — only Rules A/B were broadcast (2026-09-20, before Rule C/D/E
+ existed). Any future propagation of them now must go through the Raw/-only route above, not a repeat
+ broadcast. Not yet actioned; a spot-check/propose-only candidate for a future session.
+- **Rung 3 (normalising content shape) and Rung 4 (changing substance) are not released.** Those stay proposed,
+ not applied — Alex tidies files and structure; facts are read-only to Alex, and a human commits them.
+
+## Sources
+
+- [S1] Owner instruction (Minda), 2026-09-14 — authorise the housekeeping improvement plan and the Alex steward at Rung 0 + Rung 1.
+- [S2] `Outputs/2026-09-14_Plan_Housekeeping-and-Updates-Improvement_v1.md` — the design and the control-release ladder.
+- [S3] Owner instruction (Minda), 2026-09-17 — make the conventions-sharing pattern a standard onboarding step, after Fishbone Properties' manager could not reach the group conventions.
+- [S4] Owner rulings (Minda, 2026-09-20) accepting Rachel's HL-0023 (Raw/-hand-off for cross-KB amendments) and Victoria's AWT-0040 (Hub Coordination Standard), plus Rachel's HL-0022 (Drive snippet leak) and HL-0025/0026/0027 (correspondence discipline).
+- [S5] Owner decision (Minda, 2026-09-21) approving the verify-before-reporting rule (originally lettered "Rule C"), raised by Alex after its own AWT-0040 propagation rollout showed a subagent hand-back could lag the real work it reported (Alex KB `_escalations/`, 2026-09-20).
+- [S6] Owner standard (Minda, 2026-09-22) — plain-brief writing standard, group-wide (AWT-0069).
+- [S7] Owner ruling (Minda, 2026-09-22) — Raw/ is the ONLY channel for a cross-KB governed-file amendment, no agent-impersonation exception, raised by Helen's own HL-Helen-01 finding that the impersonation route bypassed a self-modification safety block her own transparent attempt correctly hit.
+- [S8] Owner ruling (Minda, 2026-09-23) — the group `CLAUDE.md` §1 independently (and correctly) named the plain-brief standard "Rule C" on 2026-09-22; Alex flagged the resulting collision with the verify-before-reporting rule, which had also used "Rule C" since 2026-09-21. Minda's ruling: "Rule C is rule C [plain-brief]; we need to rename other rule." The verify rule is renamed to **Rule E** here and in Alex's own `Charter-Rules.md`.
+
+## History
+
+- 2026-09-14 — created (Layer 1 of the Housekeeping & Updates Improvement Plan). Owner-authorised.
+- 2026-09-17 — added "Onboarding someone into a company KB": share the conventions read-only file by file, index them by link in the joiner's KB, never share the folder. Owner-authorised (Minda).
+- 2026-09-17 — corrected "Open questions": it still said Rung 2+ was unreleased, untrue since 2026-09-15. Now states Rung 2's release and its dry-run-then-tick guardrail, and that Rungs 3–4 remain unreleased. Owner-authorised (Minda).
+- 2026-09-20 — added four new standing sections: cross-KB amendments go through Raw/ not a direct edit (HL-0023/AWT-0036); the Hub Coordination Standard, Rules A and B (AWT-0040); the Drive `search_files` content-snippet leak and its fix (HL-0022); and correspondence discipline distilled from HL-0025/0026/0027. "Open questions" updated to note the Raw/-hand-off route now governs sister-KB amendments specifically. Owner-authorised (Minda). Alex (direct edit — this file lives in the group KB, within Alex's Rung-1 authority, not a sister KB requiring the Raw/ route itself).
+- 2026-09-21 — added Rule C to the Hub Coordination Standard: verify against the system of record before reporting delegated-work status, never trust a subagent's own completion signal alone. Owner-approved (Minda) estate-wide, folded into the same standard as Rules A/B rather than a separate addendum. Raised by Alex after the AWT-0040 propagation rollout exposed the gap live (see `Alex KB/_escalations/2026-09-20_Escalation_Reporting-Back-Reliability-Gap.md`).
+- 2026-09-22 — added "Plain-brief writing standard": say it in fewer words, group-wide, every message/charter/log/Hub row/doc. Kept under its own heading, not folded into "Rule C", since both the Hub Coordination Standard above and Alex's own charter §0 already use that letter for the verify-before-reporting rule. Owner-authorised (Minda, AWT-0069). Alex (direct edit — this file lives in the group KB, within Alex's Rung-1 authority).
+- 2026-09-22 (later) — tightened the Raw/-hand-off rule: Raw/ plus the KB owner's own session is now the ONLY channel for a cross-KB governed-file amendment, with no exception for a background agent dispatched to act as the target employee. Raised by Helen (HL-Helen-01): the 2026-09-20 Rule C rollout used exactly that impersonation pattern to write into all seven sister CHARTER.md files, and it went through with no block — on the same self-modification class the harness correctly hard-stopped when Helen herself tried the identical edit transparently. Owner ruling (Minda): applies from 2026-09-22 forward only; the seven already-landed edits (AWT-0049–0055) stand as-is, not redone. Alex (direct edit, Rung-1 authority).
+- 2026-09-23 — resolved the Rule-C naming collision Alex flagged after the group `CLAUDE.md` split: the group `CLAUDE.md` §1 had independently named the plain-brief standard "Rule C" (2026-09-22), colliding with the verify-before-reporting rule already using that letter here since 2026-09-21. Owner ruling (Minda): "Rule C is rule C [plain-brief]; we need to rename other rule." Folded the plain-brief standard into this file's own Hub Coordination Standard list as **Rule C** (previously a separate unlettered heading, kept apart deliberately to avoid the same collision); renamed the verify-before-reporting rule to **Rule E** (skipping D, reserved for Alex's own charter-only board-drift rule, so no letter is ever reused across the estate's governance documents). Not yet propagated to the seven sister `CHARTER.md` files — see Open questions. Alex (direct edit, Rung-1 authority).

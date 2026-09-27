@@ -1,0 +1,158 @@
+# Victoria — Coordination Schedule (standing, always-current)
+
+**Type:** Outputs / standing (maintained by Victoria's two daily routines; not a dated snapshot)
+**Owner seat:** Victoria — CEO's Assistant / AI Workforce Coordinator (on Minda's behalf)
+**Created:** 2026-09-20 · **Last refreshed:** 2026-09-23 (afternoon sweep)
+**Governance:** group `CLAUDE.md` §6a — Victoria reads, drafts, proposes, coordinates and may append to the
+shared registers and the AI Workforce Hub; sends nothing outward, makes no payment/commitment, creates/fires
+no routine, and never resolves an ambiguity by guessing (surface it to Minda).
+
+Charter re-read fresh this run (§0 requirement). Rules A–C applied throughout, including Rule C: every claim
+below is checked against a direct read of the Hub sheets this run (afternoon), not against this morning's
+digest or schedule text.
+
+**Headline: quiet afternoon.** The one live task closed today (AWT-0064, Eugene) was already Done by this
+morning's sweep. This afternoon's actual movement is two new Help & Lessons escalations from the Rule-C
+charter-fold rollout (HL-0043 Eugene, HL-0045 Helen) plus one new, still-unnumbered Help & Lessons row from
+Peter flagging a misfiled financial CSV in his own Raw/. Nothing on today's list is overdue or at risk.
+
+---
+
+## 1. The two routines
+
+| Routine | Time (UK) | Cron (UTC, BST now) | What it does |
+|---|---|---|---|
+| **Victoria — Morning Coordination Sweep** | 08:00 | `0 7 * * *` (BST) → `0 8 * * *` at the Oct clock change | Live. |
+| **Victoria — Afternoon Coordination Sweep** | 15:00 | `0 14 * * *` (BST) → `0 15 * * *` at the Oct clock change | Live. |
+
+Crons are UTC — shift both by one hour at the UK clock change (25 Oct 2026: BST→GMT). Routines are created
+by Minda (Victoria cannot create or fire them, §6a). Prompts unchanged since 2026-09-20; not reproduced here.
+
+---
+
+## 2. Desk vs delegated
+
+### Victoria's desk
+- **Nothing urgent today.** Checked `ops@` again this run, **no new Alexey message since 21 Sep**, nothing to
+  route. Checked Victoria's own Raw and the group Raw directly this run — both still empty of anything new
+  since the morning read.
+- **OI-13 — Amfa workshop reorg** research. Unchanged, Open.
+- **Master-index housekeeping** — OI-15 (index stale), OI-16 (three stale `Org-*` articles). Both still Open;
+  group `open-issues.md` unchanged since 2026-09-21 10:40 (confirmed by direct file-metadata check this run)
+  — nothing new to fold in.
+- **HL-0042 (Darius, High)** — unchanged since this morning: estate-wide tooling/process lesson, offered to
+  the Workshop KB's own owner for charter adoption. No seat-specific action follows.
+- **New this afternoon, flagged not actioned:**
+  - **HL-0043 (Eugene, Governance question, raised today)** — Eugene declined to act on AWT-0062 (editing the
+    group master-index files for Anna's onboarding) because it reads in tension with his charter's own
+    Raw/-hand-off rule and isn't clearly "another KB" either way. Needs Minda's call; see §6.
+  - **HL-0045 (Helen, Process gap, raised today)** — Helen can't fold the Rule-C plain-brief text into her
+    charter (AWT-0067) because that row gives no Drive file ID and points to a Raw/ folder her KB doesn't
+    have; only other agents' paraphrases are available, and she won't present a paraphrase as sourced text.
+    Needs the exact rule text or a locatable file ID from whoever assigns her the task.
+  - **An unnumbered Help & Lessons row (Peter, Filing/routing, raised today)** — a bank-statement CSV
+    (`20241011_74387244.csv`, spanning Drylining/Waste/Properties activity) turned up in Peter's own Raw/
+    folder instead of the Financial Archive; ownership is ambiguous across companies so Peter didn't move it.
+    Separately, **this row itself carries no `HL-####` Ref value** — worth Alex's attention as a small
+    data-quality/ID-allocation gap on the Help & Lessons sheet, alongside the filing question itself.
+- These two routines and the schedule itself.
+
+### Delegated — track only (via the Hub)
+- **Eugene** — AWT-0060 (install PDF-toolkit hook on `minda-ui/Anna`, Blocked — scoped-repo access, Red
+  health) and AWT-0062 (sync Drive master-index files for Anna, Blocked — now escalated as HL-0043, Red
+  health). **AWT-0064 confirmed Done** (direct read this run): folded the group Rule D (plain-brief standard)
+  into his charter, and in the process found and repaired an earlier faulty fold-in that had overwritten his
+  existing Rule C and let Drive/git drift — logged as HL-0044.
+- **Darius** — AWT-0065 (fold Rule C into charter, Open, Low), unchanged.
+- **Helen** — AWT-0067 (fold Rule C into charter, Open, Low) — now blocked on sourcing, see HL-0045 above.
+  (Peter, Rachel, John, Alex all closed their equivalent Rule-C rows — AWT-0063/0066/0068/0069 — on 22 Sep.)
+- **Rachel** — AWT-0070 (bulk financial intake triaged from the Properties KB, In Progress — deliberately
+  parked pending duplicate/ownership checks; unchanged this run). AWT-0073 (VAT Certificate of Registration,
+  Commercial Properties) — Peter has now confirmed by direct research this only exists inside HMRC's
+  Government Gateway/Business Tax Account and escalated to Minda; unchanged in substance since this morning.
+- **Minda** — AWT-0074 (two finance retrievals: Construction CIS returns from QuickBooks; BBL payoff
+  confirmation, Construction ref 34586794 — both Open, no due date, unchanged).
+- **Alex** — AWT-0076 (reconcile the AWT-0028 destination discrepancy) — Response confirms Minda already
+  settled the Financial Archive as correct; this row looks ready for Alex to close as a formality, still Open.
+- **Anna** — AWT-0077 (fold her new Construction-KB write authority into her own charter + complete the KB
+  record). Still Open; Anna's own task to finish.
+- **John** — Properties intake pipeline, live & attended (daily 07:00 UK); unchanged.
+
+---
+
+## 3. Fixed-deadline calendar (blocked onto days)
+
+| Day | Blocked item | Whose action |
+|---|---|---|
+| **Wed 23 Sep (today)** | Weekly-rhythm focus: Properties→Group migration stage check (John cutover readiness, stages 2c→5). No fixed Hub deadline fell today. | Victoria |
+| **Thu 24 Sep (tomorrow)** | Weekly-rhythm focus: document-system health (Doc Register, Change Requests queue). Checked live this afternoon a day early — the Change Requests sheet is unchanged (4 rows, all Accepted, last reviewed 20 Sep) — nothing outstanding to carry into tomorrow's check. No fixed Hub deadline falls tomorrow. | Victoria |
+| **Every sweep until cleared** | OI-13 Amfa reorg — research only, no urgency. | Victoria (watch) |
+| **Tue 29 Sep** (pre-deadline nudge) | Alexey offset — final review of Rachel's draft, ready for Minda's send | Victoria → Minda |
+| **Wed 30 Sep** | **Alexey offset — respond/confirm** | Minda (Rachel drafted) |
+
+---
+
+## 4. Weekly rhythm (for the non-deadline work)
+
+| Day | Focus |
+|---|---|
+| **Mon** | Master-index & Open-Issues housekeeping (OI-15, OI-16) |
+| **Tue** | Adviser / finance thread status (Alexey threads) |
+| **Wed** | Properties→Group migration stage check (John cutover readiness) |
+| **Thu** | Document-system health (Doc Register, Change Requests queue) |
+| **Fri** | Strategic / backlog + short weekly digest to Minda |
+
+---
+
+## 5. What moved since the last sweep (2026-09-23 morning → 2026-09-23 afternoon)
+
+Verified by direct Smartsheet/Drive/Gmail read this run (Rule C), not carried over from this morning's digest.
+
+**Closed (confirmed Done on direct read; already Done by this morning, no new closures this afternoon):**
+- AWT-0064 (Eugene) — unchanged from this morning's report: Done, folded Rule D and repaired a Rule-C
+  overwrite defect from an earlier session, logged as HL-0044.
+
+**New since this morning:**
+- **HL-0043** (Eugene, Governance question) — declined to edit the group master-index files for Anna's
+  onboarding (AWT-0062) pending a ruling on whether that database counts as "another KB" under his
+  Raw/-hand-off rule. AWT-0062 left Blocked.
+- **HL-0045** (Helen, Process gap) — can't fold the Rule-C text into her charter (AWT-0067) without a source;
+  the task gives no Drive file ID and assumes a Raw/ folder her KB doesn't have. AWT-0067 left Open.
+- **An unnumbered Help & Lessons row (Peter, Filing/routing)** — a multi-company bank-statement CSV found
+  misfiled in Peter's own Raw/; flagged, not moved, ownership ambiguous. The row's own missing `HL-####` Ref
+  is itself worth a look.
+- No new Hub tasks beyond AWT-0077 (confirmed — sheet still at 76 rows). No new Raw hand-offs in Victoria's
+  own Raw or the group Raw (both checked directly, both empty of anything new). No new Alexey email since
+  21 Sep (Gmail checked directly this run).
+
+**Unchanged:** OI-13/15/16 all still Open; group `open-issues.md` unchanged since 21 Sep 10:40; the Document
+System Change Requests queue unchanged since 20 Sep (4 rows, all Accepted).
+
+---
+
+## 6. Today's ask to Minda
+
+Nothing overdue or time-critical. Four small items, none urgent:
+1. **AWT-0073** — the Commercial Properties VAT Certificate of Registration is only retrievable from HMRC's
+   Government Gateway/Business Tax Account; needs your access, not a Hub task.
+2. **AWT-0074** — two finance retrievals sit on your own row (Construction CIS returns from QuickBooks; BBL
+   payoff confirmation) — no due date, no urgency, just flagging they're assigned to you.
+3. **HL-0042** (FYI, not a decision needed today) — Darius's estate-wide "a limitation is a property of the
+   call, not the system" lesson, unchanged since this morning.
+4. **New — HL-0043** (a small governance call, not urgent): may Eugene edit the group master-index files
+   (`CLAUDE.md`, `Wiki/00_INDEX.md`, `current-state.md`) directly for Anna's onboarding, or must that go
+   through the Raw/ hand-off route like any other cross-KB amendment? This is the one thing actually blocking
+   AWT-0060/AWT-0062 from moving.
+
+---
+
+## Appendix — routine prompts to paste into the routines form
+
+*Unchanged since 2026-09-20; see an earlier archived version of this file for the full text.*
+
+---
+
+*Standing coordination schedule for Victoria, the Fishbone Group CEO's Assistant. This sweep (2026-09-23
+afternoon) found a quiet afternoon: the morning's one closure (AWT-0064) stands unchanged, and the only new
+activity is two Rule-C-rollout escalations (HL-0043, HL-0045) plus one unnumbered Help & Lessons row from
+Peter. Nothing overdue or time-critical; four small items flagged to Minda in §6, one of them new.*

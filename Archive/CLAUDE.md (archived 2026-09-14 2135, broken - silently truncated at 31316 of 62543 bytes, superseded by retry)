@@ -1,0 +1,208 @@
+# Fishbone Group - Knowledge Database
+
+> **Status: AUTHORITATIVE since 2026-09-03.** Modelled on the Fishbone Properties Ltd `CLAUDE.md`
+> (version of 03/09/2026) and the Fishbone Commercial Properties Ltd `CLAUDE.md` (03/09/2026),
+> adapted to a group-level database that sits above the per-company knowledge bases.
+> `README.md`, `WORKFLOW.md` and `Wiki/WIKI_GUIDELINES.md` hold the detailed procedures; this file
+> is the standing context that an AI session reads first. Where this file and those differ, this
+> file wins, and the difference is a bug to fix in the same session.
+> Revised 2026-09-03T16:00Z: Fishbone Holdings Ltd added as the seventh entity.
+> Revised 2026-09-03T16:15Z: Anthill Homes Ltd confirmed out of scope; the group is final at seven.
+> Revised 2026-09-03T19:45Z: legal structure, company numbers and financial summaries taken from
+> statutory accounts (Raw batch 1); §7 rewritten.
+> Revised 2026-09-03T20:00Z: Raw batch 2 (Properties FY2025, Waste FY2025, Drylining YE2023); Fishbone Waste
+> status changed to Active; §7 Waste and Properties rows and open questions updated.
+> Revised 2026-09-04T13:39Z: Companies House certificate (ledger row 18) confirms Furniture by Fishbone Ltd renamed
+> to Amfa Furniture Ltd on 13/07/2026; OI-1 resolved; §7 Amfa row and open questions updated.
+> Revised 2026-09-04T20:00Z: owner note (ledger row 21) confirms Fishbone Waste Ltd ceased operating January 2026
+> (not being liquidated); Waste status Active -> Dormant; OI-9 resolved; §7 Waste row and open questions updated.
+> Revised 2026-09-05T13:00Z: the change log was split to the Fishbone Properties Ltd model — the single `CHANGELOG.md`
+> retired (frozen in `Archive/`) in favour of four standing control files (`current-state.md`, `open-issues.md`,
+> `external-source-register.md`, `processed-items-ledger.md`) plus dated per-session files in `change-log/`; §0, §1, §3b and §4 updated.
+> Revised 2026-09-05T19:30Z: owner ruling — AT UK Interiors Ltd is not connected to the group (owner note, ledger row 25); §0 out-of-scope list and §7 updated.
+> Revised 2026-09-07: outstanding-items sort. OI-3 to OI-7 resolved (SSAS canonical home + scheme facts; this database confirmed as the group **master index**; loan reconciliation adopting the authoritative `Fishbone_Loan_Repayment_Plan.xlsx`, three debt layers; Ferndale title TY59507 — FCP freehold / Properties leasehold); OI-5 access adequate; FY2025 accounts confirmed **filed** at Companies House. OI-8 remains open (workshop lease). §0 SSAS row, §1 sister-systems, §6b and §7 updated.
+> Revised 2026-09-07 (later): the group **weekly master-index digest routine went live** (§5) and its first run flagged drift now actioned here — the **Fishbone Holdings Ltd Knowledge Base** (created 2026-09-05) added to §0/§1; the Holdings→Properties **interest waiver recorded as executed** (§7 open question 2 closed; effective 1 Oct 2026–30 Sep 2028); and two stale sister-KB descriptions corrected in §1 (Construction no longer a skeleton; Commercial's root `CHANGELOG.md` retired). OI-10 and OI-11 resolved; OI-12 (a Loans-Wiki compliance finding) left with Minda/RMT.
+> Revised 2026-09-09: **centralised group Document Register system** stood up — one group-wide **Document Register** and a **Change Requests** feedback queue (Smartsheets in a new "Fishbone Group - Documents" workspace; SRC-38/39), and the single locked, versioned policy `Wiki/Process-Document-Numbering-and-Filing.md` v1.0 (per-entity prefixes FC/FP/FH/FW/FA/FM/FS/FG, 7-digit IDs, dedup-on-entry, files co-located in Collaboration Space, feedback loop). A **narrow §6a append exception** now permits appending rows to those two group sheets and filing documents into Collaboration Space. §0, §5 and §6a updated; rollout phased (new documents now; the Properties `FP` / Holdings `FH` back-catalogues migrated later).
+> Revised 2026-09-09 (later): the document policy went to **v1.1** — new **§7a inter-KB document hand-off** (a group KB may drop a registered document, named by its existing ID, into another group KB's `Raw/` — add-only, with a covering note and a register annotation, no re-numbering). The §6a exception widened to cover that `Raw/` hand-off; §0 and §6a updated. Owner-authorised (Minda).
+> Revised 2026-09-09 (later still): the document policy went to **v1.2** — resolving the first Change Request, FC-CR-0001 (Fishbone Construction, Accepted): §6 clarifies that **tasks/to-dos are not documents** (no register row, no ID) and §11 that **each KB may migrate its own local back-catalogue now**, deduping on entry. Current policy-version references in §0 and §6a updated to v1.2. Owner-authorised (Minda).
+> Revised 2026-09-10: the document policy went to **v1.3** — resolving two more Change Requests (both Accepted): **FM-CR-0001** (Commercial Properties) — property codes are 4 digits = acquisition-year + sequence, **self-assigned** per company and recorded in its own property register (145 High Street East = `FM2301`), property-tied docs file into `<CODE> - <Address>/Documents/` (policy §3/§7); **FP-CR-0001** (Properties) — email-attachment **source capture**: when bytes can't be captured, register with the Gmail thread id as Source key and a flagged transcription (policy §5). Current policy-version references updated to v1.3; v1.3 note distributed to the five sister `/Raw` inboxes. Owner-authorised (Minda).
+> Revised 2026-09-10 (later): added a group **incoming paper-mail process** — `Wiki/Process-Post-Handling.md` (v1.0). The office receives post for all seven companies in one pile; the group opens/scans it into a single `Raw/Paper Mail/` intake, triages each letter to its owning company, registers it in the Document Register (Direction = Incoming) and files it, then routes it to that company's KB `/Raw` via §7a (Fishbone Waste and group-level `FG` items kept by the group). Reuses the v1.3 numbering policy; no new numbering. §0 pointer added; distributed to the six KB `/Raw` inboxes. Owner-authorised (Minda).
+> Revised 2026-09-11: recorded the **group Tasks Status colour convention** in §1 (Live data sources) at the owner's instruction — Done = green, In Progress = yellow, Overdue (Due Date past AND Status ≠ Done) = red — applied via Smartsheet conditional formatting in the UI (the API/MCP has no formatting tool). Convention only; no sheet change made by this database (the "1. General" Tasks sheet is read-only for automation, §6a). Owner-authorised (Minda).
+> Revised 2026-09-10 (later still): corrected two stale "no KB" gaps — the **Amfa Furniture Ltd Knowledge Base** (Drive `1ugshCjwx2yvRXZvmtpwLcg3kUgTKN7aU`, created 2026-09-05) and the new **Fishbone Waste Ltd Knowledge Base** (Drive `1LMVTPw4YFw9OmW7GcTjaDEfXqCIjp1ZJ`, created 2026-09-10, built on policy v1.3) are now listed in §0 (read-first table) and §1 (sister systems), raising the count to **ten** other knowledge systems. **All seven group companies now have their own KB**, so the §0 post-room pointer now routes every company's post to its own KB via §7a (only group-level `FG` items are kept by the group); Fishbone Waste is no longer a special case. No policy change. Owner-authorised (Minda).
+> Revised 2026-09-12: the group **Tasks health-colour convention** was implemented as a formula-driven **`Health` RYGB column** across all five Tasks sheets (group "1. General", Construction, Holdings, SSAS, AMFA), standardised on one formula — Done green / Blocked or overdue red / due ≤14 days yellow / >14 days green / no due date blue. This **supersedes the 2026-09-11 note** that the colours would be set via Status-cell conditional formatting in the UI; the Health column is API-settable and self-updating. §1 Live-data-sources row updated. Owner-authorised (Minda).
+> Revised 2026-09-12 (later): established a **group SessionStart-hook standard** — every Fishbone KB repo carries `.claude/hooks/session-start.sh` installing the PDF toolkit (pdfplumber / PyMuPDF / pdf2image / pytesseract + tesseract-ocr / poppler-utils) on web sessions, so scanned or tabular PDFs can be OCR'd and table-extracted rather than read by eye. §5 updated; the hook is on branch `claude/session-start-pdf-toolkit` in all eight repos (group + seven company KBs), live once merged to each default branch. Owner-authorised (Minda).
+> Revised 2026-09-12 (later still): the **Quarterly sweep** routine (§5) gained a **tooling & environment health** scope (hook install check; skills/connectors/tools drift diff; change-log tooling-pain scan). A separate monthly tooling-review routine was **considered and declined** (owner): tooling changes too slowly for monthly to carry signal, so it folds into the quarterly sweep. The sweep is still to be created via the routines form. Owner-authorised (Minda).
+> Revised 2026-09-12 (evening): **Peter — AI Data Assistant** stood up as the group's data-collection
+> assistant — a collector/stager with three beats (inbound email triage of `info@fishboneconstruction.co.uk`;
+> Companies House research for the six registered companies; document capture staged toward the group register)
+> and its own Drive home + git mirror `minda-ui/Peter`. Peter **reads and drafts only, never sends, files or
+> writes to a system of record** (governed by §6a). Added to §1 sister systems (count to **eleven**) and
+> `00_INDEX.md`; his routines are not yet created. Owner-authorised (Minda).
+> Revised 2026-09-12 (night): **Eugene — AI IT & Engineering Assistant** stood up as the group's **second
+> AI employee**, built before Content & Marketing at the owner's instruction. Eugene is the enablement layer
+> behind the AI workforce: he produces software-setup runbooks + config and verifies them, scaffolds new AI
+> employees and drafts their routine prompts, writes/tests hardware & automation code, and keeps the
+> infrastructure inventory. Reach (owner-set): **edits code/repos/KB directly; guide-only for live systems
+> (a human executes Admin-console / DNS / mailbox-migration / account / routines-form / hardware-deploy
+> steps); never holds secrets** (governed by §6a). Own Drive home (`1o4MBRcckZBspw-uT6qM2V-74H6OsRK9T`) + git
+> mirror `minda-ui/Eugene`; connectors Drive + GitHub + Web (no Gmail). Added to §1 sister systems (count to
+> **twelve**); the AI Workforce Plan reordered to v2 (Eugene = build #2 ahead of Content & Marketing). Owner-authorised (Minda).
+> Revised 2026-09-14: **Helen — AI Content & Marketing Assistant** stood up as the group's **third AI
+> employee** — a **draft-only** outward tier (drafts into her own KB, never publishes/sends/schedules; a
+> human releases; cites facts, never invents; never holds secrets; §6a). Own Drive home
+> (`1H487UxvNabq1HK1NljhmEedvNA-l3XhX`) + git mirror `minda-ui/Helen`; connectors Drive + Web. Added to §1
+> sister systems (count to **thirteen**).
+> Revised 2026-09-14 (later): the **AI Workforce Hub** (Smartsheet workspace "Fishbone AI Workforce",
+> `4946803578693507`; Roster/Tasks & Requests/Achievements/**Help & Lessons** sheets + a private interactive
+> Artifact board) was built and registered as **SRC-40–45** in `external-source-register.md`; added here as
+> a Live data source (§1). Peter, Eugene and Helen each carry a scoped write-grant to their own Roster/Tasks/
+> Achievements/Help & Lessons rows.
+> Revised 2026-09-14 (later still): **Alex — AI Housekeeping & Operations Steward** stood up as the group's
+> **ninth AI employee** (reshaped from a "Triage" candidate), **owner-authorised at Rung 0 + Rung 1** of the
+> control-release ladder (`Outputs/2026-09-14_Plan_Housekeeping-and-Updates-Improvement_v1.md`). Alex reads
+> every Fishbone KB and **may fix, unattended, only its own KB and this group KB** — mechanical, reversible
+> housekeeping (change-log stubs, stale `current-state.md`, archive-then-recreate a stray root duplicate,
+> dead links) — and never changes the substance of a fact anywhere, including here. Owns the group **Help &
+> Lessons** desk. Own Drive home (`1QGc0EqThFDAIP7QYvGY1DEhliSbMTGNe`); git mirror `minda-ui/Alex` (repo
+> created, Drive→git seed pending). Added to §1 sister systems (count to **fourteen**) and `Wiki/00_INDEX.md`.
+> This first Housekeeping sweep (Alex, AX-2) is itself the session recorded by this revision — see this
+> KB's `change-log/` for the fixes it applied under that authority.
+
+This file gives Claude the context it needs to work in this database without re-explaining the
+setup each session: where the database lives and how it relates to the other Fishbone knowledge
+systems (§1), how the Wiki is maintained (§2), how new items are processed (§3), how the change
+log works (§4), what runs automatically (§5, one live routine), the governance boundary (§6), and a
+one-screen snapshot of the group with its open questions (§7).
+
+---
+
+## 0. Start every session here
+
+Read the four standing control files at the root first: `current-state.md` (present snapshot),
+`open-issues.md` (the `OI-<n>` table), `external-source-register.md` (the `SRC-<n>` register), and
+`processed-items-ledger.md` (one row per Raw item ever seen). Then read the newest one or two dated
+files in `change-log/` for narrative detail. See §4.
+
+Out of scope, settled by owner note: Anthill Homes Ltd (2026-09-03T16:15Z) and AT UK Interiors Ltd
+(2026-09-05T19:30Z) are not part of the Fishbone Group; do not raise either again.
+
+Sister-system pointer: **all seven group companies have their own KB** (§1); the incoming
+paper-mail process (`Wiki/Process-Post-Handling.md`) routes each company's post to its own KB
+`/Raw` via §7a, with group-level `FG` items kept here.
+
+---
+
+## 1. Database structure
+
+### Where it lives
+- **Google Drive**, `My Drive / Fishbone Group` (folder id `1pOHvl8X64E-x3rRb-6Wrc9zsHZ2mgi73`).
+  Source of truth. There is no git mirror as of 2026-09-03.
+- Owner: minda@fishboneconstruction.co.uk. Sharing has not been checked (§6b).
+
+### Folders
+```
+Fishbone Group/
+├── CLAUDE.md            <- this file (standing context for AI sessions)
+├── README.md            <- human-readable structure and conventions
+├── WORKFLOW.md          <- step-by-step Raw -> Wiki -> Archive procedure
+├── current-state.md             <- present snapshot, overwritten each session (§4)
+├── open-issues.md               <- the OI-<n> table (§4)
+├── external-source-register.md  <- the SRC-<n> register (§4)
+├── processed-items-ledger.md    <- one row per Raw item ever seen (§4)
+├── change-log/          <- one dated change-log file per session (§4)
+├── Raw/                 <- source material exactly as received; never edited
+├── Wiki/                <- one Markdown article per entity or topic; 00_INDEX.md; WIKI_GUIDELINES.md
+├── Outputs/             <- deliverables built from the Wiki; standing files once §5 exists
+└── Archive/             <- processed Raw items (renamed YYYY-MM-DD_<name>) and superseded control files
+```
+
+Folder ids: Raw `1AskWaogQoyQH7COKZq85jL00QUtcx---`, Wiki `1noZncKHLV9IWXbcbeIzaBAZs9yfnNQgC`,
+Outputs `1jrOGx1lqGfTHKkzUcM8ce__tOGsqPlEp`, Archive `1SVuKUs9oFbru0ZqRgC-pVZjB7oI6MTK8`.
+
+**Raw/** is immutable. Corrections arrive as new files. Verbal information from Minda or a
+director is written up as `Raw/YYYY-MM-DD_owner-note_<subject>.md`, statement separated from
+commentary, so the Wiki can cite it; owner notes keep that name in Archive. Unlike the Properties
+Ltd base, this database **does move** a Raw item into `Archive/` once processed (renamed with the
+processing date, except owner notes, which already carry it; the Drive id is unchanged, which is
+what the ledger keys on). See `WORKFLOW.md` Step 4. Minda copies documents into `Raw/` from the
+Finance archive or elsewhere; the assistant does not move files out of sister systems (§6a).
+
+**Wiki/** is flat, one article per entity or topic, filenames `Prefix-Title-Case.md` with the
+prefixes in `WIKI_GUIDELINES.md` §1 (`Org-`, `Person-`, `Project-`, `Client-`, `Supplier-`,
+`Policy-`, `Finance-`, `Asset-`, `Process-`, `Topic-`). Every article is listed in
+`Wiki/00_INDEX.md`. Seven `Org-` articles exist, one per group entity; six are built from
+statutory accounts and the SSAS one was built out from stub on 2026-09-07 (OI-3).
+
+**Outputs/** are dated, versioned snapshots (`YYYY-MM-DD_<Type>_<Subject>_v<N>.<ext>`), never
+edited after release. Standing always-current files are a deliberate exception once §5 exists;
+there are none yet.
+
+**Archive/** is never edited or deleted. Drive files cannot be edited in place by the tooling, so
+every replacement of `CLAUDE.md`, `README.md`, `WORKFLOW.md`, a standing change-log file
+(`current-state.md`, `open-issues.md`, `external-source-register.md`, `processed-items-ledger.md`)
+or a Wiki article follows **archive-then-recreate**: rename the old file to
+`<title> (archived YYYY-MM-DD HHMM, superseded by <reason>)`, move it into `Archive/`, then
+upload the new file with the original title. Never trash. (The first two replacements on
+2026-09-03, of `CHANGELOG.md` and `00_INDEX.md`, were trashed instead of archived before this rule
+was adopted; they are recoverable from Drive trash for 30 days and are noted in the change log.)
+Because control-file ids change on every replacement, **reference control files by filename,
+never by Drive id.** Raw and Archive items keep stable ids.
+
+### Sister systems (link, do not copy)
+
+Fourteen other knowledge systems exist (the Fishbone Holdings Ltd Knowledge Base was added 2026-09-05, the
+Amfa Furniture Ltd Knowledge Base 2026-09-05, the Fishbone SSAS Knowledge Base 2026-09-06 and the
+Fishbone Waste Ltd Knowledge Base 2026-09-10 — so **all seven group companies now have their own KB** —
+**Peter, the group's data-collection assistant, was added 2026-09-12**, **Eugene, the group's IT &
+engineering assistant, was added 2026-09-12** as the second AI employee, **Helen, the group's Content &
+Marketing assistant (draft-only), was added 2026-09-14** as the third, and **Alex, the group's Housekeeping
+& Operations Steward, was added 2026-09-14** as the ninth AI employee — the first with a bounded, authorised
+**cross-KB** reach (Rung 0 + Rung 1 of the control-release ladder: reads every KB, fixes only its own KB and
+this one)).
+**OI-4 was resolved on 2026-09-07 (owner decision): this group database is the _master index_
+over all Fishbone systems** — it links to and cites them and never copies their content, so each
+fact keeps one home. `Wiki/00_INDEX.md` carries the maintained "where each thing lives" map. The
+one settled exception: individual documents from the Finance archive are copied into `Raw/` by
+Minda for processing, because the archive is a filing store, not a knowledge system.
+
+| System | Location | Holds | Maturity |
+|---|---|---|---|
+| Collaboration Space | Drive root, shared folder `1YNj5BIpKVzcmI4U1DRkgu7kcnSDizGEi` | Operational filing per company: Fishbone Construction, Fishbone Properties Ltd, Fishbone Commercial Properties, Fishbone Waste, Furniture by Fishbone, Other (incl. Staff (SSAS)). Nothing for Holdings. **Also the home for filed documents under the group Document Register (SRC-38), co-located in each company's project folder (§0; `Wiki/Process-Document-Numbering-and-Filing.md`).** | Live filing since Nov 2024; several subfolders owned by other accounts |
+| Fishbone Properties Ltd - Knowledge Base | Drive root, `11SREv6Rx4jvTzMtpQbKqzzZkTN4wZgNk` | 17 property articles, tenants, financials, processes; 8 cloud Routines; Smartsheet and QuickBooks live sources | Mature, automated, actively maintained |
+| Fishbone Commercial Properties Ltd - Knowledge Base | Drive root, `1zC8LmkCLr7BEaqcAlxgAXyz5Bfm73Z7C` | One property (145 High Street East), company snapshot, Smartsheet register; git mirror `minda-ui/Fishbone-Commercial-Properties-Ltd` | New (03/09/2026), no automation |
+| Fishbone Construction Ltd - Knowledge Base | Drive root, `13IQdim0JhKmoQvJBmJmnMhreJqg55xTr` (SRC-08) | Now a working database: live `CLAUDE.md` (v3, 2026-09-05), a populated Wiki, dated `Outputs/change-log-*.md`, and a **daily email-intake automation** (info@fishboneconstruction.co.uk inbox, 07:00 local, owner's 2026-09-06 instruction; first unattended run not yet verified) | Building out since 2026-09-05 (was a five-doc skeleton) |
+| Fishbone Holdings Ltd - Knowledge Base | Drive root, `1sZJ4frIcVqsgON4eewAqmdKq5YEXInvu` (SRC-37), git mirror `minda-ui/Fishbone-Holdings-Ltd` | The parent company's own database (own CLAUDE.md, Raw/Wiki/Outputs/Archive): 14 processed items (`FH0000001`–`FH0000014`), 13+ Wiki articles, an Investment Register, and the most complete record of the Holdings↔Properties loan relationship (incl. the executed interest waiver). Cite, never copy. | New (2026-09-05), actively maintained |
+| Fishbone SSAS - Knowledge Base | Drive root, `1Ow2wOI2hQE3ugsxeZqk2xf7P5f9IT7oV` (SRC-33) | The pension scheme's own database (Raw/Wiki/Outputs/Archive, own CLAUDE.md): trust deed, scheme rules, TPR certificate, the £41,500 Commercial Properties loanback + its heads of terms, repayment schedule and 29/04/2025 legal mortgage. Canonical home for the SSAS. Member/personal data: cite, never copy. | New (03–06/09/2026), no automation |
+| Amfa Furniture Ltd - Knowledge Base | Drive root, `1ugshCjwx2yvRXZvmtpwLcg3kUgTKN7aU`, git mirror `minda-ui/Amfa-Furniture-Ltd` | The furniture company's own database (own CLAUDE.md, Raw/Wiki/Outputs/Archive), built on document policy v1.3; `FA` prefix in the group register (`FA0000001` = change-of-name certificate). Cite, never copy. | New (2026-09-05); the group's earlier "Amfa has no KB" note was stale, corrected 2026-09-10 |
+| Fishbone Waste Ltd - Knowledge Base | Drive root, `1LMVTPw4YFw9OmW7GcTjaDEfXqCIjp1ZJ`, `/Raw` `1TlNINqtx8JU1Qe6152uqhEPZEvt7JN_C` | The (dormant) waste company's own database, born on document policy v1.3; `FW` prefix in the group register. Received the v1.3 policy note, the incoming-paper-mail notice and the two 2026-09-10 post items (`FW0000001` business rates, `FW0000002` vehicle HK21 DFJ) in its `/Raw` via §7a. Cite, never copy. | New (2026-09-10), no automation |
+| Peter - AI Data Assistant | Drive root, `1zY8rVKNXheb8MQaol6GZthht1B7hlkAZ`, git mirror `minda-ui/Peter` | The group's **data-collection assistant** (own charter, four control files, and `Inbox-Triage`/`Research`/`Capture`/`_unverified` staging folders): triages `info@fishboneconstruction.co.uk`, watches Companies House for the six registered companies, and stages qualifying documents toward the group Document Register. **Collects and stages only — reads and drafts email (`create_draft`), never sends, files with anyone, or writes to a system of record (§6a).** Hands findings to the company KBs / group register; cite, never copy. | New (2026-09-12); routines not yet created |
+| Eugene - AI IT Assistant | Drive root, `1o4MBRcckZBspw-uT6qM2V-74H6OsRK9T`, git mirror `minda-ui/Eugene` | The group's **IT & engineering assistant** — the enablement layer behind the AI workforce (own charter, four control files, and `Runbooks`/`Infra-Inventory`/`Hardware-Projects` folders): produces software-setup runbooks + config and verifies them, scaffolds new AI employees and drafts their routine prompts, writes/tests hardware & automation code, and keeps the infrastructure inventory. **Edits code/repos/KB directly; guide-only for live systems (a human executes Admin console / DNS / migrations / accounts / the routines form / hardware deploy); never holds secrets (§6a).** Connectors Drive + GitHub + Web (no Gmail). Interactive; cite, never copy. | New (2026-09-12); interactive, no routines |
+| Helen - AI Content & Marketing Assistant | Drive root, `1H487UxvNabq1HK1NljhmEedvNA-l3XhX`, git mirror `minda-ui/Helen` | The group's **third AI employee** — **draft-only** outward tier (own `CHARTER.md`, four control files, `Drafts`/`Research`/`Brand-and-Voice`/`_unverified` folders): drafts case studies, social posts, newsletters/brochures into her own KB; never publishes, sends or schedules; a human releases; cites facts, never invents; never holds secrets (§6a). Connectors Drive + Web. Cite, never copy. | New (2026-09-14); interactive, no routines |
+| Alex - AI Housekeeping & Operations Steward | Drive root, `1QGc0EqThFDAIP7QYvGY1DEhliSbMTGNe`, git mirror `minda-ui/Alex` (repo created; Drive→git seed pending) | The group's **ninth AI employee** and **operations steward** — the first with a cross-KB reach: **reads every** Fishbone KB; **may fix, unattended, only this KB and its own** (Rung 1) — mechanical, reversible tidying (change-log stubs, stale `current-state.md`, archive-then-recreate a stray root duplicate, dead links), never a fact's substance; everywhere else it **proposes** fixes for a human/owning employee. Runs the group **Help & Lessons** desk (`7780569054316420`) and the weekly **Housekeeping sweep** (writes a drift digest to its own `Sweeps/`). Own `CHARTER.md`, four control files, `Sweeps`/`Templates`/`Help-Desk`/`_escalations`/`Archive` folders. Connectors Drive + Smartsheet + Web. Authorised **Rung 0 + Rung 1** only (§9 of its charter); Rungs 2–4 not yet released. | New (2026-09-14); interactive by default, gains the scheduled Housekeeping-sweep routine once created |
+| Loans Wiki | `Loans/Wiki`, `1lIfM6Rjk_dlZsRzaPSvio7eNtwNA3S_T` | 3 entity pages, 14 facility pages, 2 revolving-book pages, planned property sale; workbook in `Loans/Outputs`. Does not cover the Holdings intercompany loans. | Complete as at 25/08/2026, manually maintained |
+| Smartsheet | Nine workspaces, all owned by minda@ (`external-source-register.md` SRC-16 to SRC-30), plus the group **"Fishbone Group - Documents"** workspace (SRC-38/39, created 2026-09-09) | "1. General" (shared registers: Document Register, Tasks, Contacts, Classifier), "4. Property maintenance" (Properties Ltd register), "Fishbone Commercial Properties Ltd", "AMFA Furniture", "My Work" (group loan sheets, budgets), "2. Sourcing", "3. Project Delivery", "Minda" (personal), and **"Fishbone Group - Documents"** (the single group Document Register + Change Requests). "Workspace 1" belongs to Anthill Homes and is out of scope. | Live; the property registers, the "1. General" Document Register and the new group Document Register are the most current data anywhere |
+| Finance archive | Drive root, `Finance-20260903T154848Z-1-001 / Finance`, `1BVk_RfuJ3rBRujZUMC98KMlil4AkICL4` (SRC-31) | Statutory accounts, CT600s, bank and loan statements, PAYE and CIS returns by company and accounting year for Construction (2017-18 on), Properties (2020-21 on), Commercial Properties, Holdings (both 2023-24 on) and Waste. Sensitive: cite, never copy. | Filing store. Fifteen accounts PDFs processed through Raw on 03/09/2026 (batches 1 and 2); the rest listed in `external-source-register.md` SRC-31 |
+
+A separate `Minda Wiki` (personal knowledge base, Google Docs, e.g. "Minda Wiki - Business &
+Fishbone Group") holds strategy, targets and the founder's working notes. It is a source, not a
+sister system: cite it, do not maintain it from here. Its list of group companies is superseded
+by the owner notes of 2026-09-03 where they differ.
+
+### Live data sources (known, not yet used from this database)
+
+These exist in the sister systems and are the source of truth for their datasets; when a
+group-level article needs one of these figures, pull it fresh from the live source (or from the
+sister KB's most recent sync entry) rather than from a Raw export, and log the pull.
+
+| Dataset | Live source | Notes |
+|---|---|---|
+| AI Workforce Hub (Roster / Tasks & Requests / Achievements) + Help & Lessons desk | Smartsheet workspace "Fishbone AI Workforce", `4946803578693507` (SRC-40); Roster `8154403007760260` (SRC-41), Tasks & Requests `8860839228606340` (SRC-42, carries the group RYGB `Health` column formula), Achievements `4569101748012932` (SRC-43), Help & Lessons `7780569054316420` (SRC-44); private interactive Artifact board (SRC-45) | Owner-only/unshared workspace; each AI employee (Peter, Eugene, Helen, Alex) holds a scoped write-grant to its own rows only. Alex owns the Help & Lessons desk (triage/routing/escalation). A daily reconcile routine (board ↔ Smartsheet) is proposed, not yet created. |
+| Residential property register | Smartsheet "Property Register-DataBase", sheet id `4273518114113412` | Documented in the Properties Ltd CLAUDE.md §1, including its health-flag semantics and known anomalies |
+| Commercial property register | Smartsheet "Property Register - Database", sheet id `8289112509515652`, workspace "Fishbone Commercial Properties Ltd" | Health flags are manual picklists, not formulas |
+| Group document register | Smartsheet, workspace "Fishbone Group - Documents", sheet id `7352854736144260` (SRC-38); Change Requests `8918834172004228` (SRC-39) | The single group-wide `FC/FP/FH/FW/FA/FM/FS/FG` 7-digit numbering scheme; policy `Wiki/Process-Document-Numbering-and-Filing.md` v1.3. Legacy: the "1. General" Document Register (`7675667699337092`, `FP########`) and Tasks (`1343219457722244`) remain until migrated |
+| Company financials | QuickBooks Online via the Intuit connector | Confirmed live for Fishbone Properties Ltd (27/08/2026). **Not confirmed** which other companies' files the connector reaches. Always call `company_info` first and check the company name. |
+| Group lending position | `Loans/Outputs/Fishbone_Loan_Repayment_Plan.xlsx`; Smartsheet "Loan schedule" (`5538379808769924`) and "Repayment Plan" (`4650432322471812`) in My Work | Three lists that disagree (OI-6). Do not publish a group total until resolved. Balance-sheet anchors from the accounts are in `open-issues.md` OI-6. |
+| AMFA Furniture orders | Smartsheet workspace "AMFA Furniture", sheet id `5287398789482372` | Order tracker, Received to Shipped, one Drive folder per order |
+| Group Tasks tracker | Smartsheet "1. General", **Tasks** sheet `1343219457722244` (per-company Tasks sheets share the same shape: Construction `5235584035587972`, Holdings `3298244547446660`, SSAS `8617681802626948`, AMFA `6815307366795140`) | Shared task list (`T#####`). Status picklist = **Open / In Progress / Done / Blocked**. **Task health colour — group RYGB convention (implemented 2026-09-12, owner).** Each Tasks sheet carries a **`Health` RYGB symbol column driven by a column formula** (not conditional formatting): **Done → green; Blocked or overdue (Due Date past, not Done) → red; due within 14 days → yellow; due in over 14 days → green; no Due Date → blue.** All five Tasks sheets run the **identical** formula (`=IF(Status@row="Done","Green",IF(Status@row="Blocked","Red",IF(ISBLANK([Due Date]@row),"Blue",IF([Due Date]@row-TODAY()<0,"Red",IF([Due Date]@row-TODAY()<=14,"Yellow","Green")))))`) — AMFA was the reference; the group sheet + Construction gained the column and Holdings + SSAS were realigned to it on 2026-09-12. Being a column formula it is **API-settable and self-updating — maintain it via the connector, not by hand.** (This supersedes the 2026-09-11 note that the colours would be set via Status-cell conditional formatting in the UI.) The sheets are otherwise read-only for automation (§6a); the owner authorised these Health-column edits. |
+
+---

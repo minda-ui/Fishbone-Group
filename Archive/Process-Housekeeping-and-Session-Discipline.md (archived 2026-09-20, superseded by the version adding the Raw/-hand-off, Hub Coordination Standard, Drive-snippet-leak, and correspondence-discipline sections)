@@ -1,0 +1,158 @@
+# Process — Housekeeping & Session Discipline
+
+- **Type:** Process
+- **Status:** Active
+- **Last reviewed:** 2026-09-17
+- **Related:** `CLAUDE.md` §0/§2/§4/§6a; `WORKFLOW.md`; `Outputs/2026-09-14_Plan_Housekeeping-and-Updates-Improvement_v1.md` (the design + the control-release ladder); the **Alex** KB (the steward who enforces this); the AI Workforce Hub **Help & Lessons** desk.
+
+## Summary
+
+This is the group standard for keeping every Fishbone knowledge system **documented, current and tidy**. It
+turns the housekeeping rules that were scattered across `CLAUDE.md` and `WORKFLOW.md` into one place with a
+single **Definition of Done** and copy-paste **templates**, so the right thing is the easy thing. It is
+owner-authorised (Minda, 2026-09-14) and is **Layer 1** of the Housekeeping & Updates Improvement Plan. **Alex**
+(the Housekeeping & Operations Steward) is the named owner; the group **Help & Lessons** desk is where anyone
+raises a housekeeping problem.
+
+## Key facts
+
+### The Definition of Done (every session, every KB)
+
+A session — a one-off question, a drafting request, a Raw run, a survey — is **not finished** until:
+
+1. **`current-state.md` reflects it** (the "Last session" and "Next action" cells are true as of now).
+2. **A dated `change-log/` entry is written** — `change-log-YYYY-MM-DD-<slug>.md`, newest note at the top,
+   append-only (never edit a past file; correct with a new entry).
+3. **Every superseded file is in `Archive/`** — renamed `<title> (archived YYYY-MM-DD HHMM, superseded by
+   <reason>)`, **never trashed, never left beside its replacement** in the folder root.
+4. **Any new open issue is logged** (`OI-<n>` in the group; the KB's own scheme elsewhere), and any
+   cross-employee problem is raised on the **Help & Lessons** sheet.
+
+If a session changes nothing that needs recording, it still writes a one-line change-log entry saying so and
+refreshes `current-state.md`'s date. "Documented" is the default, not the exception.
+
+### Archive-then-recreate (because Drive files can't be edited in place)
+
+Every replacement of a control file, a Wiki article, `CLAUDE.md`, `README.md` or `WORKFLOW.md`:
+`rename old -> move to Archive/ -> upload new with the original title`. **Reference control files by filename,
+never by Drive id** (their ids change on every replacement). Raw and Archive items keep stable ids.
+
+### Byte-verify every recreate
+
+After uploading, confirm: uploaded `fileSize` **==** the local file's byte count; **zero U+FFFD** replacement
+characters; **`£` and other non-ASCII preserved**. Never round-trip `read_file_content` (it returns *escaped*
+markdown); take a faithful local copy with `download_file_content` (base64) when you must edit an existing
+Drive-only file.
+
+### One duplicate = a bug
+
+Two files with the same basename outside `Archive/` means an archive step was skipped. Fix it the same session:
+archive the older, keep the newest, note it in the change-log.
+
+### Onboarding someone into a company KB (getting them the shared conventions)
+
+When a person starts working in one of the company KBs — a property manager, a bookkeeper, anyone on an
+operating company's side — they are given that KB, and every estate-wide convention in this Wiki stays
+invisible to them. The group KB is owner-only and **stays** owner-only: it also holds
+`Org-Fishbone-SSAS.md` and each company's own profile, which are not for a sister company to read.
+
+The standard step is therefore: **share the conventions file by file, read-only. Never the folder.**
+
+1. Grant **Viewer** (never Editor) on each of these group Wiki files to the person's work address:
+   `Process-Fishbone-Systems-House-Rules.md`, `Process-Document-Numbering-and-Filing.md`,
+   `Process-Housekeeping-and-Session-Discipline.md`, `Process-Post-Handling.md`, `WIKI_GUIDELINES.md`,
+   plus **their own company's** `Org-*.md` — and nothing else. Not the folder, not `00_INDEX.md`, and
+   not another company's `Org-*.md`.
+2. Have Alex place a `Wiki/Group-Conventions-Index.md` in that person's KB: one table linking the
+   shared files, so they have a single page to start from. **Links, never copies.** A copy is a second
+   home for the rule and goes stale, silently, the next time the original is revised.
+3. If a stopgap copy of a convention is already sitting in that KB, archive it once the links work —
+   not before, or the reader is left with neither.
+
+**Only the owner can do step 1.** Alex must never change Drive or Smartsheet sharing (Alex charter
+§2c): it prepares, indexes and retires the stopgap, a human grants the access.
+
+Read-only is the point, not a precaution. These are group rules with one owner. A reader who finds one
+wrong, unclear or a bad fit raises it — to the owner, or on the **Help & Lessons** desk — and it gets
+fixed once, at the source, for everybody. A KB that quietly edits its own copy has forked the rule, and
+nobody finds out until the two versions disagree in front of a tenant, a lender or an accountant.
+
+Check domain-level grants too. A folder shared to a **domain** (e.g. `fishboneconstruction.co.uk`) does
+not reach an address on a different company domain, even inside this group. Confirm the person can
+actually open anything they have been told to use.
+
+## Details — templates
+
+### `change-log/` entry template
+
+```
+# Change log — YYYY-MM-DD — <short title>
+
+_Append-only dated session file. See `current-state.md` and `CLAUDE.md` §4._
+
+## Session — YYYY-MM-DD: <what this session did>
+
+<1–3 short paragraphs: what changed, the Drive/Smartsheet ids touched, byte-verify results,
+what was archived, any new open issue.>
+
+**Pending / carried forward:** <what the next session should pick up.>
+```
+
+### `current-state.md` skeleton (one row per field)
+
+```
+# Current State — <KB name>
+
+| Field | Value |
+|---|---|
+| Last session | <date + what happened; older sessions condensed to a digest> |
+| Last session by | Claude, on behalf of <owner> |
+| <domain rows…> | … |
+| Open issues | <count + the open ids> |
+| Next action | <the single most important next step(s)> |
+```
+
+### `open-issues.md` row
+
+```
+| <ID> | YYYY-MM-DD | Open | <the issue, and what would resolve it> |
+```
+A resolved issue gets a `Resolved YYYY-MM-DD: <how>` line — never a deletion.
+
+### `external-source-register.md` row
+
+```
+| <SRC-ID> | <source name> | <Drive id / Smartsheet id / URL> | <notes; cite, never copy> |
+```
+
+## Who keeps this working
+
+- **Every session** holds itself to the Definition of Done above.
+- **Alex** (Housekeeping & Operations Steward) runs a periodic **sweep** that detects drift (undocumented
+  sessions, stale `current-state.md`, duplicate control files, dead links, orphans), **fixes what it may**
+  (its own KB and the group KB, at Rung 1), and **proposes** the rest. See the Alex charter and the
+  control-release ladder in the Housekeeping plan.
+- A **SessionStart/Stop hook** (group repo `.claude/hooks/`) surfaces the last change-log date on start and
+  reminds + checks for duplicate control files on stop — best-effort, never blocks a session. Most useful in
+  the content-mirrored employee KB repos.
+
+## Open questions
+
+- **Rung 2 was released 2026-09-15** (owner decision, Minda): Alex may apply the same mechanical, reversible
+  housekeeping fixes in *sister* KBs, under **dry-run-then-tick, attended only** — Minda sees and approves the
+  intended list before anything touches a sister KB, every change is archive-then-recreate, and an unattended
+  routine run can never self-approve (it stops at the proposed-fix list).
+- **Rung 3 (normalising content shape) and Rung 4 (changing substance) are not released.** Those stay proposed,
+  not applied — Alex tidies files and structure; facts are read-only to Alex, and a human commits them.
+
+## Sources
+
+- [S1] Owner instruction (Minda), 2026-09-14 — authorise the housekeeping improvement plan and the Alex steward at Rung 0 + Rung 1.
+- [S2] `Outputs/2026-09-14_Plan_Housekeeping-and-Updates-Improvement_v1.md` — the design and the control-release ladder.
+- [S3] Owner instruction (Minda), 2026-09-17 — make the conventions-sharing pattern a standard onboarding step, after Fishbone Properties' manager could not reach the group conventions.
+
+## History
+
+- 2026-09-14 — created (Layer 1 of the Housekeeping & Updates Improvement Plan). Owner-authorised.
+- 2026-09-17 — added "Onboarding someone into a company KB": share the conventions read-only file by file, index them by link in the joiner's KB, never share the folder. Owner-authorised (Minda).
+- 2026-09-17 — corrected "Open questions": it still said Rung 2+ was unreleased, untrue since 2026-09-15. Now states Rung 2's release and its dry-run-then-tick guardrail, and that Rungs 3–4 remain unreleased. Owner-authorised (Minda).

@@ -1,0 +1,169 @@
+# Victoria — Coordination Schedule (standing, always-current)
+
+**Type:** Outputs / standing (maintained by Victoria's two daily routines; not a dated snapshot)
+**Owner seat:** Victoria — CEO's Assistant / AI Workforce Coordinator (on Minda's behalf)
+**Created:** 2026-09-20 · **Last refreshed:** 2026-09-22 (morning sweep)
+**Governance:** group `CLAUDE.md` §6a — Victoria reads, drafts, proposes, coordinates and may append to the
+shared registers and the AI Workforce Hub; sends nothing outward, makes no payment/commitment, creates/fires
+no routine, and never resolves an ambiguity by guessing (surface it to Minda).
+
+This is the **list of record** Victoria's two daily coordination routines run against: the morning sweep checks
+what was done and what's new against this file; the afternoon sweep does the same again and tees up tomorrow.
+Charter re-read fresh this run (Rules A–C applied throughout; charter unchanged since 2026-09-21).
+
+---
+
+## 1. The two routines
+
+| Routine | Time (UK) | Cron (UTC, BST now) | What it does |
+|---|---|---|---|
+| **Victoria — Morning Coordination Sweep** | 08:00 | `0 7 * * *` (BST) → `0 8 * * *` at the Oct clock change | Live. After John's 07:00 intake run and Peter's own AM inbox-triage run (both already landed by the time of today's sweep). Checks what was done since the last sweep, catches new items (Hub/OIs/Raw/adviser inbox), flags today's deadlines, updates this file, writes an AM digest. |
+| **Victoria — Afternoon Coordination Sweep** | 15:00 | `0 14 * * *` (BST) → `0 15 * * *` at the Oct clock change | Live. Re-checks progress against the morning digest, catches midday arrivals, flags slippage, tees up tomorrow, writes a PM digest. |
+
+Prompts to paste into the form are in the **Appendix** (unchanged since 2026-09-20). Crons are UTC — shift both by
+one hour at the UK clock change (25 Oct 2026: BST→GMT). Routines are created by Minda (Victoria cannot create or
+fire them, §6a).
+
+---
+
+## 2. Desk vs delegated
+
+### Victoria's desk (do / prepare myself)
+- **AWT-0041 — Missing-financial-data routing** (due 27 Sep, unchanged). Items 4 (Commercial Properties VAT
+  Certificate of Registration) and 7 (Holdings bank statements, Oct 2024–Apr 2025) are clean, unrouted and
+  obtainable — still mine to route this week; **not actioned this sweep either** (needs its own focused pass,
+  now 5 days from due). Full list: Drive id `1nUgOPMVeABQkJ_cEmA2hO4PDzPkmhoA4`. Items 1/2/10 already routed
+  (AWT-0028, AWT-0017 (Done), AWT-0030) — chase, don't re-raise.
+- **Alexey's two outstanding asks still need Minda's steer** — full statutory accounts + CT returns for all
+  seven entities, and contacting RMT directly for their FY2025 reconciliation schedules (his 06:26 UTC message
+  of 21 Sep, routed to Rachel's Raw). Checked the `ops@` mailbox directly this run — **no new message from
+  Alexey since 21 Sep**, so no movement and nothing new to route. Rachel is still holding off drafting either.
+- **OI-13 — Amfa workshop reorg** research (machines → Holdings, lease to Amfa; pre-sale asset protection).
+  Unchanged.
+- **AWT-0030 — Landbay facility page** in the Loans KB (3 Oct). Unchanged.
+- **Master-index housekeeping** — OI-15 (index stale), OI-16 (three stale `Org-*` articles). Both still Open;
+  last checked Monday 21st (Monday is the weekly-rhythm slot for this), no change since.
+- **Waste business-rates instalment confirmation (OI-14 tracking only, OI-14 itself is Resolved)** — checked
+  the `ops@` mailbox directly this run for a reply from North Tyneside Council: **nothing has arrived yet**,
+  only an unrelated auto-reply on a different North Tyneside matter. Still watch-only; when the written
+  confirmation lands it needs registering (Waste `FW` document) and the instalments set up (Rachel/Finance).
+- **NEW FINDING THIS SWEEP — AWT-0034 / AX-8 appears stale.** Alex's Hub response on AWT-0034 (Part A) says the
+  live policy article `Wiki/Process-Document-Numbering-and-Filing.md` v1.4 has "no live copy... anywhere" and
+  raises this as Alex's own `AX-8`. But the group `open-issues.md` **OI-17** already resolved exactly this
+  question on 2026-09-21 as a folder-id mix-up (Alex's sweep had searched the Archive folder and called it the
+  Wiki folder) and named the correct live file. **Verified directly this run, not taken on trust either way:**
+  Drive file id `1zfasnksIOsEQXtaAarVteoOiFcad3eyJ`, title `Process-Document-Numbering-and-Filing.md` (no
+  "archived" suffix), parent `1noZncKHLV9IWXbcbeIzaBAZs9yfnNQgC` (the live Wiki folder, not Archive
+  `1SVuKUs9oFbru0ZqRgC-pVZjB7oI6MTK8`), 22,739 bytes — matches OI-17's resolution exactly. **So the v1.4 file
+  is live and AWT-0034/AX-8's "missing" claim is the same folder-mix-up recurring, not a new fault.** Not
+  edited on Alex's Hub row (Rule A — own rows only); flagging here and in today's digest for Alex to re-check
+  AX-8 against the correct Wiki folder id and close it out, and for Part A of AWT-0034 to move to Done once
+  Alex confirms.
+- These two routines and the schedule itself.
+
+### Delegated — track only (via the Hub)
+- **Alex** — AWT-0028 (file 3 FY2023 PDFs into the Financial Archive, due 26 Sep — **still Open, unchanged,
+  genuinely at risk**: an authorisation gap, not a technical block — Rung-2 territory needing an attended
+  session with Minda's tick, which hasn't happened). AWT-0034 (In Progress, unchanged from yesterday — Part A's
+  group decision (FG-CR-0001) landed, but Alex's own re-check reads the live v1.4 policy file as missing; see
+  the new finding above — this looks resolvable on Alex's next run once pointed at the correct folder id).
+  HL-0030 (Darius's git↔Drive control-file question) still unassigned/Open.
+- **Peter** — AWT-0016 (FY2023 accounts parent row, In Progress, unchanged — Peter's own 2026-09-22 AM
+  Rule-C re-check today confirms still blocked on AWT-0028, nothing Peter can do from his own tooling/authority).
+  **AWT-0058 (Council Tax, 131 Goathland Avenue, FP2401) — CRITICAL, still In Progress, due date field reads
+  TODAY, 22 Sep.** Verified directly this run via `get_draft` on the live draft (id `r2667558814895859494`):
+  still labelled DRAFT only, unsent, To `irina@fishboneproperties.co.uk` cc `minda@`, last touched 2026-09-21
+  16:12 UTC — unchanged since Peter's own AM re-check. Peter cannot attach the scan (base64-relay limit,
+  HL-0014) and has already added a direct Drive link to the draft body instead; cannot send. **This is today's
+  single most time-sensitive item — see digest.** AWT-0056 and the new **AWT-0059** (Peter's shared-mailbox
+  label-coordination awareness note, folded into Peter's own `CLAUDE.md` §2e this morning) both now **Done**.
+- **Helen** — AWT-0033 and AWT-0038 both Done, unchanged since yesterday. HL-Helen-01 (Open): Helen's own
+  CHARTER.md git-mirror sync still blocked by the harness's auto-mode classifier — a tooling issue for Eugene,
+  unchanged.
+- **John** — Properties intake pipeline, live & attended (daily 07:00 UK); Victoria reviews/sends his drafts.
+- **Rachel** — AWT-0057 (Alexey house-style adoption) now **Done**, closed since yesterday afternoon. Still
+  holding on the two bigger Alexey asks pending Minda's steer (see Victoria's desk above, unchanged). Still
+  awaiting Minda's decision on Construction's year-end date — now several days past the "tomorrow" Rachel
+  promised Alexey on Saturday, unchanged.
+
+---
+
+## 3. Fixed-deadline calendar (blocked onto days)
+
+| Day | Blocked item | Whose action |
+|---|---|---|
+| **Tue 22 Sep (today) — URGENT** | **AWT-0058 — Council Tax reminder, 131 Goathland Avenue (FP2401).** Row's own Due date field is today; the task text's "23 Sep / 2 days away" note is a day behind it — flagged, not resolved, in case the row is the one that's wrong. Draft ready (Peter, draft id `r2667558814895859494`, unsent) for Minda to review and release. £5.95 rises to £773.00 with legal proceedings threatened if unpaid. | **Minda** |
+| **Every sweep until cleared** | Written confirmation of the Waste rates instalment plan (OI-14) — checked `ops@` again this run, still not arrived. Register as an `FW` document and set up instalments once it lands. | Rachel / Finance (watch only) |
+| **Today, ongoing** | AWT-0034/AX-8 — point Alex at the correct live Wiki folder id so the "v1.4 missing" false alarm can close (see new finding above). | Alex |
+| **Wed 23 Sep** | No fixed deadline this row now (AWT-0057 closed yesterday). Weekly-rhythm focus tomorrow is Properties→Group migration stage check (John cutover readiness). | Victoria |
+| **Thu 24 Sep** | No fixed deadline this row now (AWT-0056 closed yesterday). Weekly-rhythm focus is document-system health. | Victoria |
+| **Fri 25 Sep** (pre-deadline nudge) | Confirm AWT-0028/0016/0034 on track for tomorrow; 26–27 Sep fall on the weekend. **AWT-0028 is genuinely at risk** — flag plainly that it needs an attended Rung-2 session with Minda's tick, not just a chase. | Victoria → Alex/Peter/Minda |
+| **Sat 26 Sep** | AWT-0028, AWT-0016, AWT-0034 due | Alex / Peter |
+| **Sun 27 Sep** | AWT-0041 (Victoria's missing-financial-data routing) due | Victoria |
+| **Tue 29 Sep** (pre-deadline nudge) | Alexey offset — final review of Rachel's draft, ready for Minda's send | Victoria → Minda |
+| **Wed 30 Sep** | **Alexey offset — respond/confirm** | Minda (Rachel drafted) |
+| **Fri 2 Oct** (pre-deadline nudge) | Landbay page on track for 3 Oct | Victoria |
+| **Sat 3 Oct** | AWT-0030 — Landbay facility page | Victoria |
+
+Weekends: 26/27 Sep and 3 Oct fall on Sat/Sun, so the routine raises the nudge on the **Friday before**.
+
+---
+
+## 4. Weekly rhythm (for the non-deadline work)
+
+| Day | Focus (in addition to the daily deadline + Hub done/new reconciliation both sweeps do) |
+|---|---|
+| **Mon** | Master-index & Open-Issues housekeeping (OI-15, OI-16 refresh check) — done 21 Sep, both still Open, no change |
+| **Tue** | Adviser / finance thread status (Alexey threads, Rachel's drafts and reconciliation) — **done today: no new Alexey email since 21 Sep; nothing to route** |
+| **Wed** | Properties→Group migration stage check (John cutover readiness, stages 2c→5) |
+| **Thu** | Document-system health (Doc Register, Change Requests queue, register drift) |
+| **Fri** | Strategic / backlog (§E items) + a short **weekly digest** to Minda |
+
+---
+
+## 5. Live outstanding-items list
+
+*(Reconciled 2026-09-22 morning sweep, against the Hub Tasks & Requests, Change Requests and Help & Lessons
+sheets — read in full, non-Done/non-Resolved rows filtered directly, not from memory — the group
+`open-issues.md`, Victoria's/the group's `Raw/` folders (both empty of new hand-offs), and the `ops@` mailbox
+directly for Alexey and North Tyneside Council correspondence.)*
+
+**A. Deadlines** — **AWT-0058 Council Tax draft (TODAY, urgent, Minda) — still unsent**; AWT-0028/0016/0034
+(26 Sep, Alex/Peter — **AWT-0028 at risk on an authorisation gap, not a technical block**); AWT-0041 (27 Sep,
+Victoria — not yet actioned); Alexey offset (30 Sep, Minda/Rachel); AWT-0030 Landbay page (3 Oct, Victoria).
+
+**B. Needs Minda** — **Release the AWT-0058 Council Tax draft to Irina** — due today per the row's own Due
+date; Alexey's two bigger asks (full accounts+CT returns for all seven entities; contact RMT directly) — still
+unanswered, no new movement; Construction's year-end date decision — still outstanding; AWT-0028's
+authorisation gap — needs an attended Rung-2 session with Minda's tick for Alex to file into the Financial
+Archive; OI-13 Amfa reorg (research-only, no urgency).
+
+**C. In flight (delegated)** — AWT-0034 Part A (Alex, blocked on the AX-8 false-alarm re-check), AWT-0028
+(Alex), AWT-0016 (Peter), John (Properties intake), HL-0030 (unassigned).
+
+**D. Housekeeping** — OI-15 (index stale, unchanged), OI-16 (stale Org-* articles, unchanged), open/provisional
+lessons carried forward (HL-0014, HL-0017, HL-0021, HL-0022, HL-0023, HL-0025, HL-0026, HL-0027, HL-0030,
+HL-0031, HL-0034, HL-0036, HL-Helen-01 still Open on the Help & Lessons desk — several new since yesterday's
+digest, none assigned to Victoria).
+
+**E. Strategic** — Properties→Group migration stages 2c–5; Peter document-writer expansion; routines not yet
+created (Quarterly sweep, Group lending monitor).
+
+**Closed since the afternoon sweep (2026-09-21 pm → 2026-09-22 am):** **AWT-0059** (Peter — shared-mailbox
+label-coordination awareness note, folded into Peter's own `CLAUDE.md` §2e; source note archived). No other
+Hub rows changed status overnight. AWT-0056, AWT-0057, AWT-0033, AWT-0039 remain Done as recorded yesterday.
+
+---
+
+## Appendix — routine prompts to paste into the routines form
+
+*Unchanged since 2026-09-20; both confirmed live. See the archived 2026-09-21 version of this file for the
+full text if needed — not reproduced again here as nothing has changed.*
+
+---
+
+*Standing coordination schedule for Victoria, the Fishbone Group CEO's Assistant. First cut 2026-09-20; first
+live morning sweep 2026-09-21; first live afternoon sweep 2026-09-21 (closed OI-14/OI-17, surfaced AWT-0058).
+This second morning sweep, 2026-09-22, confirmed AWT-0058 still unsent and due today, closed AWT-0059, and
+found the AWT-0034/AX-8 "v1.4 missing" claim to be a stale repeat of the OI-17 false alarm — verified directly
+against Drive, not taken on trust from either record.*

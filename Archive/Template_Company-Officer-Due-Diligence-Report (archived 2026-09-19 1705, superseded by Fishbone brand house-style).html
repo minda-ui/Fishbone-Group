@@ -1,0 +1,647 @@
+<title>Due Diligence</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    color-scheme: light;
+    --bg: #f9f9f7;
+    --surface: #ffffff;
+    --surface-2: #f3f2ee;
+    --text-primary: #0b0b0b;
+    --text-secondary: #52514e;
+    --text-muted: #898781;
+    --border: rgba(11,11,11,0.10);
+    --border-strong: rgba(11,11,11,0.18);
+    --gridline: #e1e0d9;
+
+    --verified: #0ca30c;
+    --verified-fg: #0a7f0a;
+    --verified-bg: rgba(12,163,12,0.10);
+    --verified-border: rgba(12,163,12,0.35);
+
+    --provisional: #fab219;
+    --provisional-fg: #8a5a00;
+    --provisional-bg: rgba(250,178,25,0.16);
+    --provisional-border: rgba(154,105,0,0.35);
+
+    --gap: #6b6a66;
+    --gap-fg: #5b5a56;
+    --gap-bg: rgba(137,135,129,0.14);
+    --gap-border: rgba(107,106,102,0.30);
+
+    --accent: #2a78d6;
+    --shadow: 0 1px 2px rgba(11,11,11,0.04), 0 6px 20px rgba(11,11,11,0.05);
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      color-scheme: dark;
+      --bg: #0d0d0d;
+      --surface: #1a1a19;
+      --surface-2: #201f1d;
+      --text-primary: #ffffff;
+      --text-secondary: #c3c2b7;
+      --text-muted: #93918a;
+      --border: rgba(255,255,255,0.10);
+      --border-strong: rgba(255,255,255,0.20);
+      --gridline: #2c2c2a;
+
+      --verified: #0ca30c;
+      --verified-fg: #23c923;
+      --verified-bg: rgba(12,163,12,0.16);
+      --verified-border: rgba(12,163,12,0.40);
+
+      --provisional: #fab219;
+      --provisional-fg: #fab219;
+      --provisional-bg: rgba(250,178,25,0.14);
+      --provisional-border: rgba(250,178,25,0.40);
+
+      --gap: #a6a49c;
+      --gap-fg: #c3c2b7;
+      --gap-bg: rgba(195,194,183,0.12);
+      --gap-border: rgba(195,194,183,0.28);
+
+      --accent: #6ba6ef;
+      --shadow: 0 1px 2px rgba(0,0,0,0.3), 0 8px 24px rgba(0,0,0,0.35);
+    }
+  }
+
+  :root[data-theme="dark"] {
+    color-scheme: dark;
+    --bg: #0d0d0d;
+    --surface: #1a1a19;
+    --surface-2: #201f1d;
+    --text-primary: #ffffff;
+    --text-secondary: #c3c2b7;
+    --text-muted: #93918a;
+    --border: rgba(255,255,255,0.10);
+    --border-strong: rgba(255,255,255,0.20);
+    --gridline: #2c2c2a;
+
+    --verified: #0ca30c;
+    --verified-fg: #23c923;
+    --verified-bg: rgba(12,163,12,0.16);
+    --verified-border: rgba(12,163,12,0.40);
+
+    --provisional: #fab219;
+    --provisional-fg: #fab219;
+    --provisional-bg: rgba(250,178,25,0.14);
+    --provisional-border: rgba(250,178,25,0.40);
+
+    --gap: #a6a49c;
+    --gap-fg: #c3c2b7;
+    --gap-bg: rgba(195,194,183,0.12);
+    --gap-border: rgba(195,194,183,0.28);
+
+    --accent: #6ba6ef;
+    --shadow: 0 1px 2px rgba(0,0,0,0.3), 0 8px 24px rgba(0,0,0,0.35);
+  }
+
+  * { box-sizing: border-box; }
+
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: var(--bg);
+    color: var(--text-primary);
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  body {
+    font-family: "Manrope", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .wrap {
+    max-width: 1040px;
+    margin: 0 auto;
+    padding: 28px 16px 64px;
+  }
+
+  a { color: var(--accent); }
+
+  /* ---------- Header ---------- */
+  header.hero {
+    padding: 28px 20px 26px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    box-shadow: var(--shadow);
+    margin-bottom: 20px;
+  }
+  .hero-top {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  .hero h1 {
+    margin: 0 0 4px;
+    font-size: clamp(1.5rem, 1.1rem + 1.6vw, 2.15rem);
+    font-weight: 800;
+    letter-spacing: -0.01em;
+  }
+  .hero .subtitle {
+    margin: 0;
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: var(--text-secondary);
+  }
+  .stamp {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    white-space: nowrap;
+    padding: 5px 10px;
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    background: var(--surface-2);
+  }
+  .hero p.summary {
+    margin: 14px 0 0;
+    max-width: 66ch;
+    color: var(--text-secondary);
+    font-size: 0.98rem;
+  }
+
+  /* ---------- Chips ---------- */
+  .chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    padding: 3px 9px 3px 7px;
+    border-radius: 999px;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    line-height: 1.6;
+  }
+  .chip::before {
+    content: "";
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    flex: none;
+  }
+  .chip--verified { color: var(--verified-fg); background: var(--verified-bg); border-color: var(--verified-border); }
+  .chip--verified::before { background: var(--verified); }
+  .chip--provisional { color: var(--provisional-fg); background: var(--provisional-bg); border-color: var(--provisional-border); }
+  .chip--provisional::before { background: var(--provisional); }
+  .chip--gap { color: var(--gap-fg); background: var(--gap-bg); border-color: var(--gap-border); }
+  .chip--gap::before { background: var(--gap); }
+
+  /* ---------- Section shell ---------- */
+  section {
+    margin: 22px 0;
+  }
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    box-shadow: var(--shadow);
+    padding: 22px 20px;
+  }
+  h2 {
+    font-size: 1.12rem;
+    font-weight: 700;
+    margin: 0 0 4px;
+    letter-spacing: -0.005em;
+  }
+  .section-lede {
+    margin: 0 0 16px;
+    color: var(--text-secondary);
+    font-size: 0.92rem;
+    max-width: 72ch;
+  }
+  .eyebrow {
+    display: block;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    margin-bottom: 6px;
+  }
+
+  /* ---------- KPI tiles ---------- */
+  .kpi-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 12px;
+  }
+  @media (max-width: 860px) {
+    .kpi-grid { grid-template-columns: repeat(2, 1fr); }
+  }
+  @media (max-width: 420px) {
+    .kpi-grid { grid-template-columns: 1fr; }
+  }
+  .kpi {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    box-shadow: var(--shadow);
+    padding: 16px 16px 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    min-width: 0;
+  }
+  .kpi .value {
+    font-size: 1.7rem;
+    font-weight: 800;
+    letter-spacing: -0.01em;
+    line-height: 1.1;
+    word-break: break-word;
+  }
+  .kpi .label {
+    font-size: 0.83rem;
+    color: var(--text-secondary);
+    font-weight: 500;
+  }
+
+  /* ---------- Timeline ---------- */
+  .timeline-scroll {
+    overflow-x: auto;
+    padding-bottom: 10px;
+    -webkit-overflow-scrolling: touch;
+  }
+  ol.timeline {
+    list-style: none;
+    margin: 10px 0 0;
+    padding: 30px 6px 4px;
+    display: flex;
+    gap: 0;
+    min-width: 760px;
+    position: relative;
+  }
+  ol.timeline::before {
+    content: "";
+    position: absolute;
+    left: 30px;
+    right: 30px;
+    top: 40px;
+    height: 2px;
+    background: var(--gridline);
+  }
+  ol.timeline li {
+    flex: 1 1 0;
+    position: relative;
+    padding: 0 10px;
+    text-align: center;
+    min-width: 110px;
+  }
+  .tl-dot {
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background: var(--verified);
+    border: 3px solid var(--surface);
+    box-shadow: 0 0 0 1.5px var(--verified);
+    margin: 0 auto 10px;
+    position: relative;
+    z-index: 1;
+  }
+  .tl-year {
+    font-weight: 800;
+    font-size: 0.98rem;
+    margin-bottom: 3px;
+  }
+  .tl-text {
+    font-size: 0.78rem;
+    color: var(--text-secondary);
+    line-height: 1.35;
+  }
+
+  /* ---------- SVG diagram ---------- */
+  .diagram-wrap {
+    overflow-x: auto;
+  }
+  svg.orgchart {
+    display: block;
+    width: 100%;
+    min-width: 620px;
+    height: auto;
+  }
+  .box-fill { fill: var(--surface-2); }
+  .box-stroke { stroke: var(--border-strong); }
+  .box-text { fill: var(--text-primary); font-family: "Manrope", system-ui, sans-serif; }
+  .box-subtext { fill: var(--text-muted); font-family: "Manrope", system-ui, sans-serif; }
+  .line-solid { stroke: var(--text-muted); stroke-width: 1.6; fill: none; }
+  .line-dashed { stroke: var(--text-muted); stroke-width: 1.6; stroke-dasharray: 5 4; fill: none; }
+  .cluster-fill { fill: none; }
+  .cluster-stroke { stroke: var(--border-strong); stroke-dasharray: 4 4; }
+  .diagram-legend {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-top: 14px;
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+  }
+  .diagram-legend span {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+  }
+  .legend-swatch { width: 22px; height: 0; border-top: 2px solid var(--text-muted); display: inline-block; }
+  .legend-swatch.dashed { border-top-style: dashed; }
+
+  /* ---------- Tables ---------- */
+  .table-wrap {
+    overflow-x: auto;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+  }
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    min-width: 760px;
+    font-size: 0.86rem;
+  }
+  caption { text-align: left; padding: 4px 0 10px; color: var(--text-secondary); font-size: 0.85rem; }
+  thead th {
+    text-align: left;
+    background: var(--surface-2);
+    color: var(--text-muted);
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    padding: 10px 12px;
+    border-bottom: 1px solid var(--border);
+    white-space: nowrap;
+  }
+  tbody td {
+    padding: 11px 12px;
+    border-bottom: 1px solid var(--gridline);
+    vertical-align: top;
+    color: var(--text-primary);
+  }
+  tbody tr:last-child td { border-bottom: none; }
+  tbody tr:hover td { background: var(--surface-2); }
+  td.num { color: var(--text-muted); font-variant-numeric: tabular-nums; }
+  td .muted { color: var(--text-muted); font-size: 0.82rem; }
+
+  /* ---------- Panels grid ---------- */
+  .panel-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+  }
+  @media (max-width: 760px) {
+    .panel-grid { grid-template-columns: 1fr; }
+  }
+  dl.fact-list { margin: 0; }
+  dl.fact-list .fact-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 8px 14px;
+    padding: 11px 0;
+    border-bottom: 1px solid var(--gridline);
+  }
+  dl.fact-list .fact-row:last-child { border-bottom: none; }
+  dl.fact-list dt {
+    font-size: 0.86rem;
+    color: var(--text-secondary);
+    font-weight: 600;
+    flex: 1 1 auto;
+    min-width: 140px;
+  }
+  dl.fact-list dd {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-align: right;
+  }
+  .note-box {
+    margin-top: 14px;
+    padding: 12px 14px;
+    background: var(--surface-2);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    font-size: 0.82rem;
+    color: var(--text-secondary);
+  }
+
+  /* ---------- Open question ---------- */
+  .oq-card {
+    border: 1px solid var(--gap-border);
+    background: var(--gap-bg);
+    border-radius: 14px;
+    padding: 20px;
+  }
+  .oq-card h2 { display: flex; align-items: center; gap: 10px; }
+  .oq-body p { margin: 8px 0; color: var(--text-secondary); font-size: 0.92rem; }
+  .oq-body strong { color: var(--text-primary); }
+
+  /* ---------- Footer ---------- */
+  footer {
+    margin-top: 30px;
+  }
+  .legend-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 14px;
+  }
+  .legend-row .chip { font-size: 0.74rem; }
+  .banner {
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+    background: var(--surface-2);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 12px 14px;
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    margin-bottom: 14px;
+  }
+  .banner .icon { flex: none; font-size: 1rem; line-height: 1.4; }
+  .credit {
+    font-size: 0.78rem;
+    color: var(--text-muted);
+    text-align: center;
+    margin-top: 8px;
+  }
+
+  @media (max-width: 480px) {
+    .hero { padding: 20px 16px; }
+    .card { padding: 18px 15px; }
+    dl.fact-list dt { min-width: 100%; }
+    dl.fact-list dd { text-align: left; }
+    dl.fact-list .fact-row { flex-direction: column; align-items: flex-start; }
+  }
+</style>
+<div class="wrap">
+
+  <!-- ============================================================= -->
+  <!-- FISHBONE GROUP — COMPANY / OFFICER DUE-DILIGENCE REPORT TEMPLATE -->
+  <!-- Reusable for a customer, client, supplier, counterparty or any  -->
+  <!-- UK company/officer. Fill the [[PLACEHOLDERS]]; delete sections   -->
+  <!-- that don't apply. Method + data-boundary: see the "How to use"   -->
+  <!-- card below and Wiki/Process-Due-Diligence-Officer-Footprint.md.  -->
+  <!-- Worked example: the Mindaugas Gaudiesius report (v3).            -->
+  <!-- ============================================================= -->
+
+  <!-- HOW TO USE (delete this whole card in the finished report) -->
+  <section class="card" style="border-color:var(--accent);">
+    <span class="eyebrow">Template &mdash; how to use (remove before sharing)</span>
+    <h2>Filling this report</h2>
+    <p class="section-lede">Confidence-tier every fact: <span class="chip chip--verified" style="vertical-align:1px;">Verified</span> = read from the live Companies House register or a filed CH document; <span class="chip chip--provisional" style="vertical-align:1px;">Provisional</span> = an unverified lead (web search etc.) pending a register check; <span class="chip chip--gap" style="vertical-align:1px;">Gap</span> = not established. Never present a Provisional item as fact.</p>
+    <div class="note-box"><strong style="color:var(--text-primary)">Data to pull (via a Hub request assigned to Peter, whose Companies House routine reaches the live API):</strong> <code>/search/officers?q=NAME</code> &rarr; the subject's officer ID(s); <code>/officers/{id}/appointments</code> &rarr; every appointment per ID (company, role, appointed/resigned, particulars); and per company <code>/company/{n}</code>, <code>/officers</code>, <code>/persons-with-significant-control</code>, <code>/charges</code>, <code>/filing-history</code>. Disambiguate namesakes by month/year of birth + address.</div>
+    <div class="note-box"><strong style="color:var(--text-primary)">Data boundary (strict for third parties):</strong> public register data only. For an individual, only public officer particulars &mdash; month/year of birth, nationality, country of residence, <em>service/correspondence</em> address, and occupation if published. <strong style="color:var(--text-primary)">Never</strong> a full date of birth, a residential/home address, or any non-public personal, banking, payroll or health data. Purpose limited to legitimate business due diligence.</div>
+  </section>
+
+  <!-- 1. HEADER -->
+  <header class="hero">
+    <div class="hero-top">
+      <div>
+        <h1>[[SUBJECT NAME]]</h1>
+        <p class="subtitle">Companies House footprint &mdash; [[due-diligence context, e.g. "prospective client"]]</p>
+      </div>
+      <span class="stamp">compiled [[YYYY&#8209;MM&#8209;DD]]</span>
+    </div>
+    <p class="summary">[[One or two sentences: who the subject is and why this report exists.]] This report is confidence-tiered: <strong style="color:var(--verified-fg)">green</strong> facts are from the live register or filed CH documents; <strong style="color:var(--provisional-fg)">amber</strong> facts are unverified leads; <strong style="color:var(--gap-fg)">grey</strong> facts are not yet established.</p>
+  </header>
+
+  <!-- 2. KPI TILES (swap in the headline figures; keep ~5) -->
+  <section aria-labelledby="kpi-heading">
+    <h2 id="kpi-heading" style="position:absolute;left:-9999px;">Key figures</h2>
+    <div class="kpi-grid">
+      <div class="kpi"><span class="chip chip--verified">Verified</span><span class="value">[[N]]</span><span class="label">Active directorships</span></div>
+      <div class="kpi"><span class="chip chip--verified">Verified</span><span class="value">[[N]]</span><span class="label">Companies controlled / PSC of</span></div>
+      <div class="kpi"><span class="chip chip--verified">Verified</span><span class="value">[[YEAR]]</span><span class="label">Earliest incorporation</span></div>
+      <div class="kpi"><span class="chip chip--verified">Verified</span><span class="value">[[N]]</span><span class="label">Officer IDs at Companies House</span></div>
+      <div class="kpi"><span class="chip chip--gap">Gap</span><span class="value">[[?]]</span><span class="label">[[any headline still to confirm]]</span></div>
+    </div>
+  </section>
+
+  <!-- 3. TIMELINE (optional) — one <li> per incorporation / rename -->
+  <section class="card" aria-labelledby="timeline-heading">
+    <span class="eyebrow">[[earliest]] &rarr; [[latest]]</span>
+    <h2 id="timeline-heading">Incorporations &amp; renames</h2>
+    <p class="section-lede">Key dates in the subject's company history. Tag each <span class="chip chip--verified" style="vertical-align:1px;">Verified</span> once read from the register.</p>
+    <div class="timeline-scroll">
+      <ol class="timeline" aria-label="Timeline">
+        <li><div class="tl-dot"></div><div class="tl-year">[[YEAR]]</div><div class="tl-text">[[event — incorporation / rename]]</div></li>
+        <!-- repeat one <li> per event -->
+      </ol>
+    </div>
+  </section>
+
+  <!-- 4. STRUCTURE DIAGRAM (optional) — include only if the subject controls a group. -->
+  <!-- Copy the inline <svg class="orgchart"> from the worked example (Report 1) and re-label. -->
+
+  <!-- 5. DIRECTORSHIPS / APPOINTMENTS TABLE — one <tr> per appointment -->
+  <section class="card" aria-labelledby="directorships-heading">
+    <span class="eyebrow">Officer record</span>
+    <h2 id="directorships-heading">Directorships &amp; appointments</h2>
+    <p class="section-lede">Every appointment held by the subject (current and resigned), tagged by confidence. Pull the full list via <code>/officers/{id}/appointments</code> for each officer ID so nothing filed under a second ID is missed.</p>
+    <div class="table-wrap">
+      <table>
+        <caption>[[registered office(s) / note]]</caption>
+        <thead><tr>
+          <th scope="col">#</th><th scope="col">Company</th><th scope="col">Co. number</th><th scope="col">Incorporated</th><th scope="col">Former name(s)</th><th scope="col">Nature of business</th><th scope="col">Relationship</th><th scope="col">CH status</th><th scope="col">Role</th><th scope="col">Appointed / resigned</th>
+        </tr></thead>
+        <tbody>
+          <tr>
+            <td class="num">1</td><td>[[Company Ltd]]</td><td class="num">[[00000000]]</td><td>[[dd Mon yyyy]]</td><td class="muted">[[&mdash;]]</td><td>[[SIC / trade]]</td><td>[[group / common control / none]]</td><td>[[Active]]</td>
+            <td><span class="chip chip--verified">Verified</span> Director</td>
+            <td><span class="chip chip--verified">Verified</span> [[dd Mon yyyy]]</td>
+          </tr>
+          <!-- repeat one <tr> per appointment; use chip--provisional / chip--gap where not yet verified -->
+        </tbody>
+      </table>
+    </div>
+    <div class="note-box">[[co-directors / notes]]</div>
+  </section>
+
+  <!-- 5b. OFFICER IDENTITIES — include if the subject has more than one CH officer ID -->
+  <section class="card" aria-labelledby="officerids-heading">
+    <span class="eyebrow">Companies House officer IDs</span>
+    <h2 id="officerids-heading">Officer identities</h2>
+    <p class="section-lede">Companies House may hold one person under several officer IDs (unlinked at filing). List each, distinguished by the address on record.</p>
+    <div class="table-wrap">
+      <table style="min-width:640px;">
+        <thead><tr><th scope="col">Officer ID</th><th scope="col">Address on record</th><th scope="col">Companies under this ID</th><th scope="col">Appts</th></tr></thead>
+        <tbody>
+          <tr><td class="num">[[officer_id]]</td><td>[[service address]]</td><td>[[companies]]</td><td class="num">[[N]]</td></tr>
+          <!-- repeat per officer ID -->
+        </tbody>
+      </table>
+    </div>
+    <div class="note-box"><span class="chip chip--verified" style="vertical-align:1px;">Verified</span> from <code>/search/officers</code> and <code>/officers/&#123;id&#125;/appointments</code>, [[date]].</div>
+  </section>
+
+  <!-- 6 & 7. PSC + PERSONAL PARTICULARS -->
+  <section aria-labelledby="psc-personal-heading">
+    <h2 id="psc-personal-heading" style="position:absolute;left:-9999px;">Significant control and personal particulars</h2>
+    <div class="panel-grid">
+      <div class="card">
+        <span class="eyebrow">Ownership</span>
+        <h2>Persons with significant control</h2>
+        <dl class="fact-list">
+          <div class="fact-row"><dt>[[Company Ltd]]</dt><dd><span class="chip chip--verified">Verified</span> [[who, % band, since date]]</dd></div>
+          <!-- one fact-row per company / PSC entry -->
+        </dl>
+        <div class="note-box">[[pattern / history notes; note any "no-PSC" statement]]</div>
+      </div>
+      <div class="card">
+        <span class="eyebrow">Public officer particulars</span>
+        <h2>Personal particulars</h2>
+        <dl class="fact-list">
+          <div class="fact-row"><dt>Month / year of birth</dt><dd><span class="chip chip--verified">Verified</span> [[Mon YYYY]]</dd></div>
+          <div class="fact-row"><dt>Nationality</dt><dd><span class="chip chip--verified">Verified</span> [[nationality]]</dd></div>
+          <div class="fact-row"><dt>Country of residence</dt><dd><span class="chip chip--verified">Verified</span> [[country]]</dd></div>
+          <div class="fact-row"><dt>Service / correspondence address</dt><dd><span class="chip chip--verified">Verified</span> [[service address]]</dd></div>
+          <div class="fact-row"><dt>Occupation</dt><dd><span class="chip chip--gap">Gap</span> [[value, or "not published"]]</dd></div>
+        </dl>
+        <div class="note-box"><strong style="color:var(--text-primary)">Data-boundary note:</strong> public Companies House particulars only &mdash; no residential/home address, no day-of-birth, no bank, payroll or health data.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8. OPEN QUESTIONS / FLAGGED FINDINGS — one card each; style resolved ones with the verified tint -->
+  <section aria-labelledby="oq-heading">
+    <div class="oq-card">
+      <h2 id="oq-heading"><span class="chip chip--gap">Open question</span> [[title]]</h2>
+      <div class="oq-body">
+        <p>[[what is unresolved, or a flagged finding stated neutrally &mdash; no conclusions]].</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 9. FOOTER -->
+  <footer>
+    <div class="card">
+      <span class="eyebrow">Confidence &amp; sources</span>
+      <h2>How to read this report</h2>
+      <div class="legend-row" style="margin-top:12px;"><span class="chip chip--verified">Verified</span><span class="muted" style="font-size:0.83rem;color:var(--text-secondary);">from the live Companies House register or filed CH documents</span></div>
+      <div class="legend-row"><span class="chip chip--provisional">Provisional</span><span class="muted" style="font-size:0.83rem;color:var(--text-secondary);">an unverified lead &mdash; pending a register check</span></div>
+      <div class="legend-row" style="margin-bottom:14px;"><span class="chip chip--gap">Gap</span><span class="muted" style="font-size:0.83rem;color:var(--text-secondary);">not established by either source</span></div>
+      <div class="banner">
+        <span class="icon" aria-hidden="true">&#9432;</span>
+        <span><strong style="color:var(--text-primary)">Method.</strong> Built from the live Companies House register via a Hub request to Peter&rsquo;s Companies House routine (officer search &rarr; per-officer appointments &rarr; per-company profile / PSC / charges / filing-history). <strong style="color:var(--text-primary)">Public data only:</strong> officer particulars are limited to month/year of birth, nationality, country of residence, service address and published occupation &mdash; no full day-of-birth, no residential address, no non-public data. Findings are stated as data, not conclusions.</span>
+      </div>
+      <p class="credit">Fishbone Group due-diligence template &middot; data: [[researcher]] &middot; compiled: [[who]]</p>
+    </div>
+  </footer>
+
+</div>
+
+</body></html>

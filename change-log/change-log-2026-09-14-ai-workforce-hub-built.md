@@ -1,0 +1,28 @@
+# Change log — 2026-09-14 — AI Workforce Operations Hub built
+
+_Append-only dated session file (Fishbone Group). Newest notes at the top. See `current-state.md` for the present snapshot and `CLAUDE.md` §4 for the change-log model._
+
+## Session — 2026-09-14 (later): AI Workforce Operations Hub BUILT
+
+**Ask.** Minda: "a space to communicate with Peter, Eugene and future employees — where they show achievements, what they've done, and what they need to do." Earlier this session the spec was drafted (`Outputs/2026-09-14_Plan_AI-Workforce-Operations-Hub_v1.md`); Minda then answered the §9 decisions via AskUserQuestion — **build tracker + dashboard together; owner-only access; interactive Artifact board; daily refresh; name "Fishbone AI Workforce"** — and authorised the build. As the owner session (minda@) with explicit build direction, this is within §6a.
+
+**Built (all owner-authorised, additive, owned by minda@):**
+
+1. **Smartsheet workspace "Fishbone AI Workforce"** — id `4946803578693507`, **owner-only / unshared** (§9 decision). Three sheets:
+   - **Roster** `8154403007760260` — Employee / Role / Status / Home KB / Connectors / Reach / Routines / Last run / Next run / Manager. Seeded with **Peter** and **Eugene** rows.
+   - **Tasks & Requests** `8860839228606340` — Task ID / Assigned to / Requested by / Request / Priority / Status (Open·In Progress·Done·Blocked) / Response / Due date / Done date / **Health** / Source. Health is the **group RYGB column formula** (`=IF(Status@row="Done","Green",IF(Status@row="Blocked","Red",IF(ISBLANK([Due date]@row),"Blue",IF([Due date]@row-TODAY()<0,"Red",IF([Due date]@row-TODAY()<=14,"Yellow","Green")))))`), set via `update_column` (inline formula on create is rejected). Seeded `AWT-0001`–`AWT-0004`.
+   - **Achievements** `4569101748012932` — Achievement / Employee / Date / Detail / Linked task / Source. Seeded with four items.
+
+2. **Interactive Artifact board** — `https://claude.ai/code/artifact/bfe4bbc6-2718-409a-8512-2dc44988406b`, **private / owner-only**, declares the Artifact **`db`** capability. Renders a summary tile row, two employee cards (status light, reach, connectors, next run, per-employee counts, KB link), a live task list with **RYGB health dots** + status controls, an **"add request" composer**, and an achievements timeline. Seeded the board `db` with **10 docs** (collections `roster` 2, `tasks` 4, `achievements` 4) to match Smartsheet. The board renders a seeded first frame immediately, then goes live via `onSnapshot`. IBM Plex Sans/Mono + Archivo; theme-aware; owner-only.
+
+3. **`Outputs/2026-09-14_AI-Workforce-Hub-Reconcile-Routine-and-Grants_v1.md`** (id `1mMQv8AO6b6jYVQXkMhmdC65pjH9577JY`, 9616 B byte-verified) — the **daily reconcile routine prompt** (board `db` ↔ Smartsheet Tasks: promote board-added requests into Smartsheet with an `AWT-####`, pull status/achievements back, refresh roster runtimes; degraded mode if the run lacks the Artifact tool) + **paste-ready Peter/Eugene charter grants** (each may set Status/Response/Done on its own Hub rows + append Achievements; Peter's is a scoped exception, its email boundaries untouched; grants applied in each employee's own KB, not from here).
+
+**Architecture.** Smartsheet is the **system of record** the employees' routines read/write; the board is the **human front-end**; a **daily reconcile** (Minda creates via the routines form; guide-only) bridges them. Chosen for reliability over shipping a page that guesses connector wire-shapes.
+
+**Also recorded.** Marked the Hub spec **BUILT** (archive-then-recreate; live id now `1MUBXkdIHrdsO6PiUtHHEZjbyL5tJ5lHv`, 11342 B byte-verified — earlier revisions of the spec this session archived). Refreshed `current-state.md` (new id `16COpKAzEThm-QZlxLMAQZ0AW471-hqur`, 16658 B byte-verified). **Cleaned up a KB-drift bug: two `current-state.md` files were sitting in the root** (a stray 09:35 copy alongside the 16:56 authoritative one); both archived, so the root now holds exactly one.
+
+**Guide-only remainder (Minda / a human):** create the daily reconcile routine via `claude.ai/code/routines` (Smartsheet connector; cron `0 6 * * *` UTC, shift +1h after 26 Oct 2026); apply the two charter grants in the Peter and Eugene KBs.
+
+**Deferred to next session (not done now, by design).** Registering the Hub as **SRC-40–44** in `external-source-register.md`, and wiring it into `CLAUDE.md` §1 (Live-data-sources + sister-systems count) / §5 and `Wiki/00_INDEX.md`. These are large **Drive-only** control files with no clean local source; safely recreating them needs a faithful local copy, and reconstructing 20–57 KB by hand risks corrupting them. The Hub is fully recorded meanwhile in the two Output docs + `current-state.md` + this change-log, so it is discoverable; the register/index wiring is precise, low-risk housekeeping for a focused follow-up (and `CLAUDE.md` §5 is better added when the reconcile routine actually exists).
+
+**Tooling notes for future sessions.** `create_file` uses `parentId` (not `parentFolderId`/`parents`) and `textContent`/`base64Content`. `create_sheet` needs `container_id` + `container_type` ("WORKSPACE"|"FOLDER") + `sheet.operation` ("from_scratch"|"from_template"); a column **formula** is rejected inline on create — set it afterward with `update_column`. `read_file_content` returns markdown **escaped** (backslashes before `#` `` ` `` `_` `*` `[` `]` …) — do **not** round-trip it; `download_file_content` returns the true bytes as base64, but reproducing a large base64 blob by hand to decode is itself unreliable, so only recreate Drive files for which a clean local source exists.

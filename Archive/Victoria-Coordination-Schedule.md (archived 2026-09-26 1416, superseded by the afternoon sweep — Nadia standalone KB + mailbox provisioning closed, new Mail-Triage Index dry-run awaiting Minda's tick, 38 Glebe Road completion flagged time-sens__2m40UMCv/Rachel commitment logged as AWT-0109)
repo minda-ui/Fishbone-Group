@@ -1,0 +1,203 @@
+# Victoria — Coordination Schedule (standing, always-current)
+
+**Type:** Outputs / standing (maintained by Victoria's two daily routines; not a dated snapshot)
+**Owner seat:** Victoria — CEO's Assistant / AI Workforce Coordinator (on Minda's behalf)
+**Created:** 2026-09-20 · **Last refreshed:** 2026-09-26 (morning sweep)
+**Governance:** group `CLAUDE.md` §6a — Victoria reads, drafts, proposes, coordinates and may append to the
+shared registers and the AI Workforce Hub; sends nothing outward, makes no payment/commitment, creates/fires
+no routine, and never resolves an ambiguity by guessing (surface it to Minda).
+
+Charter re-read fresh this run (§0 requirement: `CHARTER.md` core + `Charter-Rules.md` Rules A–C). Every claim
+below is checked against a direct read of the Hub sheets, Drive and Gmail this run (morning), not against
+yesterday afternoon's digest or a Hub row's own account of itself (Rule C).
+
+**Headline: one real fix landed, one escalation carried a third sweep, one new low-priority process gap found
+in Victoria's own routine.** **AWT-0103** (John, High) is now **Done** — verified directly: the Properties KB
+root holds exactly one `CHARTER.md` (`13NI6cTbxzqWn0LXDHSlDlHd4xTN0GvRC`, the file Minda's ruling kept); the
+duplicate has been archived. **HL-0051 is still unresolved** — re-verified a third time this run: the group's
+own `open-issues.md` (id `19eKiZ5sh-QundSbvKhQxlMzTK1DPWHws`) is still exactly 38,077 bytes, unchanged since
+2026-09-21T10:40Z, still no OI-18 row, despite AWT-0098 reading Done since 2026-09-25. This has now sat
+unresolved across three consecutive sweeps — escalated to Minda directly below rather than waiting a fourth.
+**New — HL-0054 (Victoria, Low):** this run's own fired prompt carried a hardcoded "standing points" checklist
+that is weeks stale — it named OI-14 (Waste business rates) as OVERDUE when it was actually Resolved on
+2026-09-21, and named five AWT task numbers (0016/0028/0030/0034/0039) that no longer appear anywhere on the
+live Tasks & Requests sheet (current numbering has moved past AWT-0103) and are almost certainly long closed.
+Logged for Minda since only she can edit a routine prompt. No new adviser email (checked directly — last
+Alexey email to `ops@` is still AWT-0102, 24 Sep 21:46 UTC), no new Raw hand-offs (Victoria's Raw and the
+group Raw both checked directly and empty of anything new), no new Tasks & Requests or Help & Lessons rows
+beyond HL-0054 itself. Nothing due today or overdue on the live Hub (checked directly with a Due-date filter).
+Full digest: `Outputs/2026-09-26_Digest_Victoria-AM_v1.md`.
+
+---
+
+## 1. The two routines
+
+| Routine | Time (UK) | Cron (UTC, BST now) | What it does |
+|---|---|---|---|
+| **Victoria — Morning Coordination Sweep** | 08:00 | `0 7 * * *` (BST) → `0 8 * * *` at the Oct clock change | Live. |
+| **Victoria — Afternoon Coordination Sweep** | 15:00 | `0 14 * * *` (BST) → `0 15 * * *` at the Oct clock change | Live. |
+
+Crons are UTC — shift both by one hour at the UK clock change (25 Oct 2026: BST→GMT). Routines are created
+by Minda (Victoria cannot create or fire them, §6a). Prompts unchanged since 2026-09-20 except as flagged in
+HL-0054 above; not reproduced here.
+
+---
+
+## 2. Desk vs delegated
+
+### Victoria's desk
+- **HL-0051 (Victoria) — still unresolved, third consecutive sweep, escalated today.** AWT-0098 (Alex) reads
+  Done, claiming OI-18 was added to the group's `open-issues.md`; a direct byte/metadata check this run again
+  shows that file unchanged since 2026-09-21 (38,077 B). The write landed in a different KB's same-named file,
+  not the group master index. Needs Minda to nudge Alex directly, or have someone with write access add the
+  OI-18 row herself — this is no longer a "wait for the next sweep" item.
+- **New this run — HL-0054 (Victoria, Low) — Victoria's own routine prompt is stale.** The step-4 hardcoded
+  "standing points" checklist cites OI-14 as overdue (it was resolved 2026-09-21) and five AWT numbers
+  (0016/0028/0030/0034/0039) that no longer exist as open items. Not fixable by Victoria (routine prompts are
+  Minda's to edit); flagged for a prompt refresh.
+- **AWT-0103 (John, High) — closed this morning, verified.** Duplicate `CHARTER.md` in the Properties KB root
+  resolved per Minda's ruling: `1R_1xucHOv6tvVjoOTpsUgw-bQWyNAV0T` archived, `13NI6cTbxzqWn0LXDHSlDlHd4xTN0GvRC`
+  confirmed as the sole surviving file (direct Drive check this run — only one CHARTER.md in that folder). Two
+  smaller items in the same row (a Document Register cross-reference correction, and identifying an unlogged
+  Raw/ upload) are reported done by John; not independently re-verified this run beyond the headline claim.
+- **AWT-0090 (Eugene, M365 over-privilege) — still In Progress, due 2026-09-29 (3 days out).** Unchanged:
+  outbound/mail tools blocked on the connector; the underlying Entra grant is not revoked. Needs a tenant
+  admin in Entra ID, or Minda's confirmation the tool block is enough for now.
+- **AWT-0091 / AWT-0097 / AWT-0102 (Alexey Glukhov emails) — all unchanged, still Open.** Checked Gmail
+  directly this run: no new Alexey email since AWT-0102 (24 Sep 21:46 UTC). Nothing actioned on any of the
+  three; all still awaiting Minda's call on whether/how to engage.
+- **AWT-0101 (Eugene/Alex cross-login audit) — still Blocked**, parked pending Minda's own tests. Unchanged.
+- **OI-13** — Amfa workshop reorg research. Unchanged, Open.
+- **Master-index housekeeping** — OI-15 (index stale), OI-16 (three stale `Org-*` articles). Both still Open;
+  group `open-issues.md` unchanged since 2026-09-21 10:40 (the same file OI-18 was meant to land in and
+  didn't) — nothing new to fold in beyond OI-18 itself.
+- **HL-0042 (Darius, High), HL-0046 (Rachel), HL-0049 (Peter, git-mirror drift), HL-0050 (Darius, capability
+  vs. permission), HL-0052 (Peter, Gmail unread-index artifact, Answered), HL-0053 (Victoria, Help & Lessons
+  Ref collision, routed to Alex)** — all unchanged/informational, no seat-specific action from Victoria beyond
+  tracking.
+- Victoria's own Raw and the group Raw both checked directly this run — both empty of anything new. The group
+  `Raw/Paper Mail/` intake is empty. Gmail `ops@` checked directly for anything new today — nothing beyond the
+  already-routed Alexey threads.
+- These two routines and the schedule itself.
+
+### Delegated — track only (via the Hub)
+- **John** — **AWT-0103 now Done** (see above). Properties intake pipeline, live & attended (daily 07:00 UK);
+  still gated on the human-tick issue (AWT-0100).
+- **Eugene** — AWT-0060 (install PDF-toolkit hook on `minda-ui/Anna`, Blocked — repo empty, unchanged).
+  AWT-0090 (see above, In Progress). AWT-0101 (Blocked, parked pending Minda).
+- **Darius** — AWT-0089 (Open, Low, deliberately not fixed — front-matter drift, cheap-close deferred to next
+  content push). Unchanged.
+- **Rachel** — AWT-0070 (bulk financial intake, In Progress, parked pending duplicate checks, unchanged).
+  AWT-0073 (VAT Certificate, escalated to Minda, unchanged). AWT-0094 (Amfa umbrella finance draft, Open,
+  unchanged). AWT-0097, AWT-0102 (Alexey emails, both Open, unchanged — see above).
+- **Minda** — AWT-0074 (two finance retrievals, Open, unchanged). **AWT-0099 (Open, unchanged, at risk)** —
+  John's new intake routine still needs pasting into the routines form on the `ops@fishboneproperties.co.uk`
+  login; unmoved since 2026-09-24, now two full days. **AWT-0100 (Done, loose end unchanged)** — John's two
+  live routine prompts still say "wait for the human tick"; only Minda can edit a routine prompt.
+- **Anna** — AWT-0077 (Open, unchanged, Anna's own task to finish).
+- **Peter** — AWT-0095 (Done) — Amfa enquiry-routing rule live, dormant until `enquiries@amfa.uk` connects.
+- **Alex** — AWT-0098 marked Done but **not actually resolved** (HL-0051, above) — the group `open-issues.md`
+  write this row asked for still has not landed, now confirmed a third time. HL-0053 also routed to Alex,
+  unchanged.
+
+---
+
+## 3. Fixed-deadline calendar (blocked onto days)
+
+| Day | Blocked item | Whose action |
+|---|---|---|
+| **Sat 26 Sep (today)** | Weekend — nothing fixed-deadline falls today; checked directly against the live Hub (Due-date filter, zero rows due today or overdue). | — |
+| **Sun 27 Sep** | Weekend — nothing fixed-deadline falls. | — |
+| **Every sweep until cleared** | OI-13 Amfa reorg — research only, no urgency. | Victoria (watch) |
+| **Mon 28 Sep** (pre-deadline nudge, ordinary day-before) | — | — |
+| **Tue 29 Sep** (pre-deadline nudge) | AWT-0090 M365 Entra revoke due; Alexey offset — final review of Rachel's draft, ready for Minda's send | Victoria → Minda |
+| **Wed 30 Sep** | **Alexey offset — respond/confirm** | Minda (Rachel drafted) |
+
+Note on the weekend-nudge rule: 26/27 Sep and 3 Oct are weekends, so any deadline that would otherwise be
+nudged on one of those days is nudged the preceding Friday instead. No deadline currently falls on a day
+requiring that adjustment.
+
+---
+
+## 4. Weekly rhythm (for the non-deadline work)
+
+| Day | Focus |
+|---|---|
+| **Mon** | Master-index & Open-Issues housekeeping (OI-15, OI-16) |
+| **Tue** | Adviser / finance thread status (Alexey threads) |
+| **Wed** | Properties→Group migration stage check (John cutover readiness) |
+| **Thu** | Document-system health (Doc Register, Change Requests queue) |
+| **Fri** | Strategic / backlog + short weekly digest to Minda |
+
+Today is Saturday — outside the Mon–Fri rhythm; no specific weekday focus applies.
+
+---
+
+## 5. What moved since the last sweep (2026-09-25 afternoon → 2026-09-26 morning)
+
+Verified by direct Smartsheet/Drive/Gmail read this run (Rule C), not carried over from yesterday's digest.
+
+**Closed since yesterday afternoon (confirmed Done on direct read):**
+- **AWT-0103** (John) — duplicate `CHARTER.md` in the Properties KB root. Verified: the KB root now holds
+  exactly one `CHARTER.md` (`13NI6cTbxzqWn0LXDHSlDlHd4xTN0GvRC`); the other copy is archived. The row's two
+  smaller sub-items (T00059/FP0000163 cross-reference correction; identifying `Raw/URN243422.pdf`) are
+  reported done in John's own Response; not independently re-verified beyond the headline claim.
+
+**New since yesterday afternoon:**
+- **HL-0054** (Victoria, Low, Open, raised this run) — Victoria's own routine prompt carries a stale
+  hardcoded checklist (see headline). Routed to Minda, since only she can edit a routine prompt.
+
+**Confirmed unchanged / still at risk (re-verified this run, not assumed):**
+- **HL-0051** (Victoria) — still Open; the group `open-issues.md` this row is about is still byte-identical to
+  its 2026-09-21 state, re-checked a third time. Alex's AWT-0098 "Done" has still not been corrected. Escalated
+  to Minda in §6 below rather than left for another sweep.
+- **AWT-0099** (Minda) — still Open, unmoved since 2026-09-24, now two full days.
+- **AWT-0100** loose end (Minda) — routine prompts still ungated; unchanged.
+- **AWT-0101** (Eugene) — still Blocked, parked pending Minda's own tests; unchanged.
+- AWT-0060, AWT-0070, AWT-0073, AWT-0074, AWT-0077, AWT-0089, AWT-0090 (still In Progress), AWT-0091, AWT-0094,
+  AWT-0097; HL-0042, HL-0046, HL-0049, HL-0050, HL-0052, HL-0053; OI-13/15/16 all still Open; the Document
+  System Change Requests queue unchanged since 20 Sep (4 rows, all Accepted); Victoria's own Raw and the group
+  Raw both checked directly this run and hold nothing new; the group `Raw/Paper Mail/` intake is empty; no new
+  Alexey email since AWT-0102.
+
+---
+
+## 6. Today's ask to Minda
+
+1. **HL-0051 — the group master index still doesn't carry OI-18, now confirmed unresolved for a third
+   consecutive sweep.** A direct nudge to Alex, or having someone write the OI-18 row into the group
+   `open-issues.md` directly, would close this out — it's been open long enough that waiting for Alex's own
+   next pass no longer seems reliable.
+2. **New — HL-0054 (Victoria, Low): the Morning/Afternoon Sweep routine prompts carry a stale hardcoded
+   checklist.** Today's fired prompt named OI-14 as overdue when it was actually resolved 2026-09-21, and
+   named five AWT task numbers that no longer exist as open items. No urgency, but worth a prompt edit next
+   time you're in the routines form, since only you can make that change.
+3. **AWT-0103 is now closed** — the duplicate Properties KB `CHARTER.md` has been resolved per your ruling;
+   no action needed, FYI only.
+4. **Two Properties-routine steps only you can do**, both on the `ops@fishboneproperties.co.uk` login, unmoved
+   for two days now: (a) paste in John's new intake routine (AWT-0099); (b) edit John's two live routine
+   prompts to drop the tick-gate for Smartsheet/Drive writes only (AWT-0100).
+5. **AWT-0090 (Eugene, High)** — still needs a tenant-admin action on the Entra scope grant; due Tue 29 Sep,
+   3 days out.
+6. **Three open Alexey emails (AWT-0091, AWT-0097, AWT-0102)** — none actioned; your call on whether/how to
+   engage with each.
+7. **AWT-0101 (Eugene/Alex)** — still parked pending the tests you said you'd run first; no rush, just
+   flagging it's waiting on you.
+8. **Amfa/Nadia go-live** — unchanged, two human steps only: connect `enquiries@amfa.uk`, confirm the umbrella
+   finance approach once Rachel's AWT-0094 draft is ready.
+9. **Nothing lands today or tomorrow** — next fixed dates are Tue 29 Sep and Wed 30 Sep (§3).
+
+---
+
+## Appendix — routine prompts to paste into the routines form
+
+*Unchanged since 2026-09-20; see an earlier archived version of this file for the full text. See HL-0054
+above regarding the step-4 standing-points list within these prompts.*
+
+---
+
+*Standing coordination schedule for Victoria, the Fishbone Group CEO's Assistant. This sweep (2026-09-26
+morning) found one real fix (AWT-0103, duplicate Properties CHARTER.md resolved), one escalation carried to
+Minda after a third unresolved sweep (HL-0051), and one new low-priority process gap in Victoria's own routine
+prompt (HL-0054, stale standing-points checklist) — re-verified rather than assumed carried forward. Nothing
+new needing routing beyond what's already tracked; nothing lands today or tomorrow.*

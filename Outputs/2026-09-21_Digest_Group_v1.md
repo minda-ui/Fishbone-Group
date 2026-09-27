@@ -1,0 +1,1 @@
+$(cat /tmp/claude-0/-home-user-Fishbone-Group/cccbe2e2-3b49-54ac-b278-0df4d2ab667f/scratchpad/2026-09-21_Digest_Group_v1.md)

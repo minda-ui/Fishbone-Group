@@ -1,0 +1,177 @@
+
+# Victoria — Coordination Schedule (standing, always-current)
+
+**Type:** Outputs / standing (maintained by Victoria's two daily routines; not a dated snapshot)
+**Owner seat:** Victoria — CEO's Assistant / AI Workforce Coordinator (on Minda's behalf)
+**Created:** 2026-09-20 · **Last refreshed:** 2026-09-24 (afternoon sweep)
+**Governance:** group `CLAUDE.md` §6a — Victoria reads, drafts, proposes, coordinates and may append to the
+shared registers and the AI Workforce Hub; sends nothing outward, makes no payment/commitment, creates/fires
+no routine, and never resolves an ambiguity by guessing (surface it to Minda).
+
+Charter re-read fresh this run (§0 requirement): `CHARTER.md` (core) + `Charter-Rules.md` (Rules A–C) +
+`change-log.md`. Rules A–C applied throughout, including Rule C: every claim below is checked against a
+direct read of the Hub sheets, Drive and Gmail this run (afternoon), not against this morning's digest or
+schedule text.
+
+**Headline: a busy afternoon.** Since this morning's sweep, the **Amfa Sales & Ops department stood up
+in full** — Victoria's proposal (AWT-0092) was approved and Eugene built the new AI employee **Nadia**
+(AWT-0093, confirmed Done by direct read of her live `CHARTER.md` on Drive), with four follow-on Hub rows
+now tracking the loose ends (AWT-0094 umbrella finance draft, AWT-0095 Peter routing — unblocked, AWT-0096
+Eugene git-sync fix). **AWT-0090 (Eugene, M365 over-privilege)** moved from Open to **In Progress**: Minda
+blocked the connector's outbound/mail tools within the hour of this morning's flag, but the underlying
+Entra scope grant (29 delegated scopes, two reaching other people's shared mail/calendar) still needs a
+tenant-admin revoke — not done by a tool block alone. One **new Alexey Glukhov email** ("Bank statement
+skill", 09:21 UTC) arrived after the morning sweep and has been routed to Rachel's Raw and logged
+(AWT-0097). Nothing on today's list is overdue or stuck beyond what was already flagged this morning.
+
+---
+
+## 1. The two routines
+
+| Routine | Time (UK) | Cron (UTC, BST now) | What it does |
+|---|---|---|---|
+| **Victoria — Morning Coordination Sweep** | 08:00 | `0 7 * * *` (BST) → `0 8 * * *` at the Oct clock change | Live. |
+| **Victoria — Afternoon Coordination Sweep** | 15:00 | `0 14 * * *` (BST) → `0 15 * * *` at the Oct clock change | Live. |
+
+Crons are UTC — shift both by one hour at the UK clock change (25 Oct 2026: BST→GMT). Routines are created
+by Minda (Victoria cannot create or fire them, §6a). Prompts unchanged since 2026-09-20; not reproduced here.
+
+---
+
+## 2. Desk vs delegated
+
+### Victoria's desk
+- **New this afternoon — Amfa Sales & Ops department (AWT-0092), In Progress.** Proposed by Victoria,
+  approved by Minda, built by Eugene (AWT-0093, Done — verified by a direct read of the new
+  `minda-ui/Nadia` charter, live and AUTHORITATIVE from today). Nadia — Amfa Sales & Ops Assistant — adopts
+  the existing Amfa Furniture Ltd KB (draft-only outward, per the estate's hybrid-governance pattern).
+  Registered on the Hub Roster; `minda-ui/Nadia` git repo live; Peter's routing unblocked (AWT-0095). Stays
+  **In Progress** until Nadia actually trades — still pending: `enquiries@amfa.uk` mailbox connection
+  (human step) and the umbrella finance treatment (AWT-0094, Rachel, Open). A repo git-sync gap on the
+  *existing* Amfa Furniture Ltd KB mirror was found during the build and handed to Eugene (AWT-0096, Open).
+- **AWT-0090 (Eugene, M365 over-privilege) — Open → In Progress.** Minda blocked six outbound/mail tools on
+  the connector today within the hour of the flag (`outlook_send_draft`, `outlook_forward_mail`,
+  `outlook_set_vacation`, three Teams-send tools) plus `outlook_send_mail` (already absent) — verified by
+  Eugene checking the live toolset, not by testing a send. **Not resolved**: blocking a tool doesn't revoke
+  the Entra grant — all 29 delegated scopes still stand, including the two reaching other people's shared
+  data (`Mail.Read.Shared`, `Calendars.Read.Shared`). Durable fix is still a tenant admin revoking consent
+  in Entra ID. Due date on the row: 2026-09-29.
+- **New — Alexey Glukhov "Bank statement skill" email, routed to Rachel (AWT-0097).** Gmail thread
+  `1a0d2b84b6f8c3cd`, 09:21 UTC today, to `minda@fishbonedrylining.co.uk` (a different address than
+  yesterday's "renamer" email). Describes a five-step bank-statement-to-Excel process/skill. Second
+  unusual-shaped Alexey email in two days. Hand-off note in Rachel's Raw
+  (`2026-09-24_handoff_Victoria-to-Rachel_alexey-bank-statement-skill-email.md`, id
+  `1CGBIrEigmWwEZWF77_ksUYcaDeGCWT3b`). Not actioned.
+- **AWT-0091 (Rachel, the Alexey "renamer" email) — unchanged, still Open.** Nothing actioned; still
+  awaiting Minda's call on whether/how to engage.
+- **OI-13 — Amfa workshop reorg** research. Unchanged, Open.
+- **Master-index housekeeping** — OI-15 (index stale), OI-16 (three stale `Org-*` articles). Both still
+  Open; group `open-issues.md` unchanged since 2026-09-21 10:40 (confirmed by direct file-metadata check
+  this run) — nothing new to fold in.
+- **HL-0042 (Darius, High)** and **HL-0046 (Rachel, rule-letter propagation gap)** — both unchanged, Open,
+  no seat-specific action from Victoria beyond tracking.
+- Victoria's own Raw and the group Raw both checked directly this run — both empty of anything new.
+- These two routines and the schedule itself.
+
+### Delegated — track only (via the Hub)
+- **Eugene** — AWT-0060 (install PDF-toolkit hook on `minda-ui/Anna`, Blocked — repo empty, unchanged),
+  AWT-0090 (see above, In Progress), **AWT-0096 (new, Open)** — fix the Amfa KB git-sync gap found during
+  the Nadia build.
+- **Darius** — AWT-0087 (Blocked — needs Minda to rename Smartsheet `838802392352644` in the UI, no API
+  tool exists), AWT-0089 (Open, Low, deferred by design). Both unchanged.
+- **Helen** — AWT-0067 (fold plain-brief text into charter, Blocked on sourcing per HL-0047, unchanged).
+- **Rachel** — AWT-0070 (bulk financial intake, In Progress, parked pending duplicate checks, unchanged).
+  AWT-0073 (VAT Certificate, escalated to Minda, unchanged). **AWT-0091** and **AWT-0097 (new)** — both
+  Alexey emails, both awaiting Minda's steer on engagement. **AWT-0094 (new, Open)** — umbrella finance
+  treatment for Amfa test-run sales.
+- **Minda** — AWT-0074 (two finance retrievals, Open, unchanged).
+- **Alex** — AWT-0076 (Open, ready to close as a formality — Minda already settled the discrepancy).
+- **Anna** — AWT-0077 (Open, Anna's own task to finish).
+- **Peter** — **AWT-0095 (unblocked today)** — Amfa enquiry-routing rule can now be set up (destination
+  folder confirmed); fires once `enquiries@amfa.uk` is connected.
+- **John** — Properties intake pipeline, live & attended (daily 07:00 UK); unchanged.
+
+---
+
+## 3. Fixed-deadline calendar (blocked onto days)
+
+| Day | Blocked item | Whose action |
+|---|---|---|
+| **Fri 25 Sep (tomorrow)** | Weekly-rhythm focus: strategic/backlog review + short weekly digest to Minda. No fixed Hub deadline falls tomorrow — checked the calendar and today's Hub activity directly; nothing due 25 Sep. | Victoria |
+| **Every sweep until cleared** | OI-13 Amfa reorg — research only, no urgency. | Victoria (watch) |
+| **Mon 28 Sep** (pre-deadline nudge, ordinary day-before) | — | — |
+| **Tue 29 Sep** (pre-deadline nudge) | Alexey offset — final review of Rachel's draft, ready for Minda's send | Victoria → Minda |
+| **Wed 30 Sep** | **Alexey offset — respond/confirm** | Minda (Rachel drafted) |
+
+Note on the weekend-nudge rule: 26/27 Sep and 3 Oct are weekends, so any deadline that would otherwise be
+nudged on one of those days is nudged the preceding Friday instead. No deadline currently falls on a day
+requiring that adjustment (Tue 29 Sep's nudge lands on the ordinary weekday Mon 28 Sep).
+
+---
+
+## 4. Weekly rhythm (for the non-deadline work)
+
+| Day | Focus |
+|---|---|
+| **Mon** | Master-index & Open-Issues housekeeping (OI-15, OI-16) |
+| **Tue** | Adviser / finance thread status (Alexey threads) |
+| **Wed** | Properties→Group migration stage check (John cutover readiness) |
+| **Thu** | Document-system health (Doc Register, Change Requests queue) |
+| **Fri** | Strategic / backlog + short weekly digest to Minda |
+
+---
+
+## 5. What moved since the last sweep (2026-09-24 morning → afternoon)
+
+Verified by direct Smartsheet/Drive/Gmail read this run (Rule C), not carried over from the morning digest.
+
+**Closed since this morning (confirmed Done on direct read):**
+- AWT-0092/AWT-0093 — Amfa Sales & Ops department proposal approved and Nadia built (AWT-0093 confirmed
+  Done; AWT-0092 itself stays In Progress until Nadia trades — see §2).
+
+**New since this morning:**
+- **AWT-0094** (Rachel, Open) — umbrella finance treatment draft for Amfa test-run sales.
+- **AWT-0095** (Peter, Open, unblocked) — Amfa enquiry-routing rule, destination confirmed.
+- **AWT-0096** (Eugene, Open) — Amfa KB git-sync gap found during the Nadia build.
+- **AWT-0097** (Rachel, Open, raised this run) — new Alexey "Bank statement skill" email, routed.
+
+**Changed status since this morning:**
+- **AWT-0090** (Eugene, High) — Open → **In Progress**: Minda blocked six M365 outbound/mail tools;
+  the underlying Entra scope grant is still live and still needs a tenant-admin revoke.
+
+**Unchanged:** AWT-0060, AWT-0070, AWT-0073, AWT-0074, AWT-0076, AWT-0077, AWT-0087, AWT-0089, AWT-0091;
+HL-0042, HL-0046; OI-13/15/16 all still Open; group `open-issues.md` unchanged since 21 Sep 10:40; the
+Document System Change Requests queue unchanged since 20 Sep (4 rows, all Accepted, re-verified this run);
+Victoria's own Raw and the group Raw both checked directly this run and hold nothing new; the group
+`Raw/Paper Mail/` intake is empty.
+
+---
+
+## 6. Today's ask to Minda
+
+1. **AWT-0090 (Eugene, High) — still needs a tenant-admin action.** The connector's outbound/mail tools are
+   now blocked, but the Entra scope grant itself (29 scopes, two reaching other people's shared data) is
+   unchanged. Needs a tenant admin to revoke consent in Entra ID (Enterprise applications > Permissions),
+   or your confirmation that the tool-level block is sufficient for now.
+2. **Amfa/Nadia go-live** — two things only a human can do: connect `enquiries@amfa.uk` so mail starts
+   flowing, and confirm the umbrella finance approach once Rachel's AWT-0094 draft is ready.
+3. **Two open Alexey emails (AWT-0091, AWT-0097)** — the "renamer" procedure and today's "Bank statement
+   skill" write-up. Neither has been actioned. Your call on whether/how to engage with Alexey on either.
+4. **AWT-0087 (Darius, Blocked)** — needs you to rename Smartsheet `838802392352644` in the UI (no API tool
+   exists) and confirm "Workshop Document Log (local mirror)" as the new name.
+5. Carried, not urgent: AWT-0073 (Commercial Properties VAT Certificate — HMRC Gateway access only),
+   AWT-0074 (two finance retrievals sitting on your own row), AWT-0067/HL-0047 (Helen needs your word
+   before folding the plain-brief rule in under the right letter).
+
+---
+
+## Appendix — routine prompts to paste into the routines form
+
+*Unchanged since 2026-09-20; see an earlier archived version of this file for the full text.*
+
+---
+
+*Standing coordination schedule for Victoria, the Fishbone Group CEO's Assistant. This sweep (2026-09-24
+afternoon) found the Amfa/Nadia department stood up since this morning, a partial fix on the AWT-0090 M365
+finding (tool block done, Entra revoke still open), and one new Alexey email routed and logged (AWT-0097).
+Nothing overdue.*

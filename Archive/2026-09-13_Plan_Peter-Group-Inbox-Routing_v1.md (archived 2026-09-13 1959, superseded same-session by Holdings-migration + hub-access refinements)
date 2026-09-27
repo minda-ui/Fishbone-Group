@@ -1,0 +1,147 @@
+# Fishbone Group — Plan: Peter Group Inbox (route all trading/holding entities to Peter) · v1
+
+**Status:** Agreed 2026-09-13 (owner decisions locked, §7). **Author:** Claude, on behalf of
+minda@fishboneconstruction.co.uk. **Type:** Plan / Output (dated snapshot; supersede with v2, never
+edit in place). **Related:** `2026-09-12_Plan_AI-Workforce_v2.md` (Phase 0 access); the Peter — AI
+Data Assistant KB (`minda-ui/Peter`); the Eugene — AI IT Assistant KB (`minda-ui/Eugene`);
+`CLAUDE.md` §5 (routines), §6 (governance).
+
+This plan is **agreed but not yet executed** — nothing is forwarded or wired until the owner says go
+(§9). It supersedes the earlier "separate Properties routine" approach.
+
+---
+
+## 1. Objective & the governing constraint
+
+Bring **every relevant Fishbone entity's business email to Peter** for daily triage. Peter's Gmail
+connector authenticates as **one** account — `ops@fishboneconstruction.co.uk` — so the only mailbox a
+routine can read is that one. Therefore **"route entity X to Peter" = forward X's business mail into
+that mailbox.** This plan builds a single group agent inbox that **six** entities feed, with Peter
+sorting each item to its owning company.
+
+---
+
+## 2. Target architecture
+
+- **`ops@fishboneconstruction.co.uk` = the single group agent inbox ("the hub").** Six entities
+  forward a copy in.
+- Peter separates messages by the **`Delivered-To` header** (it survives forwarding) and tags each
+  item + ledger row by company: `[FC] [FP] [FM] [FA] [FH] [FW]`.
+- **One combined daily routine** ("Peter — group inbox triage + capture") reads the hub and handles
+  all six — **replacing** the per-company routines (Construction's live one; the not-yet-created
+  Properties one). One inbox, one routine — no collisions, no double-scan.
+
+---
+
+## 3. Routing table (locked)
+
+Five sources are Google Workspace (forwarding is a Gmail setting); **Holdings is on 1&1 / IONOS**, so
+its forwarding is set in the **IONOS mail panel**, not Gmail.
+
+| Tag | Entity | Hosting | Forward into hub from | Mechanism | Status |
+|---|---|---|---|---|---|
+| `FC` | Construction | Google WS | info@ + minda@ + invoice@ (fishboneconstruction.co.uk) | Gmail | ✅ done |
+| `FP` | Properties | Google WS | info@fishboneproperties.co.uk + irina@fishboneproperties.co.uk | Gmail | ◑ half-done (chain `ops@fishboneproperties → hub`) |
+| `FM` | Commercial | Google WS (inside Properties') | commercial@fishboneproperties.co.uk | Gmail | ⬜ |
+| `FA` | Amfa | Google WS (own; domain `amfa.uk`) | **emquires@amfa.uk** (registration typo — see §8) | Gmail | ⬜ |
+| `FH` | Holdings | **1&1 / IONOS** | info@fishboneholdings.co.uk | **IONOS panel** | ⬜ |
+| `FW` | Waste | Google WS | info@fishbonewaste.co.uk + sales@fishbonewaste.co.uk | Gmail | ⬜ dormant, low volume |
+| `FS` | **SSAS** | 1&1 (no dedicated mailbox) | — | — | **EXCLUDED (§5)** |
+
+Property vs Commercial share the `fishboneproperties.co.uk` domain but different mailboxes:
+`info@`/`irina@` → `[FP]`, `commercial@` → `[FM]` — `Delivered-To` distinguishes them.
+
+---
+
+## 4. The combined routine (design)
+
+- **One prompt**, daily **07:45 UK** (after every company's own 07:00 intake), replacing the separate
+  Construction (07:30) and Properties (07:40) runs.
+- **Sorts each message to its company by `Delivered-To`**, tags `[FX]`, and applies **per-company
+  coordination**:
+  - **Construction & Properties** each have their own `fishbone-daily-inbox-raw` KB routine (07:00)
+    that writes their Wiki/Tasks — Peter is a **supplement** there (triage + draft + deadline +
+    sent-mail-evidence only).
+  - **Amfa, Waste, Holdings, Commercial** have **no** daily intake routine — Peter is the **only**
+    triage; still read + draft + stage only, never writes into their KBs.
+- Retains everything already built: invoice@ AP handling, outbound-as-evidence, capture hand-offs,
+  the "changed bank details = fraud risk" flag.
+- **Boundary unchanged:** read + draft only; never sends; never writes into any company KB (a §7a
+  hand-off is done by the group DB / a human, never by Peter).
+
+---
+
+## 5. SSAS — excluded (owner, 2026-09-13)
+
+SSAS is the group **pension scheme**, not a trading company. It has **no dedicated domain/mailbox** —
+its correspondence goes to **personal inboxes** (which Peter must never read, charter §3), and it is
+dominated by **member personal + financial data** administered by a third party (Empowered Pensions).
+High sensitivity, negligible triage value → **excluded from the hub.** Its own **Fishbone SSAS KB**
+remains its canonical home; the corporate trustee (Empowered Trustees Ltd, 12291059) is already on
+Peter's Companies House watch (SRC-9). If a specific SSAS email ever needs Peter, forward that single
+message by hand. Revisit only if the mailbox later turns out to be mostly benign admin.
+
+---
+
+## 6. Governance & data protection
+
+- **Cross-company mixing:** all mail physically lands in **Construction's** Workspace mailbox;
+  `Delivered-To` keeps entities logically separate. Noted for **Amfa** (kept sale-ready, group OI-13)
+  as a future carve-out consideration.
+- **Peter never writes into any company KB** — a §7a `Raw/` hand-off (registered doc + covering note)
+  is done by the group DB or a human, not by Peter.
+- **Dormant Waste:** low/no volume, routed for completeness.
+- **Vault / evidence retention** is per **originating** mailbox, not the hub — each company's own
+  retention to be confirmed separately later (Construction's is live; the others TBC).
+
+---
+
+## 7. Locked decisions (owner, 2026-09-13)
+
+1. **Single hub inbox** (`ops@fishboneconstruction.co.uk`) **+ one combined Peter routine** — agreed.
+2. **Route six entities:** `FC, FP, FM, FA, FH, FW`. **SSAS excluded.**
+3. **Addresses** as in §3.
+4. **Schedule:** one combined run at **07:45 UK** (`45 6 * * *` UTC; shift to `45 7 * * *` at the
+   26 Oct 2026 UK clock change).
+
+---
+
+## 8. To verify at setup (does not block locking the plan)
+
+- **Amfa mailbox — resolved:** the live mailbox is **`emquires@amfa.uk`** — confirmed by the owner as
+  a Google Workspace **registration typo** ("e**m**quires", not "enquiries"). We forward from that
+  exact mailbox, so Peter's routing works as-is. **But a separate IT fix is needed (Eugene / Minda,
+  Admin console):** customers who email the *correct* `enquiries@amfa.uk` (or `enquires@amfa.uk`)
+  currently reach nothing, so Amfa is **silently losing real enquiries** — add `enquiries@amfa.uk`
+  (and `enquires@amfa.uk`) as **aliases** onto the same mailbox, and consider making `enquiries@` the
+  primary with the typo kept as an alias. Tracked as an Eugene infra item; independent of this routing.
+- **IONOS (1&1) forwarding** to an external Gmail address is permitted for the Holdings domain —
+  Eugene verifies in the runbook.
+
+---
+
+## 9. Execution sequence (once the owner says go — nothing done yet)
+
+- **A.** Eugene writes the per-company forwarding runbook (Gmail ×5 sources + IONOS ×1 for Holdings).
+- **B.** Minda sets each forward; test each with a live message; confirm it lands in the hub with the
+  correct `Delivered-To`.
+- **C.** Update Peter's charter §2a + add SRC entries for the forwarded sources (Properties,
+  Commercial, Amfa, Holdings, Waste); write the single combined routine prompt.
+- **D.** Create the combined routine in the `claude.ai/code/routines` form (Gmail + Drive +
+  Smartsheet); test-fire; verify per-company sorting.
+- **E.** Retire the superseded per-company routines (Construction's live one folds into the combined
+  run).
+
+---
+
+## 10. Done when
+
+All six entities forward into the hub; a test message from each is triaged under the correct `[FX]`
+tag; the single combined routine is live; the old per-company routines are retired; and Peter's
+charter / SRC register / ledger reflect the group inbox.
+
+---
+
+*Plan v1, Fishbone Group. Agreed 2026-09-13; owner decisions locked (§7). Supersede with a v2 snapshot
+if the routed set, the exclusion, or the routine design changes. See the group `change-log/` for the
+session that produced it.*

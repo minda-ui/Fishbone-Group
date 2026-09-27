@@ -1,0 +1,211 @@
+# Victoria — Coordination Schedule (standing, always-current)
+
+**Type:** Outputs / standing (maintained by Victoria's two daily routines; not a dated snapshot)
+**Owner seat:** Victoria — CEO's Assistant / AI Workforce Coordinator (on Minda's behalf)
+**Created:** 2026-09-20 · **Last refreshed:** 2026-09-25 (afternoon sweep)
+**Governance:** group `CLAUDE.md` §6a — Victoria reads, drafts, proposes, coordinates and may append to the
+shared registers and the AI Workforce Hub; sends nothing outward, makes no payment/commitment, creates/fires
+no routine, and never resolves an ambiguity by guessing (surface it to Minda).
+
+Charter re-read fresh this run (§0 requirement: `CHARTER.md` core + `Charter-Rules.md` Rules A–C). Every claim
+below is checked against a direct read of the Hub sheets, Drive and Gmail this run (afternoon), not against
+this morning's digest or a Hub row's own account of itself (Rule C) — confirmed live this run: **HL-0051 is
+still unresolved** (the group `open-issues.md` is still unchanged, byte-for-byte, since 2026-09-21).
+
+**Headline: one real fix landed, one new high-priority find, one flagged non-fix.** Eugene closed **AWT-0096**
+(Amfa KB git-mirror sync gap) with a verified real sync — checked directly. **AWT-0101** (Alex's cross-login
+audit access) moved from "approved" to **Blocked**: Eugene confirmed `ops@fishboneproperties.co.uk` is a
+genuinely separate claude.ai account with no cross-account session tool, proposed a periodic manual-login
+audit instead, and Minda asked to hold while she runs her own tests — nothing built yet. **New — AWT-0103
+(John, High): two live, differently-worded `CHARTER.md` files now sit in the Properties KB root**, both
+created within 3 minutes of each other this morning; verified directly this run (ids `1R_1xucHOv6tvVjoOTpsUgw-bQWyNAV0T`,
+18,418 B, 06:22:50Z, and `13NI6cTbxzqWn0LXDHSlDlHd4xTN0GvRC`, 18,655 B, 06:25:42Z) — a human needs to pick the
+authoritative one and archive the other before anything else writes to that file. **HL-0051 still not
+fixed**: the group's own `open-issues.md` (id `19eKiZ5sh-QundSbvKhQxlMzTK1DPWHws`) is confirmed unchanged
+since 2026-09-21T10:40Z, still 38,077 bytes — OI-18 still missing from the group master index, six-plus hours
+after Alex's row was marked Done on a write that landed in the wrong file. **Also found and logged this
+run: HL-0053** — Help & Lessons has no duplicate-Ref guard, and two live rows both carry Ref "HL-0051" (Peter's
+Resolved one from 2026-09-24, Victoria's Open one from this morning); flagged to Alex, not renumbered here.
+No new adviser email or Raw hand-off needing action (checked directly). Full morning digest:
+`Outputs/2026-09-25_Digest_Victoria-AM_v1.md`; this afternoon's digest: `Outputs/2026-09-25_Digest_Victoria-PM_v1.md`.
+
+---
+
+## 1. The two routines
+
+| Routine | Time (UK) | Cron (UTC, BST now) | What it does |
+|---|---|---|---|
+| **Victoria — Morning Coordination Sweep** | 08:00 | `0 7 * * *` (BST) → `0 8 * * *` at the Oct clock change | Live. |
+| **Victoria — Afternoon Coordination Sweep** | 15:00 | `0 14 * * *` (BST) → `0 15 * * *` at the Oct clock change | Live. |
+
+Crons are UTC — shift both by one hour at the UK clock change (25 Oct 2026: BST→GMT). Routines are created
+by Minda (Victoria cannot create or fire them, §6a). Prompts unchanged since 2026-09-20; not reproduced here.
+
+---
+
+## 2. Desk vs delegated
+
+### Victoria's desk
+- **New this run — AWT-0103 (John, High, Open) — duplicate `CHARTER.md` in the Properties KB.** Two live files,
+  same title, created 3 minutes apart this morning (see headline for ids/sizes/timestamps, verified directly
+  this run). Not Victoria's to resolve (Properties KB substance is John's/Minda's) — surfaced here because it
+  is a real risk: the next archive-then-recreate on that file could build on the wrong base. Needs Minda to
+  pick the authoritative copy and have John archive the other.
+- **HL-0051 (Victoria, raised this morning) — still unresolved, re-verified this run.** AWT-0098 (Alex) reads
+  Done, claiming OI-18 was added to the group's `open-issues.md`; a direct byte/metadata check this run shows
+  that file is still exactly as it was on 2026-09-21 (38,077 B, unchanged `modifiedTime`). The write that
+  actually happened landed in a different KB's same-named file. Not fixed by this afternoon's sweep — flag as
+  at risk; it has now sat unresolved for a full working day.
+- **New this run — HL-0053 (Victoria) — Help & Lessons Ref collision.** Two live rows both carry Ref
+  "HL-0051" (Peter's, Resolved, 2026-09-24; Victoria's, Open, this morning) — the sheet has no duplicate-Ref
+  guard formula, unlike Tasks & Requests' "⚠ Duplicate Task ID?" column. Logged for Alex (Help & Lessons desk
+  owner) to add a guard and rename the newer row; not renumbered by this run.
+- **AWT-0090 (Eugene, M365 over-privilege) — still In Progress, due 2026-09-29 (4 days out).** Unchanged this
+  run: outbound/mail tools blocked on the connector; the underlying Entra grant (29 delegated scopes, two
+  reaching other people's shared mail/calendar) is not revoked. Needs a tenant admin in Entra ID, or Minda's
+  confirmation the tool block is enough for now.
+- **AWT-0091 / AWT-0097 / AWT-0102 (Alexey Glukhov emails) — all unchanged, still Open.** Checked Gmail
+  directly this run: no new Alexey email since AWT-0102 (24 Sep 21:46 UTC, already routed). Nothing actioned
+  on any of the three; all still awaiting Minda's call on whether/how to engage.
+- **OI-13** — Amfa workshop reorg research. Unchanged, Open.
+- **Master-index housekeeping** — OI-15 (index stale), OI-16 (three stale `Org-*` articles). Both still Open;
+  group `open-issues.md` unchanged since 2026-09-21 10:40 (same file OI-18 was meant to land in and didn't) —
+  nothing new to fold in beyond OI-18 itself.
+- **HL-0042 (Darius, High), HL-0046 (Rachel), HL-0049 (Peter, git-mirror drift), HL-0050 (Darius, capability
+  vs. permission), HL-0052 (Peter, Gmail unread-index artifact, Answered)** — all unchanged/informational, no
+  seat-specific action from Victoria beyond tracking.
+- Victoria's own Raw and the group Raw both checked directly this run — both empty of anything new. The group
+  `Raw/Paper Mail/` intake is empty. Gmail `ops@` checked directly for anything new today beyond Alexey — one
+  active third-party thread (Watkins Solicitors, 38 Glebe Road remortgage completion) is Irina's/John's own
+  correspondence, already actioned by Irina directly; nothing for Victoria's desk.
+- These two routines and the schedule itself.
+
+### Delegated — track only (via the Hub)
+- **Eugene** — AWT-0060 (install PDF-toolkit hook on `minda-ui/Anna`, Blocked — repo empty, unchanged),
+  **AWT-0096 (now Done)** — Amfa KB git-sync gap genuinely fixed: 29 live files synced from Drive to
+  `minda-ui/Amfa-Furniture-Ltd` main, byte-verified, CLAUDE.md §1 branch line corrected. AWT-0090 (see above,
+  In Progress). **AWT-0101 (now Blocked)** — cross-login audit access for Alex: confirmed not buildable from
+  this account (`ops@fishboneproperties.co.uk` is a separate claude.ai account with no cross-account session
+  tool); Eugene proposed a periodic manual-login audit; Minda asked to hold, wants to test first.
+- **Darius** — AWT-0089 (Open, Low, deliberately not fixed — front-matter drift, cheap-close deferred to next
+  content push). Unchanged.
+- **Rachel** — AWT-0070 (bulk financial intake, In Progress, parked pending duplicate checks, unchanged).
+  AWT-0073 (VAT Certificate, escalated to Minda, unchanged). AWT-0094 (Amfa umbrella finance draft, Open,
+  unchanged). AWT-0097, AWT-0102 (Alexey emails, both Open, unchanged — see above).
+- **Minda** — AWT-0074 (two finance retrievals, Open, unchanged). **AWT-0099 (Open, unchanged, at risk)** —
+  John's new intake routine still needs pasting into the routines form on the `ops@fishboneproperties.co.uk`
+  login; unmoved since 2026-09-24. **AWT-0100 (Done, loose end unchanged)** — John's two live routine prompts
+  still say "wait for the human tick"; only Minda can edit a routine prompt.
+- **Anna** — AWT-0077 (Open, unchanged, Anna's own task to finish).
+- **Peter** — AWT-0095 (Done) — Amfa enquiry-routing rule live, dormant until `enquiries@amfa.uk` connects.
+- **John** — Properties intake pipeline, live & attended (daily 07:00 UK); still gated on the human-tick issue
+  (AWT-0100). Self-raised **AWT-0103** this morning during his own intake run (see above).
+- **Alex** — AWT-0098 marked Done but **not actually resolved** (HL-0051, above) — the group `open-issues.md`
+  write this row asked for still has not landed. HL-0053 (new, above) also routed to Alex.
+
+---
+
+## 3. Fixed-deadline calendar (blocked onto days)
+
+| Day | Blocked item | Whose action |
+|---|---|---|
+| **Fri 25 Sep (today)** | Weekly-rhythm focus: strategic/backlog review + short weekly digest to Minda (delivered this morning; this is the afternoon follow-up). No fixed Hub deadline falls today — checked the calendar and today's Hub activity directly. | Victoria |
+| **Sat 26 / Sun 27 Sep** | Weekend — nothing fixed-deadline falls on either day; no nudge needed (checked directly against §3's own calendar). | — |
+| **Every sweep until cleared** | OI-13 Amfa reorg — research only, no urgency. | Victoria (watch) |
+| **Mon 28 Sep** (pre-deadline nudge, ordinary day-before) | — | — |
+| **Tue 29 Sep** (pre-deadline nudge) | AWT-0090 M365 Entra revoke due; Alexey offset — final review of Rachel's draft, ready for Minda's send | Victoria → Minda |
+| **Wed 30 Sep** | **Alexey offset — respond/confirm** | Minda (Rachel drafted) |
+
+Note on the weekend-nudge rule: 26/27 Sep and 3 Oct are weekends, so any deadline that would otherwise be
+nudged on one of those days is nudged the preceding Friday instead. No deadline currently falls on a day
+requiring that adjustment — nothing lands tomorrow (Saturday) or Sunday.
+
+---
+
+## 4. Weekly rhythm (for the non-deadline work)
+
+| Day | Focus |
+|---|---|
+| **Mon** | Master-index & Open-Issues housekeeping (OI-15, OI-16) |
+| **Tue** | Adviser / finance thread status (Alexey threads) |
+| **Wed** | Properties→Group migration stage check (John cutover readiness) |
+| **Thu** | Document-system health (Doc Register, Change Requests queue) |
+| **Fri** | Strategic / backlog + short weekly digest to Minda |
+
+---
+
+## 5. What moved since the last sweep (2026-09-25 morning → afternoon)
+
+Verified by direct Smartsheet/Drive/Gmail read this run (Rule C), not carried over from the morning digest.
+
+**Closed since this morning (confirmed Done on direct read):**
+- **AWT-0096** (Eugene) — Amfa KB git-sync gap. Real fix verified: 29 live files (CLAUDE.md, README.md, Raw/,
+  all Wiki articles, all Outputs/ incl. binaries) synced from Drive to `minda-ui/Amfa-Furniture-Ltd` main,
+  byte-verified against Drive's fileSize; CLAUDE.md §1's stale git-mirror line corrected and re-verified.
+
+**Changed status since this morning:**
+- **AWT-0101** (Eugene) — Open/"approved, building" → **Blocked**. Investigated before building: confirmed
+  `ops@fishboneproperties.co.uk` is a genuinely separate claude.ai account (19 environments, 16 triggers on
+  this account, none Properties'/John's); no tool on this account can create a session or read a routine list
+  on a different account. Proposed a periodic manual-login audit instead; put to Minda, who asked to hold
+  while she runs her own tests. Nothing built.
+
+**New since this morning:**
+- **AWT-0103** (John, High, Open, self-raised) — duplicate live `CHARTER.md` files in the Properties KB root
+  (see headline). Needs Minda's decision.
+- **HL-0052** (Peter, Low, Answered) — Gmail `is:unread` search can return a stale hit after a thread is no
+  longer actually unread; informational, no action needed.
+- **HL-0053** (Victoria, Low, Open, raised this run) — Help & Lessons Ref collision on "HL-0051"; routed to
+  Alex, above.
+
+**Confirmed unchanged / still at risk (re-verified this run, not assumed):**
+- **HL-0051** (Victoria) — still Open; the group `open-issues.md` this row is about is still byte-identical to
+  its 2026-09-21 state. Alex's AWT-0098 "Done" has not been corrected. This is now the second consecutive
+  sweep this has sat unresolved — worth Minda's attention if it doesn't move by tomorrow.
+- **AWT-0099** (Minda) — still Open, unmoved since 2026-09-24; at risk of drifting further without a nudge.
+- **AWT-0100** loose end (Minda) — routine prompts still ungated; unchanged.
+- AWT-0060, AWT-0070, AWT-0073, AWT-0074, AWT-0077, AWT-0089, AWT-0090 (still In Progress), AWT-0091, AWT-0094,
+  AWT-0097; HL-0042, HL-0046, HL-0049, HL-0050; OI-13/15/16 all still Open; the Document System Change
+  Requests queue unchanged since 20 Sep (4 rows, all Accepted); Victoria's own Raw and the group Raw both
+  checked directly this run and hold nothing new; the group `Raw/Paper Mail/` intake is empty; no new Alexey
+  email since AWT-0102.
+
+---
+
+## 6. Today's ask to Minda
+
+1. **New — AWT-0103 (John, High): pick the authoritative Properties KB `CHARTER.md`.** Two live files, ids
+   `1R_1xucHOv6tvVjoOTpsUgw-bQWyNAV0T` (18,418 B, 06:22:50Z) and `13NI6cTbxzqWn0LXDHSlDlHd4xTN0GvRC` (18,655 B,
+   06:25:42Z, the later one, independently worded, covering the same AWT-0100 content). John needs your steer
+   on which stands, so he can archive the other before the next write to that file.
+2. **HL-0051 — the group master index still doesn't carry OI-18, a working day after AWT-0098 was marked
+   Done.** Worth a direct nudge to Alex if it hasn't moved by tomorrow's sweep.
+3. **AWT-0101 (Eugene/Alex) — your call on the cross-login audit approach.** Eugene's periodic manual-login
+   proposal is parked pending the tests you said you'd run first; no rush from this end, just flagging it's
+   waiting on you rather than silently stalled.
+4. **Two Properties-routine steps only you can do**, both on the `ops@fishboneproperties.co.uk` login,
+   unmoved since yesterday: (a) paste in John's new intake routine (AWT-0099); (b) edit John's two live
+   routine prompts to drop the tick-gate for Smartsheet/Drive writes only (AWT-0100).
+5. **AWT-0090 (Eugene, High)** — still needs a tenant-admin action on the Entra scope grant; due 29 Sep.
+6. **Three open Alexey emails (AWT-0091, AWT-0097, AWT-0102)** — none actioned; your call on whether/how to
+   engage with each.
+7. **Amfa/Nadia go-live** — unchanged, two human steps only: connect `enquiries@amfa.uk`, confirm the umbrella
+   finance approach once Rachel's AWT-0094 draft is ready.
+8. **Awareness only:** HL-0053 (Help & Lessons Ref-collision housekeeping, Alex's to fix) — Low, no action
+   needed from you.
+9. **Nothing lands tomorrow or Sunday** — next fixed dates are Tue 29 Sep and Wed 30 Sep (§3).
+
+---
+
+## Appendix — routine prompts to paste into the routines form
+
+*Unchanged since 2026-09-20; see an earlier archived version of this file for the full text.*
+
+---
+
+*Standing coordination schedule for Victoria, the Fishbone Group CEO's Assistant. This sweep (2026-09-25
+afternoon) found one real fix (AWT-0096, Amfa git-sync), one item moved to Blocked pending Minda's own tests
+(AWT-0101), one new high-priority finding needing Minda's decision (AWT-0103, duplicate Properties CHARTER.md),
+and one still-unresolved discrepancy from this morning (HL-0051, the group open-issues.md write that never
+landed) — re-verified rather than assumed carried forward. Nothing new needing routing beyond what's already
+tracked; nothing lands tomorrow or Sunday.*

@@ -1,0 +1,96 @@
+# AI Workforce Hub — daily reconcile routine + charter grants · v1
+
+**Type:** Output (ready-to-use routine prompt + paste-ready charter grants). **Status:** Built 2026-09-14; the routine is to be **created by Minda via the routines form** (§6a: the group DB guides, a human creates routines). **Author:** Claude, for minda@fishboneconstruction.co.uk. **Related:** `2026-09-14_Plan_AI-Workforce-Operations-Hub_v1.md` (the design spec, now BUILT); the AI Workforce Hub board (artifact) and the "Fishbone AI Workforce" Smartsheet workspace.
+
+This is the bridge that keeps the two Hub surfaces in step: the **interactive board** (where Minda queues requests and glances at status) and the **Smartsheet system of record** (where Peter's and Eugene's routines read and write). One routine, once a day.
+
+---
+
+## 0. The concrete IDs (bake these into the routine prompt — a routine starts with no memory)
+
+**Board artifact (Artifact `db`):** `https://claude.ai/code/artifact/bfe4bbc6-2718-409a-8512-2dc44988406b`
+- Collections: `roster` (docs `peter`, `eugene`), `tasks` (docs keyed by Task ID / a `REQ-…` id for board-added ones), `achievements`.
+- `tasks` doc fields: `taskId, assignedTo, requestedBy, priority, status, request, dueDate (YYYY-MM-DD), doneDate, response, source ("seed"|"board"), order`. A board-added request has `source:"board"`, a `taskId` starting `REQ-`, and no `smartsheetRow` yet.
+
+**Smartsheet workspace "Fishbone AI Workforce"** (id `4946803578693507`), all owned by minda@:
+- **Roster** sheet `8154403007760260`
+- **Tasks & Requests** sheet `8860839228606340` — column IDs:
+  `Task ID 3261859655976836` · `Assigned to 7765459283347332` · `Requested by 2135959749134212` ·
+  `Request / question 6639559376504708` · `Priority 4387759562819460` · `Status 8891359190189956` ·
+  `Response / result 95266167981956` · `Due date 4598865795352452` · `Done date 2347065981667204` ·
+  `Health 6850665609037700` (RYGB column formula — self-updating, never set by hand) · `Source 1221166074824580`
+- **Achievements** sheet `4569101748012932` — columns:
+  `Achievement 3936306960402308` · `Employee 8439906587772804` · `Date 1121557193295748` ·
+  `Detail 5625156820666244` · `Linked task 3373357006980996` · `Source 7876956634351492`
+
+**Tasks statuses:** Open / In Progress / Done / Blocked. **Task ID scheme:** `AWT-####` (next after AWT-0004).
+
+---
+
+## A. Routine settings (create via the routines form at claude.ai/code/routines)
+
+- **Name:** `AI Workforce Hub — daily reconcile`
+- **Repo / home:** the Fishbone Group KB (this database).
+- **Connectors:** **Smartsheet** (required). The board `db` is reached with the Claude Code **Artifact** tool (`read_db` / `write_db`) against the board URL above — confirm the run has it; if a form-created routine session does not expose the Artifact tool, run in the degraded mode in §C.
+- **Schedule (cron, UTC):** `0 6 * * *` = ~07:00 UK. **After the 26 Oct 2026 UK clock change, shift to `0 7 * * *`** (crons are UTC; the group has been bitten by this before).
+- **Read-only to every sister KB.** The only writes are to the "Fishbone AI Workforce" Smartsheet (owner-authorised group-management sheet) and the board `db` — nothing else.
+
+---
+
+## B. Routine prompt (paste verbatim into the form)
+
+> You are the daily reconcile between the **AI Workforce Hub board** and its **Smartsheet system of record**. You have no memory between runs; all IDs you need are in this prompt. You may write **only** to the "Fishbone AI Workforce" Smartsheet Tasks/Achievements/Roster sheets and to the board `db` at the URL below. Do not send email, touch any other Smartsheet, or edit any sister KB. If anything is ambiguous, leave it and note it in the run summary rather than guessing.
+>
+> **Board:** `https://claude.ai/code/artifact/bfe4bbc6-2718-409a-8512-2dc44988406b` — collections `roster`, `tasks`, `achievements` (shapes and Smartsheet IDs are listed below in this prompt).
+>
+> **Step 1 — promote board-added requests into Smartsheet.** `read_db` the board `tasks` collection. For each task with `source == "board"` and no `smartsheetRow` field:
+> 1. Read the Smartsheet Tasks sheet `8860839228606340`, find the highest existing `AWT-####`, and take the next number.
+> 2. Add a row (columns per the ID list): Task ID = the new `AWT-####`; Assigned to, Requested by, Request / question, Priority, Due date from the board task; Status = its status (usually Open); Source = "board". Do **not** set Health (column formula).
+> 3. `write_db update` that board task doc: set `taskId` to the new `AWT-####`, `smartsheetRow` to the new row id, and leave `source:"board"`. This clears its "pending sync" state on the board.
+>
+> **Step 2 — pull Smartsheet status back to the board.** Read every Tasks row. For each board task that has a `smartsheetRow` (or whose `taskId` matches a row's Task ID), `write_db update` the board doc so `status`, `response` (from Response / result), `doneDate` (Done date) and `priority` match Smartsheet. Smartsheet is authoritative for these. Do not create board docs for Smartsheet rows that never came from the board unless you also want them visible on the board — if so, `set` a board `tasks` doc keyed by the Task ID with the same fields and `source:"smartsheet"`.
+>
+> **Step 3 — refresh achievements.** Read the Achievements sheet `4569101748012932` and any Tasks rows newly moved to Done since yesterday. For each not already on the board (match on title+date, or Linked task), `set` a board `achievements` doc (id = the Smartsheet row id or a short slug) with `employee, date (YYYY-MM-DD), title, detail, source`. Never delete achievements.
+>
+> **Step 4 — refresh roster runtimes.** From the Roster sheet `8154403007760260`, `write_db update` each board `roster` doc's `nextRun` (and `routines`, `status`) if they changed.
+>
+> **Step 5 — run summary.** Write a short summary of what moved (requests promoted with their new AWT IDs, statuses synced, achievements added, anything left ambiguous). Keep it factual. Do not email it.
+>
+> Never set the Health column (it is a self-updating formula). Never invent a Done date. Never mark a task Done or Blocked yourself — only mirror what a human or the assigned employee set in Smartsheet.
+
+---
+
+## C. Degraded mode (if the routine run has no Artifact `db` tool)
+
+Every step above needs the Artifact `db` tool to read and write the board. If a form-created routine session does **not** expose that tool, it cannot touch the board, so do not create the routine expecting it to sync — the Hub still works, this way:
+- **Smartsheet is the single source of truth.** Minda (and Peter's/Eugene's routines) read and write the Tasks sheet directly as the record. The board stays the seeded live snapshot plus Minda's own in-page queue.
+- **Refresh the board on demand from a normal Claude Code session** (which always has the Artifact tool): run Steps 1–4 by hand — or ask this database to — whenever the board should be brought back in step with Smartsheet.
+- Be honest about it: if the daily routine can't reach the board, tell Minda the board is a manual mirror, don't imply it auto-syncs. The daily routine is the convenience; Smartsheet is the correctness.
+
+---
+
+## D. Charter grants — apply in each employee's own KB (not from the group DB; §6a)
+
+These give each employee a **narrow, explicit** write into the Hub Tasks sheet so it can report progress. Paste into the employee's charter (its own KB / a session there or Minda), modelled on the group Document-Register append exception.
+
+**Peter — add to the charter's "may do" list (§2a):**
+
+> **AI Workforce Hub (scoped exception).** Peter may set `Status`, `Response / result` and `Done date` **on its own rows** (Assigned to = Peter) in the group **"Fishbone AI Workforce" → Tasks & Requests** sheet (id `8860839228606340`, workspace `4946803578693507`), to report progress on work assigned to it. It may **read** the Roster, Tasks and Achievements sheets. It may **append** an Achievements row for work it has completed. **No other write** to that workspace (never another employee's rows, never the Health column), and **no change** to Peter's existing boundaries: still reads + drafts only, never sends email, files with anyone, or writes to any other system of record.
+
+**Eugene — add to the charter's reach note:**
+
+> **AI Workforce Hub.** Eugene may read the group **"Fishbone AI Workforce"** workspace (id `4946803578693507`) and update its own rows (Assigned to = Eugene) in the Tasks & Requests sheet (id `8860839228606340`) — Status / Response / Done date — and append Achievements rows for completed work. This is within Eugene's existing "edits code/repos/KB directly" reach; it does not touch the guide-only-for-live-systems or never-holds-secrets boundaries.
+
+**Future hires** inherit the Peter-style scoped grant (own rows only) when Eugene scaffolds them.
+
+---
+
+## E. Verify after the routine's first run
+- A request added on the board acquires an `AWT-####` and a Smartsheet row within a day; its "pending sync" marker clears.
+- A status set in Smartsheet (or by an employee) appears on the board card and dot after the next run.
+- New Done tasks and Achievements rows show on the board timeline.
+- The Health column stays formula-driven and correct; no row of another employee is ever edited by a grant-holder.
+
+---
+
+*Output v1, Fishbone Group. Built 2026-09-14 alongside the Hub board and Smartsheet workspace. The routine is created by Minda via the routines form; the charter grants are applied in the Peter and Eugene KBs. See the group `change-log/`.*
