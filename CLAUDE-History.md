@@ -7,6 +7,13 @@ so that `CLAUDE.md` never has to grow an intro blockquote just to record what ch
 routine rule or roster change now only needs a new line here, not a rewrite of the standing-context
 paragraph above it._
 
+- **2026-09-27.** **`CLAUDE-Rules.md` §6a — Composio fallback-connector rule added.** Adopts
+ Alex's `Raw/2026-09-27_Proposal_Composio-Rollout.md` into this database's governance: Composio
+ (CLI pinned 0.4.1) may stand in when a native connector fails, as a transport only — every §6a
+ limit binds through it; per-seat aliases in the shared org; verify account and first write;
+ Minda authorises logins/links and runs removals; no secrets. Permission rule already in
+ `.claude/settings.json` (Minda, git `2b8ed60`). Owner-authorised (Minda: "adopt CLAUDE-Rules.md"
+ → "Add Composio rule").
 - **2026-09-23 (later).** **Two corrections to the split below.** (1) The split had paraphrased
  §1's Hub Coordination Standard bullet list (Rules A/B/plain-brief) into a short pointer claiming
  the rules lived in `CLAUDE-Rules.md` §0 — they did not; the original bullet text belongs in §1 and

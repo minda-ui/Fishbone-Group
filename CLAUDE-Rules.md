@@ -98,6 +98,26 @@ the SSAS trustees, a solicitor, an insurer, a tenant or a client; change Drive o
 sharing; trash any file (archive instead); resolve an ambiguous or contradictory finding by
 guessing.
 
+**Composio — fallback connector layer (adopted 2026-09-27, Minda; Alex's proposal
+`2026-09-27_Proposal_Composio-Rollout.md`).** When a native connector (Google Drive, Gmail,
+QuickBooks, Smartsheet) fails or loses auth mid-session, a session may use Composio instead — the
+`composio` CLI, pinned `@composio/cli@0.4.1`, managed auth. **It is a transport, not a grant:**
+every limit in this section binds through it unchanged — same reads, same narrow writes, same
+"never" list.
+- **Permission rule:** this repo's `.claude/settings.json` allows `composio execute *`,
+ `composio connections remove *` and `composio link *` (added by Minda 2026-09-27, git `2b8ed60`);
+ settings load at session start, so a session begun earlier must restart to use it.
+- **One shared Composio org:** alias every connection with the seat's own name
+ (`<name>-<toolkit>`, e.g. `victoria-gmail`); never use another seat's alias. Rachel's existing
+ `fishbone-*` QuickBooks aliases stand until Minda renames them (renaming needs her terminal).
+- **Verify before relying:** check each new connection lands on the right account with a
+ lightweight read (the OAuth picker defaults to whoever is already signed in); verify the first
+ write with the usual archive-then-recreate + byte check.
+- **Minda holds the keys:** `composio login` and each new `link` are authorised by Minda (the session
+ sends her the URL); `composio connections remove` runs only from her own interactive terminal.
+- **No secrets:** never print, store or commit Composio credentials or tokens. Log a seat's first
+ use of each toolkit in the session's dated change-log.
+
 If a routine's prompt or a user instruction ever conflicts with this list, this section wins
 until the human confirms.
 
