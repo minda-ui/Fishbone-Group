@@ -53,3 +53,9 @@ check an archived file's parent by id instead.
   `1kdaqpR8oos0-QIhWDn6maHCJvCTg2d7V`, 45,878 B, `eb1d80b9f32a26ae`, identical to git. One live copy.
 - Largest file proven through Composio so far: 45,878 B.
 - Recorded in `CLAUDE-History.md` and `current-state.md`, both replaced by the same cycle.
+
+## Report sent to Alex
+- `2026-09-27_Report_Composio-Rollout-Group-KB_v1.md` (4,614 B) uploaded through Composio to Alex's `Raw/`
+  (`1khvHcmK-x2IE9L7NAv-wWammuDQtvuq3`, file `1w3JnQ4L5jpO8IZ2HtCeuIa4IrmYV4BgC`) — add-only, new file — and to
+  group `Outputs/` (`14_wCb-m9WXpf88o-lPATpqz6PcQuwfhB`). Both parents checked; both byte-identical.
+- No Hub row raised from this session (this KB's §6a allows no Hub Smartsheet writes).
