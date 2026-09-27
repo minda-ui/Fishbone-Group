@@ -21,3 +21,11 @@ Follows the §6a Composio rule adopted earlier today (`change-log-2026-09-27-cla
 - `GOOGLEDRIVE_UPLOAD_FILE` silently falls back to My Drive root on a bad folder ID — always check the
   parent after upload.
 - No other seat's alias was used. Gmail / Smartsheet / QuickBooks not linked for `victoria-*`.
+
+## In-place edit test (same session, Minda's request)
+- This section was added by overwriting this file in place with `GOOGLEDRIVE_EDIT_FILE`
+  (`victoria-googledrive`), same Drive file id `1H9fxvpahRe6FJuvF9cTcN5M12PoA9pRl` — no new file, no
+  archive copy. The tool replaces the whole body (no partial edits), so the full text is sent each time.
+- Scope note: an in-place overwrite skips archive-then-recreate, so it is used here only on this
+  session's own new file. Governed files (`CLAUDE*.md`, the four control files, Wiki articles, past
+  change-logs) stay on archive-then-recreate (`CLAUDE.md` §1).
