@@ -29,3 +29,18 @@ Follows the §6a Composio rule adopted earlier today (`change-log-2026-09-27-cla
 - Scope note: an in-place overwrite skips archive-then-recreate, so it is used here only on this
   session's own new file. Governed files (`CLAUDE*.md`, the four control files, Wiki articles, past
   change-logs) stay on archive-then-recreate (`CLAUDE.md` §1).
+
+## Full archive-then-recreate through Composio (Minda's request) — both passed
+Old file renamed + moved to `Archive/` in one call (`GOOGLEDRIVE_UPDATE_FILE_PUT`: name, add/remove
+parents), new file uploaded to the root (`GOOGLEDRIVE_UPLOAD_FILE`). Before: live Drive copy checked
+identical to git. After: parents checked; both copies downloaded and hashed; one live copy each in root.
+
+| File | Old id → Archive (bytes unchanged) | New live id | New size / sha256 (first 16) |
+|---|---|---|---|
+| `current-state.md` | `1MlIZSV6QND8vBeg5DW1IcWNjbpUOM7-L`, 20,875 B | `16elFcyMu5QwKurPZsaZ8uQm0woIo7OKk` | 21,529 B / `ecdad54528413b63` |
+| `open-issues.md` | `19eKiZ5sh-QundSbvKhQxlMzTK1DPWHws`, 38,077 B | `1rEGAz7HZzzlB2v6OUD61A4uBEjgUu7Bn` | 39,837 B / `d31ceca3f3fbfbd7` |
+
+Changes carried: `open-issues.md` gained **OI-18** (six `Raw/` items with no ledger row); `current-state.md`
+records this rollout, OI-18, and marks "Raw items pending" unverified.
+Gotcha: `GOOGLEDRIVE_FIND_FILE` on `Archive/` (hundreds of files) returned no `data` at pageSize 200 —
+check an archived file's parent by id instead.
