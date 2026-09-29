@@ -23,6 +23,16 @@
           }
         ]
       }
+    ],
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash \"$CLAUDE_PROJECT_DIR/.claude/hooks/good-night-docs-check.sh\""
+          }
+        ]
+      }
     ]
   },
   "permissions": {
