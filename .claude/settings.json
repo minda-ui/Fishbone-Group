@@ -40,6 +40,21 @@
       "Bash(composio execute *)",
       "Bash(composio connections remove *)",
       "Bash(composio link *)"
+    ],
+    "deny": [
+      "Bash(composio execute GMAIL_BATCH_DELETE_MESSAGES*)",
+      "Bash(composio execute GMAIL_DELETE_*)",
+      "Bash(composio execute GMAIL_FORWARD_MESSAGE*)",
+      "Bash(composio execute GMAIL_MOVE_THREAD_TO_TRASH*)",
+      "Bash(composio execute GMAIL_MOVE_TO_TRASH*)",
+      "Bash(composio execute GMAIL_REPLY_TO_THREAD*)",
+      "Bash(composio execute GMAIL_SEND_DRAFT*)",
+      "Bash(composio execute GMAIL_SEND_EMAIL*)",
+      "Bash(composio execute GOOGLEDRIVE_DELETE_*)",
+      "Bash(composio execute GOOGLEDRIVE_GOOGLE_DRIVE_DELETE_FOLDER_OR_FILE_ACTION*)"
     ]
-  }
+  },
+  "enabledMcpjsonServers": [
+    "composio"
+  ]
 }
