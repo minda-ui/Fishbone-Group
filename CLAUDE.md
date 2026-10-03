@@ -87,13 +87,15 @@ never by Drive id.** Raw and Archive items keep stable ids.
 
 ### Sister systems (link, do not copy)
 
-Thirteen other knowledge systems exist (the Fishbone Holdings Ltd Knowledge Base was added 2026-09-05, the
+Fourteen other knowledge systems exist (the Fishbone Holdings Ltd Knowledge Base was added 2026-09-05, the
 Amfa Furniture Ltd Knowledge Base 2026-09-05, the Fishbone SSAS Knowledge Base 2026-09-06 and the
 Fishbone Waste Ltd Knowledge Base 2026-09-10 — so **all seven group companies now have their own KB** —
 **Peter, the group's data-collection assistant, was added 2026-09-12**, and **Eugene, the group's IT &
 engineering assistant, was added 2026-09-12** as the second AI employee; **Anna, the group's AI
 Construction Assistant — a technical construction adviser — was added 2026-09-22** with her own Drive
-home and `minda-ui/Anna` mirror).
+home and `minda-ui/Anna` mirror; **Nadia, the Amfa Sales & Ops Assistant, gained her own standalone KB
+2026-09-26** — Drive home + `minda-ui/Nadia` mirror — converted from adopting the Amfa Furniture Ltd KB
+(see the 2026-09-26 revision below), which is what raises the count from thirteen to fourteen).
 **Revised 2026-09-20:** **Victoria — the CEO's Assistant and AI Workforce Coordinator** — and
 **John — the AI Properties Operations Assistant** — added below; both were missing from this
 roster. Neither adds a new knowledge system to the count above: Victoria has no separate KB or git
@@ -105,9 +107,23 @@ file), is tracked live on the **Fishbone AI Workforce Hub** (Smartsheet workspac
 Workforce": `Roster`, `Tasks & Requests`, `Help & Lessons`), which supersedes this section as the
 day-to-day source for who is on the workforce; this section is kept as the group KB's own dated
 record of it.
+**Revised 2026-09-24, updated 2026-09-26:** **Nadia — the Amfa Sales & Ops Assistant** — added 2026-09-24,
+then **converted to a standalone KB on 2026-09-26** (owner decision, Minda; proposed/coordinated by Victoria,
+built by Eugene, AWT-0104). She now has **her own standalone Knowledge Base** — a Drive home (`Nadia - AI Amfa
+Sales & Ops Assistant`, `1dWtVYhQZlluqDiL4azeaEN2t4Y-be9xT`) with its own `CHARTER.md` / `Charter-Rules.md` /
+`Charter-History.md`, four control files and `Raw/Wiki/Outputs/Drafts/Archive`, mirrored to git `minda-ui/Nadia`
+— which is the added system in the count above. (Originally, 2026-09-24, she **adopted** the Amfa Furniture Ltd
+KB with no KB of her own, on the John pattern; on 2026-09-26 her identity was moved out of that KB's root into
+her own home, the Amfa **company** KB left intact as one of the seven.) Draft-only outward, she runs Amfa's
+enquiry→quote→order pipeline (an Enquiries/Quotes CRM sheet, Smartsheet `5405540723328900`, feeding the AMFA
+order tracker) and reads/maintains the Amfa Furniture Ltd KB + AMFA Smartsheet from her own home, while Amfa
+stays dormant — sales **test-running under the Fishbone Construction Ltd umbrella** until the 1 May 2027 launch.
+Proposed by Victoria (AWT-0092), built by Eugene (AWT-0093 stand-up, AWT-0104 standalone conversion),
+owner-authorised (Minda). Status **Building** on the Hub Roster until `enquiries@amfa.uk` is connected; Peter
+routes Amfa enquiries into her `Raw/` (AWT-0095).
 
-**The Hub Coordination Standard (owner "main thing", Minda 2026-09-20; AWT-0040).** Two standing
-rules govern how every AI employee — Victoria, Rachel, John, Peter, Eugene, Helen, Darius, Anna and Alex
+**The Hub Coordination Standard (owner "main thing", Minda 2026-09-20; AWT-0040).** The standing
+rules below govern how every AI employee — Victoria, Rachel, John, Peter, Eugene, Helen, Darius, Anna, Nadia and Alex
 — uses the Fishbone AI Workforce Hub:
 - **Rule A — session start, check the Hub first.** At every session start, before other work, read
  Tasks & Requests for your own Assigned-to rows that are Open or In Progress; flip a task you take
@@ -122,6 +138,12 @@ rules govern how every AI employee — Victoria, Rachel, John, Peter, Eugene, He
  charters since 2026-09-21; see `CLAUDE-History.md`).** Say it in fewer words. Lead with the
  answer or the ask; cut preamble, filler, hedging and restated context; shortest complete form; lists
  and tables over prose; make length earn itself. Applies to every message, charter, log, Hub row and doc.
+- **Rule F — shared-space changes are registered and broadcast (owner ruling, Minda 2026-09-27; Hub
+ AWT-0151).** A change to any space more than one employee reads from — a Hub sheet (Tasks & Requests,
+ Help & Lessons, the Authority Register), a shared Drive structure — is not finished until it is both
+ **registered** (a Tasks & Requests row, or a Help & Lessons row for a lesson, saying what changed and
+ why) and **broadcast** (a `Raw/` hand-off note in the own `Raw/` of every employee it could affect).
+ Having the authority to make the change is never grounds to skip either half.
 
 The full standard is recorded as the group session-discipline standard in Alex's own
 `Process-Housekeeping-and-Session-Discipline.md` and propagated to each employee's own charter §0
@@ -157,7 +179,7 @@ Minda for processing, because the archive is a filing store, not a knowledge sys
 | Eugene - AI IT Assistant | Drive root, `1o4MBRcckZBspw-uT6qM2V-74H6OsRK9T`, git mirror `minda-ui/Eugene` | The group's **IT & engineering assistant** — the enablement layer behind the AI workforce (own charter, four control files, and `Runbooks`/`Infra-Inventory`/`Hardware-Projects` folders): produces software-setup runbooks + config and verifies them, scaffolds new AI employees and drafts their routine prompts, writes/tests hardware & automation code, and keeps the infrastructure inventory. **Edits code/repos/KB directly; guide-only for live systems (a human executes Admin console / DNS / migrations / accounts / the routines form / hardware deploy); never holds secrets (§6a).** Connectors Drive + GitHub + Web (no Gmail). Interactive; cite, never copy. | New (2026-09-12); interactive, no routines |
 | Anna - AI Construction Assistant | Drive root, `1b0p62LxaX4C9H1cvK1R7K1KdX6-JcvoT`, git mirror `minda-ui/Anna` | The group's **technical construction adviser** (own charter, four control files, and `Reference`/`Queries`/`Raw` folders): answers Minda's on-site & build questions — Building Regulations (Approved Docs A–S), methods & sequencing, drylining/finishes, materials, buildability, CDM — grounded and **sourced**. **Adviser, not certifier — structural / fire / Building-Control / party-wall / gas / electrical decisions are flagged and deferred to the named professional; reads and cites the Fishbone Construction Ltd KB, never writes to it; drafts only, never sends email or writes to a system of record (§6a).** Connectors Drive + Web + GitHub (no Gmail). Interactive; cite, never copy. | New (2026-09-22); interactive, no routines |
 | Victoria - CEO's Assistant / AI Workforce Coordinator | Drive root, `1X0R91ej11K6JDcD0ZjT925O5dCX6Q4yn` (identity folder — `CHARTER.md` + `README.md` only) | **No separate KB or git mirror — operates from this Fishbone Group Knowledge Base** (the master index), by design. Coordinates the AI workforce on Minda's behalf (Peter, Eugene, Helen, Alex, Darius, Rachel, John, Anna), keeps the group master index current, and helps stand up and register new employees. **Proposes and coordinates; Minda decides** — not an autonomous employee, same §6a guardrails as the estate. Tracked on the **Fishbone AI Workforce Hub** (Smartsheet "Fishbone AI Workforce": Roster / Tasks & Requests / Help & Lessons). | Added here 2026-09-20 (active since 2026-09-16, previously missing from this roster) |
-| John - AI Properties Operations Assistant | Operates the **Fishbone Properties Ltd - Knowledge Base** (Drive `11SREv6Rx4jvTzMtpQbKqzzZkTN4wZgNk`, git mirror `minda-ui/Fishbone-Properties-Ltd`) — no separate KB of his own; adopts the existing Properties system | The group's **AI Properties Operations Assistant** — hybrid reach: operational write inside the Properties domain (intake pipeline, document numbering into the group Document Register, Tasks, Raw→Wiki) via Google Drive + Gmail (`ops@fishboneproperties.co.uk`, internal hand-off only) + Smartsheet + Web + QuickBooks (read-only); **draft-only outward** — tenant/compliance communications go to Drafts/ for Irina to review and release, never contacts a tenant or external party directly; finance write stays with Rachel. Assists Irina (human property manager); reports to Victoria (coordinator) / Minda. Inheriting the Properties KB's 8 existing cloud routines under a phased migration plan. Cite, never copy. | Building/onboarding (2026-09-20), previously missing from this roster; attended (dry-run-then-tick) until Minda confirms unattended cutover |
+| John - AI Properties Operations Assistant | Operates the **Fishbone Properties Ltd - Knowledge Base** (Drive `11SREv6Rx4jvTzMtpQbKqzzZkTN4wZgNk`, git mirror `minda-ui/Fishbone-Properties-Ltd`) — no separate KB of his own; adopts the existing Properties system | The group's **AI Properties Operations Assistant** — hybrid reach: operational write inside the Properties domain (intake pipeline, document numbering into the group Document Register, Tasks, Raw→Wiki) via Google Drive + Gmail (`ops@fishboneproperties.co.uk`, internal hand-off only) + Smartsheet + Web + QuickBooks (read-only); **draft-only outward** — tenant/compliance communications go to Drafts/ for Irina to review and release, never contacts a tenant or external party directly; finance write stays with Rachel. Assists Irina (human property manager); reports to Victoria (coordinator) / Minda. Inheriting the Properties KB's 8 existing cloud routines under a phased migration plan. Cite, never copy. | Building/onboarding (2026-09-20); **unattended for Smartsheet + Google Drive writes, within his §2 guardrails, since 2026-09-24 (owner-authorised, Minda)** — the prior attended (dry-run-then-tick) gate is lifted for those two systems only. Unchanged: outward email stays **draft-only** (Irina reviews/releases; never contacts a tenant or external party directly), **finance write stays with Rachel**, QuickBooks is **read-only**, the Property Register (`4273518114113412`) and Budget sheets are **read-only**, and no payments/filings/commitments/sharing-changes. Landed via the group `CLAUDE.md` §1 (here), John's `CHARTER.md` §2 (Properties KB `/Raw` hand-off + Hub row for John to fold in), and the live `ops@` routine prompt (Minda updates — that is what actually drops the per-write tick) |
 | Loans Wiki | `Loans/Wiki`, `1lIfM6Rjk_dlZsRzaPSvio7eNtwNA3S_T` | 3 entity pages, 14 facility pages, 2 revolving-book pages, planned property sale; workbook in `Loans/Outputs`. Does not cover the Holdings intercompany loans. | Complete as at 25/08/2026, manually maintained |
 | Smartsheet | Nine workspaces, all owned by minda@ (`external-source-register.md` SRC-16 to SRC-30), plus the group **"Fishbone Group - Documents"** workspace (SRC-38/39, created 2026-09-09) | "1. General" (shared registers: Document Register, Tasks, Contacts, Classifier), "4. Property maintenance" (Properties Ltd register), "Fishbone Commercial Properties Ltd", "AMFA Furniture", "My Work" (group loan sheets, budgets), "2. Sourcing", "3. Project Delivery", "Minda" (personal), and **"Fishbone Group - Documents"** (the single group Document Register + Change Requests). "Workspace 1" belongs to Anthill Homes and is out of scope. | Live; the property registers, the "1. General" Document Register and the new group Document Register are the most current data anywhere |
 | Finance archive | Drive root, `Finance-20260903T154848Z-1-001 / Finance`, `1BVk_RfuJ3rBRujZUMC98KMlil4AkICL4` (SRC-31) | Statutory accounts, CT600s, bank and loan statements, PAYE and CIS returns by company and accounting year for Construction (2017-18 on), Properties (2020-21 on), Commercial Properties, Holdings (both 2023-24 on) and Waste. Sensitive: cite, never copy. | Filing store. Fifteen accounts PDFs processed through Raw on 03/09/2026 (batches 1 and 2); the rest listed in `external-source-register.md` SRC-31 |
