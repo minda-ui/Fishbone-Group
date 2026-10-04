@@ -70,3 +70,8 @@ Before telling Minda anything about a row:
   - Planned "create John's intake routine". It had been running since 20 Sep. Check change-logs for evidence a thing already exists.
   - Reassigned a Properties control copy to John, then had to reverse it when Minda ruled Properties mail is monitor-only. Ask whose mailbox a mail really belongs to.
   - Closed fewer rows than promised because Response notes said parts were "not covered". Say so plainly rather than closing silently.
+- **2026-10-04 (HMRC pull).**
+  - My plan listed the FBCP VAT certificate as something Minda still had to fetch. Rachel had already sent it to Alexey on 28 Sep. Read the sent thread and its attachment names before listing a document as outstanding.
+  - I grouped CIS returns and the BBL statements under "HMRC". AWT-0074 says CIS comes from QuickBooks and BBL from the lender. Read the row's own text before grouping tasks.
+  - Reading the files Minda dropped in Raw paid off: the CT figures matched Alexey's open item exactly (tax £2,145.86 against his £2,146) and also showed interest and a penalty he did not have. Read what arrives, do not just acknowledge it.
+  - Files Minda drops land wherever she is working (the group Raw, not the seat's Raw). Say where they are and hand the seat the Drive ids.
