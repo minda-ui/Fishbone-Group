@@ -32,6 +32,7 @@ Before telling Minda anything about a row:
    - Set Status = Done and Done date.
    - Report how many closed, how many did not, and why.
 7. **Adding rows:** check the next ID is free with a `get_sheet_summary` filter on Task ID, and read the "Duplicate Task ID?" cell in the result. The routine also mints IDs (AWT-0280 collided on 2026-10-03). Renumber your own row if it collides.
+7a. **Project column (from 2026-10-09, AWT-0493):** Tasks & Requests has a `Project` column. Put the job number (e.g. FC2611) there and at the start of the Request text when a row concerns a job. Read the job's row in the Project Register (Smartsheet 5250912102778756) before acting. Money columns are Rachel's.
 8. **Never**: send external email, pay, file, change sharing, trash (§6a). Drafts only, for Minda to send. Delete a draft only if she says so.
 
 ## How we put a decision to Minda
@@ -74,4 +75,9 @@ Before telling Minda anything about a row:
   - My plan listed the FBCP VAT certificate as something Minda still had to fetch. Rachel had already sent it to Alexey on 28 Sep. Read the sent thread and its attachment names before listing a document as outstanding.
   - I grouped CIS returns and the BBL statements under "HMRC". AWT-0074 says CIS comes from QuickBooks and BBL from the lender. Read the row's own text before grouping tasks.
   - Reading the files Minda dropped in Raw paid off: the CT figures matched Alexey's open item exactly (tax £2,145.86 against his £2,146) and also showed interest and a penalty he did not have. Read what arrives, do not just acknowledge it.
+- **2026-10-09 (project way of working).**
+  - "Check the Raw folder" means every seat's Raw, not only mine. On the first check I looked at two folders and said nothing was new; a Drive-wide search by created time found seven replies from other seats. Search by `createdTime` across Drive, then read the notes.
+  - Before saying a routine change is "done", check whether Minda has pasted it. A prompt in Outputs is a draft; v4 stays live until she pastes the new one.
+  - Seats' replies correct my own facts (Nadia's Raw id, Alex's duplicate-ID cause). Read them and carry the corrections into the log.
+- **2026-10-04 (continued).**
   - Files Minda drops land wherever she is working (the group Raw, not the seat's Raw). Say where they are and hand the seat the Drive ids.
