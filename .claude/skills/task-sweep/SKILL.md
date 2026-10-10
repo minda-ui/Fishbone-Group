@@ -79,5 +79,11 @@ Before telling Minda anything about a row:
   - "Check the Raw folder" means every seat's Raw, not only mine. On the first check I looked at two folders and said nothing was new; a Drive-wide search by created time found seven replies from other seats. Search by `createdTime` across Drive, then read the notes.
   - Before saying a routine change is "done", check whether Minda has pasted it. A prompt in Outputs is a draft; v4 stays live until she pastes the new one.
   - Seats' replies correct my own facts (Nadia's Raw id, Alex's duplicate-ID cause). Read them and carry the corrections into the log.
+- **2026-10-10 (procedures, Sarah, close-out test).**
+  - A seat's summary of an owner ruling is a claim. I passed on "FC2613 replaces FP2401-01" from Rachel's note; Minda's standing decision B said otherwise. Check the standing decision before relaying.
+  - A register note ("one-night job") is a claim too. Anna's email search showed three weeks. Verify with the job's own record.
+  - Check a Hub ID is free before writing it into a document, not after. Count twice (26 v 27).
+  - Before proposing a new system, ask the owner and search Drive for what exists. Minda later said Construction holds ISO 9001, 14001 and 45001; the Wiki had nothing.
+  - When an owner decides, write the rule narrowly (one document) and ask before widening it (standing authorisation was her choice).
 - **2026-10-04 (continued).**
   - Files Minda drops land wherever she is working (the group Raw, not the seat's Raw). Say where they are and hand the seat the Drive ids.
