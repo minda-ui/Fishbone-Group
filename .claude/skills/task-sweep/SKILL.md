@@ -90,5 +90,10 @@ Before telling Minda anything about a row:
   - Names, dates and causes in a seat's draft come from emails and invoices, and the review found four wrong: Andrej on FC2609 (not on site), a start date from the first email (true start 20 July), the finish taken from the last invoice (13 Aug), the pilaster blamed on the client (it was our own defect). Ask the person who was there; do not repeat the draft's version as the question.
   - Cross-check an answer against the live record before writing it down. "Repair free, within the 15 days" clashed with 15 invoiced days; asking once more found the out-of-hours work.
   - A date in the Project Register or a Hub row is not a job date. Ask for start and finish.
+- **2026-10-10 late, part 2 (HSE/QC/ENV decisions).**
+  - Putting the review to Minda one question at a time worked again: five decisions in a few minutes, each one recorded as she gave it.
+  - I wrote the owner's full name from an initial ("M Gaudiesius" became "Minda Gaudiesius"). Ask for a full name; never build one from an initial or from a known first name.
+  - I repeated the group KB's "Fishbone Waste is dormant" as fact in a note to Rachel. The KB claim was months old and wrong. A KB statement about a company's status is a claim: ask Minda before relying on it.
+  - A short answer can carry a rule bigger than the question ("Andrejus Prutkovas" as deputy turned out to be a co-director with 50%, so the whole "deputy" frame went). Restate what the answer changes before writing it down.
 - **2026-10-04 (continued).**
   - Files Minda drops land wherever she is working (the group Raw, not the seat's Raw). Say where they are and hand the seat the Drive ids.
