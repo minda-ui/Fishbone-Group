@@ -85,5 +85,10 @@ Before telling Minda anything about a row:
   - Check a Hub ID is free before writing it into a document, not after. Count twice (26 v 27).
   - Before proposing a new system, ask the owner and search Drive for what exists. Minda later said Construction holds ISO 9001, 14001 and 45001; the Wiki had nothing.
   - When an owner decides, write the rule narrowly (one document) and ask before widening it (standing authorisation was her choice).
+- **2026-10-10 late (close-out review with Minda, 28 questions).**
+  - Reviewing a report with Minda one question at a time worked: each answer was recorded the moment it came, and nothing was left to memory. Keep it.
+  - Names, dates and causes in a seat's draft come from emails and invoices, and the review found four wrong: Andrej on FC2609 (not on site), a start date from the first email (true start 20 July), the finish taken from the last invoice (13 Aug), the pilaster blamed on the client (it was our own defect). Ask the person who was there; do not repeat the draft's version as the question.
+  - Cross-check an answer against the live record before writing it down. "Repair free, within the 15 days" clashed with 15 invoiced days; asking once more found the out-of-hours work.
+  - A date in the Project Register or a Hub row is not a job date. Ask for start and finish.
 - **2026-10-04 (continued).**
   - Files Minda drops land wherever she is working (the group Raw, not the seat's Raw). Say where they are and hand the seat the Drive ids.
