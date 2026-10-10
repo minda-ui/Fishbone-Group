@@ -95,5 +95,10 @@ Before telling Minda anything about a row:
   - I wrote the owner's full name from an initial ("M Gaudiesius" became "Minda Gaudiesius"). Ask for a full name; never build one from an initial or from a known first name.
   - I repeated the group KB's "Fishbone Waste is dormant" as fact in a note to Rachel. The KB claim was months old and wrong. A KB statement about a company's status is a claim: ask Minda before relying on it.
   - A short answer can carry a rule bigger than the question ("Andrejus Prutkovas" as deputy turned out to be a co-director with 50%, so the whole "deputy" frame went). Restate what the answer changes before writing it down.
+- **2026-10-10 late, part 3 (CDM check, safe way of work).**
+  - A one-word answer ("Agreed") to a two-way question is ambiguous. Ask again with the two options numbered; record the second answer.
+  - Before closing a row whose Response says "also not drafted", split the uncovered item into its own row first (AWT-0524 gave AWT-0541 and AWT-0542). Do not close over a hidden item.
+  - Testing each clause against a real job (Merry Hill, BBC Cardiff) turned a legal-sounding check into a plain yes/no for Minda and exposed real practice gaps (no induction or competence record). Use a live job as the test.
+  - State the basis of a check in the record exactly (who checked, against what, who did not). Do not let it read as a specialist sign-off.
 - **2026-10-04 (continued).**
   - Files Minda drops land wherever she is working (the group Raw, not the seat's Raw). Say where they are and hand the seat the Drive ids.
