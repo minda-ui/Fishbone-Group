@@ -112,5 +112,10 @@ Before telling Minda anything about a row:
   - Search narrowly. A Smartsheet text search for "mortgage" returned 100 rows; go to one sheet and one column, or ask Minda where to look.
   - "Who is responsible for X?": check the Roster and the Hub rows, say what was checked and not, name the gap (no owner for sales). Minda may already know the answer; record it as hers.
   - Minda pointing me to a folder ("check all folders") beat the web: the licence was in Drive. Do not open password, bank or HR folders.
+- **2026-10-12 late (Atlas ISO capture).**
+  - Photos of a platform are readings, not records: write them up as owner notes and mark what was read from a photo. The 17-file capture Minda saved is the record; "Check Raw folder too" meant the group Raw, found by `createdTime`.
+  - A certificate answers dashboard shorthand ("Nov '28" was the expiry). Read the document before guessing what a figure means, and label any date not on it as inference (next surveillance about 8 Nov 2026).
+  - `add_rows` can land twice: after adding a Hub row, filter on the ID, read every row returned, and delete only an exactly identical copy you created.
+  - I wrote "15 Citation-raised" into a Hub row from memory; the dashboard said 16 Citation-raised plus 1 internal. Check a count against the source before putting it in a row someone else will act on.
 - **2026-10-04 (continued).**
   - Files Minda drops land wherever she is working (the group Raw, not the seat's Raw). Say where they are and hand the seat the Drive ids.
