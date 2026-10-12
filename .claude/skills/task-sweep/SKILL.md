@@ -100,5 +100,12 @@ Before telling Minda anything about a row:
   - Before closing a row whose Response says "also not drafted", split the uncovered item into its own row first (AWT-0524 gave AWT-0541 and AWT-0542). Do not close over a hidden item.
   - Testing each clause against a real job (Merry Hill, BBC Cardiff) turned a legal-sounding check into a plain yes/no for Minda and exposed real practice gaps (no induction or competence record). Use a live job as the test.
   - State the basis of a check in the record exactly (who checked, against what, who did not). Do not let it read as a specialist sign-off.
+- **2026-10-12 (PM v1.1, mail answers, Waste licence).**
+  - Hub IDs are minted concurrently by the routine. Before an ID goes into a document, check it is free; after `add_rows`, read the duplicate cell; probe a range well above the last ID seen (I used AWT-0544, 0571 and 0572 and all were taken, and had to archive and recreate an approved text).
+  - Read a Hub row's Response, not only its Request. I called a settled VAT point "still open".
+  - A state file or log line ("Minda's 3-week absence") is a claim. Ask her. She is remote, available.
+  - When Minda says where something is ("check Collaboration Space, check all folders"), go there: the Waste licence was in Drive and Peter could not reach the public register. Do not open folders that hold passwords, bank details or HR.
+  - Escalations from the triage routine can be wrong or stale (the Starling "failed" alert, the Google sign-in). Ask the owner before acting on them.
+  - A short answer can carry a rule bigger than the question; ask what a phrase means ("own work") before recording it as accepted.
 - **2026-10-04 (continued).**
   - Files Minda drops land wherever she is working (the group Raw, not the seat's Raw). Say where they are and hand the seat the Drive ids.
