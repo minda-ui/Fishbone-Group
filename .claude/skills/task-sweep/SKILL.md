@@ -107,5 +107,10 @@ Before telling Minda anything about a row:
   - When Minda says where something is ("check Collaboration Space, check all folders"), go there: the Waste licence was in Drive and Peter could not reach the public register. Do not open folders that hold passwords, bank details or HR.
   - Escalations from the triage routine can be wrong or stale (the Starling "failed" alert, the Google sign-in). Ask the owner before acting on them.
   - A short answer can carry a rule bigger than the question; ask what a phrase means ("own work") before recording it as accepted.
+- **2026-10-12 later (Waste, John, ISO).**
+  - When Minda's statements shift as we go (three versions of "who carries the waste"), record each, say plainly where it does not fit the last one, and ask one question at a time. Do not pick a version or give a legal conclusion; hand the legal question to Anna with sources.
+  - Search narrowly. A Smartsheet text search for "mortgage" returned 100 rows; go to one sheet and one column, or ask Minda where to look.
+  - "Who is responsible for X?": check the Roster and the Hub rows, say what was checked and not, name the gap (no owner for sales). Minda may already know the answer; record it as hers.
+  - Minda pointing me to a folder ("check all folders") beat the web: the licence was in Drive. Do not open password, bank or HR folders.
 - **2026-10-04 (continued).**
   - Files Minda drops land wherever she is working (the group Raw, not the seat's Raw). Say where they are and hand the seat the Drive ids.
