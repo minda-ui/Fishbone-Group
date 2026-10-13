@@ -117,5 +117,12 @@ Before telling Minda anything about a row:
   - A certificate answers dashboard shorthand ("Nov '28" was the expiry). Read the document before guessing what a figure means, and label any date not on it as inference (next surveillance about 8 Nov 2026).
   - `add_rows` can land twice: after adding a Hub row, filter on the ID, read every row returned, and delete only an exactly identical copy you created.
   - I wrote "15 Citation-raised" into a Hub row from memory; the dashboard said 16 Citation-raised plus 1 internal. Check a count against the source before putting it in a row someone else will act on.
+- **2026-10-13 (256 open rows; Minda: "we need to stop working like that").**
+  - With a big backlog, do not put escalations to Minda one at a time. Read every row first, sort into groups using her standing rulings (Construction is Anna's, Properties and the mortgage process are John's, finance is Rachel's, marketing and alerts are noise), propose one list per group with the outcome, and take one approval. Only genuine decisions go one by one.
+  - Her numbered answers map to the numbered questions. An unnumbered approval question (the one about groups A to F) is not answered by them; ask it again.
+  - Read the info-only rows against the open High rows before bulk-closing: the Motorway valuation emails matched the suspected van fraud (YH70 MVG) and were worth one question (the answer was harmless).
+  - Never type a row ID from memory. Pull IDs fresh, and after every bulk `update_rows` check each returned Task ID against the intended group (output is saved to a file; use jq). I closed AWT-0570 with a wrong ID.
+  - Rows whose Response says "not covered" are split into carry-over rows (Rachel, John, Anna, Eugene) before closing. Bulk updates that only set Status and Done date leave the old Response text intact.
+  - Proofread a file before saving; a stray "wait" went into a published proposal and cost a v2.
 - **2026-10-04 (continued).**
   - Files Minda drops land wherever she is working (the group Raw, not the seat's Raw). Say where they are and hand the seat the Drive ids.
