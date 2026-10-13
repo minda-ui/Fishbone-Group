@@ -124,5 +124,10 @@ Before telling Minda anything about a row:
   - Never type a row ID from memory. Pull IDs fresh, and after every bulk `update_rows` check each returned Task ID against the intended group (output is saved to a file; use jq). I closed AWT-0570 with a wrong ID.
   - Rows whose Response says "not covered" are split into carry-over rows (Rachel, John, Anna, Eugene) before closing. Bulk updates that only set Status and Done date leave the old Response text intact.
   - Proofread a file before saving; a stray "wait" went into a published proposal and cost a v2.
+- **2026-10-13 later (paper mail).**
+  - "Who picks it up?" has a written process but no named owner; find the process file (here `Wiki/Process-Post-Handling.md`) and check whether it names a person, seat or routine before answering. Two folders with the same name existed; list both by id.
+  - Do not assume an assistant has a separate login. Minda: all assistants use her Google logins, so a folder shared with her is visible to everyone. I opened a sharing task for Eugene on that assumption and had to withdraw it. Ask or check which account a tool uses before opening a sharing row.
+  - Drive search returns file text by default. A query meant to count files returned tenant documents; before searching a folder that may hold personal data, prefer a narrow query and say up front that only names and dates will be used.
+  - When Minda asks for a long watch ("2-3 weeks"), set dated reminders (send_later) and give the seat a row to report weekly, rather than relying on the session staying open.
 - **2026-10-04 (continued).**
   - Files Minda drops land wherever she is working (the group Raw, not the seat's Raw). Say where they are and hand the seat the Drive ids.
