@@ -129,5 +129,11 @@ Before telling Minda anything about a row:
   - Do not assume an assistant has a separate login. Minda: all assistants use her Google logins, so a folder shared with her is visible to everyone. I opened a sharing task for Eugene on that assumption and had to withdraw it. Ask or check which account a tool uses before opening a sharing row.
   - Drive search returns file text by default. A query meant to count files returned tenant documents; before searching a folder that may hold personal data, prefer a narrow query and say up front that only names and dates will be used.
   - When Minda asks for a long watch ("2-3 weeks"), set dated reminders (send_later) and give the seat a row to report weekly, rather than relying on the session staying open.
+- **2026-10-13 evening (Peter's grants).**
+  - An assistant will not widen its own authority on a relayed claim. When Minda grants a seat new authority, record her words, update the row and hand-off notes, and then ask her to tell that seat directly (one pasted line in the seat's own session is enough). Write the line for her. It took two rounds because I relayed twice.
+  - Give a grant its own Authority Register row (Alex adds it); keep the scope narrow, copied from the written process, and list what is excluded.
+  - Check the digits in an ID Minda quotes against what is on her screen. "AWT-0167" was AWT-0617 swapped; the screenshot showed it, and I should have looked at the number first.
+  - Do not edit an approved file to add its register number if that changes its Drive ID: the ID is the register's source key. Put the number in the register row.
+  - A new row is not finished until the seat reads it. Check the Hub rows and the seat's Raw after a few hours: Peter and Eugene had both replied within the hour.
 - **2026-10-04 (continued).**
   - Files Minda drops land wherever she is working (the group Raw, not the seat's Raw). Say where they are and hand the seat the Drive ids.
