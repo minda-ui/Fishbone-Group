@@ -144,5 +144,11 @@ Before telling Minda anything about a row:
   - Known Correspondents: add only on Minda's explicit say, and say that the scope wording is yours, copied from the nearest existing row.
   - A one-word prompt ("Shared-skills") after an open question is a request for the decision brief. Re-read the Hub rows and the seat replies first; state what you did not re-test.
   - Probe a wide ID range before adding rows (0679 to 0695), then check the duplicate cell on the new rows.
+- **2026-10-14 late (Raw check, skills fit check).**
+  - "Check Raw folder" again meant a Drive-wide search by `createdTime` as well as my own Raw. It found Alex's files in Eugene's Raw, not mine.
+  - When reviewing a seat's skill or script, test it against our own lessons (here `find_in_sheet` unreliability, concurrent ID minting, the cross-KB amendment rule). All four fixes came from that, not from the file's own logic. Say plainly what was read and not run.
+  - Seats act on a fit-check note within the hour. Re-read the Hub rows before reporting something as waiting; they had already applied the fixes and committed.
+  - The session's own skill list is a live signal: the revised description of drive-sync-verified had appeared, which suggests the upload happened. It is not proof the body matches; say so.
+  - Eugene opened a duplicate row for each handover (three rows for one job). Name the live row in the note and ask the seat to close the rest.
 - **2026-10-04 (continued).**
   - Files Minda drops land wherever she is working (the group Raw, not the seat's Raw). Say where they are and hand the seat the Drive ids.
