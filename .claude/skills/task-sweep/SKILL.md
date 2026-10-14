@@ -135,5 +135,14 @@ Before telling Minda anything about a row:
   - Check the digits in an ID Minda quotes against what is on her screen. "AWT-0167" was AWT-0617 swapped; the screenshot showed it, and I should have looked at the number first.
   - Do not edit an approved file to add its register number if that changes its Drive ID: the ID is the register's source key. Put the number in the register row.
   - A new row is not finished until the seat reads it. Check the Hub rows and the seat's Raw after a few hours: Peter and Eugene had both replied within the hour.
+- **2026-10-14 (overnight rows, PM-6.1a, shared skills).**
+  - Grouping worked again: 47 rows, one list in four groups (close junk, close info, reassign, ask), one approval, 38 handled. Put the numbered questions last and short; she answered all four in one line.
+  - In the morning brief I said two High rows were "with Rachel" and "with John". Both were assigned to Minda. Read the Assigned-to column before saying who holds a row.
+  - A triage alert can contradict itself: the GoCardless "failed" notice was stamped a week before the collection date it related to. Say it is unverified and hand the check to the owner (Rachel) rather than repeating it as fact.
+  - A bulk `update_rows` can time out and still apply. Read the rows back by Task ID before retrying.
+  - When a decision adds a clause to an approved document and another change is already waiting (Rachel's check), hold both for one release. Record the decision on the Hub row and the Procedure Register Conditions cell; do not edit the approved file.
+  - Known Correspondents: add only on Minda's explicit say, and say that the scope wording is yours, copied from the nearest existing row.
+  - A one-word prompt ("Shared-skills") after an open question is a request for the decision brief. Re-read the Hub rows and the seat replies first; state what you did not re-test.
+  - Probe a wide ID range before adding rows (0679 to 0695), then check the duplicate cell on the new rows.
 - **2026-10-04 (continued).**
   - Files Minda drops land wherever she is working (the group Raw, not the seat's Raw). Say where they are and hand the seat the Drive ids.
