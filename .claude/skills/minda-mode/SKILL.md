@@ -33,5 +33,17 @@ Created 2026-10-15 at Minda's instruction: "In this mode everything stays inside
 - If the session is compacted or summarised, the summary must say only that Minda mode was on, with **no content**.
 - Anything I have already been told earlier in the session stays in my context for that session. I will not use it outside the mode.
 
+## Diary (agreed 2026-10-15)
+Minda asked for a diary "so we can see a journey". This section is how it works. It holds no diary content.
+- **Home, for now:** Minda's Drive, folder `Minda/Raw/Notes` (id `1b5y-G7JhpbsWRpiCTGtlMh5bvAOFny_w`), until she finds a new home. Drive is not private from the assistants; she accepted that for now. On 2026-10-15 a "do not open or mention the Notes folder" notice went to the Raw folders of Anna, Rachel, John, Eugene, Peter, Alex, Helen, Sarah and Nadia. Darius has no Raw folder and was not sent one.
+- **Rhythm:** flexible, no fixed day, about weekly. An entry happens when Minda says "diary" in Minda mode. Never remind unless she asks.
+- **Each entry:** I draft it in chat and show it. She says save, edit or skip. Nothing is written before her yes.
+- **File names are neutral:** `YYYY-MM-DD_note.md`, never with personal words. Raw files are not edited; a correction is a new file.
+- **Entry shape:** What happened. What Minda said (her words, one item per line). Five numbers: days with family in the last 30; days on site; weekend days worked; cash reserve against the £50k target; the "step-off number" (monthly cost of replacing her site work) once known. Open questions. One next step. Victoria's commentary, separate and labelled.
+- **Journey summary:** one article in `Notes` with a one-line timeline and a trend table. Update it only with her yes, archive-then-recreate (old copy renamed and moved to `Minda/Archive`, never trashed).
+- **Baseline:** the first entry is the owner-statements note of 2026-10-15 in `Notes`. The August baseline is the one row of 18/08/2026 in "Minda - Progress Tracker".
+- **Moving home:** when Minda says so, give her the whole diary as one text in chat. Then archive the Drive copies (never trash) unless she says otherwise.
+- **Nothing else changes:** all other Minda mode rules above still apply.
+
 ## Not covered
 - Other assistants have no Minda mode. If she wants one for a seat, she says so, and the request goes through that seat's own Raw (the seat writes it into its own charter).
