@@ -150,5 +150,13 @@ Before telling Minda anything about a row:
   - Seats act on a fit-check note within the hour. Re-read the Hub rows before reporting something as waiting; they had already applied the fixes and committed.
   - The session's own skill list is a live signal: the revised description of drive-sync-verified had appeared, which suggests the upload happened. It is not proof the body matches; say so.
   - Eugene opened a duplicate row for each handover (three rows for one job). Name the live row in the note and ask the seat to close the rest.
+- **2026-10-15 to 16 (closures, Phase 2 prep, Amfa push).**
+  - Build the closed-by-rule list from a readback of the rows, not from memory, and name the borderline rows (a finance notice closed as a duplicate, a site query already answered) so her review starts there.
+  - Ask the seat before asking Minda. I asked her three questions about the live campaign that Helen can answer from the Ads account. Her reply: "We are talking about automation :). Ask Helen to report." State the fact she gave, brief the seat, and do not ask her for what a seat can see.
+  - A fact from Minda can overtake a task: Helen was told to build a campaign that was already live. Rewrite the brief as "report on the live one", name the overtaken row (AWT-0748), keep the launch and spend boundary in the brief.
+  - `find_in_sheet` scans only the first 100 rows (see `nextOffset`); zero matches proves nothing. Use `get_sheet_summary` with `filters` at the top level (`columnName`, `operator`, `columnValue`); a nested `request` string is ignored and returns everything, sampled. `update_rows` rows take `id`, not `rowId`. Drive `search_files` wants `parentId = '<id>'` inside the query.
+  - Large `update_rows` output goes to a file; verify with `jq` on the cell `columnId`s (Task ID 3261859655976836, assignee 7765459283347332, status 8891359190189956, done date 2347065981667204) and check `failedItems` is empty.
+  - A pending check holds a release: Rachel's PM-14.9 to 14.11 check (AWT-0579) was three days open, so v1.2 was prepared as a change sheet, not a full text. Nudge the seat in its Raw and say what is waiting on it.
+  - Close-out after a private-mode session: the change-log records that the mode was on and nothing from inside it, including how or where anything was stored.
 - **2026-10-04 (continued).**
   - Files Minda drops land wherever she is working (the group Raw, not the seat's Raw). Say where they are and hand the seat the Drive ids.
