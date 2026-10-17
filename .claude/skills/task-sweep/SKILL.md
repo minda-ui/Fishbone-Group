@@ -158,5 +158,12 @@ Before telling Minda anything about a row:
   - Large `update_rows` output goes to a file; verify with `jq` on the cell `columnId`s (Task ID 3261859655976836, assignee 7765459283347332, status 8891359190189956, done date 2347065981667204) and check `failedItems` is empty.
   - A pending check holds a release: Rachel's PM-14.9 to 14.11 check (AWT-0579) was three days open, so v1.2 was prepared as a change sheet, not a full text. Nudge the seat in its Raw and say what is waiting on it.
   - Close-out after a private-mode session: the change-log records that the mode was on and nothing from inside it, including how or where anything was stored.
+- **2026-10-16 evening (sweep, approvals, progress page).**
+  - After adding a connection in Composio, list the accounts again: the new one became the default for that app and stayed so until Minda changed it back. Report the default after any add.
+  - A Hub row can be older than the document it cites (Rachel's AWT-0767 said five questions were pending; her flow map said Minda answered them on 15 Oct). Read the document before repeating the row.
+  - Seats reply within hours. Re-read their rows before reporting a state, and refresh the progress page after: Eugene's dry run arrived the same evening and showed 5 of my 28 hand-closures his rule would escalate.
+  - Treat legal, finance and external-party threads as never-close even when they look like information (a solicitor's ID checks, a GoCardless notice, a colleague's own mail to a tenant). Closing by hand should follow the same rule the routine will.
+  - A dashboard built from a file goes stale. Say so on hand-over, and refresh it when a seat replies. `ArtifactData` updates need `if_version`; replace an attached file by uploading the new one, updating the dataset's `url`, then deleting the old asset.
+  - When a bulk call returns a file, check `failedItems` and read each row by column id. Keep a closed list for every batch, built from a readback.
 - **2026-10-04 (continued).**
   - Files Minda drops land wherever she is working (the group Raw, not the seat's Raw). Say where they are and hand the seat the Drive ids.
