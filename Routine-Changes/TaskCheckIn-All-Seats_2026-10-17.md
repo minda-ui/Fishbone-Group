@@ -1,40 +1,37 @@
-# Task Check-in routines: all ten seats (trial week from Mon 19 Oct 2026)
+# Task Check-in scheduled tasks: all ten seats (trial week from Mon 19 Oct 2026)
 
-Prepared by Victoria, 2026-10-17, at Minda's instruction ("Today we need to create all routines"). Standard: group Outputs `2026-10-17_Draft_Task-Check-in-Standard_v0.3.md` (Drive 1QaBFLKgq6aZ8toSQnJy0bYCCue3Iec4y). Hub AWT-0831. These are first versions built from the standard and the Roster. Eugene verifies each seat's limits against its charter and builds the session-start register (AWT-0833, AWT-0834); changes come back as revised prompts.
+Prepared by Victoria, 2026-10-17, at Minda's instruction ("Today we need to create all routines"), updated the same evening for the new Scheduled tasks form (no cron box). Standard: group Outputs `2026-10-17_Draft_Task-Check-in-Standard_v0.3.md` (Drive 1QaBFLKgq6aZ8toSQnJy0bYCCue3Iec4y). Hub AWT-0831. These are first versions built from the standard and the Roster. Eugene verifies each seat's limits against its charter and builds the session-start register (AWT-0833, AWT-0834); changes come back as revised prompts.
 
-## How to create each routine (claude.ai/code/routines)
-1. New routine (or open the existing one named below). Name it as shown.
-2. Repository: the repo shown. Connectors: only those shown.
-3. Schedule: custom cron, the line shown for the clocks as they are NOW (BST). Cron is in UTC.
-4. Paste the prompt in the box (the whole text between the lines).
-5. Notifications: push OFF (or email only). Ten routines at four runs a day can send up to 280 pushes a week.
-6. Save. Do not use "Run now" more than once per routine for a test; one test run shows whether the Hub read applies its filter.
-
-## Sunday 25 Oct: clocks go back
-Edit each cron to the GMT line (hours 8,11,14,17 instead of 7,10,13,16). Same minutes.
+## How to create each task (claude.ai, Scheduled tasks, New scheduled task)
+1. Name: as shown below (for Eugene and Helen, open the existing Task Check-in task instead and replace its instructions and schedule).
+2. Instructions: paste the whole prompt shown for that seat.
+3. Trigger: Schedule, Daily, then the first time shown. Press the + at the right of the Trigger row to add the other three times (each task needs four daily times). Times are local (UK) time as the form shows them; check the time zone in Advanced settings. Because they are local times, no edit is needed when the clocks change on Sun 25 Oct.
+4. Advanced settings: if it offers a repository or connectors, use the ones shown; if it offers notifications, turn them OFF. If there is no repository option the prompt reads the charter from the seat's Drive folder, whose id is inside the prompt.
+5. Create. Then use the run-now option once if the form has one, and tell Victoria; she checks the first run in the Hub.
+6. This form lets Claude "work and use connectors without pausing for approval", so the limits written in each prompt are the guard. Do not widen them.
 
 ## Summary
-| Seat | New or replace | Repo | Connectors | Cron now (BST) | Cron from Sun 25 Oct (GMT) |
-|---|---|---|---|---|---|
-| Eugene | Replace existing | minda-ui/Eugene | Google Drive, Smartsheet (GitHub for the repo) | `5 7,10,13,16 * * *` | `5 8,11,14,17 * * *` |
-| Helen | Replace existing | minda-ui/Helen | Google Drive, Smartsheet, Web (GitHub for the repo) | `15 7,10,13,16 * * *` | `15 8,11,14,17 * * *` |
-| Rachel | New | minda-ui/rachel | Google Drive, Smartsheet (GitHub for the repo) | `25 7,10,13,16 * * *` | `25 8,11,14,17 * * *` |
-| Anna | New | minda-ui/Anna | Google Drive, Smartsheet (GitHub for the repo) | `35 7,10,13,16 * * *` | `35 8,11,14,17 * * *` |
-| Nadia | New | minda-ui/Nadia | Google Drive, Smartsheet (GitHub for the repo) | `45 7,10,13,16 * * *` | `45 8,11,14,17 * * *` |
-| Darius | New | minda-ui/Darius | Google Drive, Smartsheet (GitHub for the repo) | `55 7,10,13,16 * * *` | `55 8,11,14,17 * * *` |
-| John | New | minda-ui/Fishbone-Properties-Ltd | Google Drive, Smartsheet (GitHub for the repo) | `10 7,10,13,16 * * *` | `10 8,11,14,17 * * *` |
-| Peter | New | minda-ui/Peter | Google Drive, Smartsheet (GitHub for the repo) | `20 7,10,13,16 * * *` | `20 8,11,14,17 * * *` |
-| Alex | New | minda-ui/Alex | Google Drive, Smartsheet (GitHub for the repo) | `30 7,10,13,16 * * *` | `30 8,11,14,17 * * *` |
-| Sarah | New | minda-ui/Sarah | Google Drive, Smartsheet read | `40 7,10,13,16 * * *` | `40 8,11,14,17 * * *` |
+| Seat | New or replace | Repo (if the form offers one) | Connectors | Daily times (UK) |
+|---|---|---|---|---|
+| Eugene | Replace existing | minda-ui/Eugene | Google Drive, Smartsheet (GitHub for the repo) | 08:05 , 11:05 , 14:05 , 17:05 |
+| Helen | Replace existing | minda-ui/Helen | Google Drive, Smartsheet, Web (GitHub for the repo) | 08:15 , 11:15 , 14:15 , 17:15 |
+| Rachel | New | minda-ui/rachel | Google Drive, Smartsheet (GitHub for the repo) | 08:25 , 11:25 , 14:25 , 17:25 |
+| Anna | New | minda-ui/Anna | Google Drive, Smartsheet (GitHub for the repo) | 08:35 , 11:35 , 14:35 , 17:35 |
+| Nadia | New | minda-ui/Nadia | Google Drive, Smartsheet (GitHub for the repo) | 08:45 , 11:45 , 14:45 , 17:45 |
+| Darius | New | minda-ui/Darius | Google Drive, Smartsheet (GitHub for the repo) | 08:55 , 11:55 , 14:55 , 17:55 |
+| John | New | minda-ui/Fishbone-Properties-Ltd | Google Drive, Smartsheet (GitHub for the repo) | 08:10 , 11:10 , 14:10 , 17:10 |
+| Peter | New | minda-ui/Peter | Google Drive, Smartsheet (GitHub for the repo) | 08:20 , 11:20 , 14:20 , 17:20 |
+| Alex | New | minda-ui/Alex | Google Drive, Smartsheet (GitHub for the repo) | 08:30 , 11:30 , 14:30 , 17:30 |
+| Sarah | New | minda-ui/Sarah | Google Drive, Smartsheet read | 08:40 , 11:40 , 14:40 , 17:40 |
 
 ---
 
 ## Eugene
-- Routine: REPLACE the prompt and cron of the existing Task Check-in routine (trig_01Q6nS5UKzQFRfGsQnQLKiQX, currently 30 9 * * 1-5).
+- Task: REPLACE the instructions and schedule of the existing Eugene Task Check-in scheduled task (currently weekdays 10:30).
 - Repository: minda-ui/Eugene
 - Connectors: Google Drive, Smartsheet (GitHub for the repo)
-- Cron now (BST): `5 7,10,13,16 * * *`   From Sun 25 Oct (GMT): `5 8,11,14,17 * * *`
-- Push notifications: OFF
+- Daily times (UK, local): 08:05 , 11:05 , 14:05 , 17:05
+- Notifications: OFF
 
 Prompt:
 
@@ -43,7 +40,7 @@ You are Eugene, the Fishbone Group's AI IT & Engineering Assistant, running a TA
 
 PURPOSE: nothing assigned to you should sit silently. Each run, move your rows forward or make the blocker visible. A hand-off must not wait for Minda to open your session.
 
-START: Read your charter (CLAUDE.md and Charter-Rules.md in this repo) and current-state if it exists. If the Smartsheet connector asks you to load its guide first, call get_resource_guide with intents ["smartsheet-intelligence"] once.
+START: Read your charter (CLAUDE.md and Charter-Rules.md in this repo) and current-state if it exists. If no repository is attached to this task, read them from your own KB's Drive home folder instead (id 1o4MBRcckZBspw-uT6qM2V-74H6OsRK9T). If the Smartsheet connector asks you to load its guide first, call get_resource_guide with intents ["smartsheet-intelligence"] once.
 
 EACH RUN, IN ORDER
 
@@ -83,11 +80,11 @@ SAFETY
 ---
 
 ## Helen
-- Routine: REPLACE the prompt and cron of the existing Task Check-in routine (trig_01AJ2vd3rxuishiThgSJ38sT, currently 0 10 * * 1-5).
+- Task: REPLACE the instructions and schedule of the existing Helen Task Check-in scheduled task (currently weekdays 11:00).
 - Repository: minda-ui/Helen
 - Connectors: Google Drive, Smartsheet, Web (GitHub for the repo)
-- Cron now (BST): `15 7,10,13,16 * * *`   From Sun 25 Oct (GMT): `15 8,11,14,17 * * *`
-- Push notifications: OFF
+- Daily times (UK, local): 08:15 , 11:15 , 14:15 , 17:15
+- Notifications: OFF
 
 Prompt:
 
@@ -96,7 +93,7 @@ You are Helen, the Fishbone Group's AI Content & Marketing Assistant, running a 
 
 PURPOSE: nothing assigned to you should sit silently. Each run, move your rows forward or make the blocker visible. A hand-off must not wait for Minda to open your session.
 
-START: Read your charter (CHARTER.md in this repo) and current-state if it exists. If the Smartsheet connector asks you to load its guide first, call get_resource_guide with intents ["smartsheet-intelligence"] once.
+START: Read your charter (CHARTER.md in this repo) and current-state if it exists. If no repository is attached to this task, read them from your own KB's Drive home folder instead (id 1H487UxvNabq1HK1NljhmEedvNA-l3XhX). If the Smartsheet connector asks you to load its guide first, call get_resource_guide with intents ["smartsheet-intelligence"] once.
 
 EACH RUN, IN ORDER
 
@@ -136,11 +133,11 @@ SAFETY
 ---
 
 ## Rachel
-- Routine: CREATE a new routine named "Rachel Task Check-in".
+- Task: CREATE a new scheduled task named "Rachel Task Check-in".
 - Repository: minda-ui/rachel
 - Connectors: Google Drive, Smartsheet (GitHub for the repo). No Gmail. QuickBooks not needed.
-- Cron now (BST): `25 7,10,13,16 * * *`   From Sun 25 Oct (GMT): `25 8,11,14,17 * * *`
-- Push notifications: OFF
+- Daily times (UK, local): 08:25 , 11:25 , 14:25 , 17:25
+- Notifications: OFF
 
 Prompt:
 
@@ -149,7 +146,7 @@ You are Rachel, the Fishbone Group's AI Finance Assistant, running a TASK CHECK-
 
 PURPOSE: nothing assigned to you should sit silently. Each run, move your rows forward or make the blocker visible. A hand-off must not wait for Minda to open your session.
 
-START: Read your charter (CHARTER.md / Charter-Rules.md in this repo) and current-state if it exists. If the Smartsheet connector asks you to load its guide first, call get_resource_guide with intents ["smartsheet-intelligence"] once.
+START: Read your charter (CHARTER.md / Charter-Rules.md in this repo) and current-state if it exists. If no repository is attached to this task, read them from your own KB's Drive home folder instead (id 1pFz0CMXbHH1buLd2ptbAwTX2GXDsXseN). If the Smartsheet connector asks you to load its guide first, call get_resource_guide with intents ["smartsheet-intelligence"] once.
 
 EACH RUN, IN ORDER
 
@@ -191,11 +188,11 @@ SAFETY
 ---
 
 ## Anna
-- Routine: CREATE a new routine named "Anna Task Check-in" (keep your existing project email check routine as it is).
+- Task: CREATE a new scheduled task named "Anna Task Check-in" (keep your existing project email check task as it is).
 - Repository: minda-ui/Anna
 - Connectors: Google Drive, Smartsheet (GitHub for the repo). Leave Gmail OFF for this routine; your project email check is a separate routine.
-- Cron now (BST): `35 7,10,13,16 * * *`   From Sun 25 Oct (GMT): `35 8,11,14,17 * * *`
-- Push notifications: OFF
+- Daily times (UK, local): 08:35 , 11:35 , 14:35 , 17:35
+- Notifications: OFF
 
 Prompt:
 
@@ -204,7 +201,7 @@ You are Anna, the Fishbone Group's AI Construction Assistant (technical adviser)
 
 PURPOSE: nothing assigned to you should sit silently. Each run, move your rows forward or make the blocker visible. A hand-off must not wait for Minda to open your session.
 
-START: Read your charter (CHARTER.md / Charter-Rules.md in this repo) and current-state if it exists. If the Smartsheet connector asks you to load its guide first, call get_resource_guide with intents ["smartsheet-intelligence"] once.
+START: Read your charter (CHARTER.md / Charter-Rules.md in this repo) and current-state if it exists. If no repository is attached to this task, read them from your own KB's Drive home folder instead (id 1b0p62LxaX4C9H1cvK1R7K1KdX6-JcvoT). If the Smartsheet connector asks you to load its guide first, call get_resource_guide with intents ["smartsheet-intelligence"] once.
 
 EACH RUN, IN ORDER
 
@@ -244,11 +241,11 @@ SAFETY
 ---
 
 ## Nadia
-- Routine: CREATE a new routine named "Nadia Task Check-in".
+- Task: CREATE a new scheduled task named "Nadia Task Check-in".
 - Repository: minda-ui/Nadia
 - Connectors: Google Drive, Smartsheet (GitHub for the repo). Leave Gmail OFF for this routine.
-- Cron now (BST): `45 7,10,13,16 * * *`   From Sun 25 Oct (GMT): `45 8,11,14,17 * * *`
-- Push notifications: OFF
+- Daily times (UK, local): 08:45 , 11:45 , 14:45 , 17:45
+- Notifications: OFF
 
 Prompt:
 
@@ -257,7 +254,7 @@ You are Nadia, the Fishbone Group's Amfa Sales & Ops Assistant, running a TASK C
 
 PURPOSE: nothing assigned to you should sit silently. Each run, move your rows forward or make the blocker visible. A hand-off must not wait for Minda to open your session.
 
-START: Read your charter (CHARTER.md / Charter-Rules.md in this repo) and current-state if it exists. If the Smartsheet connector asks you to load its guide first, call get_resource_guide with intents ["smartsheet-intelligence"] once.
+START: Read your charter (CHARTER.md / Charter-Rules.md in this repo) and current-state if it exists. If no repository is attached to this task, read them from your own KB's Drive home folder instead (id 1dWtVYhQZlluqDiL4azeaEN2t4Y-be9xT). If the Smartsheet connector asks you to load its guide first, call get_resource_guide with intents ["smartsheet-intelligence"] once.
 
 EACH RUN, IN ORDER
 
@@ -297,11 +294,11 @@ SAFETY
 ---
 
 ## Darius
-- Routine: CREATE a new routine named "Darius Task Check-in".
+- Task: CREATE a new scheduled task named "Darius Task Check-in".
 - Repository: minda-ui/Darius
 - Connectors: Google Drive, Smartsheet (GitHub for the repo)
-- Cron now (BST): `55 7,10,13,16 * * *`   From Sun 25 Oct (GMT): `55 8,11,14,17 * * *`
-- Push notifications: OFF
+- Daily times (UK, local): 08:55 , 11:55 , 14:55 , 17:55
+- Notifications: OFF
 
 Prompt:
 
@@ -310,7 +307,7 @@ You are Darius, the Fishbone Group's Workshop Operations Assistant, running a TA
 
 PURPOSE: nothing assigned to you should sit silently. Each run, move your rows forward or make the blocker visible. A hand-off must not wait for Minda to open your session.
 
-START: Read your charter (CHARTER.md / Charter-Rules.md in this repo) and current-state if it exists. If the Smartsheet connector asks you to load its guide first, call get_resource_guide with intents ["smartsheet-intelligence"] once.
+START: Read your charter (CHARTER.md / Charter-Rules.md in this repo) and current-state if it exists. If no repository is attached to this task, read them from your own KB's Drive home folder instead (id 1ykYJERaptUNH0FDvkOVU26jh_x_hRtLz). If the Smartsheet connector asks you to load its guide first, call get_resource_guide with intents ["smartsheet-intelligence"] once.
 
 EACH RUN, IN ORDER
 
@@ -350,11 +347,11 @@ SAFETY
 ---
 
 ## John
-- Routine: CREATE a new routine named "John Task Check-in" (an additional routine; keep your existing routines).
+- Task: CREATE a new scheduled task named "John Task Check-in" (an additional task; keep your existing scheduled tasks).
 - Repository: minda-ui/Fishbone-Properties-Ltd
-- Connectors: Google Drive, Smartsheet (GitHub for the repo). Leave Gmail and QuickBooks OFF for this routine; your intake routines stay as they are.
-- Cron now (BST): `10 7,10,13,16 * * *`   From Sun 25 Oct (GMT): `10 8,11,14,17 * * *`
-- Push notifications: OFF
+- Connectors: Google Drive, Smartsheet (GitHub for the repo). Leave Gmail and QuickBooks OFF for this routine; your intake tasks stay as they are.
+- Daily times (UK, local): 08:10 , 11:10 , 14:10 , 17:10
+- Notifications: OFF
 
 Prompt:
 
@@ -363,7 +360,7 @@ You are John, the Fishbone Group's AI Properties Operations Assistant, running a
 
 PURPOSE: nothing assigned to you should sit silently. Each run, move your rows forward or make the blocker visible. A hand-off must not wait for Minda to open your session.
 
-START: Read your charter (CHARTER.md in this repo (the Properties Ltd KB)) and current-state if it exists. If the Smartsheet connector asks you to load its guide first, call get_resource_guide with intents ["smartsheet-intelligence"] once.
+START: Read your charter (CHARTER.md in this repo (the Properties Ltd KB)) and current-state if it exists. If no repository is attached to this task, read them from your own KB's Drive home folder instead (id 11SREv6Rx4jvTzMtpQbKqzzZkTN4wZgNk). If the Smartsheet connector asks you to load its guide first, call get_resource_guide with intents ["smartsheet-intelligence"] once.
 
 EACH RUN, IN ORDER
 
@@ -405,11 +402,11 @@ SAFETY
 ---
 
 ## Peter
-- Routine: CREATE a new routine named "Peter Task Check-in" (an additional routine; keep your existing routines).
+- Task: CREATE a new scheduled task named "Peter Task Check-in" (an additional task; keep your existing scheduled tasks).
 - Repository: minda-ui/Peter
-- Connectors: Google Drive, Smartsheet (GitHub for the repo). Leave Gmail OFF for this routine; your inbox routines stay as they are.
-- Cron now (BST): `20 7,10,13,16 * * *`   From Sun 25 Oct (GMT): `20 8,11,14,17 * * *`
-- Push notifications: OFF
+- Connectors: Google Drive, Smartsheet (GitHub for the repo). Leave Gmail OFF for this routine; your inbox tasks stay as they are.
+- Daily times (UK, local): 08:20 , 11:20 , 14:20 , 17:20
+- Notifications: OFF
 
 Prompt:
 
@@ -418,7 +415,7 @@ You are Peter, the Fishbone Group's AI Data Assistant, running a TASK CHECK-IN r
 
 PURPOSE: nothing assigned to you should sit silently. Each run, move your rows forward or make the blocker visible. A hand-off must not wait for Minda to open your session.
 
-START: Read your charter (CHARTER.md in this repo) and current-state if it exists. If the Smartsheet connector asks you to load its guide first, call get_resource_guide with intents ["smartsheet-intelligence"] once.
+START: Read your charter (CHARTER.md in this repo) and current-state if it exists. If no repository is attached to this task, read them from your own KB's Drive home folder instead (id 1zY8rVKNXheb8MQaol6GZthht1B7hlkAZ). If the Smartsheet connector asks you to load its guide first, call get_resource_guide with intents ["smartsheet-intelligence"] once.
 
 EACH RUN, IN ORDER
 
@@ -458,11 +455,11 @@ SAFETY
 ---
 
 ## Alex
-- Routine: CREATE a new routine named "Alex Task Check-in" (an additional routine; keep your housekeeping sweep and Hub Drift Watch as they are).
+- Task: CREATE a new scheduled task named "Alex Task Check-in" (an additional task; keep your housekeeping sweep and Hub Drift Watch as they are).
 - Repository: minda-ui/Alex
 - Connectors: Google Drive, Smartsheet (GitHub for the repo)
-- Cron now (BST): `30 7,10,13,16 * * *`   From Sun 25 Oct (GMT): `30 8,11,14,17 * * *`
-- Push notifications: OFF
+- Daily times (UK, local): 08:30 , 11:30 , 14:30 , 17:30
+- Notifications: OFF
 
 Prompt:
 
@@ -471,7 +468,7 @@ You are Alex, the Fishbone Group's AI Housekeeping & Operations Steward, running
 
 PURPOSE: nothing assigned to you should sit silently. Each run, move your rows forward or make the blocker visible. A hand-off must not wait for Minda to open your session.
 
-START: Read your charter (CHARTER.md in this repo) and current-state if it exists. If the Smartsheet connector asks you to load its guide first, call get_resource_guide with intents ["smartsheet-intelligence"] once.
+START: Read your charter (CHARTER.md in this repo) and current-state if it exists. If no repository is attached to this task, read them from your own KB's Drive home folder instead (id 1QGc0EqThFDAIP7QYvGY1DEhliSbMTGNe). If the Smartsheet connector asks you to load its guide first, call get_resource_guide with intents ["smartsheet-intelligence"] once.
 
 EACH RUN, IN ORDER
 
@@ -511,11 +508,11 @@ SAFETY
 ---
 
 ## Sarah
-- Routine: CREATE a new routine named "Sarah Task Check-in" (trial: your Roster entry says interactive only; Minda approved this trial on 17 Oct).
-- Repository: minda-ui/Sarah (created but not yet seeded: if the repo has no charter, read CHARTER.md from your Drive home folder "Sarah - Fishbone Group compliance officer", id 1Qa5Q-lS1b3w6_TAubLPRI5dx64fzSQHI)
+- Task: CREATE a new scheduled task named "Sarah Task Check-in" (trial: your Roster entry says interactive only; Minda approved this trial on 17 Oct).
+- Repository: minda-ui/Sarah (created but not yet seeded; use the Drive home folder)
 - Connectors: Google Drive, Smartsheet read. No Gmail, no QuickBooks.
-- Cron now (BST): `40 7,10,13,16 * * *`   From Sun 25 Oct (GMT): `40 8,11,14,17 * * *`
-- Push notifications: OFF
+- Daily times (UK, local): 08:40 , 11:40 , 14:40 , 17:40
+- Notifications: OFF
 
 Prompt:
 
@@ -524,7 +521,7 @@ You are Sarah, the Fishbone Group's compliance officer, running a TASK CHECK-IN 
 
 PURPOSE: nothing assigned to you should sit silently. Each run, move your rows forward or make the blocker visible. A hand-off must not wait for Minda to open your session.
 
-START: Read your charter (CHARTER.md in your Drive home folder (id 1Qa5Q-lS1b3w6_TAubLPRI5dx64fzSQHI)) and current-state if it exists. If the Smartsheet connector asks you to load its guide first, call get_resource_guide with intents ["smartsheet-intelligence"] once.
+START: Read your charter (CHARTER.md in your Drive home folder (id 1Qa5Q-lS1b3w6_TAubLPRI5dx64fzSQHI)) and current-state if it exists. If no repository is attached to this task, read them from your own KB's Drive home folder instead (id 1Qa5Q-lS1b3w6_TAubLPRI5dx64fzSQHI). If the Smartsheet connector asks you to load its guide first, call get_resource_guide with intents ["smartsheet-intelligence"] once.
 
 EACH RUN, IN ORDER
 
