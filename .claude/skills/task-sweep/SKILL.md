@@ -165,5 +165,16 @@ Before telling Minda anything about a row:
   - Treat legal, finance and external-party threads as never-close even when they look like information (a solicitor's ID checks, a GoCardless notice, a colleague's own mail to a tenant). Closing by hand should follow the same rule the routine will.
   - A dashboard built from a file goes stale. Say so on hand-over, and refresh it when a seat replies. `ArtifactData` updates need `if_version`; replace an attached file by uploading the new one, updating the dataset's `url`, then deleting the old asset.
   - When a bulk call returns a file, check `failedItems` and read each row by column id. Keep a closed list for every batch, built from a readback.
+- **2026-10-17 (routines, skill, PM v1.2, Amfa tracking).**
+  - A clean test run that had nothing closable proves nothing about the close path. Say which path was exercised and name the next run that will show it; leave the row In Progress until then.
+  - Read the row before saying what is pending. I told Minda Eugene was waiting for her approval; his row (AWT-0817) was already Done and committed.
+  - `get_sheet_summary` string filters on Task ID compare as text: `GREATER_THAN AWT-0823` returned T00073 and T00070. Probe new ids with an `IN` list. `update_rows` with a guessed columnId fails; call `get_columns` on that sheet first (the Procedure Register has its own ids).
+  - The Drive reader returns markdown with backslash escapes. To republish a document, write it from a local file, compare the byte size after upload (23,361 B matched), and do not paste the reader's output back.
+  - Answering a document's points is not approving the document. "Yes to all three" got a final text and one more ask; she then said "approve v1.2". Record both as separate owner notes.
+  - A one-line answer with two possible readings ("AWT-0824 needs only managing director approval"): record her words, put my reading in the commentary, change the row marked "being confirmed", ask one yes/no question. She confirmed. Send the seat a second note when it is confirmed.
+  - Archive-then-recreate in Drive: `update_file` with a new title and the Archive `parentId` renames and moves in one call. Create the new file first.
+  - Rule F needs each seat's Raw folder id. Search `title = 'Raw' and parentId = '<home>'`. Darius's was not found under his home folder; say so rather than skipping silently.
+  - A document that a client may see (Level 1) must not mention assistants or name suppliers: I changed Rachel's wording to fit and told Minda each change.
+  - Dashboard refresh: edit `plan.json`, upload as an asset, then `ArtifactData` update of the dataset `url` and `updated`, pinned with `if_version`.
 - **2026-10-04 (continued).**
   - Files Minda drops land wherever she is working (the group Raw, not the seat's Raw). Say where they are and hand the seat the Drive ids.
