@@ -27,5 +27,9 @@ Status Done, Done date today, and a closing line: what was done, where it is, wh
 ## Hand on
 A Hub row for them (first line: what is wanted and the done-when; sources; due date; Requested by you) and a Raw note in their KB's Raw folder (raw-handoff-to-employee skill). Answer anything handed to you on your own row and in a note to the sender by your next run.
 
+
+## Due dates
+With four runs a day, seven days a week, the default due date is the next calendar day (the same day for a single run). Choose a later date only for a named dependency, such as something a person must supply or a date set outside the group, and name that dependency on the row. Never copy a weekday habit into a due date.
+
 ## New Task ID
 Never use find_in_sheet or an unfiltered read. Take the highest AWT number you know, probe the next ten with get_sheet_summary filters Task ID IN [AWT-xxxx ...], columns ["Task ID"]. First number not returned is free. After add_rows, read the "⚠ Duplicate Task ID?" cell: if it is not empty, renumber with update_rows to the next free one. Never compare IDs with GREATER_THAN. add_rows column ids: Task ID 3261859655976836, Assigned to 7765459283347332, Requested by 2135959749134212, Request 6639559376504708, Priority 4387759562819460, Status 8891359190189956, Source 1221166074824580.

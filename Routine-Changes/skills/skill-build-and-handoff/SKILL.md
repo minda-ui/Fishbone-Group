@@ -27,7 +27,7 @@ No secrets, no rules copied from the procedure, no email or Hub text pasted in.
 Zip the folder so the zip contains `<name>/SKILL.md`; send the zip to Minda (SendUserFile, attach). Only Minda can upload to the account. Say which skills are new and which replace one. Never call a skill live until she says it is uploaded.
 
 ## 5. Pass it to Eugene (Raw note and Hub row, both)
-Use the raw-handoff-to-employee skill. The note names: the skill, its version, the procedure it works with, what to test (real tool names and arguments, whether scheduled runs load it), what to send back, and the due date. The Hub row (sheet 8860839228606340) is assigned to Eugene, Requested by Victoria (for Minda), first line = what is wanted and done-when, Source = note and Drive ids. Probe the next Task IDs with an IN filter, add the row, read the duplicate cell, renumber if flagged.
+Use the raw-handoff-to-employee skill. The note names: the skill, its version, the procedure it works with, what to test (real tool names and arguments, whether scheduled runs load it), what to send back, and the due date. The Hub row (sheet 8860839228606340) is assigned to Eugene, Requested by Victoria (for Minda), first line = what is wanted and done-when, Source = note and Drive ids. Due date: the next calendar day by default (employees work four runs a day, seven days a week); later only for a named dependency, stated on the row. Probe the next Task IDs with an IN filter, add the row, read the duplicate cell, renumber if flagged.
 
 ## 6. Log it for the audit trail (all of these)
 1. The Hub row to Eugene (above). That row is the record of who was asked, when, to do what.
