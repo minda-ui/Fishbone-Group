@@ -1,4 +1,4 @@
-# Procedure: Mail and requests (v0.2 DRAFT; adds Request-Inbox to Peter's pass, approved by Minda 18 Oct)
+# Procedure: Mail and requests (v0.2, APPROVED by Minda on 18 Oct 2026; Drive copy is authoritative, id 1BkezeFwtwT_iaxNQQOYxqzaUfb4CN6Ar)
 
 Victoria, 2026-10-18. Hub AWT-0831. Decided by Minda on 18 Oct 2026: the mailbox is the queue; Peter triages with labels; seats work from their labels; ops@ is the control inbox; no dry run. Replaces the Estate Index mail pipeline (prompt v6) once live. Owner of the procedure: Alex. Doer of triage: Peter. Rules the triage follows: Peter's `Triage-Rules.md`, versioned in his KB.
 
