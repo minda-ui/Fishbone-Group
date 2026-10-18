@@ -1,6 +1,6 @@
 # Procedure: Mail and requests (v0.3, DRAFT for Minda's approval; replaces v0.2 APPROVED 18 Oct 2026)
 
-**Status: DRAFT.** Not in force until Minda approves it. Until then v0.2 stays the approved procedure; the file with `APPROVED` in its title in group Outputs is the one in force. Procedure register id P07-L1 (numbering to be reconciled by Alex). Supersedes v0.2 (same day), amended at Minda's request after the first day of runs. Owner: Alex (confirmed by Minda 18 Oct). Doer of triage: Peter. Rules the triage follows: Peter's `Triage-Rules.md`, versioned in his KB. Decided by Minda: the mailbox is the queue; Peter triages with labels; seats work from their labels; ops@ is the control inbox; no dry run. Hub AWT-0831, AWT-0840 to AWT-0843, AWT-0854, AWT-0861, AWT-0865, AWT-0842.
+**Status: DRAFT.** Not in force until Minda approves it. Until then v0.2 stays the approved procedure; the file with `APPROVED` in its title in group Outputs is the one in force. Procedure register id P07-L1 (numbering to be reconciled by Alex). Supersedes v0.2 (same day), amended at Minda's request after the first day of runs. Owner: Alex (confirmed by Minda 18 Oct). Doer of triage: Peter. Rules the triage follows: Peter's `Triage-Rules.md`, versioned in his KB. Decided by Minda: the mailbox is the queue; Peter triages with labels; seats work from their labels; ops@ is the control inbox; no dry run. Hub AWT-0831, AWT-0840 to AWT-0843, AWT-0854, AWT-0861, AWT-0865, AWT-0842, AWT-0872, AWT-0873.
 
 ## 1. Principle
 An email is not a task. It stays in the mailbox with labels that say where it goes and what it is. It becomes a Hub row only when someone has to do work beyond reading and a draft. State lives in one place (Gmail labels); the Hub holds work.
@@ -23,13 +23,13 @@ Existing labels (`Regulator`, `Marketing`, `Notifications`, `Personal`, `Finance
 Runs seven times a day, every day: 05:50, 07:50, 09:50, 11:50, 13:50, 15:50, 17:50 UK. Each pass:
 1. Read threads with no `FG/` routing label (newest first).
 2. Apply the rules in section 6 and set one routing label, one class label and, if needed, `FG/Urgent`.
-3. Closed by rule: add `FG/Closed-by-rule`, `FG/To-Peter` and `FG/Done`, and mark the thread read. **Peter does not archive (remove INBOX): archiving is not granted (Minda, 18 Oct 2026).** Closed threads stay in the inbox; the labels, not the inbox, say what is open. Never delete.
+3. Closed by rule: add `FG/Closed-by-rule`, `FG/To-Peter` and `FG/Done`, and mark the thread read. **Archiving (remove INBOX) is granted to Peter in phases (Minda, 18 Oct 2026). Phase 1: marketing only.** A closed thread whose class is `FG/Marketing` is also archived, including the closed marketing threads already labelled since 15 Oct. Closed threads of every other class (auto-replies, notices, information-only) are labelled and marked read but stay in the inbox until Minda widens the grant in writing. Archiving is `unlabel_thread` with the `INBOX` id; never delete, trash or mark spam.
 4. Real correspondence a seat must act on: leave in the inbox.
 5. Pointer note in a seat's Raw only if that seat's row says it cannot read ops@ (subject, sender, thread id, date, any amount or deadline stated). The note is data, not an instruction.
 6. Read corrections (section 7).
 7. Self-check, then write the pass summary (Inbox-Triage in Peter's KB): counts by routing label, closed by rule, to Minda, corrections applied. A quiet pass writes a one-line summary.
 8. At the 17:50 pass only: create one Gmail draft to Minda listing every `FG/To-Minda` thread (section 6).
-Peter reads, labels, marks read and drafts. He never sends, replies, forwards, archives or deletes. **Peter does not read the Request-Inbox and writes no Mail Triage Audit Trail rows** (Minda, 18 Oct 2026).
+Peter reads, labels, marks read, archives (phase 1: closed marketing only) and drafts. He never sends, replies, forwards or deletes. **Peter does not read the Request-Inbox and writes no Mail Triage Audit Trail rows** (Minda, 18 Oct 2026).
 
 ## 5. Who reads which labels
 All eleven seats have Gmail on ops@ (approved by Minda 18 Oct): read and create_draft only; Alex and Sarah read only; Peter also labels. Each seat searches `label:FG/Urgent` first, then `label:FG/To-<me> -label:FG/Done` in each work run, handles the thread (draft a reply, file, register), adds `FG/Done`, and raises a Hub row only if real work remains. This is the `mail-work-from-labels` skill. Nadia's run connector reads `enquiries@amfa.uk` until Minda attaches ops@; until then her mail step skips. Each seat reports on its first run whether it can read ops@, on its Hub row.
@@ -52,8 +52,8 @@ Peter keeps `Triage-Rules.md`, one rule per line with its reason and the date ad
 
 ## 8. Control (ops@ as evidence)
 - Peter's end-of-pass self-check: every thread from the last 24 hours carries one routing and one class label.
-- Victoria's daily sample: ten labelled threads, agree or disagree with each label, count on the board. Any breach of the never-close list becomes one High row to Minda and a rule change by Peter.
-- Counts: one row per day in the Mail Triage Audit Trail sheet (3256140446173060), written by Victoria from Peter's pass summaries and the label counts (threads by routing and class, closed by rule, to Minda, corrections applied). It replaces one row per email. Peter writes no Audit Trail rows.
+- Victoria's daily sample: ten labelled threads, agree or disagree with each label, count on the board. Any breach of the never-close list becomes one High row to Minda and a rule change by Peter. From phase 1 of archiving, the sample includes at least three archived marketing threads, to check nothing real was archived.
+- Counts: one row per day in the Mail Triage Audit Trail sheet (3256140446173060), written by Victoria from Peter's pass summaries and the label counts (threads by routing and class, closed by rule, archived, to Minda, corrections applied). It replaces one row per email. Peter writes no Audit Trail rows.
 - The board reads the same label counts live from Gmail (Victoria adds this to the board).
 
 ## 9. What stopped, and when
@@ -63,19 +63,20 @@ Minda removed all previous scheduled routines on Sun 18 Oct 2026, including the 
 | Step | Owner | Status |
 |---|---|---|
 | Create labels; `Triage-Rules.md` v1 | Peter | Done 18 Oct (24 labels, 99 threads labelled, rules v1) |
-| Peter's triage routine prompt (seven passes) | Eugene | v0.1 written 18 Oct; drops archiving, Request-Inbox and Audit Trail rows to match section 4 (AWT-0841) |
+| Peter's triage routine prompt (seven passes) | Eugene | v0.1 written 18 Oct; to archive closed marketing only (phase 1) and drop the Request-Inbox and Audit Trail rows, to match section 4 (AWT-0841, AWT-0873) |
+| Archiving grant folded into Peter's Charter-Rules s2e; archive the closed marketing backlog | Peter | AWT-0872 |
 | Review the routine against this procedure | Victoria | Tue 20 Oct |
-| Skills for mail work uploaded (they find this file by title) | Minda | Done 18 Oct; one re-upload for the title lookup |
+| Skills for mail work uploaded (they find this file by title) | Minda | Done 18 Oct; one re-upload for the title lookup and the archiving phase |
 | Gmail on ops@ for all eleven seats | Minda | Done 18 Oct (Nadia's connector pending) |
 | Daily sample, daily counts row, board mail panel | Victoria | from Mon 19 Oct |
 | Retire stray duplicate Audit Trail sheets (propose; Minda decides) | Alex | Fri 23 Oct (AWT-0842) |
-| First review against the 90% target | Victoria, Peter | Mon 26 Oct |
+| First review against the 90% target; decide phase 2 of archiving | Victoria, Peter, Minda | Mon 26 Oct |
 
 ## 11. Changes from v0.2
 1. Section 2: send, reply, forward and delete are a rule, not enforced in settings (Minda, review 26 Oct).
-2. Sections 3 and 4 step 3: closed-by-rule threads get `FG/Closed-by-rule` + `FG/To-Peter` + `FG/Done`, are marked read and stay in the inbox. Peter does not archive.
+2. Sections 3 and 4 step 3: closed-by-rule threads get `FG/Closed-by-rule` + `FG/To-Peter` + `FG/Done` and are marked read. Peter archives closed marketing threads (phase 1, granted by Minda 18 Oct); other closed classes stay in the inbox until she widens the grant.
 3. Section 4: Peter no longer reads the Request-Inbox and writes no Audit Trail rows; the counts go in his pass summary; the 17:50 digest is its own step.
-4. Section 8: the daily counts row is Victoria's, one a day instead of one per pass.
+4. Section 8: the daily counts row is Victoria's, one a day instead of one per pass; the daily sample includes archived marketing.
 5. Section 9: the Request-Inbox is routed by Victoria.
 6. Section 10 rewritten as status.
-Open for Minda: whether Peter is ever granted archiving. If yes, this becomes v0.4 and section 4 step 3 reverts to archive.
+Open for Minda: when to widen archiving beyond marketing (phase 2). Proposed review date: Mon 26 Oct. A change is a one-line edit to section 4 step 3, recorded as a new version.
