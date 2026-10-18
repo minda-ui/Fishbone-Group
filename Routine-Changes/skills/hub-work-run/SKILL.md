@@ -8,7 +8,7 @@ description: How to work and close Hub rows in a work run. Use in every run: cho
 Rules source: Task Work Run Standard v1.1 (group Outputs, Drive 1ysdjb-vsPIQnmGlp2CXIrvyu93LT1ovN).
 
 ## Read your rows
-get_sheet_summary on 8860839228606340 with a top-level filters list: Assigned to = you, Status not Done. Confirm metadata.filtersApplied names both filters, isSampled false, rowsActual = rowsInFilter; else re-read once, then raise one Help and Lessons row (7780569054316420) and stop. Never use find_in_sheet to read rows (first 100 only).
+get_sheet_summary on 8860839228606340 with a top-level filters list: Assigned to = you, Status not Done. Confirm metadata.filtersApplied names both filters, isSampled false, rowsActual = rowsInFilter; else re-read once, then raise one Help and Lessons row (7780569054316420) and stop. Filters use the field names columnName, operator, columnValue (not columnId, columnTitle or value, which are ignored and leave filtersApplied None). find_in_sheet also works and pages; use it to confirm a row exists, not to read Status.
 
 ## State lines (one per row you touch, newest last)
 `<You> <date> <time UK>: DONE | PROGRESS | BLOCKED | NOT MINE - ...`
@@ -32,4 +32,4 @@ A Hub row for them (first line: what is wanted and the done-when; sources; due d
 With four runs a day, seven days a week, the default due date is the next calendar day (the same day for a single run). Choose a later date only for a named dependency, such as something a person must supply or a date set outside the group, and name that dependency on the row. Never copy a weekday habit into a due date.
 
 ## New Task ID
-Never use find_in_sheet or an unfiltered read. Take the highest AWT number you know, probe the next ten with get_sheet_summary filters Task ID IN [AWT-xxxx ...], columns ["Task ID"]. First number not returned is free. After add_rows, read the "⚠ Duplicate Task ID?" cell: if it is not empty, renumber with update_rows to the next free one. Never compare IDs with GREATER_THAN. add_rows column ids: Task ID 3261859655976836, Assigned to 7765459283347332, Requested by 2135959749134212, Request 6639559376504708, Priority 4387759562819460, Status 8891359190189956, Source 1221166074824580.
+Never use an unfiltered read. Take the highest AWT number you know, probe the next ten with get_sheet_summary filters Task ID IN [AWT-xxxx ...], columns ["Task ID"]. First number not returned is free. After add_rows, read the "⚠ Duplicate Task ID?" cell: if it is not empty, renumber with update_rows to the next free one. Never compare IDs with GREATER_THAN. add_rows column ids: Task ID 3261859655976836, Assigned to 7765459283347332, Requested by 2135959749134212, Request 6639559376504708, Priority 4387759562819460, Status 8891359190189956, Source 1221166074824580.

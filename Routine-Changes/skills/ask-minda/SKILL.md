@@ -11,7 +11,7 @@ Rule source: Hub Coordination Standard, Rule G, and the Task Work Run Standard v
 Money; legal or contract; security; signing; sending anything outward; a choice between ways the business could go; a fact only she holds. Everything else you decide inside your authority and record.
 
 ## Before asking, check
-1. The Hub: is there already an open row on this? Add to it rather than a second.
+1. The Hub: is there already an open row on this? Add to it rather than a second. On the large Tasks and Requests sheet read with get_sheet_summary using top-level filters (columnName, operator, columnValue) and confirm metadata.filtersApplied is not None; or use find_in_sheet with a distinctive word (it pages).
 2. Her answers: the owner notes in group Raw (1AskWaogQoyQH7COKZq85jL00QUtcx---), newest first.
 3. Drive and your own KB.
 Never ask what she has already answered.
