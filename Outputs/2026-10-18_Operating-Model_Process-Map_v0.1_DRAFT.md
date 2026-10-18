@@ -84,7 +84,7 @@ Alex's daily work run, inside his rungs (fixes group and own KB; proposes elsewh
 4. **Registers agree:** a new routine, seat or procedure appears in the Build, Authority or Procedure Register within a day.
 5. **Group Outputs and Raw:** naming, duplicates, files in the wrong place.
 6. **Monday report:** a one-page summary for you, built from the week's daily results (replaces the old weekly sweep as the only check).
-Alex's hourly Hub Drift Watch does **not** stay as it is (corrected 18 Oct after Minda's question): it compares the Smartsheet Hub with a copy of it (the board), cannot write to the board, and logs every difference as "blocked, awaiting an attended session". Its ledger shows about 58 hourly runs (items 293 to 350) all blocked, until one attended resync on 16 Oct. Recommendation: retire the copy, show the Hub live from Smartsheet (a dashboard or report), and retire the watch with it. Victoria nudges seats through their Raw; Alex does not chase.
+The board (Group Dashboard) stays: Minda uses it as her view of where the group is and, going forward, how efficient the work is (Minda, 18 Oct). What goes is the copy behind it. Today the board holds its own copy of the Hub, kept in step by a daily reconcile routine and an hourly Drift Watch that can only log "blocked, awaiting an attended session" (about 58 runs, items 293 to 350, one attended resync on 16 Oct). Replacement: the board reads the Smartsheet Hub live, as Minda, each time it opens (the `mcp` page capability; checked against the contract, one live test still to do). No copy means no drift, so the Drift Watch and the reconcile routine retire once the live board works. The board gains an efficiency section (see section 9). Victoria nudges seats through their Raw; Alex does not chase.
 
 ## 5. Logging standard (three records, the rest derived)
 
@@ -129,3 +129,19 @@ Assumes plan week 1 began 15 Oct (gates: step-off number week 2, authority ladde
 1. **Yes to the direction:** daily pass for Alex, on-request plus alert-driven Companies House for Peter, one mail pipeline with the Index as the only classifier (dry run first).
 2. **Correct this page:** owners in section 3 (is Alex the right owner of the mail pipeline? is Nadia the owner until the order is accepted?).
 Nothing else; everything else I decide and record.
+
+## 9. The board as the efficiency dashboard
+
+Live Hub numbers on 18 Oct (one aggregate call, 685 rows): Done 558, In Progress 110, Open 14, Blocked 3. Rows ever assigned to Minda: 423 of 685 (62%). Rows closed per day: 13 Oct 259 (bulk), 14 Oct 50, 15 Oct 44, 16 Oct 19, 17 Oct 24.
+
+Measures, tied to the plan goals ("about ten items a week reach Minda", "the team works without asking"):
+1. Open rows waiting on Minda, and how old (target about ten a week).
+2. Share of rows closed without Minda: by rule, by a seat.
+3. Rows closed per day, seven-day trend.
+4. In Progress per seat against closed per seat; rows with no update for 24 hours / 3 days.
+5. Blocked rows and who must act.
+6. Time from raised to done (needs a Created date column on the Hub; Eugene adds it).
+7. Hand-offs answered within three hours (from the modified time; approximate until rows carry a handed-on stamp).
+8. Mail: arrived, dispatched, closed by rule, escalated (Audit Trail, live).
+9. Plan gates and their status (step-off number, authority ladder, go/no-go, cash decision).
+Data quality first: 110 rows read In Progress and only 3 Blocked, so the status field does not yet separate working, waiting and stuck. The work-run states (PROGRESS / BLOCKED / NOT MINE) are what make measures 4 and 5 true.
