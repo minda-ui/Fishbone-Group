@@ -33,12 +33,21 @@ All company mail lands in one mailbox, `ops@fishboneconstruction.co.uk` (it carr
 - #4 labels what #1 also tags.
 
 **Proposal: read once, classify once, then do.**
-1. **Collect:** one report per run, whichever routine does it cheapest. The FC/FA/FM/FP reports stay as feeders only if Eugene's inventory shows they are cheap; otherwise merge them into one.
+1. **Collect:** one report per run, whichever routine does it cheapest. The FC/FA/FM/FP reports stay only if the Index's results need them; otherwise merge them into one.
 2. **Classify:** the Index is the only classifier. Add Layer-1 lines: documents for the register, deadlines and bank-detail changes go to Peter's Raw (bank-detail change stays never-close, escalated); Amfa enquiries go to Nadia only.
-3. **Do:** each seat works its own dispatched items in its work run. Peter's work is drafts, register candidates, deadline rows and fraud flags on what the Index sends him. His own mailbox-reading routine (#1) is retired after a one-week dry run beside the Index.
+3. **Do:** each seat works its own dispatched items in its work run. Peter's drafts, register candidates, deadline rows and fraud flags continue. Whether his own mailbox-reading routine (#1) is still needed is decided by section 2a, after a one-week comparison beside the Index.
 4. **Escalate:** only the Index writes rows to you, in the ASK / RECOMMEND / DEFAULT form.
 5. **Owner:** Alex owns the pipeline (he built the Index); Peter is the doer for documents and drafts.
 Result: one read stage, one classification, one place you see mail. Needs a dry run before anything is retired; I will not retire a routine without it.
+
+## 2a. How I judge keep, merge or retire: by value, not cost (Minda, 18 Oct)
+
+Cost and duplication are not reasons. Each routine is scored on four questions, in this order:
+1. **What does it produce?** A decision made, a row closed, a draft used, a deadline caught, a risk stopped.
+2. **Who uses it, and when did they last?** Evidence from the Hub, the Audit Trail or a reply, in the last 30 days.
+3. **What goes wrong if it stops for a week?** If nothing, it is retired. If something, it stays, however it overlaps.
+4. **Could another routine produce the same result with less of your attention?** Only then merge.
+By this test Peter's triage may stay: his drafts, deadline flags and fraud guard create value no other routine does. I proposed retiring his mailbox read because it overlaps the Index; that is a duplication argument, so it is withdrawn until his output is scored. The Build Register (AWT-0775, AWT-0776) gets two more columns for this: **output and who uses it**, and **evidence of use, last 30 days**.
 
 ## 3. Business processes, owners and records
 
@@ -75,7 +84,7 @@ Alex's daily work run, inside his rungs (fixes group and own KB; proposes elsewh
 4. **Registers agree:** a new routine, seat or procedure appears in the Build, Authority or Procedure Register within a day.
 5. **Group Outputs and Raw:** naming, duplicates, files in the wrong place.
 6. **Monday report:** a one-page summary for you, built from the week's daily results (replaces the old weekly sweep as the only check).
-Alex's hourly Hub Drift Watch stays; it is read-only. Victoria nudges seats through their Raw; Alex does not chase.
+Alex's hourly Hub Drift Watch does **not** stay as it is (corrected 18 Oct after Minda's question): it compares the Smartsheet Hub with a copy of it (the board), cannot write to the board, and logs every difference as "blocked, awaiting an attended session". Its ledger shows about 58 hourly runs (items 293 to 350) all blocked, until one attended resync on 16 Oct. Recommendation: retire the copy, show the Hub live from Smartsheet (a dashboard or report), and retire the watch with it. Victoria nudges seats through their Raw; Alex does not chase.
 
 ## 5. Logging standard (three records, the rest derived)
 
