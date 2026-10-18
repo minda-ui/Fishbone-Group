@@ -5,11 +5,11 @@ description: How any employee works the mail labelled for them in ops@. Use in e
 
 # Mail work from labels (mechanics only)
 
-Works with: procedure "Mail and requests" v0.2 (register id P07-L1). Rules and owners live in the procedure.
+Works with: procedure "Mail and requests" (register id P07-L1; versions 0.2 and 0.3 are valid). Rules and owners live in the procedure.
 
 ## First, every run
-1. Read the procedure: group Outputs, Drive id 1BkezeFwtwT_iaxNQQOYxqzaUfb4CN6Ar. Your prompt may name an older id (1TTBWvsU9CEgiTxZVTjPTH8cqbDuCx5Or); that file is archived Draft v0.1: ignore it and use this one.
-2. Status must be Approved (file header and Procedure Register row P07-L1, sheet 4244584085456772). If not, skip mail this run and say so in one line. If the procedure version is higher than 0.2, raise one Help and Lessons row (7780569054316420) and skip.
+1. Find the procedure: search the group Outputs folder (Drive 1jrOGx1lqGfTHKkzUcM8ce__tOGsqPlEp) for the one file whose title contains `Procedure_Mail-and-Requests` and `APPROVED`, and read it. (At v0.2 its id was 1BkezeFwtwT_iaxNQQOYxqzaUfb4CN6Ar; the id changes when the procedure is replaced, the title does not, so search by title.) Ignore any older id in your prompt (1TTBWvsU9CEgiTxZVTjPTH8cqbDuCx5Or is archived Draft v0.1).
+2. Status must be Approved (the title says APPROVED and the file header says Approved; Procedure Register row P07-L1, sheet 4244584085456772). If no approved file is found, skip mail this run and say so in one line. If the version is higher than 0.3, raise one Help and Lessons row (7780569054316420) and skip.
 
 ## Mechanics
 - **Find your mail:** Gmail search_threads on ops@ with `label:FG/Urgent` first, then `label:FG/To-<You> -label:FG/Done`. Replace <You> with your name (Anna, Rachel, John, Nadia, Darius, Helen, Eugene, Alex, Peter, Sarah). Gmail search matches labels by NAME. search_threads returns 20 threads by default (pageSize max 50) and previews only the oldest messages: paginate with pageToken until none is left.
