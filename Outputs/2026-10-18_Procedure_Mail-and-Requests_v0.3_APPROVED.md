@@ -1,6 +1,6 @@
-# Procedure: Mail and requests (v0.3, DRAFT for Minda's approval; replaces v0.2 APPROVED 18 Oct 2026)
+# Procedure: Mail and requests (v0.3, APPROVED by Minda on 18 Oct 2026; supersedes v0.2)
 
-**Status: DRAFT.** Not in force until Minda approves it. Until then v0.2 stays the approved procedure; the file with `APPROVED` in its title in group Outputs is the one in force. Procedure register id P07-L1 (numbering to be reconciled by Alex). Supersedes v0.2 (same day), amended at Minda's request after the first day of runs. Owner: Alex (confirmed by Minda 18 Oct). Doer of triage: Peter. Rules the triage follows: Peter's `Triage-Rules.md`, versioned in his KB. Decided by Minda: the mailbox is the queue; Peter triages with labels; seats work from their labels; ops@ is the control inbox; no dry run. Hub AWT-0831, AWT-0840 to AWT-0843, AWT-0854, AWT-0861, AWT-0865, AWT-0842, AWT-0872, AWT-0873.
+**Status: Approved.** Approved by Minda, 18 Oct 2026, in chat ("Approve v0.3"). The file with `APPROVED` in its title in group Outputs is the one in force; v0.2 is archived. Procedure register id P07-L1 (numbering to be reconciled by Alex). Supersedes v0.2 (same day), amended at Minda's request after the first day of runs; the v0.3 draft was never in force. Owner: Alex (confirmed by Minda 18 Oct). Doer of triage: Peter. Rules the triage follows: Peter's `Triage-Rules.md`, versioned in his KB. Decided by Minda: the mailbox is the queue; Peter triages with labels; seats work from their labels; ops@ is the control inbox; no dry run. Hub AWT-0831, AWT-0840 to AWT-0843, AWT-0854, AWT-0861, AWT-0865, AWT-0842, AWT-0872, AWT-0873, AWT-0874.
 
 ## 1. Principle
 An email is not a task. It stays in the mailbox with labels that say where it goes and what it is. It becomes a Hub row only when someone has to do work beyond reading and a draft. State lives in one place (Gmail labels); the Hub holds work.
@@ -66,7 +66,7 @@ Minda removed all previous scheduled routines on Sun 18 Oct 2026, including the 
 | Peter's triage routine prompt (seven passes) | Eugene | v0.1 written 18 Oct; to archive closed marketing only (phase 1) and drop the Request-Inbox and Audit Trail rows, to match section 4 (AWT-0841, AWT-0873) |
 | Archiving grant folded into Peter's Charter-Rules s2e; archive the closed marketing backlog | Peter | AWT-0872 |
 | Review the routine against this procedure | Victoria | Tue 20 Oct |
-| Skills for mail work uploaded (they find this file by title) | Minda | Done 18 Oct; one re-upload for the title lookup and the archiving phase |
+| Skills for mail work uploaded (they find this file by title) | Minda | First upload done 18 Oct; re-upload of mail-work-from-labels and mail-triage-by-labels pending (AWT-0874); until then they read v0.2 by id and Peter's charter (AWT-0872) governs archiving |
 | Gmail on ops@ for all eleven seats | Minda | Done 18 Oct (Nadia's connector pending) |
 | Daily sample, daily counts row, board mail panel | Victoria | from Mon 19 Oct |
 | Retire stray duplicate Audit Trail sheets (propose; Minda decides) | Alex | Fri 23 Oct (AWT-0842) |
