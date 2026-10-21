@@ -30,3 +30,6 @@ Victoria, with Minda.
 
 ## 21 Oct, about 15:05 UK
 - Minda driving for about 60 minutes, offered to pass the extension to Andrejus Prutkovas (co-director). Drafted `Outputs/2026-10-21_Legal_MSEM-019JE538_Extension-Pack-for-Andrejus_DRAFT_v0.1.docx`: phone script for the court (0300 123 5577), letter in his name, MSEM copy, what to report back. Nothing sent or phoned by Victoria. Three facts needed from Minda: date, method and size of MSEM's package.
+
+## 21 Oct, about 15:25 UK
+- Minda asked for a PDF message to Andrejus Prutkovas: `Outputs/2026-10-21_Legal_MSEM-019JE538_Message-to-Andrejus.pdf` (3 pages: what to do, what to say to the court, letter in his name). Sent to Minda to forward. Nothing sent or phoned by Victoria. Waiting for Minda or Andrejus to confirm the call.
