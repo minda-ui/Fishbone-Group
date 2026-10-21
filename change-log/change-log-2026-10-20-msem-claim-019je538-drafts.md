@@ -39,3 +39,7 @@ Victoria, with Minda.
 
 ## 21 Oct, about 16:10 UK
 - Andrejus phoned the court; the court asked for an N244. Anna's AWT-0931 note: two court emails (N244 General Application, EX50 fees form) reached ops@ and minda@ at 15:23-15:24 UK; not read by Victoria. Minda put the blank N244 in group Raw (links to the gov.uk form and guidance, then the PDF). Victoria filled the form fields (Composio sandbox, pypdf) and saved `Outputs/2026-10-21_N244_MSEM-019JE538_Extension-application_FILLED-DRAFT_unsigned.pdf` (also Drive 1PnF_bGRVzbvXCzSSsg7YoiIn3f8niW5V in group Outputs). Statement of truth, signature, name and date left for the signer. Fee unknown. Nothing sent.
+
+## 21 Oct, about 16:40 UK
+- Read the two court emails (ops@ copies, 14:23Z): both are links only (N244, guidance, EX160, EX50). The N244 email says payment by cheque/postal order to HMCTS, or PBA number, or a cover letter asking for a payment call-back with a phone number; with no payment or EX160 the court returns the application. EX50 (Minda's saved page): application on notice GBP 321; by consent or without notice GBP 126; witness summons GBP 4.
+- Drafted `Outputs/2026-10-21_Legal_MSEM-019JE538_N244-Cover-Letter-Payment-Callback_DRAFT_v0.1.docx`. Nothing sent. Not checked: whether a company can use Help with Fees.
