@@ -18,3 +18,7 @@ Victoria, with Minda.
 - Snagging list found in info@ (Dave Newell, J4 Projects, 12 Feb 15:11, forwarded by David Macdonald 15:32): MG8. Snag Doctor (Cardiff) invoice INV-0622, GBP 636.00, repair of damaged cubicle panels: MG9. The 26 March "84 man-days" email is a different job (BBC Wales), not this claim; my first reading was wrong.
 - Latest drafts: statement v0.7, bundle index v0.5, letters v0.1. Earlier versions kept.
 - Minda: "Push it" (21 Oct); earlier "Leave it" lifted. Pushed to claude/awesome-knuth-p1ll7w.
+
+## 21 Oct, about 11:30 UK
+- Minda received a very large package from MSEM and asked for a short extension. Drafted `Outputs/2026-10-21_Legal_MSEM-019JE538_Extension-Request_DRAFT_v0.1.docx`: where to call (County Court at Lincoln, 0300 123 5577, from the 27 Aug notice), call script, reason, letter to the court, email to MSEM, and what to file by 4pm anyway. Nothing sent. Minda's earlier "Push it" covered the MSEM drafts; this file is the same matter and branch.
+- Scheduled checks of AWT-0904 and AWT-0907 closed (AWT-0915 Done).
