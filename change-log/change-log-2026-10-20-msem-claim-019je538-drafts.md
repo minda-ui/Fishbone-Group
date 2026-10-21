@@ -27,3 +27,6 @@ Victoria, with Minda.
 - Minda scanned MSEM's package (Drive shortcut "Mikheil Davidans" in group Raw, pointing to a folder in Irina's Drive; 16 PDFs). Read by text extraction: Mikheil Davidans's witness statement (104 paras, dated 18.10.2026), exhibits MD1-MD19, Ryan Andrews statement (MD18), references (MD19), ED4-ED8 emails, phone bills (MD14). Not seen: Egita Davidane's own statement, invoices 553/554; SD card videos (MD13).
 - Findings reported to Minda: Mikheil was on site 13 Feb until about 16:05 and wrote he was "removed" (MD16); Geoff Smith (Macdonald PM) 13 Feb email; EMCOR 21 Jan email on Roath Lock management; his 10 Feb WhatsApp video of door gaps; 30 Jan meeting disputed.
 - Statement v0.8 (paras 3, 5, 7A, 10A, 12, 12A, 18, exhibits, witness outlines); extension request draft v0.1 (earlier). Nothing sent. Minda's earlier "Push it" taken to cover updates to these drafts on this branch.
+
+## 21 Oct, about 15:05 UK
+- Minda driving for about 60 minutes, offered to pass the extension to Andrejus Prutkovas (co-director). Drafted `Outputs/2026-10-21_Legal_MSEM-019JE538_Extension-Pack-for-Andrejus_DRAFT_v0.1.docx`: phone script for the court (0300 123 5577), letter in his name, MSEM copy, what to report back. Nothing sent or phoned by Victoria. Three facts needed from Minda: date, method and size of MSEM's package.
