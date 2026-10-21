@@ -22,3 +22,8 @@ Victoria, with Minda.
 ## 21 Oct, about 11:30 UK
 - Minda received a very large package from MSEM and asked for a short extension. Drafted `Outputs/2026-10-21_Legal_MSEM-019JE538_Extension-Request_DRAFT_v0.1.docx`: where to call (County Court at Lincoln, 0300 123 5577, from the 27 Aug notice), call script, reason, letter to the court, email to MSEM, and what to file by 4pm anyway. Nothing sent. Minda's earlier "Push it" covered the MSEM drafts; this file is the same matter and branch.
 - Scheduled checks of AWT-0904 and AWT-0907 closed (AWT-0915 Done).
+
+## 21 Oct, about 14:50 UK
+- Minda scanned MSEM's package (Drive shortcut "Mikheil Davidans" in group Raw, pointing to a folder in Irina's Drive; 16 PDFs). Read by text extraction: Mikheil Davidans's witness statement (104 paras, dated 18.10.2026), exhibits MD1-MD19, Ryan Andrews statement (MD18), references (MD19), ED4-ED8 emails, phone bills (MD14). Not seen: Egita Davidane's own statement, invoices 553/554; SD card videos (MD13).
+- Findings reported to Minda: Mikheil was on site 13 Feb until about 16:05 and wrote he was "removed" (MD16); Geoff Smith (Macdonald PM) 13 Feb email; EMCOR 21 Jan email on Roath Lock management; his 10 Feb WhatsApp video of door gaps; 30 Jan meeting disputed.
+- Statement v0.8 (paras 3, 5, 7A, 10A, 12, 12A, 18, exhibits, witness outlines); extension request draft v0.1 (earlier). Nothing sent. Minda's earlier "Push it" taken to cover updates to these drafts on this branch.
