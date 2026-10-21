@@ -33,3 +33,6 @@ Victoria, with Minda.
 
 ## 21 Oct, about 15:25 UK
 - Minda asked for a PDF message to Andrejus Prutkovas: `Outputs/2026-10-21_Legal_MSEM-019JE538_Message-to-Andrejus.pdf` (3 pages: what to do, what to say to the court, letter in his name). Sent to Minda to forward. Nothing sent or phoned by Victoria. Waiting for Minda or Andrejus to confirm the call.
+
+## 21 Oct, about 15:40 UK
+- Minda's account for paragraph 12: she did not remove Mikheil Davidans from site; the plan was to put the strongest team in to support him; operatives told her he packed his tools and left the site without a site manager; she did not speak to him. Statement v0.9 (para 12 rewritten). Flags: name the operatives who told her; check phone log for 12, 13 and 18 Feb; do not say who "removed" him. Mikheil's own 13:38 email (13 Feb) says Fishbone sent Sebastian and Dainius.
