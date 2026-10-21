@@ -36,3 +36,6 @@ Victoria, with Minda.
 
 ## 21 Oct, about 15:40 UK
 - Minda's account for paragraph 12: she did not remove Mikheil Davidans from site; the plan was to put the strongest team in to support him; operatives told her he packed his tools and left the site without a site manager; she did not speak to him. Statement v0.9 (para 12 rewritten). Flags: name the operatives who told her; check phone log for 12, 13 and 18 Feb; do not say who "removed" him. Mikheil's own 13:38 email (13 Feb) says Fishbone sent Sebastian and Dainius.
+
+## 21 Oct, about 16:10 UK
+- Andrejus phoned the court; the court asked for an N244. Anna's AWT-0931 note: two court emails (N244 General Application, EX50 fees form) reached ops@ and minda@ at 15:23-15:24 UK; not read by Victoria. Minda put the blank N244 in group Raw (links to the gov.uk form and guidance, then the PDF). Victoria filled the form fields (Composio sandbox, pypdf) and saved `Outputs/2026-10-21_N244_MSEM-019JE538_Extension-application_FILLED-DRAFT_unsigned.pdf` (also Drive 1PnF_bGRVzbvXCzSSsg7YoiIn3f8niW5V in group Outputs). Statement of truth, signature, name and date left for the signer. Fee unknown. Nothing sent.
