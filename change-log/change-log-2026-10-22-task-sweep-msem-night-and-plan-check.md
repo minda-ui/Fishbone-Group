@@ -21,3 +21,8 @@ Victoria, with Minda. Complements `change-log-2026-10-20-msem-claim-019je538-dra
 ## Housekeeping
 - Scheduled checks AWT-0915 closed 21 Oct. Hub row AWT-0940 opened for Alex (refresh current-state.md at next sweep). Lessons added to `.claude/skills/task-sweep/SKILL.md` and Hub HL row.
 - Not verified: HSBC funding outcome and CIS return of 19 Oct (not visible to Victoria).
+
+## 22 Oct, morning (UK)
+- AWT-0798: Minda said rates paid in full. Receipt found in minda@ (North Tyneside e-payment, 22 Oct 08:23, NNDR GBP 1,879.58, ref 2611953540, txn 71-41721, Amfa Furniture Ltd). Minda: treat as Amfa recharge. Recorded on the row; HMRC CT demand part still open.
+- AWT-0855: Minda answered items 1-5 (option A; no Citation visit, 8 Nov is the date for non-conformances; Anna has the Citation facts; RAMS to be created; no need to tell Citation about Sarah while nothing outstanding). Recorded on the row.
+- AWT-0930: N244 not yet sent as of this entry. Court's 21 Oct email gives no filing address. Cover letter v0.2 drafted (`Outputs/2026-10-22_Legal_MSEM-019JE538_N244-Cover-Letter-Payment-Callback_DRAFT_v0.2.docx`): dated 22 Oct, sent by email with call-back, receipt confirmation requested. Brackets left: court email, fee, call-back number, signer. Nothing sent. Minda: "Push it" (22 Oct) for this file.
