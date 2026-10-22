@@ -176,5 +176,14 @@ Before telling Minda anything about a row:
   - Rule F needs each seat's Raw folder id. Search `title = 'Raw' and parentId = '<home>'`. Darius's was not found under his home folder; say so rather than skipping silently.
   - A document that a client may see (Level 1) must not mention assistants or name suppliers: I changed Rachel's wording to fit and told Minda each change.
   - Dashboard refresh: edit `plan.json`, upload as an asset, then `ArtifactData` update of the dataset `url` and `updated`, pinned with `if_version`.
+- **2026-10-20 to 22 (sweep C10-C14, MSEM court night, plan check).**
+  - "Yes to all five" on a numbered, grouped list closed five rows with one approval. An unclear "1." after a two-way question was re-asked with numbers, as the earlier lessons say.
+  - I asked Minda to read two court emails that I could read myself in ops@ (AWT-0931). Read what you can reach before asking her; the reply was "links only, nothing due".
+  - Read the other side's bundle before telling her what she can say. My draft said Mr Davidans left after 12 Feb; his own emails showed he was on site 13 Feb. A claim in a draft statement is a claim until the documents are read.
+  - I took the 26 March "84 man-days" email for the same job. It was a different BBC job. Check the job code before using a fact.
+  - Scans read by text extraction are claims: quote word for word only after checking against the page, and say who sent each bubble in a chat screenshot cannot be read from text.
+  - The sandbox cannot reach gov.uk. The Composio sandbox with Drive account `victoria-googledrive` can download a PDF, fill its form fields with pypdf and upload to Drive. Leave the statement of truth, signature and date for the signer.
+  - A court application with no fee is returned; the route to pay is in the court's own email. Say that before telling someone to send.
+  - Minda's "Leave it" on git held until her "Push it"; later updates to the same drafts were treated as covered and said so each time. Say it in the change-log.
 - **2026-10-04 (continued).**
   - Files Minda drops land wherever she is working (the group Raw, not the seat's Raw). Say where they are and hand the seat the Drive ids.
