@@ -31,3 +31,11 @@ Victoria, with Minda. Complements `change-log-2026-10-22-task-sweep-msem-night-a
 - Access fixes (Collaboration Space, "1. General", Property Register): findings only, nothing changed.
 - Darius as resolver; SmartCabinet folder; QuickBooks user lists; break-glass; per-person logins plan; solicitor's wording on tool ownership.
 - Nothing from this project is pushed to git. The three local PDFs and this file are untracked.
+
+## Late 22 Oct: close-out and tomorrow (Fri 23 Oct)
+- Minda mode off. Owner note, this change-log, AWT-0976 (Alex) and HL-0100/HL-0101 record the project. AWT-0953 is In Progress; AWT-0970 and AWT-0972 to AWT-0975 closed; AWT-0971 stays In Progress for Minda.
+- Pushed under Minda's "Push it" (22 Oct): the three framework PDFs and this file.
+- Friday morning: read replies on AWT-0961 to AWT-0968 and AWT-0952; carry Eugene's AWT-0969 (shared-skills library, estate-fit sign-off) which is still open for Victoria.
+- Friday afternoon (Project A starts): create Irina's exchange sheet from Eugene's template (sharing is Minda's step) and give its id to Peter, Sarah, Rachel and John; run the read-only access fence checks; Peter's attended charter fold-in with Minda's written grant; Minda tells Irina about the test.
+- Weekend: test drill with Irina (John stands in); Sarah checks, Rachel prepares the TEST request. Monday: go/no-go for Project B (connecting Andrejus).
+- Court (AWT-0930): no court reply, fee receipt or MSEM copy seen in the mailboxes at 22:00 UK; Minda or Andrejus to phone the court.
