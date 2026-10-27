@@ -1,0 +1,31 @@
+# DRAFT v0.1 for Minda: witness statement, paragraphs 5 to 9
+
+Prepared by Victoria, 26 Oct 2026. MSEM UK Ltd v Fishbone Construction Ltd, claim 019JE538. Draft only: nothing is filed or sent. Not legal advice. The statement is yours; change anything that is not true or not how you would say it.
+
+How to read it: plain text is drafted from your own earlier account (the Chronology of Events and N9B you sent the court on 15 and 19 May) and from the records. **[CONFIRM ...]** marks a sentence only you can confirm. Delete any sentence you cannot swear to. Remove the square brackets and this box before it is filed.
+
+Sources: Chronology of Events (sent to the court 15 and 19 May 2026); O2 bill 3 Feb to 2 Mar 2026 (outgoing calls from your mobile only); WhatsApp chat with Mr Davidans (from 3 Feb); Telegram group export; site register photographs; owner notes of 24 and 26 Oct.
+
+---
+
+**5.** On or about 30 January 2026 a pre-handover meeting and site inspection took place at the BBC Cardiff site. Mr Davidans attended it on behalf of Fishbone Construction Ltd, together with a representative of the client. [CONFIRM: I was not there.] Outstanding and incomplete items were discussed at that meeting. [CONFIRM: after the meeting Mr Davidans did not tell me about the outstanding items. He told me the project was progressing and under control. If he told you anything on or after 30 January, say what and when.]
+
+**6.** When Mr Davidans started on site, I agreed with him that he would send me photographs of the progress every day and photographs of the site sign-in register, so that I could check who was on site. He sent them through the Telegram group chat for the project. The last photograph he sent was on 6 February 2026. [CONFIRM: the photographs did not show the incomplete or defective work that was found later. Give one or two examples if you can.] [Exhibit: register photographs, 2 December 2025 to 6 February 2026.]
+
+**7.** Between 2 and 6 February 2026 I [and Andrejus Prutkovas] spoke to Mr Davidans by telephone about the progress of the project. [CONFIRM: your records show calls from your mobile to him on 3 February (two calls, under 30 seconds each) and on 5 February (about one minute). If you or Andrejus spoke to him on other days, from any phone, say which.] I asked him whether he needed more labour, more subcontractors or any other help, and whether anything could stop the work finishing on time. [CONFIRM] He did not ask for more help and did not tell me that there was a problem. He told me that the project was progressing as planned. [CONFIRM] [OPEN: MSEM says that on 6 February weekend working was proposed and he said it could not be done. Was it? Who proposed it, and how?]
+
+**8.** On 9 February 2026 Andrejus Prutkovas and I visited the site. [CONFIRM: time; who else was there.] We saw that some work was still outstanding and we discussed it with Mr Davidans. We offered him more labour and support. [CONFIRM] He said that he would complete the remaining work with the people already on site. [CONFIRM] He did not say that the project could not be completed or that we needed to step in. [CONFIRM] [OPEN: any photographs or messages from the visit; how you reached the site that day.]
+
+**9.** On 10 February 2026 Mr Davidans sent me a video and an image on WhatsApp about a panel finish [CONFIRM what it was about; the message is in Russian and the translation is a rough reading] and I replied that we did not have that item and that I would try to find one. [CONFIRM: that was the only problem he raised with me in writing.] [CONFIRM: on 10 February I also telephoned him at 13:03, a call of 4 minutes 38 seconds. What was it about?] After the 9 February visit I arranged for Dainius Drulia, an experienced site manager from another project, to attend the site on 12 February 2026 to help with the handover. [CONFIRM the date you arranged it and who asked for him.]
+
+---
+
+## Points for you before this goes anywhere
+
+1. **"Ceased communication".** The Chronology you sent the court says that after the 12 February inspection he "thereafter ceased communication" with Fishbone. The WhatsApp chat shows he messaged you on 22 and 27 February about pay, and you replied. The statement must not repeat "ceased communication". It can say he stopped working on the project and did not discuss the outstanding works. Whether the Chronology needs correcting is a question for the court office or an adviser.
+2. **The day he left.** The Chronology says 12 February (the inspection day). MSEM and my earlier notes say 13 February. Which is right?
+3. **Calls on 2 to 6 February.** Your O2 bill shows only three short calls to him in that week. The Chronology says "several telephone discussions" with you and Andrejus. The statement should say only what the records and your memory support. I need Andrejus's account and, if he made calls, his phone records.
+4. **The earlier bill (read 26 Oct, bill date 3 Feb 2026, usage 3 Jan to 2 Feb).** It shows no outgoing call from your mobile to Mr Davidans between 21 January (9:33, 4 min 42 s) and 3 February. Nothing on 30 January, 31 January, 1 or 2 February. Earlier in January it shows calls on 8 Jan (22 s), 12 Jan (three calls, 2 to 2.5 min each), 13 Jan (22 s) and 21 Jan. So from your own phone, the only calls to him in the week before and around the 30 January meeting are the short ones on 3 and 5 February. Calls to you, and calls from Andrejus's phone, are not on it. For paras 5 and 7 this means anything said about phone discussions in that week has to come from your memory, incoming call records or Andrejus's phone.
+5. **MSEM's different story.** MSEM para 14.4 says that when the outstanding items became clear, Mr Davidans told you and Andrejus what labour was needed and asked for experienced operatives. Your Chronology says the opposite. Your answer to point 5 above is what the court will weigh.
+6. **Dainius Drulia.** The Chronology says he was arranged for 12 February. QuickBooks shows his first bill dated 8 February. Which days did he first work on this project?
+7. **Attachments on the 19 May email.** I checked: both the Chronology and the N9B were attached to your 19 May email to the court. That open item is closed.
