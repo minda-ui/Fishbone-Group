@@ -2,6 +2,11 @@
 
 Victoria, with Minda. Follows `change-log-2026-10-27-msem-witness-statement-v0-5-and-witnesses.md` (not edited; this entry adds to it). Pushed to `claude/awesome-knuth-p1ll7w` on Minda's "Push it": 16da282 (statement v0.6, 27 Oct log), 0a1f27c (exhibit pack plan), 5bbb07e (DPIA and notice v0.1), 8604752 (v0.2). No pull request. Nothing signed or filed by Victoria; Minda sent the emails below herself.
 
+## Later on 30 Oct: DPIA approved (corrects the FC2614 section below)
+- Minda approved the DPIA and the group notice in session ("DPIA - approved; I will tell group") and will tell the FC2614 group herself. Notice v0.3 carries her contacts (minda@fishboneconstruction.co.uk, +44 7855 463292, taken from her email signature). DPIA v0.3 adds a checks table. Pushed in ee082fe.
+- Checks still open before go-live: group membership (group not created yet; check on day one), existing staff notice (none found in Drive by title), ICO fee (not verifiable from here; Minda or Rachel to check company 07948220), AI provider and Telegram terms (not checked; Minda with Eugene). Eugene's build stays parked until Minda says go. Hub AWT-1036 updated.
+- The FC2614 section below, written before the approval, still reads "Open: Minda's sign-off" and "contact name and phone in the notice". Those two are now done.
+
 ## Owner note
 - Written to group Raw on Drive: `2026-10-27_owner-note_msem-statement-answers-and-counterclaim-evidence.md` (id 126cPBV4Wo8uydJu6VUOj0fEjvnCr4Uhw). Part A is Minda's answers since 26 Oct (statement paras 2 to 5, 9 Feb meeting and J4 call, counterclaim window, Pabis paid by salary); Part B is Victoria's findings. Not in git.
 
