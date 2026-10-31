@@ -2,6 +2,14 @@
 
 Victoria, with Minda. Follows `change-log-2026-10-27-msem-witness-statement-v0-5-and-witnesses.md` (not edited; this entry adds to it). Pushed to `claude/awesome-knuth-p1ll7w` on Minda's "Push it": 16da282 (statement v0.6, 27 Oct log), 0a1f27c (exhibit pack plan), 5bbb07e (DPIA and notice v0.1), 8604752 (v0.2). No pull request. Nothing signed or filed by Victoria; Minda sent the emails below herself.
 
+## End of day 30 Oct: staff notice, DocuSeal hand-off, close-out
+- **Staff and subcontractor privacy notice:** Minda confirmed none exists. Draft v0.1 written (`Outputs/2026-10-30_Draft_Fishbone-Construction_Staff-and-Subcontractor-Privacy-Notice_v0.1.md`, pushed 5c07b64): what is held, basis, recipients, retention, rights; [CONFIRM] lines for Minda; adviser review before issue. Not issued.
+- **DocuSeal:** Minda wants it used to issue the notice as an acknowledgement (not consent) and says Eugene owns the integration. Hand-off per CLAUDE.md s1: note in Eugene's Raw (Drive id 1Q6PfZu8kmfiJzIuF5Utgs7tlVLRzOarw, 2,205 bytes, size matched) and Hub **AWT-1054** (six questions: in use or planned, storage, bulk send, tick-only form, retention, inventory). Local copy `Outputs/2026-10-30_Victoria-to-Eugene_docuseal-privacy-notice-acknowledgement.md` not yet pushed.
+- **Lesson raised (Rule B):** Help & Lessons **HL-0109**: check the mailbox for what has already been filed or sent to a court or counterparty before drafting, and check the address is monitored (the 28 Oct court email missed the N244).
+- **current-state.md:** last session shown is 2026-09-27 (Alex). It is Alex's file; hand-off raised as Hub **AWT-1056** (Low). Victoria did not edit it.
+- **Hub:** AWT-1036 In Progress (approval, contacts, staff-notice note); AWT-1054 and AWT-1056 Open; AWT-1029 is Rachel's and Done. AWT-1016 (MSEM follow-on) still not updated.
+- **§6a:** Victoria drafted and recorded only. Minda sent the court and witness emails herself; nothing signed, filed, paid or posted by Victoria. Drafts in info@ (court cover, MSEM copy, Kogut) remain unsent.
+
 ## Later on 30 Oct: DPIA approved (corrects the FC2614 section below)
 - Minda approved the DPIA and the group notice in session ("DPIA - approved; I will tell group") and will tell the FC2614 group herself. Notice v0.3 carries her contacts (minda@fishboneconstruction.co.uk, +44 7855 463292, taken from her email signature). DPIA v0.3 adds a checks table. Pushed in ee082fe.
 - Checks still open before go-live: group membership (group not created yet; check on day one), existing staff notice (none found in Drive by title), ICO fee (not verifiable from here; Minda or Rachel to check company 07948220), AI provider and Telegram terms (not checked; Minda with Eugene). Eugene's build stays parked until Minda says go. Hub AWT-1036 updated.
