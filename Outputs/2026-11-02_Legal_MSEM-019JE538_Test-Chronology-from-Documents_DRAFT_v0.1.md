@@ -22,6 +22,8 @@ Prepared by Victoria, 2 Nov 2026. Working note, not for filing. Not legal advice
 | 21 Jan | Liam Price (Building Management) criticises lack of daily briefings at Roath Lock | STMT (his para 16; email not seen) |
 | 23 Jan 14:18 | Two adults travel Cardiff Central to London Paddington | DOC (LNER 26SVNSYT7V) |
 | 26–30 Jan | Raitis Bykovs at Travelodge Cardiff Atlantic Wharf (PO FC2521) | DOC (conf. 159465423) |
+| 7 Jan, 12 Jan | Liam Price objects to Mikheil managing both sites; Andrew Macdonald names Oleksii 'Alex' Starovoitov as Roath Lock foreman (12 Jan) | DOC (info@) |
+| 4–6 Feb | J4 proposes Thursday 12 Feb for the final WC site meeting; Macdonald forwards to Minda 6 Feb; Minda replies "Yes, Thursday perfect" | DOC (info@) |
 | 28 Jan 19:39 | Premier Inn Guernsey St Peter Port booked, 29 Jan to 6 Feb, 2 adults; forwarded from info@ on 30 Jan. Guests: Sebastian Pabis and Mr Kogut (Minda, 2 Nov) | DOC (BKY1301215); STMT (Minda) |
 | 30 Jan 07:45 | Mikheil's programme update to Liam Price: two weeks remaining | STMT (his para 30; email in MD11 not read in detail) |
 | 30 Jan 09:20 | Call from Mikheil's phone to Minda's number (1m 13s) | MSEM (MD14) |
@@ -43,7 +45,7 @@ Prepared by Victoria, 2 Nov 2026. Working note, not for filing. Not legal advice
 | 10 Feb 10:36 | Call from Mikheil's phone to Minda's number (1m) | MSEM (MD14) |
 | 10 Feb 13:03 | Minda phones Mikheil about the panel; 13:35 label photo | DOC (MG5, MG6) |
 | 10 Feb 14:34 | Andrejus books Travelodge London Kings Cross Royal Scot, 13–14 Feb, 2 adults | DOC (conf. 163703763) |
-| 10 Feb 14:35, about 15:19 | Calls from Mikheil's phone to Andrejus's number (07966 347462, annotated on the bill) | MSEM (MD14) |
+| 10 Feb 14:35, about 15:19 | Calls from Mikheil's phone to Andrejus's number ((number in the email file), annotated on the bill) | MSEM (MD14) |
 | 11 Feb | "Danila" attends Central Square and starts remedial work | STMT (his para 22) |
 | 12 Feb 10:50, 13:00 | Calls from Mikheil's phone to Minda's number (1m 52s; 3m 06s) | MSEM (MD14) |
 | 12 Feb 12:49 | Call from Mikheil's phone to Macdonald Joinery's office number (5m 33s) | MSEM (MD14) |
@@ -51,6 +53,7 @@ Prepared by Victoria, 2 Nov 2026. Working note, not for filing. Not legal advice
 | 12 Feb 15:11 | Dave Newell of j4projects emails 16 snagging items after "the snagging meeting today"; forwarded to Minda at 15:32 | DOC (MG7) |
 | 12 Feb 20:31 | Mikheil asks BBC parking for level -2 access at 09:00 on 13 Feb | STMT (his para 66; MD16 not read in detail) |
 | 11 Feb 18:46–18:51; 12 Feb 07:24, 09:00 | Condor Ferries booking 11323088, lead passenger Sebastian Pabis, contact mobile 07855 463292 (Minda's): Guernsey to Portsmouth, MV Islander, **departs 12 Feb 08:15, arrives 15:45**, with a car and a commercial vehicle (NJ17 CWK). Freight reservation 11322935, same route and time | DOC (info@) |
+| 13 Feb 11:41, 11:47 | J4 Teams invitations to Minda, Macdonald, Price: 12:00, then moved to 14:00–14:30 | DOC (invite.ics) |
 | 13 Feb 08:50 | Parking replies, authorising access | STMT (his para 66) |
 | 13 Feb 11:17, 12:23 | Mikheil books parking for Sebastian 13:00–18:00; replies about the Sunday road closure | STMT (his para 68) |
 | 13 Feb 12:57, 13:38 | Mikheil emails Macdonald: "mindi send me a Sebastian and Daniela. And they doing the snagging" | MSEM (MD16) |
@@ -97,11 +100,11 @@ Prepared by Victoria, 2 Nov 2026. Working note, not for filing. Not legal advice
 | Para 23: Drulia, Pabis, Kogut, Snag Doctor, others | invoice@ and QuickBooks (Rachel) | Supported, except Kogut's confirmation |
 
 ## 4. Gaps: documents we do not hold
-1. Minda's own call records for 12, 13 and 18 Feb, and Andrejus's records (number 07966 347462).
+1. Minda's own call records for 12, 13 and 18 Feb, and Andrejus's records (number (number in the email file)).
 2. The WhatsApp export for 9–13 Feb, and the 10 Feb video (MD13-V1 on MSEM's SD card).
 3. Any record of where Minda and Andrejus were on 8, 9 and 13 Feb.
 4. When Pabis and Kogut actually left Guernsey (booking was 29 Jan to 6 Feb; the ferry is 12 Feb), and what Pabis did between 6 and 12 Feb. Who the three adults in the Cardiff flat from 6 Feb were.
 5. J4 Projects' confirmation of the cancelled 9 Feb meeting.
 6. Egita Davidane's statement and ED1–ED4, ED7.
-7. The 13 Feb Teams meeting time, to place it against Mikheil's departure.
+7. (Found 2 Nov) J4's Teams invitations for 13 Feb: 12:00–12:30, moved to 14:00–14:30. Still needed: whether Minda joined (Teams record).
 8. Any reply to Egita's requests of 18 and 27 Mar.
