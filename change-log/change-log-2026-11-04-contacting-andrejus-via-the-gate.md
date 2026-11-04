@@ -54,3 +54,11 @@ Victoria, with Minda. Follows `change-log-2026-11-03-new-n244-and-first-task-for
 ## Statement v0.9: 13A closed, para 15 (4 Nov, after push `040c1ee`)
 - 13A: Minda confirmed she was not on site on 10 Feb; closed.
 - Para 15: Minda and Andrejus arranged for Dainius Drulia to help at Central Square; he helped Mikheil on 10, 11 and 12 Feb (10 and 11 Feb rest on what Dainius told her; his signed statement starts 12 Feb and does not mention 10 or 11 Feb; Minda decided not to ask him), then worked on the remedial work from 13 Feb. Sebastian Pabis worked in Guernsey until 12 Feb, crossed to Portsmouth that day and reached Cardiff that evening; first day at Central Square still "on or after 13 Feb" (open). Not signed, not filed, not sent.
+
+## Statement v0.9: paras 15 to 19 (4 Nov, after push `ecae0f9`)
+- Para 15 closed: Sebastian Pabis in Guernsey until 12 Feb, reached Cardiff that evening, first working day at Central Square 13 Feb.
+- Para 16 closed as it was (Fishbone received the snagging list and Andrejus posted it; what was said on his 16:29 call is not known to Minda).
+- Para 17: Minda joined the 13 Feb Teams meeting at 14:00 from London with Andrejus (not travelling to Cardiff that night); a meeting with David Macdonald and Dave Newell was agreed for 18 Feb; nothing else was agreed.
+- Para 19A changed: Minda and Andrejus arrived in Cardiff 17 Feb and met Macdonald and Newell at Central Square on 18 Feb (Minda's decision). Andrejus's draft and Dainius's signed statement (para 10) say 17 Feb; not changed, for Minda or her adviser to weigh.
+- Para 19: Dainius told Minda (when and how not remembered) that Mikheil left on 13 Feb; she reads "Misha jau sjibalsa" as "he had gone quickly"; certified translation still to obtain; line about Sebastian removed at her request. Open: what the four 10:19 photographs of 13 Feb show.
+- Still open: paras 20 and 22; the 18 [CONFIRM] notes are being cleared one by one. Statement unsigned and not ready to sign. Nothing signed, filed or sent.
