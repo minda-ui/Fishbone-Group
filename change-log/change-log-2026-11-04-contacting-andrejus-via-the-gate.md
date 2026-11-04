@@ -1,0 +1,34 @@
+# Change log 2026-11-04 (Wed): how everyone contacts Andrejus via the gate (draft)
+
+Victoria, with Minda. Follows `change-log-2026-11-03-new-n244-and-first-task-for-andrejus.md` (not edited). **Local only: NOT committed or pushed.** Nothing sent, broadcast or changed on a live system.
+
+## Goga media (3 Nov, late)
+- Reviewed 63 distinct photos and 12 distinct videos (frames only) from the info@ Drive Goga folder; contact-sheet PDF given to Minda in chat; nothing filed (third-party images). WhatsApp had stripped all photo metadata. No usable audio transcript: speech-to-text blocked in Victoria's environment and the Composio workbench ran out of memory. Options given to Minda (human transcription, a transcription service on Composio, Eugene, a tool she runs).
+
+## Minda's instruction (4 Nov)
+- "We need to explain to everyone how to contact Andrejus through his assistant. Everyone should be able to contact direct, not via you. But via gate."
+
+## Minda's ruling on Andrejus's data access (4 Nov)
+- "Andrejus is the company director, so he should have access to financial and other sensitive data. But only to Fishbone Group data. If it gets connected with my other businesses, it should have my approval before being revealed to Andrejus."
+- Recorded as owner note `2026-11-04_owner-note_andrejus-data-access.md` in group Raw (minda@ Drive, `1AskWaogQoyQH7COKZq85jL00QUtcx---`). The guide draft now routes anything connected to her other businesses to Minda first (Gate reason = Another core or business).
+- No access granted or changed. Open: which entities and systems count as "Fishbone Group data" for him; his assistant's charter (v0.7) not yet amended.
+
+## Refinement (4 Nov, later): copies only
+- Minda: "Andrejus have right to see data, but not directly and definitely not in master core. we should hand him copy only."
+- Second owner note `2026-11-04_owner-note_andrejus-data-access-copy-only.md` in group Raw (`1AskWaogQoyQH7COKZq85jL00QUtcx---`); the first note was not edited. Guide draft gained a "copies only" section (ask, make, approve, hand over, log). Nothing built or handed over; delivery route into his Raw folder still only via Victoria (open).
+
+## Third ruling (4 Nov): Collaboration Space, careful requests, watertight master core
+- Minda: "Andrejus has access to the collaboration space where all Fishbone Group data is stored. So, treat what he asks for carefully. Master core should watertight."
+- Owner note `2026-11-04_owner-note_andrejus-collaboration-space-careful.md` in group Raw. Guide gained "Handling his requests carefully".
+- Read-only permission check (Drive): Fishbone Group root `1pOHvl8X64E-x3rRb-6Wrc9zsHZ2mgi73` and Finance archive `1BVk_RfuJ3rBRujZUMC98KMlil4AkICL4` owner Minda only. Collaboration Space `1YNj5BIpKVzcmI4U1DRkgu7kcnSDizGEi` writers: whole domain fishboneconstruction.co.uk, andrej@, irina@, lana@, and three outside accounts (alexey.glukhov@aggaservices.co.uk, agga.services@gmail.com, sveta_usurt@yahoo.com). Nothing changed; sharing is Minda's. (Earlier KB text calls the Collaboration Space "operational filing" with some folders owned by other accounts; the finance and group KB content is not in it.)
+
+## Clarification (4 Nov): Collaboration Space is shared space
+- Minda: "Collaboration Space is not part of master core; it is shared space for Fishbone Group."
+- Fourth owner note `2026-11-04_owner-note_collaboration-space-is-shared-space.md` in group Raw. Wide access to the Collaboration Space is by design; the "review who can reach it" point above is withdrawn. Guide wording corrected; the rule stands that master-core content is never copied into it.
+
+## Checked
+- Framework v0.4 draft, exchange-sheet template v2.2/v2.3, Peter's AWT-1094 draft J addendum: they define Andrejus's assistant sending requests in. No inbound route to him is defined.
+- Live columns of Exchange - Andrejus (`3543002788267908`): 18 as Irina's; Core options Andrejus/Irina; no Direction column.
+
+## Drafted
+- `Outputs/2026-11-04_Process_How-to-contact-Andrejus-via-the-gate_DRAFT_v0.1.md`: the how-to, with the five changes needed (Direction column, Peter's inbound check, assistant charter, employee charters, Rule F). Not live; awaiting Minda.
