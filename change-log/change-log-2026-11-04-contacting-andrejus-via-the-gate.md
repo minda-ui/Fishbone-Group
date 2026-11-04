@@ -62,3 +62,8 @@ Victoria, with Minda. Follows `change-log-2026-11-03-new-n244-and-first-task-for
 - Para 19A changed: Minda and Andrejus arrived in Cardiff 17 Feb and met Macdonald and Newell at Central Square on 18 Feb (Minda's decision). Andrejus's draft and Dainius's signed statement (para 10) say 17 Feb; not changed, for Minda or her adviser to weigh.
 - Para 19: Dainius told Minda (when and how not remembered) that Mikheil left on 13 Feb; she reads "Misha jau sjibalsa" as "he had gone quickly"; certified translation still to obtain; line about Sebastian removed at her request. Open: what the four 10:19 photographs of 13 Feb show.
 - Still open: paras 20 and 22; the 18 [CONFIRM] notes are being cleared one by one. Statement unsigned and not ready to sign. Nothing signed, filed or sent.
+
+## Statement v1.0 (4 Nov, Minda: "yes, make v1.0")
+- `Outputs/2026-11-04_Legal_MSEM-019JE538_Witness-Statement-FOR-SIGNING_v1.0.md` and `.pdf` (9 pp): v0.9 with all notes removed, paragraphs renumbered 1 to 28, cross-references updated, 30 Jan paragraph moved before the 2 and 3 Feb visit, the 09:24 call before the 10:47 call, exhibits sorted MG1 to MG19 (MG19 new; MG16 now a company phone, no consent). Para 25: only Dainius is the source of "left on 13 Feb" (Pabis line removed from para 22). Statement of truth, signature and date blank.
+- `…_v1.0_CHECKLIST-before-signing_for-Minda.md`: nine items to settle before signing (translation, MG16 redaction, exhibits, hotel/O2 direction, 17 vs 18 Feb difference with Andrejus/Dainius, Dainius's 10 Feb, para 27 dependencies, names, court form and filing).
+- v0.9 review copy PDF regenerated. Nothing signed, filed or sent. Not legal advice.
