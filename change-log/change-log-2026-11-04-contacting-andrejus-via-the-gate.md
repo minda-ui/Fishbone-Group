@@ -32,3 +32,16 @@ Victoria, with Minda. Follows `change-log-2026-11-03-new-n244-and-first-task-for
 
 ## Drafted
 - `Outputs/2026-11-04_Process_How-to-contact-Andrejus-via-the-gate_DRAFT_v0.1.md`: the how-to, with the five changes needed (Direction column, Peter's inbound check, assistant charter, employee charters, Rule F). Not live; awaiting Minda.
+
+## Statement rewordings (4 Nov, Minda: "6. reword please")
+- Asked: "is my statement ready to sign?" Answered no: v0.8 has 18 [CONFIRM] notes, para 9A is a placeholder, no clean signing copy, Dainius's signed statement not yet reflected.
+- Item 6 (the two rewordings offered on 2 Nov) done as new draft versions; v0.8 and Chronology v0.4 untouched:
+  - `Outputs/2026-11-04_Legal_MSEM-019JE538_Witness-Statement-FILING-VERSION_v0.9.md` and `-v0.9-REVIEW-COPY.pdf`: para 21 "I was told on 14 February that he left site on Friday 13 February" now names the source ("Mr Drulia and Mr Pabis told me ... (paragraph 19)"); "Differences" note says "left that day". No other paragraph changed.
+  - `Outputs/2026-11-04_Legal_MSEM-019JE538_Fishbone-Chronology_DRAFT_v0.5.md` and `.pdf`: the 18 Mar row no longer says "two calls on 3 and 5 Feb"; it says about 15 calls 4 Jan to 2 Mar, two of them on 3 and 5 Feb. The 13 Feb row now points at v0.9 para 21.
+- v0.8 itself had no "two calls" wording (it was in the Chronology rows v0.2 to v0.4). Still unsigned; 18 [CONFIRM] notes open. Nothing signed, filed or sent.
+
+## Statement v0.9: paragraph-by-paragraph answers from Minda (4 Nov)
+- Minda answered the [CONFIRM] notes one paragraph at a time, in her own words; written into `Outputs/2026-11-04_Legal_MSEM-019JE538_Witness-Statement-FILING-VERSION_v0.9.md` (review copy PDF regenerated). Paragraphs closed: 3, 6, 7, 8, 9, 9A, 11. Paragraph 12A written; three points still open (number of joiners asked for on the 6 Feb call, what happened after it, and "building shut" against para 13).
+- New exhibit MG19 (21 Jan 2026 thread "Roath Lock Kitchens": Price 08:22, D. Macdonald 08:41, A. Macdonald 09:26, Minda's reply 15:12) read from info@; Minda chose to cite the whole thread. The 8 Dec 2025 Andrew Macdonald email to Venesta (delivery contacts) is not an exhibit yet.
+- Not yet answered: paragraphs 12 to 23 notes as listed in chat (12A open points, 13A, 15, 16, 17, 19, 19A, 20, 22), the Dainius differences, and 9A/11 consistency checks. Statement still unsigned, not ready to sign.
+- Nothing signed, filed or sent.
