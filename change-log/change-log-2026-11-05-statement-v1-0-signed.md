@@ -60,3 +60,13 @@ Built from the 2 Nov Telegram exports in group Raw; uploaded to Minda's private 
 - 24 files "MGxx COURT COPY numbered - ..." added to the MG folders: every page stamped top right "Exhibit MGxx | page n of N", numbering running on across the files of one exhibit (MG06 47 pp, MG15 19, MG17 76). Same content as the earlier "PRINT" files, which stay as the MSEM copy (no stamp). All under 5 MB. Checked on MG01 and MG08.
 - Index v4 created in the exhibits folder (court copy and MSEM copy, pages per exhibit).
 - Court order para 2 (scan in Raw): send to the Court and each other. Same content to both; only the stamp differs.
+
+## Later on 5 Nov: Andrejus's statement put into court form (Minda: "Adopt statement to form a court need for his signature")
+- Raw has only Andrejus's unsigned draft (`Emailing Andrejus_Prutkovas_Witness_Statement_FINAL_REVIEW.pdf`, 2 Nov, 31 paras). Dainius's signed statement (v0.2, 3 Nov 15:59, with DocuSeal log) is in Raw.
+- New: `Outputs/2026-11-05_Legal_MSEM-019JE538_Witness-Statement-Andrejus-Prutkovas_FOR-SIGNATURE_v0.1.md/.pdf` (3 pp; PDF also in Drive group Outputs `1riXlcIPZm6BCqv6qzX1LDCUmiKzym_V4`) and `..._REVIEW-NOTE_for-Minda.md`. His wording and facts unchanged; business address instead of home address; exhibit references MG15, MG16 added. His call times checked against his O2 bills: all correct.
+- Conflicts with Minda's v1.0 listed in the review note (13 Feb at home v in London; meeting 17 v 18 Feb; 3 Feb site condition; 9 Feb labour request). Not harmonised; for Minda and her adviser. Not sent to Andrejus.
+
+## Later on 5 Nov: Andrejus's statement sent to his assistant (Minda: "send to his assistant")
+- Placed in the Raw folder of Andrejus's assistant (info@ Drive home `1p7arSbUuzhvzkW2axmR6P0UCkrfpgHZG`, Raw `1iYQ35aW8mOFJ_cJAl_Its5sm1YEmorpY`): the signing copy PDF (`1lgx1sB3D6g7tZ5-Xo9_HtWEr9jdLFe6X`) and `2026-11-05_handoff_victoria_andrejus-witness-statement-for-signature.md` (`1PBs-SpYEuv5jJOJ_JoGHEQE_P9QIK5q7`): read, correct in his own words, sign, return to Minda by 4pm Fri 6 Nov. Copy only. The review note (conflicts with Minda's statement) was not sent.
+- Hub row AWT-1117 (Done) records it. No Exchange sheet row: that sheet is for requests from Andrejus to the master core, not the other way.
+- Whether the assistant has read it, and whether Andrejus has seen it, is not known; Minda to tell him too.
