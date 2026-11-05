@@ -76,3 +76,8 @@ Built from the 2 Nov Telegram exports in group Raw; uploaded to Minda's private 
 
 ## Later on 5 Nov: Minda on 9 Feb (Andrejus's paras 9 to 11 v Minda's para 16)
 - Minda: Mikheil may have asked Andrejus for labour in the café; she does not remember; she may have been on the phone to other projects, which is common. Added to the review note (row 4). Statement v1.0 (para 16 already says she does not remember) and Andrejus's draft not changed. Local, not pushed.
+
+## Later on 5 Nov: new Andrejus file in Raw (Minda: "check raw folder for new Andrejus statement")
+- `Andrejus_Witness_Statement_13Feb_Corrected.pdf` (`1ukhPvhPuRUgSSASjCrtdtGICe63AF9zC`, 3 pp, 84 KB, created 11:18). Author not known. UNSIGNED and undated; same old layout (home address kept, no exhibit references), not the court-form copy sent to his assistant at 11:04.
+- Only two changes against his 2 Nov draft: para 16 now "On 13 February 2026, I was in London with Mindaugas Gaudiesius" (was "at home"); para 19 now "the London hotel booking for 13 February" (was "a London hotel booking referred to in the questions"). Everything else, including 17 Feb for the meeting, is unchanged. Para 16 and para 19 sit awkwardly: he says he was in London with Minda but does not remember the purpose of the London hotel booking.
+- Not touched; not forwarded. Minda to confirm the change is Andrejus's own recollection.
