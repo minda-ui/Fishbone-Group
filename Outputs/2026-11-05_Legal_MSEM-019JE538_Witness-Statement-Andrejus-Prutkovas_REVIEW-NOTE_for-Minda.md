@@ -19,6 +19,7 @@ Both go to the court. The judge will see these. They are for you and your advise
 | 1 | 13 Feb | At home (his paras 16 and 19) | In London with him, did not travel to Cardiff that night (para 20) |
 | 2 | Site meeting with the Macdonalds | 17 Feb (his para 20) | Arrived 17 Feb, met on 18 Feb (para 23). Dainius's signed statement says 17 Feb |
 | 3 | Site on 3 Feb | Saw missing panels, plumbing and skirting not done, ceiling repairs needed (his para 6) | Routine visit, no problems raised, work progressing (para 11) |
+|  | **Minda's answer, 5 Nov:** the panels were not installed yet and that was not a problem; delivery of them was to be later. **Programme (MG2, draft of 19 Nov):** laminated wall panels to be installed 22 Jan to 4 Feb and doors to 2 Feb, so missing panels and doors on 3 Feb fit it. It planned plumbing first fix to 21 Jan, ceilings to 19 Jan and tile skirting 19 to 21 Jan, so skirting, plumbing and ceiling work not done on 3 Feb was behind it. That is a draft programme; check whether a later one exists. | |
 | 4 | Site on 9 Feb | Limited progress; Mikheil asked for more labour in the café; they agreed three workers for the next day (his paras 9 to 11) | You do not remember whether he asked for labour that day (para 16). You say you and Andrejus arranged Mr Drulia's help after the call on 6 Feb (para 14) |
 | 5 | Phone calls | His paras 15, 16, 27 and 28 repeat call times "as described to me by Mindaugas" | The bills are exhibits. It would carry more weight if he says he has looked at them himself |
 

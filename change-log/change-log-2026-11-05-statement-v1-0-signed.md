@@ -70,3 +70,6 @@ Built from the 2 Nov Telegram exports in group Raw; uploaded to Minda's private 
 - Placed in the Raw folder of Andrejus's assistant (info@ Drive home `1p7arSbUuzhvzkW2axmR6P0UCkrfpgHZG`, Raw `1iYQ35aW8mOFJ_cJAl_Its5sm1YEmorpY`): the signing copy PDF (`1lgx1sB3D6g7tZ5-Xo9_HtWEr9jdLFe6X`) and `2026-11-05_handoff_victoria_andrejus-witness-statement-for-signature.md` (`1PBs-SpYEuv5jJOJ_JoGHEQE_P9QIK5q7`): read, correct in his own words, sign, return to Minda by 4pm Fri 6 Nov. Copy only. The review note (conflicts with Minda's statement) was not sent.
 - Hub row AWT-1117 (Done) records it. No Exchange sheet row: that sheet is for requests from Andrejus to the master core, not the other way.
 - Whether the assistant has read it, and whether Andrejus has seen it, is not known; Minda to tell him too.
+
+## Later on 5 Nov: Minda on 3 Feb (Andrejus's para 6 v Minda's para 11)
+- Minda: the panels were not installed yet and it was not a problem; their delivery was to be later. Recorded in the review note (row 3). Programme MG2 (draft 19 Nov): laminated panels 22 Jan to 4 Feb, doors to 2 Feb; plumbing first fix to 21 Jan, ceilings to 19 Jan, tile skirting 19 to 21 Jan. So the panels and doors fit the programme on 3 Feb; skirting, plumbing and ceilings were behind it. Statement v1.0 and Andrejus's draft not changed.
