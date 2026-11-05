@@ -73,3 +73,6 @@ Built from the 2 Nov Telegram exports in group Raw; uploaded to Minda's private 
 
 ## Later on 5 Nov: Minda on 3 Feb (Andrejus's para 6 v Minda's para 11)
 - Minda: the panels were not installed yet and it was not a problem; their delivery was to be later. Recorded in the review note (row 3). Programme MG2 (draft 19 Nov): laminated panels 22 Jan to 4 Feb, doors to 2 Feb; plumbing first fix to 21 Jan, ceilings to 19 Jan, tile skirting 19 to 21 Jan. So the panels and doors fit the programme on 3 Feb; skirting, plumbing and ceilings were behind it. Statement v1.0 and Andrejus's draft not changed.
+
+## Later on 5 Nov: Minda on 9 Feb (Andrejus's paras 9 to 11 v Minda's para 16)
+- Minda: Mikheil may have asked Andrejus for labour in the café; she does not remember; she may have been on the phone to other projects, which is common. Added to the review note (row 4). Statement v1.0 (para 16 already says she does not remember) and Andrejus's draft not changed. Local, not pushed.
